@@ -1,0 +1,49 @@
+@media (--hlx-screen-sm) {
+  .sm-hide {
+    display: none;
+  }
+
+  .sm-show {
+    display: inherit;
+  }
+}
+
+@media (--hlx-screen-md) {
+  .md-hide {
+    display: none;
+  }
+
+  .md-show {
+    display: inherit;
+  }
+}
+
+@media (--hlx-screen-lg) {
+  .lg-hide {
+    display: none;
+  }
+
+  .lg-show {
+    display: inherit;
+  }
+}
+
+@media (--hlx-screen-xl) {
+  .xl-hide {
+    display: none;
+  }
+
+  .xl-show {
+    display: inherit;
+  }
+}
+
+@media (--hlx-screen-xxl) {
+  .xxl-hide {
+    display: none;
+  }
+
+  .xxl-show {
+    display: inherit;
+  }
+}

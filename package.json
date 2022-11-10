@@ -1,25 +1,29 @@
 {
-  "name": "@adobe/helix-project-boilerplate",
+  "name": "@rosalind/rosalind-template",
   "private": true,
   "version": "1.0.0",
-  "description": "Starter project for Adobe Helix",
+  "description": "Starter franklin project with the Rosalind Template",
   "scripts": {
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
     "lint:css": "stylelint 'blocks/**/*.css' 'styles/*.css'",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adobe/helix-project-boilerplate.git"
+    "url": "git+https://github.com/dylandepass/rosalind-template.git"
   },
   "author": "Adobe",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-project-boilerplate/issues"
+    "url": "https://github.com/dylandepass/rosalind-template/issues"
   },
-  "homepage": "https://github.com/adobe/helix-project-boilerplate#readme",
+  "homepage": "https://github.com/dylandepass/rosalind-template#readme",
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@babel/eslint-parser": "7.19.1",
@@ -33,6 +37,21 @@
     "sinon": "14.0.1",
     "stylelint": "14.13.0",
     "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-standard": "25.0.0"
+    "stylelint-config-standard": "25.0.0",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/html": "^6.5.10",
+    "postcss": "^8.4.18",
+    "postcss-preset-env": "7.8.2",
+    "postcss-import": "14.1.0",
+    "postcss-mixins": "9.0.2",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-util": "3.0.8"
+  },
+  "dependencies": {
+    "@rosalind/rosalind-dna": "1.0.0"
   }
 }

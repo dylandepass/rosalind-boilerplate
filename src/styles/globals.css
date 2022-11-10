@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--ros-font-size-body);
+  font-family: var(--ros-font-family-body);
+  line-height: var(--ros-line-height-body);
+  padding-top: var(--hlx-padding-top-body-mobile);
+  color: var(--ros-color-typography-base);
+  background-color: var(--ros-color-body-background);
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+main {
+  display: block;
+}
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: solid 1px var(--ros-color-grey-dark);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: 10px 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--hlx-mono-font-family);
+}
+
+pre {
+  border-radius: 12px;
+}
+
+small {
+  font-size: var(--size-small-mobile);
+  line-height: var(--lineheight-small-mobile);
+
+  @media (--hlx-screen-lg) {
+    font-size: var(--size-small-desktop);
+    line-height: var(--lineheight-small-desktop);
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+a,
+button {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  color: var(--ros-color-grey-dark);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--ros-color-primary-base);
+    }
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  appearance: none;
+  border: none;
+}
+
+img,
+svg {
+  transition: all 0.3s ease;
+
+  & * {
+    transition: all 0.3s ease;
+  }
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-style: none;
+  object-fit: contain;
+}
+
+strong,
+b {
+  font-weight: 700;
+  color: var(--ros-color-grey-dark);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  & th,
+  & td {
+    text-align: left;
+    border-bottom: solid 1px var(--ros-color-grey-light);
+    padding: 5px 20px 5px 0;
+    white-space: nowrap;
+  }
+
+  & td {
+    color: var(--ros-color-grey-base);
+
+    &:first-of-type {
+      font-weight: 600;
+      color: var(--ros-color-grey-dark);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@custom-media --hlx-screen-sm (min-width: 576px);
+@custom-media --hlx-screen-md (min-width: 768px);
+@custom-media --hlx-screen-lg (min-width: 992px);
+@custom-media --hlx-screen-xl (min-width: 1200px);
+@custom-media --hlx-screen-xxl (min-width: 1440px);

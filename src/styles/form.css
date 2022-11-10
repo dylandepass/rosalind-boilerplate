@@ -1,0 +1,339 @@
+form .group {
+    display: flex;
+    flex-direction: column;
+}
+
+form .group label {
+    color: var(--ros-color-form-typography-label);
+    font-size: var(--ros-font-size-form-group-label);
+    font-weight: var(--ros-font-weight-form-group-label);
+    line-height: var(--ros-line-height-form-group-label);
+    padding-bottom: var(--ros-size-form-label-padding-bottom);
+}
+
+form .group span {
+    color: var(--ros-color-form-typography-help);
+    font-size: var(--ros-font-size-form-group-help);
+    font-weight: var(--ros-font-weight-form-group-help);
+    line-height: var(--ros-line-height-form-group-help);
+    padding-top: var(--ros-size-form-help-padding-top);
+}
+
+input[type='text'],
+textarea,
+select {
+    color: var(--ros-color-form-input-foreground-default);
+    background-color: var(--ros-color-form-input-background-default);
+    border-width: var(--ros-border-width-form-input-default);
+    border-radius: var(--ros-radius-form-input);
+    border-color: var(--ros-color-form-input-border-default);
+    padding: var(--ros-size-form-input-vertical-padding) var(--ros-size-form-input-horizontal-padding);
+    margin: calc(var(--ros-border-width-form-input-default) * -1);
+    border-style: solid;
+}
+
+input[type='text']:hover,
+textarea:hover,
+select:hover {
+    color: var(--ros-color-form-input-foreground-hover);
+    background-color: var(--ros-color-form-input-background-hover);
+    border-width: var(--ros-border-width-form-input-hover);
+    border-color: var(--ros-color-form-input-border-hover);
+    margin: calc(var(--ros-border-width-form-input-hover) * -1);
+}
+
+input[type='text']:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline-style: solid;
+    outline-width: var(--ros-border-width-form-input-focus-visible);
+    outline-color: var(--ros-color-form-input-border-focus-visible);
+    color: var(--ros-color-form-input-foreground);
+    background-color: var(--ros-color-form-input-background-focus);
+}
+
+input[type='text']:active,
+textarea:active,
+select:active {
+    outline: none;
+    color: var(--ros-color-form-input-foreground);
+    background-color: var(--ros-color-form-input-background-active);
+    border-width: var(--ros-border-width-form-input-active);
+    border-color: var(--ros-color-form-input-border-active);
+    margin: calc(var(--ros-border-width-form-input-active) * -1);
+}
+
+input[type='text']:disabled,
+textarea:disabled,
+select:disabled {
+    color: var(--ros-color-form-input-foreground);
+    background-color: var(--ros-color-form-input-background-disabled);
+    border-color: var(--ros-color-form-input-border-disabled);
+    border-width: var(--ros-border-width-form-input-disabled);
+    margin: calc(var(--ros-border-width-form-input-disabled) * -1);
+}
+
+input[type='text']::placeholder,
+textarea::placeholder,
+select::placeholder {
+    font-size: var(--ros-font-size-form-input-placeholder);
+    font-weight: var(--ros-font-weight-form-input-placeholder);
+    line-height: var(--ros-line-height-form-input-placeholder);
+    color: var(--ros-color-form-typography-placeholder);
+}
+
+
+input[type="checkbox"],
+input[type='radio'] {
+    opacity: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Checkbox */
+input[type="checkbox"],
+input[type='radio'] {
+    /* Default */
+    & + label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--ros-color-form-input-background);
+        border-width: var(--ros-border-width-form-input-default);
+        border-color: var(--ros-color-form-input-border-default);
+        border-radius: var(--ros-radius-form-input);
+        border-style: solid;
+    }
+
+    /* Label */
+    & + label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        display: inline-block;
+        color: var(--ros-color-form-input-foreground-default);
+        line-height: var(--ros-line-height-form-checkbox-label);
+    }
+
+    &:hover + label::before {
+        border-style: solid;
+        border-width: var(--ros-border-width-form-input-hover);
+        border-color: var(--ros-color-form-input-border-hover);
+        background-color: var(--ros-color-form-input-background-hover);
+    }
+
+    &:focus-visible + label::before {
+        outline-style: solid;
+        outline-width: var(--ros-border-width-form-input-focus-visible);
+        outline-color: var(--ros-color-form-input-border-focus);
+        border-color: var(--ros-color-form-input-border);
+        background-color: var(--ros-color-form-input-background-focus);
+    }
+    
+    &:checked + label::before {
+        border-color: var(--ros-color-form-input-checked-border);
+    }
+    
+
+    &:checked + label::after {
+        background-color: var(--ros-color-form-input-checked-border);
+    }
+}
+
+
+
+[type="checkbox"] {
+    &:not(.switch) {
+        /* Default checkbox state */
+        & + label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: var(--ros-radius-form-input);
+            background-color: var(--ros-color-form-input-background);
+            border-width: var(--ros-border-width-form-input-default);
+            border-color: var(--ros-color-form-input-border-default);
+            border-style: solid;
+        }
+
+        /* Checkbox Checked (Background) */
+        &:checked + label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-style: solid;
+            border-width: var(--ros-border-width-form-input-active);
+            border-color: var(--ros-color-form-input-checked-border);
+            background-color: var(--ros-color-form-input-checked-background);
+        }
+
+        /* Checkbox Checked (Check Shape) */
+        &:checked + label::after {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            width: 5px;
+            height: 10px;
+            border-color: var(--ros-color-form-input-checked-foreground);
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &.switch {
+        & + label {
+            padding-left: 47px;
+        }
+
+        & + label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--ros-size-form-switch-width);
+            height: var(--ros-size-form-switch-height);
+            border-radius: 11px;
+        }
+
+        & + label::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            background-color: var(--ros-color-form-input-switch-foreground);
+            transform: translateX(var(--x, 0));
+        }
+
+        &:checked + label::before {
+            background-color: var(--ros-color-form-input-switch-background-active);
+        }
+        
+        &:checked + label::after {
+            --x: 18px;
+            background-color: var(--ros-color-form-input-checked-foreground);
+        }
+    }
+}
+
+input[type='radio'] {
+    & + label::before {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    
+    & + label::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--ros-color-form-input-checked-border);
+        transform: scale(var(--s, .7));
+        opacity: 0;
+    }
+
+    &:checked + label::after {
+        --s: .5;
+        --opacity: 1;
+        opacity: 1;
+    }
+}
+
+select {
+  appearance: none;
+  width: 100%;
+  min-width: 200px;
+}
+
+.select {
+    position: relative;
+}
+
+.select::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+
+/* Checkbox Hover */
+/* [type="checkbox"]:hover + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border-style: solid;
+    border-width: var(--ros-border-width-form-input-hover);
+    border-color: var(--ros-color-form-input-border-hover);
+    background-color: var(--ros-color-form-input-background-hover);
+} */
+
+/* Checkbox Focus */
+/* [type="checkbox"]:focus-visible + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline-style: solid;
+    outline-width: var(--ros-border-width-form-input-focus);
+    outline-color: var(--ros-color-form-input-border-focus);
+    border-color: var(--ros-color-form-input-border);
+    background-color: var(--ros-color-form-input-background-focus);
+} */
+
+/* Checkbox Checked (Background) */
+/* [type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border-style: solid;
+    border-width: var(--ros-border-width-form-input-active);
+    border-color: var(--ros-color-form-input-border-checked);
+    background-color: var(--ros-color-form-input-background-checked);
+} */
+
+/* Checkbox Checked (Check Shape) */
+/* [type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border-color: var(--ros-color-form-input-foreground);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+} */

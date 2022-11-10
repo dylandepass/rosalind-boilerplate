@@ -1,0 +1,74 @@
+:root {
+  /** PAGE **/
+
+  /** SPACING **/
+  --hlx-padding-top-body-mobile: 76px;
+  --hlx-padding-top-body-desktop: 76px;
+  --hlx-margin-section-mobile: 20px;
+  --hlx-margin-section-desktop: 20px;
+
+  /** GRID **/
+  --hlx-margin-row-sm: -5px;
+  --hlx-margin-row-md: -10px;
+  --hlx-margin-row-lg: -30px;
+  --hlx-margin-row-xl: -50px;
+  --hlx-gutter-col-sm: 5px;
+  --hlx-gutter-col-md: 10px;
+  --hlx-gutter-col-lg: 30px;
+  --hlx-gutter-col-xl: 50px;
+
+  /** COLOR **/
+
+
+  --hlx-color-gray-100: #fff;
+  --hlx-color-gray-200: #f4f4f4;
+  --hlx-color-gray-300: #eaeaea;
+  --hlx-color-gray-400: #d3d3d3;
+  --hlx-color-gray-500: #bcbcbc;
+  --hlx-color-gray-600: #959595;
+  --hlx-color-gray-700: #747474;
+  --hlx-color-gray-800: #505050;
+  --hlx-color-gray-900: #323232;
+
+  --hlx-color-positive: #008f5d;
+  --hlx-color-negative: #ea3829;
+  --hlx-color-notice: #f68524;
+  --hlx-color-informative: #3892f3;
+
+  /**
+    * Fonts 
+   **/
+
+  /* Changes the browser base font size to 10px making turning the rem scale to base 10 */
+  --base-font-size: 62.5%;
+
+  --hlx-body-font-family: "Open Sans", sans-serif;
+  --hlx-mono-font-family: "Source Code Pro", monospace;
+  --hlx-heading-font-family: "Oswald", sans-serif;
+  --hlx-subheading-font-family: "Oswald", sans-serif;
+  --hlx-eyebrow-font-family: "Oswald", sans-serif;
+
+  --hlx-heading-font-weight: 700;
+  --hlx-heading-line-height-multiplier: 1.2;
+  --hlx-heading-bottom-margin: 0.8rem;
+
+  --hlx-display-font-weight: 300;
+
+  --size-input-big-mobile: 18px;
+  --lineheight-input-big-mobile: 1;
+  --size-input-big-desktop: 18px;
+  --lineheight-input-big-desktop: 1;
+
+  --size-strong-mobile: 14px;
+  --lineheight-strong-mobile: 1.5;
+  --size-strong-desktop: 16px;
+  --lineheight-strong-desktop: 1.5;
+
+  --lineheight-text-mobile: 1.5;
+  --lineheight-text-desktop: 1.5;
+
+  --size-small-mobile: 12px;
+  --lineheight-small-mobile: 1.3;
+  --size-small-desktop: 14px;
+  --lineheight-small-desktop: 1.3;
+}

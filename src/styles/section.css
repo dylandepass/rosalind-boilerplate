@@ -1,0 +1,33 @@
+.section {
+  margin: auto;
+  width: 100%;
+  padding: 0 var(--hlx-margin-section-mobile);
+  max-width: var(--ros-section-max-width);
+
+  @media (--hlx-screen-lg) {
+    padding: 0 var(--hlx-margin-section-desktop);
+  }
+
+  &.fluid {
+    max-width: var(--hlx-max-width-limit);
+  }
+
+  &.full-width {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}

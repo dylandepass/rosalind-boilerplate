@@ -1,0 +1,13 @@
+.row.visible {
+  background-color: #dbeaff;
+  outline: 1px dashed #97c1ff;
+}
+
+.row.visible [class*="col"] {
+  background-color: #dbeaff;
+  outline: 1px dashed #97c1ff;
+}
+
+.row.visible > div > div {
+  background-color: #edf4ff;
+}
