@@ -78,7 +78,7 @@ ul.row {
     }
   }
 
-  @media (--hlx-screen-sm) {
+  @media (--ros-screen-sm) {
     &.gutter-sm-sm {
       @mixin gutter-sm;
 
@@ -112,7 +112,7 @@ ul.row {
     }
   }
 
-  @media (--hlx-screen-md) {
+  @media (--ros-screen-md) {
     &.gutter-md-sm {
       @mixin gutter-sm;
 
@@ -146,7 +146,7 @@ ul.row {
     }
   }
 
-  @media (--hlx-screen-lg) {
+  @media (--ros-screen-lg) {
     &.gutter-lg-sm {
       @mixin gutter-sm;
 
@@ -180,7 +180,7 @@ ul.row {
     }
   }
 
-  @media (--hlx-screen-xl) {
+  @media (--ros-screen-xl) {
     &.gutter-xl-sm {
       @mixin gutter-sm;
 
@@ -214,7 +214,7 @@ ul.row {
     }
   }
 
-  @media (--hlx-screen-xxl) {
+  @media (--ros-screen-xxl) {
     &.gutter-xxl-sm {
       @mixin gutter-sm;
 

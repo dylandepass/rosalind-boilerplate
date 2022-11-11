@@ -1,11 +1,11 @@
 .section {
   margin: auto;
   width: 100%;
-  padding: 0 var(--hlx-margin-section-mobile);
+  padding: 0 var(--ros-spacing-section-horizontal-padding);
   max-width: var(--ros-section-max-width);
 
-  @media (--hlx-screen-lg) {
-    padding: 0 var(--hlx-margin-section-desktop);
+  @media (--ros-screen-lg) {
+    padding: 0 var(--ros-spacing-section-horizontal-padding);
   }
 
   &.fluid {
@@ -17,6 +17,16 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  @media (--ros-screen-sm) {
+   padding: 64px 32px;
+  }
+
+  @media (--ros-screen-md) {
+    & > div {
+      max-width: var(--ros-section-max-width);
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-@media (--hlx-screen-sm) {
+@media (--ros-screen-sm) {
   .sm-hide {
     display: none;
   }
@@ -8,7 +8,7 @@
   }
 }
 
-@media (--hlx-screen-md) {
+@media (--ros-screen-md) {
   .md-hide {
     display: none;
   }
@@ -18,7 +18,7 @@
   }
 }
 
-@media (--hlx-screen-lg) {
+@media (--ros-screen-lg) {
   .lg-hide {
     display: none;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@media (--hlx-screen-xl) {
+@media (--ros-screen-xl) {
   .xl-hide {
     display: none;
   }
@@ -38,7 +38,7 @@
   }
 }
 
-@media (--hlx-screen-xxl) {
+@media (--ros-screen-xxl) {
   .xxl-hide {
     display: none;
   }

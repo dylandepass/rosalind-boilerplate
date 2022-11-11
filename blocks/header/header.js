@@ -6,7 +6,7 @@ import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
  */
 
 function collapseAllNavSections(sections) {
-  sections.querySelectorAll('.nav-sections > ul > li').forEach((section) => {
+  sections.querySelectorAll('.nav-menu > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', 'false');
   });
 }
@@ -29,21 +29,20 @@ export default async function decorate(block) {
     // decorate nav DOM
     const nav = document.createElement('nav');
     nav.innerHTML = html;
-    decorateIcons(nav);
 
-    const classes = ['brand', 'sections', 'tools'];
+    const classes = ['brand', 'menu', 'tools'];
     classes.forEach((e, j) => {
       const section = nav.children[j];
       if (section) section.classList.add(`nav-${e}`);
     });
 
-    const navSections = [...nav.children][1];
-    if (navSections) {
-      navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
+    const navMenu = [...nav.children][1];
+    if (navMenu) {
+      navMenu.querySelectorAll(':scope > ul > li').forEach((navSection) => {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-        navSection.addEventListener('click', () => {
+        navSection.addEventListener('mouseover', () => {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          collapseAllNavSections(navSections);
+          collapseAllNavSections(navMenu);
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         });
       });
@@ -52,8 +51,15 @@ export default async function decorate(block) {
     // hamburger for mobile
     const hamburger = document.createElement('div');
     hamburger.classList.add('nav-hamburger');
-    hamburger.innerHTML = '<div class="nav-hamburger-icon"></div>';
+    hamburger.innerHTML = /* html */`
+          <div>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+    `;
     hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
       const expanded = nav.getAttribute('aria-expanded') === 'true';
       document.body.style.overflowY = expanded ? '' : 'hidden';
       nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');

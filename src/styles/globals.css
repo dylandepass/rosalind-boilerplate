@@ -17,6 +17,11 @@ body {
   color: var(--ros-color-typography-base);
   background-color: var(--ros-color-body-background);
   margin: 0;
+  display: none;
+}
+
+body.appear {
+  display: unset;
 }
 
 * {
@@ -28,10 +33,6 @@ body {
   &:after {
     box-sizing: border-box;
   }
-}
-
-main {
-  display: block;
 }
 
 hr {
@@ -46,7 +47,7 @@ hr {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 pre,
@@ -58,32 +59,7 @@ samp {
 
 pre {
   border-radius: 12px;
-}
-
-small {
-  font-size: var(--size-small-mobile);
-  line-height: var(--lineheight-small-mobile);
-
-  @media (--hlx-screen-lg) {
-    font-size: var(--size-small-desktop);
-    line-height: var(--lineheight-small-desktop);
-  }
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
+  overflow: scroll;
 }
 
 a,
@@ -95,7 +71,7 @@ button {
 
 a {
   background-color: transparent;
-  color: var(--ros-color-grey-dark);
+  color: var(--ros-color-typography-link);
 
   @media (hover: hover) {
     &:hover {
@@ -104,37 +80,27 @@ a {
   }
 }
 
-figure {
-  margin: 0;
-}
-
-fieldset {
-  appearance: none;
-  border: none;
-}
-
-img,
-svg {
-  transition: all 0.3s ease;
-
-  & * {
-    transition: all 0.3s ease;
-  }
-}
-
 img {
-  display: inline-block;
   max-width: 100%;
   width: auto;
   height: auto;
-  border-style: none;
-  object-fit: contain;
 }
 
-strong,
-b {
-  font-weight: 700;
-  color: var(--ros-color-grey-dark);
+blockquote {
+  font-style: italic;
+  margin: 3rem;
+  text-indent: -1rem;
+  hanging-punctuation: first;
+}
+
+blockquote p::before {
+  content: "“";
+  line-height: 0;
+}
+
+blockquote p::after {
+  content: "”";
+  line-height: 0;
 }
 
 table {
@@ -144,17 +110,17 @@ table {
   & th,
   & td {
     text-align: left;
-    border-bottom: solid 1px var(--ros-color-grey-light);
+    border-bottom: solid 1px var(--ros-color-form-input-border-default);
     padding: 5px 20px 5px 0;
     white-space: nowrap;
   }
 
   & td {
-    color: var(--ros-color-grey-base);
+    color: var(--ros-color-typography-light);
 
     &:first-of-type {
       font-weight: 600;
-      color: var(--ros-color-grey-dark);
+      color: var(--ros-color-typography-base);
     }
   }
 }

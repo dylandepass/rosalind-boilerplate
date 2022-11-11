@@ -5,6 +5,7 @@
     border-style: solid;
     align-items: center;
     gap: var(--ros-spacing-button-default-horizontal-gap);
+    font-style: initial;
 }
 
 .button.large {
@@ -35,7 +36,7 @@
     height: 20px;
 }
 
-.button.cta {
+.button.primary {
     color: var(--ros-color-button-cta-foreground);
     background-color: var(--ros-color-button-cta-background);
     border-width: var(--ros-border-width-button-cta-default);
@@ -44,7 +45,7 @@
     margin: calc(var(--ros-border-width-button-cta-default) * -1);
 }
 
-.button.cta:hover {
+.button.primary:hover {
     color: var(--ros-color-button-cta-foreground-hover);
     background-color: var(--ros-color-button-cta-background-hover);
     border-width: var(--ros-border-width-button-cta-hover);
@@ -52,7 +53,7 @@
     margin: calc(var(--ros-border-width-button-cta-hover) * -1);
 }
 
-.button.cta:active {
+.button.primary:active {
     color: var(--ros-color-button-cta-forground-active);
     background-color: var(--ros-color-button-cta-background-active);
     border-width: var(--ros-border-width-button-cta-active);
@@ -60,7 +61,7 @@
     margin: calc(var(--ros-border-width-button-cta-active) * -1);
 }
 
-.button.cta:focus {
+.button.primary:focus {
     color: var(--ros-color-button-cta-forground-focus);
     background-color: var(--ros-color-button-cta-background-focus);
     border-width: var(--ros-border-width-button-cta-focus);
@@ -68,7 +69,7 @@
     margin: calc(var(--ros-border-width-button-cta-focus) * -1);
 }
 
-.button.cta.disabled {
+.button.primary.disabled {
     color: var(--ros-color-button-cta-forground-disabled);
     background-color: var(--ros-color-button-cta-background-disabled);
     border-width: var(--ros-border-width-button-cta-disabled);
