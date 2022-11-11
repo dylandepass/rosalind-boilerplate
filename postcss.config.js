@@ -15,5 +15,6 @@ module.exports = {
     // 	minPixelValue: 0,
     // 	exclude: /node_modules/i
     // }),
+    require('cssnano'),
   ],
 };

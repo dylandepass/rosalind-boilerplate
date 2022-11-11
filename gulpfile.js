@@ -6,6 +6,22 @@ const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const gutil = require('gulp-util');
 const rename = require('gulp-rename');
+const merge = require('merge-stream');
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * UTIL TASKS
+ */
+const errorMsg = '\x1b[41mError\x1b[0m';
+
+const onError = (err) => {
+  gutil.beep();
+  gutil.log(`${errorMsg} ${err.toString()}`);
+
+  // @ts-ignore
+  this.emit('end');
+};
 
 /**
  * Copy variables
@@ -26,8 +42,23 @@ function copyDarkTheme() {
 /**
  * DEV TASKS
  */
-function startWatching() {
-  watch('./src/**/*.css', stylesDev);
+function getFolders(dir) {
+  return fs.readdirSync(dir)
+    .filter((file) => fs.statSync(path.join(dir, file)).isDirectory());
+}
+
+function buildBlocksCSS() {
+  const blocksSrcPath = './src/styles/blocks';
+  const blocksDestPath = './blocks';
+  const folders = getFolders('./src/styles/blocks');
+
+  const tasks = folders.map((folder) => src(path.join(blocksSrcPath, folder, '*.css'))
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
+    .pipe(postcss())
+    .pipe(dest(`${blocksDestPath}/${folder}`)));
+
+  return merge(tasks);
 }
 
 function stylesDev() {
@@ -38,7 +69,12 @@ function stylesDev() {
     .pipe(rename('system.css'))
     .pipe(dest('./styles'));
 }
-exports.dev = series(stylesDev, copyLightTheme, copyDarkTheme, startWatching);
+
+function startWatching() {
+  watch('./src/**/*.css', undefined, series(stylesDev, buildBlocksCSS));
+}
+
+exports.dev = series(stylesDev, copyLightTheme, copyDarkTheme, buildBlocksCSS, startWatching);
 
 /**
  * BUILD TASKS
@@ -52,14 +88,3 @@ function stylesBuild() {
 }
 
 exports.build = series(stylesBuild);
-
-/**
- * UTIL TASKS
- */
-const errorMsg = '\x1b[41mError\x1b[0m';
-
-const onError = (err) => {
-  gutil.beep();
-  gutil.log(`${errorMsg} ${err.toString()}`);
-  this.emit('end');
-};
