@@ -257,8 +257,11 @@
       @media (--ros-screen-lg) {
         margin-bottom: 0;
 
-        & .illustration > svg {
-          padding: 50px;
+        & .illustration {
+          min-height: 484px;
+          & > svg {
+            padding: 50px;
+          }
         }
         @mixin col6;
       }

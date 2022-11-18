@@ -1,6 +1,7 @@
 .section.svg-grid-container {
     border-top: 1px solid var(--ros-color-form-input-border-default);
     padding: 20px 10px;
+    min-height: 98px;
 }
 
 .svg-grid {
