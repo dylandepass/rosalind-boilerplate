@@ -2,12 +2,8 @@
   position: relative;
   width: 100%;
   min-height: 1px;
-  flex-basis: 0;
-  flex-grow: 1;
   max-width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
 @define-mixin col-auto {
@@ -243,6 +239,31 @@
 
 .col-order-last {
   order: 13;
+}
+
+.columns-2-cols {
+  & > div {
+    & > div {
+      margin-right: 24px;
+      margin-bottom: 24px;
+      @mixin col12;
+
+      & .illustration > svg {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+      }
+
+      @media (--ros-screen-lg) {
+        margin-bottom: 0;
+
+        & .illustration > svg {
+          padding: 50px;
+        }
+        @mixin col6;
+      }
+    }
+  }
 }
 
 @media (--ros-screen-sm) {
@@ -762,5 +783,343 @@
     max-height: calc(100vh - var(--hlx-padding-top-body-desktop));
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-cols-11 {
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+@media (--ros-screen-sm) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .grid-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (--ros-screen-md) {
+  .grid-md-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
+  .grid-md-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (--ros-screen-lg) {
+  .grid-lg-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
+  .grid-lg-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.grid-col-span-2 {
+  grid-column: span 2/span 2!important;
+}
+
+.grid-col-span-3 {
+  grid-column: span 3/span 3!important;
+}
+
+.grid-col-span-4 {
+  grid-column: span 4/span 4!important;
+}
+
+.grid-col-span-5 {
+  grid-column: span 5/span 5!important;
+}
+
+.grid-col-span-6 {
+  grid-column: span 6/span 6!important;
+}
+
+.grid-col-span-7 {
+  grid-column: span 7/span 7!important;
+}
+
+.grid-col-span-8 {
+  grid-column: span 8/span 8!important;
+}
+
+.grid-col-span-9 {
+  grid-column: span 9/span 9!important;
+}
+
+.grid-col-span-10 {
+  grid-column: span 10/span 10!important;
+}
+
+.grid-col-span-11 {
+  grid-column: span 11/span 11!important;
+}
+
+.grid-col-span-12 {
+  grid-column: span 12/span 12!important;
+}
+
+@media (--ros-screen-md) {
+  .grid-md-col-span-2 {
+    grid-column: span 2/span 2!important;
+  }
+
+  .grid-md-col-span-3 {
+    grid-column: span 3/span 3!important;
+  }
+
+  .grid-md-col-span-4 {
+    grid-column: span 4/span 4!important;
+  }
+
+  .grid-md-col-span-5 {
+    grid-column: span 5/span 5!important;
+  }
+
+  .grid-md-col-span-6 {
+    grid-column: span 6/span 6!important;
+  }
+
+  .grid-md-col-span-7 {
+    grid-column: span 7/span 7!important;
+  }
+
+  .grid-md-col-span-8 {
+    grid-column: span 8/span 8!important;
+  }
+
+  .grid-md-col-span-9 {
+    grid-column: span 9/span 9!important;
+  }
+
+  .grid-md-col-span-10 {
+    grid-column: span 10/span 10!important;
+  }
+
+  .grid-md-col-span-11 {
+    grid-column: span 11/span 11!important;
+  }
+
+  .grid-md-col-span-12 {
+    grid-column: span 12/span 12!important;
+  }
+}
+
+@media (--ros-screen-lg) {
+  .grid-lg-col-span-2 {
+    grid-column: span 2/span 2!important;
+  }
+
+  .grid-lg-col-span-3 {
+    grid-column: span 3/span 3!important;
+  }
+
+  .grid-lg-col-span-4 {
+    grid-column: span 4/span 4!important;
+  }
+
+  .grid-lg-col-span-5 {
+    grid-column: span 5/span 5!important;
+  }
+
+  .grid-lg-col-span-6 {
+    grid-column: span 6/span 6!important;
+  }
+
+  .grid-lg-col-span-7 {
+    grid-column: span 7/span 7!important;
+  }
+
+  .grid-lg-col-span-8 {
+    grid-column: span 8/span 8!important;
+  }
+
+  .grid-lg-col-span-9 {
+    grid-column: span 9/span 9!important;
+  }
+
+  .grid-lg-col-span-10 {
+    grid-column: span 10/span 10!important;
+  }
+
+  .grid-lg-col-span-11 {
+    grid-column: span 11/span 11!important;
+  }
+
+  .grid-lg-col-span-12 {
+    grid-column: span 12/span 12!important;
   }
 }

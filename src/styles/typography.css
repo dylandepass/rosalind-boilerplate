@@ -3,53 +3,44 @@
   line-height: calc(var($multiplier) * clamp(var(--min), var(--val), var(--max)));
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+@custom-selector :--heading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6;
+@custom-selector :--display .display1, .display2, .display3;
+@custom-selector :--eyebrow h1.font-eyebrow, h2.font-eyebrow, h3.font-eyebrow, h4.font-eyebrow, h5.font-eyebrow, p.font-eyebrow, .font-eyebrow;
+@custom-selector :--subtitle h1.font-subtitle, h2.font-subtitle, h3.font-subtitle, h4.font-subtitle, h5.font-subtitle, h6.font-subtitle, p.font-subtitle, .font-subtitle;
+
+:--heading {
   @mixin responsive-font --ros-size-line-height-heading-multiplier;
   font-family: var(--ros-font-family-heading);
   font-weight: var(--ros-font-weight-heading);
   margin-top: 0;
   margin-bottom: var(--ros-spacing-typography-heading-margin-bottom);
+  color: var(--ros-color-typography-heading);
 }
 
-.display1,
-.display2,
-.display3 {
+:--display {
   @mixin responsive-font --ros-size-line-height-display-multiplier;
   font-family: var(--ros-font-family-display);
   font-weight: var(--ros-font-weight-display);
   margin-bottom: var(--ros-spacing-typography-display-margin-bottom);
+  color: var(--ros-color-typography-heading);
 }
 
 .display1 {
   --min: var(--ros-font-size-display-1-min);
   --val: 5vw;
   --max: var(--ros-font-size-display-1-max);
-  font-weight: var(--ros-font-weight-display);
 }
 
 .display2 {
   --min: var(--ros-font-size-display-2-min);
   --val: 4vw;
   --max: var(--ros-font-size-display-2-max);
-  font-weight: var(--ros-font-weight-display);
 }
 
 .display3 {
   --min: var(--ros-font-size-display-3-min);
   --val: 3vw;
   --max: var(--ros-font-size-display-3-max);
-  font-weight: var(--ros-font-weight-display);
 }
 
 .subtitle {
@@ -95,13 +86,7 @@ h5,
   --max: var(--ros-font-size-heading-5-max);
 }
 
-h1.font-eyebrow,
-h2.font-eyebrow,
-h3.font-eyebrow,
-h4.font-eyebrow,
-h5.font-eyebrow,
-p.font-eyebrow,
-.font-eyebrow {
+:--eyebrow {
   @mixin responsive-font --ros-size-line-height-eyebrow-multiplier;
   --min: var(--ros-font-size-eyebrow-min);
   --val: 3vw;
@@ -110,16 +95,10 @@ p.font-eyebrow,
   text-transform: var(--ros-text-case-eyebrow);
   font-weight: var(--ros-font-weight-eyebrow);;
   margin: 0;
+  color: var(--ros-color-typography-heading);
 }
 
-h1.font-subtitle,
-h2.font-subtitle,
-h3.font-subtitle,
-h4.font-subtitle,
-h5.font-subtitle,
-h6.font-subtitle,
-p.font-subtitle,
-.font-subtitle {
+:--subtitle {
   @mixin responsive-font --ros-size-line-height-heading-multiplier;
   --min: var(--ros-font-size-subtitle-min);
   --val: 3.55vw;
@@ -129,9 +108,9 @@ p.font-subtitle,
 }
 
 p {
-  margin-bottom: 1.6rem;
+  margin-bottom: var(--ros-spacing-typography-paragraph-margin-bottom);
   & a {
-    color: var(--ros-color-primary-base);
+    color: var(--ros-color-typography-link);
 
     @media (hover: hover) {
       &:hover {
@@ -146,8 +125,11 @@ blockquote {
   border-left: 10px solid var(--ros-color-primary-base);
   margin-bottom: 15px;
   line-height: var(--ros-line-height-body);
-  color: var(--ros-color-grey-dark);
+  color: var(--ros-color-typography-light);
   max-width: var(--hlx-paragraph-max-width);
+  font-style: italic;
+  margin: 3rem;
+  hanging-punctuation: first;
 }
 
 code {
@@ -155,7 +137,22 @@ code {
   background-color: #08090a;
   font-size: 1.6rem;
   padding: 24px;
-  color: #fff;
   width: 100%;
   border-radius: 0.6rem;
+  color: #fff;
+  font-family: var(--ros-font-family-mono);
+  font-size: var(--ros-font-size-source-code);
+  line-height: var(--ros-line-height-source-code);
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
 }

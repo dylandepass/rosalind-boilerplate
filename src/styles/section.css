@@ -1,11 +1,11 @@
 .section {
   margin: auto;
   width: 100%;
-  padding: 0 var(--ros-spacing-section-horizontal-padding);
+  padding: var(--ros-spacing-section-mobile-vertical-padding) var(--ros-spacing-section-mobile-horizontal-padding);
   max-width: var(--ros-section-max-width);
 
-  @media (--ros-screen-lg) {
-    padding: 0 var(--ros-spacing-section-horizontal-padding);
+  &.secondary-background {
+    background-color: var(--ros-color-global-body-background-secondary);
   }
 
   &.fluid {
@@ -19,8 +19,29 @@
     padding: 0;
   }
 
+  &.full-width-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    & .default-content-wrapper {
+      max-width: var(--ros-section-max-width);
+      margin: auto;
+    }
+
+    & > div {
+      max-width: var(--ros-section-max-width);
+      margin: auto;
+    }
+
+    @media (--ros-screen-lg) {
+      padding: var(--ros-spacing-section-desktop-vertical-padding) var(--ros-spacing-section-desktop-horizontal-padding);
+    }
+  }
+
+
   @media (--ros-screen-sm) {
-   padding: 64px 32px;
+    padding: var(--ros-spacing-section-desktop-vertical-padding) var(--ros-spacing-section-desktop-horizontal-padding);
   }
 
   @media (--ros-screen-md) {
@@ -28,16 +49,4 @@
       max-width: var(--ros-section-max-width);
     }
   }
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-.text-align-left {
-  text-align: left;
 }

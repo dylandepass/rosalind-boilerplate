@@ -15,13 +15,17 @@ body {
   line-height: var(--ros-line-height-body);
   padding-top: var(--hlx-padding-top-body-mobile);
   color: var(--ros-color-typography-base);
-  background-color: var(--ros-color-body-background);
+  background-color: var(--ros-color-body-background-primary);
   margin: 0;
   display: none;
 }
 
 body.appear {
   display: unset;
+}
+
+main {
+  padding-top: 72px;
 }
 
 * {
@@ -45,16 +49,20 @@ hr {
   margin: 10px 0;
 }
 
+.default-content-wrapper {
+  text-align: center;
+  margin-bottom: var(--ros-spacing-default-content-wrapper-margin-bottom);
+}
+
 b,
 strong {
   font-weight: 700;
 }
 
 pre,
-code,
 kbd,
 samp {
-  font-family: var(--hlx-mono-font-family);
+  font-family: var(--ros-font-family-mono);
 }
 
 pre {
@@ -84,23 +92,6 @@ img {
   max-width: 100%;
   width: auto;
   height: auto;
-}
-
-blockquote {
-  font-style: italic;
-  margin: 3rem;
-  text-indent: -1rem;
-  hanging-punctuation: first;
-}
-
-blockquote p::before {
-  content: "“";
-  line-height: 0;
-}
-
-blockquote p::after {
-  content: "”";
-  line-height: 0;
 }
 
 table {

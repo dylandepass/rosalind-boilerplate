@@ -1,11 +1,34 @@
+@define-mixin rosalind-button $type, $state: default {
+    color: var(--ros-color-button-$(type)-foreground-$(state));
+    background-color: var(--ros-color-button-$(type)-background-$(state));
+    border-width: var(--ros-border-width-button-$(type)-$(state));
+    border-radius: var(--ros-radius-button-$(type));
+    border-color: var(--ros-color-button-$(type)-border-$(state));
+    margin: calc(var(--ros-border-width-button-$(type)-$(state)) * -1);
+}
+
+.button-container {
+    display: block;
+    margin-right: 10px;
+
+    @media (--ros-screen-md) {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
 .button {
     display: flex;
+    justify-content: center;
     font-size: var(--ros-font-size-button-default);
     padding: var(--ros-spacing-button-default-vertical-padding) var(--ros-spacing-button-default-horizontal-padding);
     border-style: solid;
     align-items: center;
     gap: var(--ros-spacing-button-default-horizontal-gap);
     font-style: initial;
+    user-select: none;
+    transition-property: color,background-color,border-color,fill,stroke,opacity;
+    transition-duration: .5s;
 }
 
 .button.large {
@@ -18,15 +41,15 @@
     padding: var(--ros-spacing-button-sm-vertical-padding) var(--ros-spacing-button-sm-horizontal-padding);
 }
 
-.button:has(.icon:only-child) {
+.button.icon-only {
     padding: var(--ros-spacing-button-default-vertical-padding-icon-only) var(--ros-spacing-button-default-horizontal-padding-icon-only);
 }
 
-.button.large:has(.icon:only-child) {
+.button.icon-only.large {
     padding: var(--ros-spacing-button-lg-horizontal-padding-icon-only) var(--ros-spacing-button-lg-vertical-padding-icon-only);
 }
 
-.button.small:has(.icon:only-child) {
+.button.icon-only.small {
     padding: var(--ros-spacing-button-sm-horizontal-padding-icon-only) var(--ros-spacing-button-sm-vertical-padding-icon-only);
 }
 
@@ -37,128 +60,75 @@
 }
 
 .button.primary {
-    color: var(--ros-color-button-cta-foreground);
-    background-color: var(--ros-color-button-cta-background);
-    border-width: var(--ros-border-width-button-cta-default);
-    border-radius: var(--ros-radius-button-cta);
-    border-color: var(--ros-color-button-cta-border);
-    margin: calc(var(--ros-border-width-button-cta-default) * -1);
+    @mixin rosalind-button primary, default;
 }
 
 .button.primary:hover {
-    color: var(--ros-color-button-cta-foreground-hover);
-    background-color: var(--ros-color-button-cta-background-hover);
-    border-width: var(--ros-border-width-button-cta-hover);
-    border-color: var(--ros-color-button-cta-border-hover);
-    margin: calc(var(--ros-border-width-button-cta-hover) * -1);
+    @mixin rosalind-button primary, hover;
 }
 
 .button.primary:active {
-    color: var(--ros-color-button-cta-forground-active);
-    background-color: var(--ros-color-button-cta-background-active);
-    border-width: var(--ros-border-width-button-cta-active);
-    border-color: var(--ros-color-button-cta-border-active);
-    margin: calc(var(--ros-border-width-button-cta-active) * -1);
+    @mixin rosalind-button primary, active;
 }
 
 .button.primary:focus {
-    color: var(--ros-color-button-cta-forground-focus);
-    background-color: var(--ros-color-button-cta-background-focus);
-    border-width: var(--ros-border-width-button-cta-focus);
-    border-color: var(--ros-color-button-cta-border-focus);
-    margin: calc(var(--ros-border-width-button-cta-focus) * -1);
+    @mixin rosalind-button primary, focus;
+}
+
+.button.primary:focus-visible {
+    @mixin rosalind-button primary, focus-visible;
 }
 
 .button.primary.disabled {
-    color: var(--ros-color-button-cta-forground-disabled);
-    background-color: var(--ros-color-button-cta-background-disabled);
-    border-width: var(--ros-border-width-button-cta-disabled);
-    border-color: var(--ros-color-button-cta-border-disabled);
-    margin: calc(var(--ros-border-width-button-cta-disabled) * -1);
-    pointer-events: none;
+    @mixin rosalind-button primary, disabled;
 }
 
+
 .button.secondary {
-    color: var(--ros-color-button-secondary-foreground);
-    background-color: var(--ros-color-button-secondary-background);
-    font-size: var(--ros-font-size-button-default);
-    border-width: var(--ros-border-width-button-secondary-default);
-    border-color: var(--ros-color-button-secondary-border);
-    border-radius: var(--ros-radius-button-secondary);
-    margin: calc(var(--ros-border-width-button-secondary-default) * -1);
+    @mixin rosalind-button secondary, default;
 }
 
 .button.secondary:hover {
-    color: var(--ros-color-button-secondary-foreground-hover);
-    background-color: var(--ros-color-button-secondary-background-hover);
-    border-width: var(--ros-border-width-button-secondary-hover);
-    border-color: var(--ros-color-button-secondary-border-hover);
-    margin: calc(var(--ros-border-width-button-secondary-hover) * -1);
+    @mixin rosalind-button secondary, hover;
 }
 
 .button.secondary:active {
-    color: var(--ros-color-button-secondary-forground-active);
-    background-color: var(--ros-color-button-secondary-background-active);
-    border-width: var(--ros-border-width-button-secondary-active);
-    border-color: var(--ros-color-button-secondary-border-active);
-    margin: calc(var(--ros-border-width-button-secondary-active) * -1);
+    @mixin rosalind-button secondary, active;
 }
 
 .button.secondary:focus {
-    color: var(--ros-color-button-secondary-forground-focus);
-    background-color: var(--ros-color-button-secondary-background-focus);
-    border-width: var(--ros-border-width-button-secondary-focus);
-    border-color: var(--ros-color-button-secondary-border-focus);
-    margin: calc(var(--ros-border-width-button-secondary-focus) * -1);
+    @mixin rosalind-button secondary, focus;
+}
+
+.button.secondary:focus-visible {
+    @mixin rosalind-button secondary, focus-visible;
 }
 
 .button.secondary.disabled {
-    color: var(--ros-color-button-secondary-forground-disabled);
-    background-color: var(--ros-color-button-secondary-background-disabled);
-    border-width: var(--ros-border-width-button-secondary-disabled);
-    border-color: var(--ros-color-button-secondary-border-disabled);
-    margin: calc(var(--ros-border-width-button-secondary-disabled) * -1);
-    pointer-events: none;
+    @mixin rosalind-button secondary, disabled;
 }
 
+
 .button.quiet {
-    color: var(--ros-color-button-quiet-foreground);
-    background-color: var(--ros-color-button-quiet-background);
-    font-size: var(--ros-font-size-button-default);
-    border-width: var(--ros-border-width-button-quiet-default);
-    border-radius: var(--ros-radius-button-quiet);
-    margin: calc(var(--ros-border-width-button-quiet) * -1);
+    @mixin rosalind-button quiet, default;
 }
 
 .button.quiet:hover {
-    color: var(--ros-color-button-quiet-foreground-hover);
-    background-color: var(--ros-color-button-quiet-background-hover);
-    border-width: var(--ros-border-width-button-quiet-hover);
-    border-color: var(--ros-color-button-quiet-border-hover);
-    margin: calc(var(--ros-border-width-button-quiet-hover) * -1);
+    @mixin rosalind-button quiet, hover;
 }
 
 .button.quiet:active {
-    color: var(--ros-color-button-quiet-forground-active);
-    background-color: var(--ros-color-button-quiet-background-active);
-    border-width: var(--ros-border-width-button-quiet-active);
-    border-color: var(--ros-color-button-quiet-border-active);
-    margin: calc(var(--ros-border-width-button-quiet-active) * -1);
+    @mixin rosalind-button quiet, active;
 }
 
 .button.quiet:focus {
-    color: var(--ros-color-button-quiet-forground-focus);
-    background-color: var(--ros-color-button-quiet-background-focus);
-    border-width: var(--ros-border-width-button-quiet-focus);
-    border-color: var(--ros-color-button-quiet-border-focus);
-    margin: calc(var(--ros-border-width-button-quiet-focus) * -1);
+    @mixin rosalind-button quiet, focus;
+}
+
+.button.quiet:focus-visible {
+    @mixin rosalind-button quiet, focus-visible;
 }
 
 .button.quiet.disabled {
-    color: var(--ros-color-button-quiet-forground-disabled);
-    background-color: var(--ros-color-button-quiet-background-disabled);
-    border-width: var(--ros-border-width-button-quiet-disabled);
-    border-color: var(--ros-color-button-quiet-border-disabled);
-    margin: calc(var(--ros-border-width-button-quiet-disabled) * -1);
-    pointer-events: none;
+    @mixin rosalind-button quiet, disabled;
 }
