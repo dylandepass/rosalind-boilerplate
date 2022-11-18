@@ -1,22 +1,27 @@
 @import "../../breakpoints";
 
 header {
-  height: 76px;
+  height: 72px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  & .header {
+    background-color: var(--ros-color-body-background-primary);
+    
+    /* nav padding on larger screens */
+    @media (--ros-screen-lg) {
+       margin: 0 32px;
+    }
+  }
 
   & nav {
-    z-index: 1;
-    position: fixed;
-    width: 100vw;
+    max-width: var(--ros-section-max-width);
+    margin: 0 auto;
     display: flex;
     align-items: stretch;
     height: 72px;
-    background-color: var(--ros-color-ref-grey-50);
-    color: var(--ros-color-typography-base);
-
-    /* nav padding on larger screens */
-    @media (--ros-screen-lg) {
-      padding: 0 2rem;
-    }
+    color: var(--ros-color-typography-light);
 
     /* unset any link colors */
     & a {

@@ -13,7 +13,6 @@
 
                 & > div {
                     flex: 1;
-                    margin-left: 32px;
 
                     &:first-of-type {
                         margin-left: unset;
@@ -31,6 +30,11 @@
         & .columns-wrapper {
             max-width: 100%;
         }
+    }
+
+    & u {
+        color: var(--ros-color-primary-base);
+        text-decoration: none;
     }
 
     &.split-left-content {
