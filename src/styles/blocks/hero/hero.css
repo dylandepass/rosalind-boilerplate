@@ -2,11 +2,14 @@
     & > div {
         text-align: center;
         & > div {
-            margin-right: 24px;
             margin-bottom: 24px;
 
             @media (--ros-screen-lg) {
                 margin-bottom: 0;
+            }
+
+            @media (--ros-screen-md) {
+                margin-right: 24px;
             }
         }
 

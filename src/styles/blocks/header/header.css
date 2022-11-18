@@ -49,8 +49,8 @@ header {
 
       & .line{
         width: 25px;
-        height: 2.5px;
-        background-color: #ecf0f1;
+        height: 2px;
+        background-color: var(--ros-color-ref-grey-900);
         display: block;
         margin: 4px auto;
         transition: all 0.3s ease-in-out;
@@ -167,7 +167,7 @@ header {
     &[aria-expanded='true'] .nav-menu {
       position: absolute;
       align-items: flex-start;
-      background: #0d0d0e;
+      background: var(--ros-color-body-background-secondary);
       display: flex;
       flex-direction: column;
       /* opacity: 0; */
