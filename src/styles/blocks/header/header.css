@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: stretch;
     height: 72px;
-    color: var(--ros-color-typography-light);
+    color: var(--ros-color-ref-grey-900);
 
     /* unset any link colors */
     & a {

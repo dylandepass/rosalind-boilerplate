@@ -4,6 +4,11 @@
   padding: var(--ros-spacing-section-mobile-vertical-padding) var(--ros-spacing-section-mobile-horizontal-padding);
   max-width: var(--ros-section-max-width);
 
+  &[data-section-status='loading'], 
+  &[data-section-status='initialized'] {
+    display: none;
+  }
+
   &.secondary-background {
     background-color: var(--ros-color-global-body-background-secondary);
   }

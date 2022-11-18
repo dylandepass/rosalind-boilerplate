@@ -9,10 +9,22 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  getMetadata,
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+const LCP_BLOCKS = ['columns', 'svg-grid']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
+
+function build2ColHero(main) {
+  const firstDiv = main.querySelector(':scope > div:first-of-type');
+  const picture = firstDiv.querySelector('picture');
+  const section = document.createElement('div');
+  const heroBlock = buildBlock('hero', [[{ elems: [...firstDiv.children] }, picture]]);
+  heroBlock.classList.add('hero-2-cols');
+  section.append(heroBlock);
+  firstDiv.remove();
+  main.prepend(section);
+}
 
 /**
  * Builds all synthetic blocks in a container element.
@@ -21,6 +33,14 @@ window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information 
 function buildAutoBlocks(main) {
   try {
     // noop
+    const template = getMetadata('template');
+    if (!template) {
+      return;
+    }
+
+    if (template === 'home') {
+      build2ColHero(main);
+    }
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
