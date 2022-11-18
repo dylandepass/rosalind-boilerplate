@@ -1,0 +1,49 @@
+.icon-cards {
+    text-align: center;
+    gap: 30px;
+}.icon-cards h1,.icon-cards h2,.icon-cards h3,.icon-cards h4,.icon-cards h5,.icon-cards h6,.icon-cards .h1,.icon-cards .h2,.icon-cards .h3,.icon-cards .h4,.icon-cards .h5,.icon-cards .h6 {
+        font-weight: 200;
+        --min: var(--ros-font-size-heading-5-min);
+        --val: 5vw;
+        --max: var(--ros-font-size-heading-5-max);
+    }.icon-cards svg {
+        width: 40px;
+        height: 40px;
+        transform: rotate(-45deg);
+        color: var(--ros-color-primary-base);
+    }@media (color-index: 48) {.icon-cards svg {
+            color: #fff;
+    }
+        }@media (color: 48842621) {.icon-cards svg {
+            color: #fff;
+    }
+        }@media (prefers-color-scheme: dark) {.icon-cards svg {
+            color: #fff;
+    }
+        }.icon-cards .icon {
+        background-color: var(--ros-color-ref-indigo-100);
+        padding: 20px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        border-radius: 10px;
+        transform: rotate(45deg);
+        margin: 0 auto;
+        opacity: 0.7;
+    }.icon-cards > div {
+        padding: var(--ros-size-xl);
+        border-radius: 4px;
+        box-shadow: var(--ros-shadow-100-x) var(--ros-shadow-100-y) var(--ros-shadow-100-blur) var(--ros-shadow-100-spread) var(--ros-color-global-shadow-100);
+    }.icon-cards > div p[\:not-has\(.icon\)] {
+            margin-bottom: 0;
+        }.icon-cards > div p:not(:has(.icon)) {
+            margin-bottom: 0;
+        }.icon-cards > div:hover {
+            background-color: var(--ros-color-primary-base);
+            color: #fff;
+        }.icon-cards > div:hover h1,.icon-cards > div:hover h2,.icon-cards > div:hover h3,.icon-cards > div:hover h4,.icon-cards > div:hover h5,.icon-cards > div:hover h6,.icon-cards > div:hover .h1,.icon-cards > div:hover .h2,.icon-cards > div:hover .h3,.icon-cards > div:hover .h4,.icon-cards > div:hover .h5,.icon-cards > div:hover .h6 {
+                color: #fff;
+            }
