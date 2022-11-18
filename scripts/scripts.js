@@ -3,8 +3,6 @@ import {
   buildBlock,
   loadHeader,
   loadFooter,
-  decorateButtons,
-  decorateIcons,
   decorateSections,
   decorateBlocks,
   decorateTemplateAndTheme,
@@ -30,6 +28,71 @@ function buildAutoBlocks(main) {
 }
 
 /**
+ * Replace icons with inline SVG and prefix with codeBasePath.
+ * @param {Element} element
+ */
+export function decorateIconsIllustrations(element = document) {
+  element.querySelectorAll('span.icon').forEach(async (span) => {
+    if (span.classList.length < 2 || !span.classList[1].startsWith('icon-')) {
+      return;
+    }
+    const isIllustration = span.classList[1].startsWith('icon-illustration');
+    const icon = isIllustration ? span.classList[1].substring(18) : span.classList[1].substring(5);
+    // eslint-disable-next-line no-use-before-define
+    const resp = await fetch(`${window.hlx.codeBasePath}/${isIllustration ? 'illustrations' : 'icons'}/${icon}.svg`);
+    if (resp.ok) {
+      const iconHTML = await resp.text();
+      if (iconHTML.match(/<style/i)) {
+        const img = document.createElement('img');
+        img.src = `data:image/svg+xml,${encodeURIComponent(iconHTML)}`;
+        span.appendChild(img);
+      } else {
+        span.innerHTML = iconHTML;
+      }
+
+      if (isIllustration) {
+        span.classList.add('illustration');
+      }
+    }
+  });
+}
+
+/**
+ * decorates paragraphs containing a single link as buttons.
+ * @param {Element} element container element
+ */
+
+export function decorateButtons(element) {
+  element.querySelectorAll('a').forEach((a) => {
+    a.title = a.title || a.textContent;
+    if (a.href !== a.textContent) {
+      const up = a.parentElement;
+      const twoup = a.parentElement.parentElement;
+      if (!a.querySelector('img')) {
+        if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
+          a.className = 'button primary'; // default
+          up.classList.add('button-container');
+        }
+        if (up.childNodes.length === 1 && up.tagName === 'STRONG'
+          && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
+          a.className = 'button primary';
+          twoup.classList.add('button-container');
+        }
+        if (up.childNodes.length === 1 && up.tagName === 'EM'
+          && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
+          a.className = 'button secondary';
+          twoup.classList.add('button-container');
+        }
+
+        if (a.textContent === '') {
+          a.classList.add('icon-only');
+        }
+      }
+    }
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -37,7 +100,7 @@ function buildAutoBlocks(main) {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
-  decorateIcons(main);
+  decorateIconsIllustrations(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
@@ -85,7 +148,7 @@ async function loadLazy(doc) {
   if (hash && element) element.scrollIntoView();
 
   loadHeader(doc.querySelector('header'));
-  // loadFooter(doc.querySelector('footer'));
+  loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.svg`);
