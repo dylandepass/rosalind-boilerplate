@@ -2,13 +2,11 @@ export default {
   title: 'Form',
 };
 
-const Template = ({content}) => {
-  return content;
-};
+const Template = ({ content }) => content;
 
 export const InputField = Template.bind({});
 InputField.parameters = {
-  title: "Form/Input",
+  title: 'Form/Input',
 };
 InputField.args = {
   content: /* html */`
@@ -20,7 +18,7 @@ InputField.args = {
                 <input type="text" id="email" placeholder="Placeholder"/>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
               </div>
-              <div class="col-12 group mt-lg">
+              <div class="col-12 group">
                 <label for="email">Description</label>
                 <textarea type="text" id="email" placeholder="Placeholder"></textarea>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
@@ -32,19 +30,19 @@ InputField.args = {
 
 export const Checkbox = Template.bind({});
 Checkbox.parameters = {
-  title: "Form/Checkbox",
+  title: 'Form/Checkbox',
 };
 Checkbox.args = {
   content: /* html */`
         <div class="section">
           <div class="block-wrapper">
-            <form class="row">
-              <div class="col-12 group">
+            <form>  
+              <div class="group">
                 <label for="email">Email</label>
                 <input type="text" id="email" placeholder="Placeholder"/>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
               </div>
-              <div class="col-12 group mt-lg">
+              <div class="group">
                 <label for="email">Description</label>
                 <textarea type="text" id="email" placeholder="Placeholder"></textarea>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
@@ -84,7 +82,6 @@ Checkbox.args = {
                     <option value="12">Volvo</option>
                   </select>
                 </div>
-              </div>
             </form>
           </div>
         </div>`,
