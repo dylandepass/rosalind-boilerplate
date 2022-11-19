@@ -1,1 +1,5 @@
-.grid{gap:30px}
+.grid {
+    gap: 30px;
+}.grid > div > div {
+
+        }
