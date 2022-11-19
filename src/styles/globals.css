@@ -16,7 +16,7 @@ body {
   line-height: var(--ros-line-height-body);
   padding-top: var(--hlx-padding-top-body-mobile);
   color: var(--ros-color-typography-base);
-  background-color: var(--ros-color-body-background-primary);
+  background-color: var(--ros-color-global-body-background-primary);
   margin: 0;
   display: none;
 }
@@ -26,7 +26,7 @@ body.appear {
 }
 
 main {
-  padding-top: 72px;
+  padding-top: var(--ros-size-nav-height);
 }
 
 * {

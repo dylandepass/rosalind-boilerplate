@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 17 Nov 2022 20:19:38 GMT
+ * Generated on Sat, 19 Nov 2022 02:21:25 GMT
  */
 
 :root {
@@ -67,11 +67,10 @@
   --ros-spacing-typography-heading-margin-bottom: 15px;
   --ros-spacing-typography-subtitle-margin-bottom: 20px;
   --ros-spacing-typography-display-margin-bottom: 20px;
-  --ros-spacing-section-mobile-vertical-padding: 20px;
+  --ros-spacing-section-mobile-vertical-padding: 75px;
   --ros-spacing-section-mobile-horizontal-padding: 20px;
-  --ros-spacing-section-desktop-vertical-padding: 64px;
+  --ros-spacing-section-desktop-vertical-padding: 100px;
   --ros-spacing-section-desktop-horizontal-padding: 32px;
-  --ros-section-max-width: 1280px;
   --ros-text-case-eyebrow: none;
   --ros-line-height-display-2-min: 60px;
   --ros-line-height-display-2-max: 90px;
@@ -101,6 +100,8 @@
   --ros-line-height-form-group-help: 14.4px;
   --ros-line-height-form-group-label: 18.2px;
   --ros-line-height-body: 24px;
+  --ros-size-nav-height: 72px;
+  --ros-size-section-max-width: 1280px;
   --ros-size-form-radio-toggle-height: 10px;
   --ros-size-form-radio-toggle-width: 10px;
   --ros-size-form-radio-height: 20px;
@@ -406,6 +407,7 @@
   --ros-color-primary-dark: #001cb2;
   --ros-color-primary-light: #006fff;
   --ros-color-primary-base: #4f46e5;
+  --ros-color-global-nav-background-color: #0f172a;
   --ros-color-global-shadow-100: #1f2937;
   --ros-color-global-form-input-border-color: #1f2937;
   --ros-color-global-form-input-background-color: #002651;
@@ -592,8 +594,6 @@
   --ros-color-ref-grey-75: #262626;
   --ros-color-ref-grey-50: #1d1d1d;
   --ros-shadow-100-color: var(--ros-color-global-shadow-100);
-  --ros-color-body-background-secondary: var(--ros-color-global-body-background-secondary);
-  --ros-color-body-background-primary: var(--ros-color-global-body-background-primary);
   --ros-color-typography-heading: var(--ros-color-ref-grey-900);
   --ros-color-typography-lightest: var(--ros-color-ref-grey-400);
   --ros-color-typography-lighter: var(--ros-color-ref-grey-500);

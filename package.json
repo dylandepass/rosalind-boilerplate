@@ -54,6 +54,6 @@
     "stylelint-config-standard": "25.0.0"
   },
   "dependencies": {
-    "@rosalind/rosalind-dna": "1.0.18"
+    "@rosalind/rosalind-dna": "1.0.20"
   }
 }

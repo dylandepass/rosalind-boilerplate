@@ -2,7 +2,7 @@
   margin: auto;
   width: 100%;
   padding: var(--ros-spacing-section-mobile-vertical-padding) var(--ros-spacing-section-mobile-horizontal-padding);
-  max-width: var(--ros-section-max-width);
+  max-width: var(--ros-size-section-max-width);
 
   &[data-section-status='loading'], 
   &[data-section-status='initialized'] {
@@ -30,12 +30,12 @@
     margin: 0;
 
     & .default-content-wrapper {
-      max-width: var(--ros-section-max-width);
+      max-width: var(--ros-size-section-max-width);
       margin: auto;
     }
 
     & > div {
-      max-width: var(--ros-section-max-width);
+      max-width: var(--ros-size-section-max-width);
       margin: auto;
     }
 
@@ -51,7 +51,7 @@
 
   @media (--ros-screen-md) {
     & > div {
-      max-width: var(--ros-section-max-width);
+      max-width: var(--ros-size-section-max-width);
     }
   }
 }
