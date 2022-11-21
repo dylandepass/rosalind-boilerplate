@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
   block.querySelectorAll(':scope > div').forEach((row) => {
     row.querySelectorAll(':scope > div').forEach((col) => {
       if (block.classList.contains('bulleted')) {
