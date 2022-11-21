@@ -19,6 +19,8 @@ header {
 		height: var(--ros-size-nav-height);
 		color: var(--ros-color-ref-grey-900);
 
+		@mixin padding-lg-horizontal lg;
+
 		/* unset any link colors */
 		& a {
 			color: unset;
@@ -148,16 +150,6 @@ header {
 						}
 					}
 				}
-
-				/* & > li[aria-expanded='true'] ul {
-            display: block;
-            position: absolute;
-            background-color: var(--highlight-background-color, #19191c);
-            width: 300px;
-            left: 0;
-            padding: 16px;
-            box-shadow: 0 0 5px var(text-color);
-          } */
 			}
 
 			@media (--ros-screen-lg) {

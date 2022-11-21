@@ -1,0 +1,70 @@
+@import "../breakpoints";
+
+/* CSS GRID */
+@define-mixin grid-cols $cols {
+	grid-template-columns: repeat($(cols), minmax(0, 1fr));
+}
+
+@define-mixin grid-xxl-cols $cols {
+	@media (--ros-screen-xxl) {
+		grid-template-columns: repeat($(cols), minmax(0, 1fr));
+	}
+}
+
+@define-mixin grid-xl-cols $cols {
+	@media (--ros-screen-xl) {
+		grid-template-columns: repeat($(cols), minmax(0, 1fr));
+	}
+}
+
+@define-mixin grid-lg-cols $cols {
+	@media (--ros-screen-lg) {
+		grid-template-columns: repeat($(cols), minmax(0, 1fr));
+	}
+}
+
+@define-mixin grid-md-cols $cols {
+	@media (--ros-screen-md) {
+		grid-template-columns: repeat($(cols), minmax(0, 1fr));
+	}
+}
+
+@define-mixin grid-sm-cols $cols {
+	@media (--ros-screen-sm) {
+		grid-template-columns: repeat($(cols), minmax(0, 1fr));
+	}
+}
+
+@define-mixin grid-col-span $cols {
+	grid-column: span $(cols)/span $(cols) !important;
+}
+
+@define-mixin grid-xxl-col-span $cols {
+	@media (--ros-screen-xxl) {
+		grid-column: span $(cols)/span $(cols) !important;
+	}
+}
+
+@define-mixin grid-xl-col-span $cols {
+	@media (--ros-screen-xl) {
+		grid-column: span $(cols)/span $(cols) !important;
+	}
+}
+
+@define-mixin grid-lg-col-span $cols {
+	@media (--ros-screen-lg) {
+		grid-column: span $(cols)/span $(cols) !important;
+	}
+}
+
+@define-mixin grid-md-col-span $cols {
+	@media (--ros-screen-md) {
+		grid-column: span $(cols)/span $(cols) !important;
+	}
+}
+
+@define-mixin grid-sm-col-span $cols {
+	@media (--ros-screen-sm) {
+		grid-column: span $(cols)/span $(cols) !important;
+	}
+}

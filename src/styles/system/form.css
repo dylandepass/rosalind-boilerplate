@@ -46,9 +46,10 @@ select {
 
 		border-color: rgb(0 0 0 / 0%);
 		margin: calc(var(--ros-border-width-form-input-focus) * -1);
-		outline-width: var(--ros-border-width-form-input-focus-visible);
-		outline-color: var(--ros-color-form-input-border-focus-visible);
-		outline-style: solid;
+		outline-style:
+			var(--ros-border-width-form-input-focus-visible)
+			solid
+			var(--ros-color-form-input-border-focus-visible);
 	}
 
 	&:disabled {
@@ -106,9 +107,10 @@ input[type="radio"] {
 
 	/* Background focus-visible */
 	&:focus-visible + label::before {
-		outline-style: solid;
-		outline-width: var(--ros-border-width-form-input-focus-visible);
-		outline-color: var(--ros-color-form-input-border-focus-visible);
+		outline:
+			var(--ros-border-width-form-input-focus-visible)
+			solid
+			var(--ros-color-form-input-border-focus-visible);
 		border-color: rgb(0 0 0 / 0%);
 		background-color: var(--ros-color-form-input-background-focus);
 	}

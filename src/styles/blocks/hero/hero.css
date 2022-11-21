@@ -1,6 +1,12 @@
+@import "../../system/mixins";
+
 .hero-2-cols {
 	& > div {
+		display: grid;
 		text-align: center;
+
+		@mixin grid-cols 1;
+		@mixin grid-md-cols 2;
 
 		& > div {
 			margin-bottom: 24px;

@@ -16,31 +16,17 @@ export default async function decorate(block) {
   footer.innerHTML = html;
   await decorateIcons(footer);
 
-  const container = footer.querySelector('.footer > div');
-  container?.classList.add('grid');
-  container?.classList.add('grid-cols-1');
-  container?.classList.add('grid-md-cols-12');
-  container?.classList.add('gap-lg');
-
-  const about = container?.children[0];
+  const about = footer.children[0];
   about?.classList.add('about');
-  about?.classList.add('grid-lg-col-span-4');
-  about?.classList.add('grid-md-col-span-12');
 
-  const company = container?.children[1];
+  const company = footer?.children[1];
   company?.classList.add('company');
-  company?.classList.add('grid-lg-col-span-2');
-  company?.classList.add('grid-md-col-span-4');
 
-  const links = container?.children[2];
+  const links = footer?.children[2];
   links?.classList.add('links');
-  links?.classList.add('grid-lg-col-span-3');
-  links?.classList.add('grid-md-col-span-4');
 
-  const newsletter = container?.children[3];
+  const newsletter = footer?.children[3];
   newsletter?.classList.add('newsletter');
-  newsletter?.classList.add('grid-lg-col-span-3');
-  newsletter?.classList.add('grid-md-col-span-4');
 
   block.classList.add('section');
   block.classList.add('full-width-section');

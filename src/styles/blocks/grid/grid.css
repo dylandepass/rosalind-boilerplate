@@ -1,27 +1,61 @@
 @import "../../system/mixins";
 
 .grid {
+	display: grid;
 	gap: 30px;
+
+	&.two-cols {
+		@mixin grid-cols 1;
+		@mixin grid-lg-cols 2;
+	}
+
+	&.bulleted {
+		& > div {
+			display: flex;
+
+			& .icon {
+				@mixin flex-cols 1;
+				@mixin padding-top xs;
+				@mixin padding-horizontal xs;
+			}
+		}
+	}
 }
 
-.section:has(.svg-grid) {
+.section:has(.img-grid) {
 	border-top: 1px solid var(--ros-color-form-input-border-default);
 	padding: 20px 10px;
 	min-height: 98px;
 }
 
-.svg-grid {
+.img-grid {
+	@mixin grid-cols 1;
+	@mixin grid-sm-cols 3;
+	@mixin grid-md-cols 3;
+	@mixin grid-lg-cols 5;
+
+	& > div {
+		display: flex;
+		justify-content: center;
+	}
+
 	& a {
 		all: unset;
 	}
 
-	& svg {
+	& img {
 		max-height: 50px;
-		width: 100%;
+		width: auto;
 	}
 }
 
 .icon-cards {
+	@mixin grid-cols 1;
+	@mixin grid-sm-cols 2;
+	@mixin grid-md-cols 2;
+	@mixin grid-lg-cols 3;
+	@mixin grid-xl-cols 4;
+
 	text-align: center;
 	gap: 30px;
 
