@@ -1,3 +1,5 @@
+@import "./mixins";
+
 /* nunito-300 - latin */
 @font-face {
 	font-family: Nunito;
@@ -56,11 +58,6 @@
 		local(""),
 		url("../../styles/fonts/nunito-v25-latin-700.woff2") format("woff2"),
 		url("../../styles/fonts/nunito-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@define-mixin responsive-font $multiplier {
-	font-size: clamp(var(--min), var(--val), var(--max));
-	line-height: calc(var($multiplier) * clamp(var(--min), var(--val), var(--max)));
 }
 
 @custom-selector :--heading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6;

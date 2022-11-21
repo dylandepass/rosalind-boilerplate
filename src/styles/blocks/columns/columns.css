@@ -1,87 +1,85 @@
 .columns-container {
-    & .columns-wrapper {
-        & .columns {
-            & > div {
-                display: flex;
-                flex-direction: column;
+	& .columns-wrapper {
+		& .columns {
+			& > div {
+				display: flex;
+				flex-direction: column;
 
-                @media (--ros-screen-md) {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: unset;
-                }
+				@media (--ros-screen-md) {
+					display: flex;
+					align-items: center;
+					flex-direction: unset;
+				}
 
-                & > div {
-                    flex: 1;
+				& > div {
+					flex: 1;
 
-                    &:first-of-type {
-                        margin-left: unset;
-                    }
-                }
-            }
+					&:first-of-type {
+						margin-left: unset;
+					}
+				}
+			}
 
-            & img {
-                width: 100%;
-            }
-        }
-    }
-    
-    &.full-width {
-        & .columns-wrapper {
-            max-width: 100%;
-        }
-    }
+			& img {
+				width: 100%;
+			}
+		}
+	}
 
-    & u {
-        color: var(--ros-color-primary-base);
-        text-decoration: none;
-    }
+	&.full-width {
+		& .columns-wrapper {
+			max-width: 100%;
+		}
+	}
 
-    &.split-left-content {
-        & .columns {
-            & div {
-                & div:first-of-type {
-                    order: 2;
-                    padding: 30px;
+	& u {
+		color: var(--ros-color-primary-base);
+		text-decoration: none;
+	}
 
-                    & .button-container {
-                        display: inline-block;
-                    }
+	&.split-left-content {
+		& .columns {
+			& div {
+				& div:first-of-type {
+					order: 2;
+					padding: 30px;
 
-                    & u {
-                        color: var(--ros-color-primary-base);
-                        text-decoration: none;
-                    }
-                }
+					& .button-container {
+						display: inline-block;
+					}
 
-                & div:nth-child(2) {
-                    margin-left: 0;
+					& u {
+						color: var(--ros-color-primary-base);
+						text-decoration: none;
+					}
+				}
 
-                    & img {
-                        height: 200px;
-                        object-fit: cover;
-                    }
-                }
+				& div:nth-child(2) {
+					margin-left: 0;
 
-                @media (--ros-screen-md) {
-                    & div:first-of-type {
-                        order: 1;
-                    }
+					& img {
+						height: 200px;
+						object-fit: cover;
+					}
+				}
 
-                    & div:nth-child(2) {
-                        height: unset;
-                        order: 2;
+				@media (--ros-screen-md) {
+					& div:first-of-type {
+						order: 1;
+					}
 
+					& div:nth-child(2) {
+						height: unset;
+						order: 2;
 
-                        & img {
-                            height: 100%;
-                            width: 100%;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						& img {
+							height: 100%;
+							width: 100%;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
 }
-

@@ -1,5 +1,5 @@
 @import "./breakpoints";
-@import "./shadows";
+@import "./mixins";
 @import "./globals";
 @import "./section";
 @import "./typography";

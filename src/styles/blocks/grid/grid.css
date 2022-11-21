@@ -1,83 +1,80 @@
-@import '../../system/shadows';
+@import "../../system/mixins";
 
 .grid {
-    gap: 30px;
-    & > div {
-        & > div {
-
-        }
-    }
+	gap: 30px;
 }
 
-.section:has(.svg-grid){
-    border-top: 1px solid var(--ros-color-form-input-border-default);
-    padding: 20px 10px;
-    min-height: 98px;
+.section:has(.svg-grid) {
+	border-top: 1px solid var(--ros-color-form-input-border-default);
+	padding: 20px 10px;
+	min-height: 98px;
 }
 
 .svg-grid {
-    & a {
-        all: unset;
-    }
+	& a {
+		all: unset;
+	}
 
-    & svg {
-        max-height: 50px;
-        width: 100%;
-    }
+	& svg {
+		max-height: 50px;
+		width: 100%;
+	}
 }
 
 .icon-cards {
-    text-align: center;
-    gap: 30px;
+	text-align: center;
+	gap: 30px;
 
-    & :--heading {
-        font-weight: 200;
-        --min: var(--ros-font-size-heading-5-min);
-        --val: 5vw;
-        --max: var(--ros-font-size-heading-5-max);
-    }
+	& :--heading {
+		font-weight: 200;
 
-    & svg {
-        width: 40px;
-        height: 40px;
-        transform: rotate(-45deg);
-        color: var(--ros-color-primary-base);
+		--min: var(--ros-font-size-heading-5-min);
+		--val: 5vw;
+		--max: var(--ros-font-size-heading-5-max);
+	}
 
-        @media (prefers-color-scheme: dark) {
-            color: #fff;
-        }
-    }
+	& svg {
+		width: 40px;
+		height: 40px;
+		transform: rotate(-45deg);
+		color: var(--ros-color-primary-base);
 
-    & .icon {
-        background-color: var(--ros-color-ref-indigo-100);
-        padding: 20px;
-        width: 60px;
-        height: 60px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        border-radius: 10px;
-        transform: rotate(45deg);
-        margin: 0 auto;
-        opacity: 0.7;
-    }
+		@media (prefers-color-scheme: dark) {
+			color: #fff;
+		}
+	}
 
-    & > div {
-        padding: var(--ros-size-xl);
-        @mixin shadow-100;
+	& .icon {
+		background-color: var(--ros-color-ref-indigo-100);
+		padding: 20px;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		border-radius: 10px;
+		transform: rotate(45deg);
+		margin: 0 auto;
+		opacity: 0.7;
+	}
 
-        & p:not(:has(.icon)) {
-            margin-bottom: 0;
-        }
+	& > div {
+		padding: var(--ros-size-xl);
 
-        &:hover {
-            background-color: var(--ros-color-primary-base);
-            color: #fff;
+		@mixin shadow-100;
 
-            & :--heading {
-                color: #fff;
-            }
-        }
-    }
+		& p:not(:has(.icon)) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background-color: var(--ros-color-primary-base);
+			color: #fff;
+
+			& :--heading {
+				color: #fff;
+			}
+		}
+	}
 }
