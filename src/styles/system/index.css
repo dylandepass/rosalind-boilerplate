@@ -1,6 +1,6 @@
 @import "./breakpoints";
 @import "./mixins";
-@import "./globals";
+@import "./base";
 @import "./section";
 @import "./typography";
 @import "./spacing";

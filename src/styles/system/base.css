@@ -40,13 +40,10 @@ main {
 }
 
 hr {
-	background: none;
-	border: none;
-	border-bottom: solid 1px var(--ros-color-grey-dark);
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-	margin: 10px 0;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	border: 0;
+	border-bottom: 1px solid var(--ros-color-ref-grey-700);
 }
 
 .default-content-wrapper {
@@ -54,20 +51,10 @@ hr {
 	margin-bottom: var(--ros-spacing-default-content-wrapper-margin-bottom);
 }
 
-b,
-strong {
-	font-weight: 700;
-}
-
 pre,
 kbd,
 samp {
 	font-family: var(--ros-font-family-mono);
-}
-
-pre {
-	border-radius: 12px;
-	overflow: scroll;
 }
 
 a,
@@ -92,26 +79,4 @@ img {
 	max-width: 100%;
 	width: auto;
 	height: auto;
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-
-	& th,
-	& td {
-		text-align: left;
-		border-bottom: solid 1px var(--ros-color-form-input-border-default);
-		padding: 5px 20px 5px 0;
-		white-space: nowrap;
-	}
-
-	& td {
-		color: var(--ros-color-typography-light);
-
-		&:first-of-type {
-			font-weight: 600;
-			color: var(--ros-color-typography-base);
-		}
-	}
 }
