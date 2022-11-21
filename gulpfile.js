@@ -62,7 +62,7 @@ function buildBlocksCSS() {
 }
 
 function stylesDev() {
-  return src('./src/styles/index.css')
+  return src('./src/styles/system/index.css')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(postcss())

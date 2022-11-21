@@ -1,14 +1,1 @@
-.section.svg-grid-container {
-    border-top: 1px solid var(--ros-color-form-input-border-default);
-    padding: 20px 10px;
-    min-height: 98px;
-}
-
-.svg-grid a {
-        all: unset;
-    }
-
-.svg-grid svg {
-        max-height: 50px;
-        width: 100%;
-    }
+.section.svg-grid-container{border-top:1px solid var(--ros-color-form-input-border-default);min-height:98px;padding:20px 10px}.svg-grid a{all:unset}.svg-grid svg{max-height:50px;width:100%}

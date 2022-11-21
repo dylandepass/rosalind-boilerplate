@@ -1,5 +1,5 @@
-@import "../../breakpoints";
-@import "../../shadows";
+@import "../../system/breakpoints";
+@import "../../system/shadows";
 
 
 header {
