@@ -1,3 +1,10 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": "tab",
+    "custom-property-pattern": null,
+    "function-whitespace-after": null,
+    "function-no-unknown": null,
+    "at-rule-no-unknown": null
+  }
 }
