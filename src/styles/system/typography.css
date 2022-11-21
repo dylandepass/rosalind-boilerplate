@@ -12,7 +12,7 @@
 
 /* nunito-regular - latin */
 @font-face {
-	font-family: Nunito;
+	font-family: Nunito, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -24,7 +24,7 @@
 
 /* nunito-500 - latin */
 @font-face {
-	font-family: Nunito;
+	font-family: Nunito, sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
@@ -36,7 +36,7 @@
 
 /* nunito-600 - latin */
 @font-face {
-	font-family: Nunito;
+	font-family: Nunito, sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
@@ -48,7 +48,7 @@
 
 /* nunito-700 - latin */
 @font-face {
-	font-family: Nunito;
+	font-family: Nunito, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;

@@ -12,7 +12,7 @@ import {
   getMetadata,
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = ['columns', 'svg-grid']; // add your LCP blocks to the list
+const LCP_BLOCKS = ['grid']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
 function build2ColHero(main) {
