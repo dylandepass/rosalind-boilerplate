@@ -4,11 +4,21 @@ import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
  * collapses all open nav sections
  * @param {Element} sections The container element
  */
-
 function collapseAllNavSections(sections) {
   sections.querySelectorAll('.nav-menu > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', 'false');
   });
+}
+
+function onScroll() {
+  const header = document.querySelector('.header');
+  if (header) {
+    if (document.documentElement.scrollTop >= 50) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  }
 }
 
 /**
@@ -72,5 +82,10 @@ export default async function decorate(block) {
     nav.setAttribute('aria-expanded', 'false');
     decorateIcons(nav);
     block.append(nav);
+
+    window.addEventListener('scroll', (ev) => {
+      ev.preventDefault();
+      onScroll();
+    });
   }
 }

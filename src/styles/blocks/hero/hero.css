@@ -4,6 +4,7 @@
 	& > div {
 		display: grid;
 		text-align: center;
+		gap: 20px;
 
 		@mixin grid-cols 1;
 		@mixin grid-md-cols 2;
@@ -13,10 +14,6 @@
 
 			@media (--ros-screen-lg) {
 				margin-bottom: 0;
-			}
-
-			@media (--ros-screen-md) {
-				margin-right: 24px;
 			}
 		}
 

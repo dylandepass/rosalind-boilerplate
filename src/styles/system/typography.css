@@ -6,6 +6,7 @@
 	font-style: normal;
 	font-weight: 300;
 	font-display: swap;
+	size-adjust: 105%;
 	src:
 		local(""),
 		url("./fonts/nunito-v25-latin-300.woff2") format("woff2"),
@@ -18,6 +19,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
+	size-adjust: 99%;
 	src:
 		local(""),
 		url("./fonts/nunito-v25-latin-regular.woff2") format("woff2"),
@@ -30,6 +32,7 @@
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
+	size-adjust: 105%;
 	src:
 		local(""),
 		url("./fonts/nunito-v25-latin-500.woff2") format("woff2"),
@@ -42,6 +45,7 @@
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
+	size-adjust: 105%;
 	src:
 		local(""),
 		url("./fonts/nunito-v25-latin-600.woff2") format("woff2"),
@@ -51,9 +55,10 @@
 /* nunito-700 - latin */
 @font-face {
 	font-family: Nunito;
-	font-style: normal;
+	font-style: bold;
 	font-weight: 700;
 	font-display: swap;
+	size-adjust: 99%;
 	src:
 		local(""),
 		url("./fonts/nunito-v25-latin-700.woff2") format("woff2"),
