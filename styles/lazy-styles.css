@@ -59,3 +59,17 @@
 		url("./fonts/nunito-v25-latin-700.woff2") format("woff2"),
 		url("./fonts/nunito-v25-latin-700.woff") format("woff"); 
 }
+
+/* fallback font for Nunito (300) */
+  @font-face {
+    font-family: "Nunito-300-fallback";
+    size-adjust: 107.9%;
+    src: local("Arial");
+  };
+  
+  /* fallback font for Nunito (700) */
+  @font-face {
+    font-family: "Nunito-700-fallback";
+    size-adjust: 107.9%;
+    src: local("Arial");
+  };

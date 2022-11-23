@@ -193,12 +193,12 @@
   --ros-font-family-form-input-label: Nunito, sans-serif;
   --ros-font-family-form-input-text: Nunito, sans-serif;
   --ros-font-family-form-input-placeholder: Nunito, sans-serif;
-  --ros-font-family-body: Nunito, sans-serif;
+  --ros-font-family-body: Nunito, Nunito-300-fallback;
   --ros-font-family-mono: Source Code Pro;
   --ros-font-family-caption: Nunito, sans-serif;
   --ros-font-family-subtitle: Nunito, sans-serif;
   --ros-font-family-eyebrow: Nunito, sans-serif;
-  --ros-font-family-heading: Nunito, sans-serif;
+  --ros-font-family-heading: Nunito, Nunito-700-fallback;
   --ros-font-family-display: Nunito, sans-serif;
   --ros-typography-form-input-label-font-size: 0.875rem;
   --ros-typography-form-input-label-line-height: 0.875rem;
