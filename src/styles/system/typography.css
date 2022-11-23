@@ -20,28 +20,6 @@
 	p.font-subtitle,
 	.font-subtitle;
 
-@font-face {
-	font-family: Nunito;
-	font-style: normal;
-	font-weight: 300;
-	font-display: swap;
-	src:
-		local(""),
-		url("./fonts/nunito-v25-latin-300.woff2") format("woff2"),
-		url("./fonts/nunito-v25-latin-300.woff") format("woff");
-}
-
-@font-face {
-	font-family: Nunito;
-	font-style: bold;
-	font-weight: 700;
-	font-display: swap;
-	src:
-		local(""),
-		url("./fonts/nunito-v25-latin-700.woff2") format("woff2"),
-		url("./fonts/nunito-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 :--heading {
 	@mixin responsive-font --ros-size-line-height-heading-multiplier;
 

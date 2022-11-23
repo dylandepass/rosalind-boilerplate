@@ -1,8 +1,7 @@
 /* below the fold CSS goes here */
 
-
 /* nunito-300 - latin */
-/* @font-face {
+@font-face {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 300;
@@ -11,7 +10,7 @@
 		local(""),
 		url("./fonts/nunito-v25-latin-300.woff2") format("woff2"),
 		url("./fonts/nunito-v25-latin-300.woff") format("woff"); 
-} */
+}
 
 /* nunito-regular - latin */
 /* @font-face {
@@ -50,7 +49,7 @@
 } */
 
 /* nunito-700 - latin */
-/* @font-face {
+@font-face {
 	font-family: Nunito;
 	font-style: bold;
 	font-weight: 700;
@@ -59,4 +58,4 @@
 		local(""),
 		url("./fonts/nunito-v25-latin-700.woff2") format("woff2"),
 		url("./fonts/nunito-v25-latin-700.woff") format("woff"); 
-} */
+}
