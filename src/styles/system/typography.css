@@ -201,13 +201,15 @@ code {
 /* fallback font for Nunito (300) */
 @font-face {
 	font-family: "Nunito-300-fallback";
-	size-adjust: 107.9%;
+	size-adjust: 101.48999999999997%;
+	ascent-override: 110%;
 	src: local("Arial");
 }
 
 /* fallback font for Nunito (700) */
 @font-face {
 	font-family: "Nunito-700-fallback";
-	size-adjust: 107.9%;
+	size-adjust: 101.48999999999997%;
+	ascent-override: 110%;
 	src: local("Arial");
 }
