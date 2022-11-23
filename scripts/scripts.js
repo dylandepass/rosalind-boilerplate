@@ -91,7 +91,6 @@ export function decorateButtons(element) {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
-  decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
@@ -134,6 +133,7 @@ async function loadLazy(doc) {
   const main = doc.querySelector('main');
   await loadBlocks(main);
 
+  decorateIcons(main);
   const { hash } = window.location;
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
