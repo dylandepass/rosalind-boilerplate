@@ -197,3 +197,17 @@ code {
 .text-align-left {
 	text-align: left;
 }
+
+/* fallback font for Nunito (300) */
+@font-face {
+	font-family: "Nunito-300-fallback";
+	size-adjust: 107.9%;
+	src: local("Arial");
+}
+
+/* fallback font for Nunito (700) */
+@font-face {
+	font-family: "Nunito-700-fallback";
+	size-adjust: 107.9%;
+	src: local("Arial");
+}
