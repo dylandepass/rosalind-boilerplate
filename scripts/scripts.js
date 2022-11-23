@@ -13,7 +13,7 @@ import {
   getMetadata,
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = ['grid']; // add your LCP blocks to the list
+const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
 function build2ColHero(main) {
@@ -155,6 +155,7 @@ async function loadLazy(doc) {
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
   window.setTimeout(() => import('./delayed.js'), 3000);
+  if (!window.hlx.performance) window.setTimeout(() => import('./delayed.js'), 4000);
   // load anything that can be postponed to the latest here
 }
 
@@ -165,3 +166,11 @@ async function loadPage() {
 }
 
 loadPage();
+
+const params = new URLSearchParams(window.location.search);
+if (params.get('performance')) {
+  window.hlx.performance = true;
+  import('./performance.js').then((mod) => {
+    if (mod.default) mod.default();
+  });
+}

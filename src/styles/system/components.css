@@ -20,8 +20,10 @@
 .button {
 	display: flex;
 	justify-content: center;
+	font-family: Nunito, sans-serif;
 	font-size: var(--ros-font-size-button-default);
 	padding: var(--ros-spacing-button-default-vertical-padding) var(--ros-spacing-button-default-horizontal-padding);
+	font-weight: 700;
 	border-style: solid;
 	align-items: center;
 	gap: var(--ros-spacing-button-default-horizontal-gap);
