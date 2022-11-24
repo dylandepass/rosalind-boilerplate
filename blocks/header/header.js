@@ -49,6 +49,7 @@ export default async function decorate(block) {
     const navMenu = [...nav.children][1];
     if (navMenu) {
       navMenu.querySelectorAll(':scope > ul > li').forEach((navSection) => {
+        navSection.classList.add('top-level');
         navSection.addEventListener('mouseover', () => {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           collapseAllNavSections(navMenu);
