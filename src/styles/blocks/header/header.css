@@ -1,6 +1,34 @@
 @import "../../system/breakpoints";
 @import "../../system/mixins";
 
+body:has(.hero-image) {
+	& header {
+		& nav {
+			@media (--ros-screen-lg) {
+				& .top-level {
+					color: #fff;
+				}
+
+				& .nav-brand p {
+					color: #fff;
+				}
+			}
+		}
+
+		& .header.sticky {
+			& nav {
+				& .top-level {
+					color: var(--ros-color-ref-grey-900);
+				}
+
+				& .nav-brand p {
+					color: var(--ros-color-ref-grey-900);
+				}
+			}
+		}
+	}
+}
+
 header {
 	height: var(--ros-size-nav-height);
 	width: 100%;
@@ -8,13 +36,17 @@ header {
 	z-index: 1;
 
 	& .header {
-		background-color: transparent;
+		background-color: var(--ros-color-global-nav-background-color);
 		transition-property: all;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
 
 		&.sticky {
 			background-color: var(--ros-color-global-nav-background-color);
+		}
+
+		@media (--ros-screen-lg) {
+			background-color: transparent;
 		}
 	}
 
@@ -120,6 +152,7 @@ header {
 					height: 100%;
 					display: flex;
 					align-items: center;
+					color: var(--ros-color-ref-grey-900);
 
 					/* Level 2 Menu - default */
 					& > ul {
@@ -148,10 +181,16 @@ header {
 								white-space: nowrap;
 								padding: 16px 32px;
 								cursor: pointer;
+								color: var(--ros-color-ref-grey-900);
 
 								&:hover {
 									background-color: var(--ros-color-primary-base);
 									color: #fff;
+								}
+
+								&:first-of-type {
+									border-top-left-radius: 3px;
+									border-top-right-radius: 3px;
 								}
 							}
 						}
