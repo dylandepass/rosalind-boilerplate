@@ -27,6 +27,68 @@ function build2ColHero(main) {
   main.prepend(section);
 }
 
+function buildImageHero(main) {
+  const firstDiv = main.querySelector('div:first-of-type');
+  const img = firstDiv.querySelector('img');
+
+  const backgroundImage = document.createElement('div');
+  backgroundImage.style.backgroundImage = `url('${img.src})`;
+  backgroundImage.classList.add('image');
+  img.closest('p').remove();
+
+  const cover = document.createElement('div');
+  cover.classList.add('cover');
+
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.append(...firstDiv.childNodes);
+
+  const section = document.createElement('div');
+  const heroBlock = buildBlock('hero', [[{ elems: [cover, backgroundImage] }, content]]);
+  heroBlock.classList.add('hero-image');
+  section.append(heroBlock);
+  firstDiv.remove();
+  main.prepend(section);
+}
+
+/**
+ * Loads JS and CSS for a template.
+ */
+export async function loadTemplate(main, template) {
+  if (template) {
+    try {
+      const cssLoaded = new Promise((resolve) => {
+        loadCSS(`${window.hlx.codeBasePath}/templates/${template}/${template}.css`, resolve);
+      });
+      const decorationComplete = new Promise((resolve) => {
+        (async () => {
+          try {
+            const mod = await import(`../templates/${template}/${template}.js`);
+            if (mod.default) {
+              await mod.default(main);
+            }
+          } catch (error) {
+            // eslint-disable-next-line no-console
+            console.log(`failed to load module for ${template}`, error);
+          }
+          resolve();
+        })();
+      });
+      await Promise.all([cssLoaded, decorationComplete]);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(`failed to load block ${template}`, error);
+    }
+  }
+}
+
+function decorateTemplate(main) {
+  const template = getMetadata('template');
+  if (template && template !== 'blog' && template !== 'home') {
+    loadTemplate(main, template);
+  }
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -41,6 +103,8 @@ function buildAutoBlocks(main) {
 
     if (template === 'home') {
       build2ColHero(main);
+    } else if (template === 'blog') {
+      buildImageHero(main);
     }
   } catch (error) {
     // eslint-disable-next-line no-console
@@ -91,7 +155,6 @@ export function decorateButtons(element) {
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
-  decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
@@ -104,6 +167,7 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
+  decorateTemplate(main);
   if (main) {
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);
@@ -134,6 +198,7 @@ async function loadLazy(doc) {
   const main = doc.querySelector('main');
   await loadBlocks(main);
 
+  decorateIcons(main);
   const { hash } = window.location;
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();

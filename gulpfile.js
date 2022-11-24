@@ -47,18 +47,26 @@ function getFolders(dir) {
     .filter((file) => fs.statSync(path.join(dir, file)).isDirectory());
 }
 
-function buildBlocksCSS() {
-  const blocksSrcPath = './src/styles/blocks';
-  const blocksDestPath = './blocks';
-  const folders = getFolders('./src/styles/blocks');
+function buildCSS(type) {
+  const srcPath = `./src/styles/${type}`;
+  const destPath = `./${type}`;
+  const folders = getFolders(`./src/styles/${type}`);
 
-  const tasks = folders.map((folder) => src(path.join(blocksSrcPath, folder, '*.css'))
+  const tasks = folders.map((folder) => src(path.join(srcPath, folder, '*.css'))
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(postcss())
-    .pipe(dest(`${blocksDestPath}/${folder}`)));
+    .pipe(dest(`${destPath}/${folder}`)));
 
   return merge(tasks);
+}
+
+function buildBlocksCSS() {
+  return buildCSS('blocks');
+}
+
+function buildTemplateCSS() {
+  return buildCSS('templates');
 }
 
 function stylesDev() {
@@ -71,10 +79,17 @@ function stylesDev() {
 }
 
 function startWatching() {
-  watch('./src/**/*.css', undefined, series(stylesDev, buildBlocksCSS));
+  watch('./src/**/*.css', undefined, series(stylesDev, buildBlocksCSS, buildTemplateCSS));
 }
 
-exports.dev = series(stylesDev, copyLightTheme, copyDarkTheme, buildBlocksCSS, startWatching);
+exports.dev = series(
+  stylesDev,
+  copyLightTheme,
+  copyDarkTheme,
+  buildBlocksCSS,
+  buildTemplateCSS,
+  startWatching,
+);
 
 /**
  * BUILD TASKS

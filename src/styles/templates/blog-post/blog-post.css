@@ -1,0 +1,46 @@
+@import "../../system/mixins";
+
+.blog-post {
+	display: grid;
+	flex-direction: row;
+	gap: 20px;
+
+	@mixin grid-cols 1;
+	@mixin grid-lg-cols 12;
+
+	& .content {
+		@mixin grid-col-span 1;
+		@mixin grid-md-col-span 8;
+		@mixin shadow-100;
+
+		& :--heading {
+			margin: 0 auto;
+			max-width: 75ch;
+		}
+
+		& .default-content-wrapper {
+			text-align: left;
+
+			@mixin padding xl;
+		}
+
+		& .default-content-wrapper:not(:last-of-type) {
+			margin-bottom: 20px;
+		}
+
+		& .blockquote {
+			text-align: left;
+			margin-left: 10px;
+		}
+	}
+
+	& .sidebar {
+		width: 100%;
+		height: 100%;
+
+		@mixin padding xl;
+		@mixin grid-col-span 1;
+		@mixin grid-md-col-span 4;
+		@mixin shadow-100;
+	}
+}

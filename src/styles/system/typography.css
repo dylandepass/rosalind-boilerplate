@@ -171,7 +171,7 @@ strong {
 
 .default-content-wrapper {
 	& p {
-		max-width: 75ch;
+		max-width: 95ch;
 		margin: 0 auto;
 	}
 }
