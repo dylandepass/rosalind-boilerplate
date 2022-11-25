@@ -1,3 +1,5 @@
+@import "./mixins";
+
 html,
 body {
 	margin: 0;
@@ -8,13 +10,11 @@ body {
 }
 
 body {
+	@mixin body-font;
+
 	-moz-osx-font-smoothing: grayscale;
 	text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
-	font-size: var(--ros-font-size-body);
-	font-family: var(--ros-font-family-body);
-	line-height: var(--ros-line-height-body);
-	color: var(--ros-color-typography-base);
 	background-color: var(--ros-color-global-body-background-primary);
 	margin: 0;
 	display: none;

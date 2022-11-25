@@ -154,6 +154,7 @@ header {
 					align-items: center;
 					text-transform: uppercase;
 					font-weight: 700;
+					user-select: none;
 					color: var(--ros-color-ref-grey-900);
 
 					/* Level 2 Menu - default */

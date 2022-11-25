@@ -110,3 +110,11 @@
 	font-weight: var(--ros-font-weight-eyebrow);
 	margin: 0;
 }
+
+@define-mixin body-font {
+	font-size: var(--ros-font-size-body);
+	font-family: var(--ros-font-family-body);
+	font-weight: var(--ros-font-weight-body);
+	line-height: var(--ros-line-height-body);
+	color: var(--ros-color-typography-base);
+}
