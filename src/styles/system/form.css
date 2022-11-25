@@ -163,6 +163,11 @@ input[type="radio"] {
 	}
 
 	&.switch {
+		height: var(--ros-size-form-switch-height);
+		width: var(--ros-size-form-switch-width);
+		position: absolute;
+		z-index: 1;
+
 		& + label {
 			padding-left: 47px;
 		}

@@ -81,8 +81,50 @@ export default async function decorate(block) {
     });
     nav.prepend(hamburger);
     nav.setAttribute('aria-expanded', 'false');
-    decorateIcons(nav);
     block.append(nav);
+
+    const toolsContainer = document.createElement('div');
+    toolsContainer.classList.add('nav-tools');
+
+    const themeSwitchContainer = document.createElement('div');
+    themeSwitchContainer.classList.add('theme-switcher');
+
+    const themeSwitch = document.createElement('input');
+    themeSwitch.type = 'checkbox';
+    themeSwitch.classList.add('switch');
+
+    const label = document.createElement('label');
+    label.innerHTML = '&nbsp;';
+
+    const darkIcon = document.createElement('span');
+    darkIcon.classList.add('icon');
+    darkIcon.classList.add('icon-moon');
+    label.append(darkIcon);
+
+    const lightIcon = document.createElement('span');
+    lightIcon.classList.add('icon');
+    lightIcon.classList.add('icon-sun');
+    label.append(lightIcon);
+
+    themeSwitchContainer.append(themeSwitch);
+    themeSwitchContainer.append(label);
+
+    toolsContainer.append(themeSwitchContainer);
+
+    nav.appendChild(toolsContainer);
+
+    themeSwitch.addEventListener('change', (event) => {
+      const theme = document.getElementById('theme');
+      if (event.target && theme) {
+        if (event.target.checked === true) {
+          theme.setAttribute('href', '/styles/dark-theme.css');
+        } else {
+          theme.setAttribute('href', '/styles/light-theme.css');
+        }
+      }
+    });
+
+    decorateIcons(nav);
 
     window.addEventListener('scroll', (ev) => {
       ev.preventDefault();
