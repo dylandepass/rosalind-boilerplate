@@ -3,22 +3,22 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6;
 @custom-selector :--display .display1, .display2, .display3;
 @custom-selector :--eyebrow
-	h1.font-eyebrow,
-	h2.font-eyebrow,
-	h3.font-eyebrow,
-	h4.font-eyebrow,
-	h5.font-eyebrow,
-	p.font-eyebrow,
-	.font-eyebrow;
+	h1.eyebrow,
+	h2.eyebrow,
+	h3.eyebrow,
+	h4.eyebrow,
+	h5.eyebrow,
+	p.eyebrow,
+	.eyebrow;
 @custom-selector :--subtitle
-	h1.font-subtitle,
-	h2.font-subtitle,
-	h3.font-subtitle,
-	h4.font-subtitle,
-	h5.font-subtitle,
-	h6.font-subtitle,
-	p.font-subtitle,
-	.font-subtitle;
+	h1.subtitle,
+	h2.subtitle,
+	h3.subtitle,
+	h4.subtitle,
+	h5.subtitle,
+	h6.subtitle,
+	p.subtitle,
+	.subtitle;
 
 @font-face {
 	font-family: Nunito;
@@ -42,111 +42,53 @@
 		url("./fonts/nunito-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-:--heading {
-	@mixin responsive-font --ros-size-line-height-heading-multiplier;
-
-	font-family: var(--ros-font-family-heading);
-	font-weight: var(--ros-font-weight-heading);
-	margin-top: 0;
-	margin-bottom: var(--ros-spacing-typography-heading-margin-bottom);
-	color: var(--ros-color-typography-heading);
-}
-
-:--display {
-	@mixin responsive-font --ros-size-line-height-display-multiplier;
-
-	font-family: var(--ros-font-family-display);
-	font-weight: var(--ros-font-weight-display);
-	margin-bottom: var(--ros-spacing-typography-display-margin-bottom);
-	color: var(--ros-color-typography-heading);
-}
-
 .display1 {
-	--min: var(--ros-font-size-display-1-min);
-	--val: 5vw;
-	--max: var(--ros-font-size-display-1-max);
+	@mixin display1;
 }
 
 .display2 {
-	--min: var(--ros-font-size-display-2-min);
-	--val: 4vw;
-	--max: var(--ros-font-size-display-2-max);
+	@mixin display2;
 }
 
 .display3 {
-	--min: var(--ros-font-size-display-3-min);
-	--val: 3vw;
-	--max: var(--ros-font-size-display-3-max);
+	@mixin display3;
 }
 
 .subtitle {
-	--min: var(--ros-font-size-subtitle-min);
-	--val: 3vw;
-	--max: var(--ros-font-size-subtitle-max);
-
-	font-weight: var(--ros-font-weight-subtitle);
-	margin-bottom: var(--ros-spacing-typography-subtitle-margin-bottom);
+	@mixin subtitle;
 }
 
 h1,
 .h1 {
-	--min: var(--ros-font-size-heading-1-min);
-	--val: 5vw;
-	--max: var(--ros-font-size-heading-1-max);
+	@mixin h1;
 }
 
 h2,
 .h2 {
-	--min: var(--ros-font-size-heading-2-min);
-	--val: 4.5vw;
-	--max: var(--ros-font-size-heading-2-max);
+	@mixin h2;
 }
 
 h3,
 .h3 {
-	--min: var(--ros-font-size-heading-3-min);
-	--val: 4vw;
-	--max: var(--ros-font-size-heading-3-max);
+	@mixin h3;
 }
 
 h4,
 .h4 {
-	--min: var(--ros-font-size-heading-4-min);
-	--val: 3.55vw;
-	--max: var(--ros-font-size-heading-4-max);
+	@mixin h4;
 }
 
 h5,
 .h5 {
-	--min: var(--ros-font-size-heading-5-min);
-	--val: 5vw;
-	--max: var(--ros-font-size-heading-5-max);
-}
-
-:--eyebrow {
-	@mixin responsive-font --ros-size-line-height-eyebrow-multiplier;
-
-	--min: var(--ros-font-size-eyebrow-min);
-	--val: 3vw;
-	--max: var(--ros-font-size-eyebrow-max);
-
-	font-family: var(--ros-font-family-eyebrow);
-	text-transform: var(--ros-text-case-eyebrow);
-	font-weight: var(--ros-font-weight-eyebrow);
-	margin: 0;
-	color: var(--ros-color-typography-heading);
+	@mixin h5;
 }
 
 :--subtitle {
-	@mixin responsive-font --ros-size-line-height-heading-multiplier;
+	@mixin subtitle;
+}
 
-	--min: var(--ros-font-size-subtitle-min);
-	--val: 3.55vw;
-	--max: var(--ros-font-size-subtitle-max);
-
-	font-family: var(--ros-font-family-subtitle);
-	font-weight: 300;
-	margin-bottom: var(--ros-spacing-typography-subtitle-margin-bottom);
+:--eyebrow {
+	@mixin eyebrow;
 }
 
 p {
