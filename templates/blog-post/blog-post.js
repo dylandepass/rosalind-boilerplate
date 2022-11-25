@@ -66,8 +66,7 @@ export default function decorate(main) {
     heroImage.loading = 'eager';
   }
 
-  const container = document.createElement('div');
-  container.classList.add('blog-post');
+  const container = document.createElement('article');
   const post = document.createElement('div');
   post.classList.add('blog-post');
   const content = document.createElement('div');
@@ -85,8 +84,7 @@ export default function decorate(main) {
 
   content.append(heroImageContainer);
 
-  const sidebar = document.createElement('div');
-  sidebar.classList.add('sidebar');
+  const sidebar = document.createElement('aside');
 
   sidebar.innerHTML = renderSidebar();
 

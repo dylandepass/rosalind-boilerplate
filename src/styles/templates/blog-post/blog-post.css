@@ -1,6 +1,6 @@
 @import "../../system/mixins";
 
-.blog-post {
+article {
 	display: grid;
 	flex-direction: row;
 	gap: 20px;
@@ -52,7 +52,7 @@
 		}
 	}
 
-	& .sidebar {
+	& aside {
 		width: 100%;
 
 		@mixin grid-col-span 1;
