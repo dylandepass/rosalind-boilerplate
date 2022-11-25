@@ -13,6 +13,22 @@
 		@mixin grid-md-col-span 8;
 		@mixin shadow-100;
 
+		& .hero {
+			@mixin padding-horizontal xl;
+
+			text-align: center;
+
+			& img {
+				border-radius: 8px;
+			}
+
+			& .h3 {
+				@mixin padding-top xxl;
+
+				max-width: 20ch;
+			}
+		}
+
 		& :--heading {
 			margin: 0 auto;
 			max-width: 75ch;
@@ -25,7 +41,8 @@
 		}
 
 		& .default-content-wrapper:not(:last-of-type) {
-			margin-bottom: 20px;
+			@mixin margin-bottom sm;
+			@mixin padding-bottom sm;
 		}
 
 		& .blockquote {

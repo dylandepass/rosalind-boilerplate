@@ -23,12 +23,12 @@
 @font-face {
 	font-family: Nunito;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	font-display: swap;
 	src:
 		local(""),
-		url("./fonts/nunito-v25-latin-300.woff2") format("woff2"),
-		url("./fonts/nunito-v25-latin-300.woff") format("woff");
+		url("./fonts/nunito-v25-latin-400.woff2") format("woff2"),
+		url("./fonts/nunito-v25-latin-400.woff") format("woff");
 }
 
 @font-face {
@@ -172,7 +172,9 @@ strong {
 .default-content-wrapper {
 	& p {
 		max-width: 95ch;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
 	}
 }
 
@@ -191,8 +193,7 @@ blockquote {
 	color: var(--ros-color-typography-light);
 	max-width: var(--hlx-paragraph-max-width);
 	font-style: italic;
-	margin: 3rem;
-	margin-bottom: 15px;
+	margin: 1rem 3em;
 	hanging-punctuation: first;
 }
 
