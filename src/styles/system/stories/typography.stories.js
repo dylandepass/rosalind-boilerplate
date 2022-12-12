@@ -2,13 +2,11 @@ export default {
   title: 'Typography',
 };
 
-const Template = ({content}) => {
-  return content;
-};
+const Template = ({ content }) => content;
 
 export const Headings = Template.bind({});
 Headings.parameters = {
-  title: "Typograph/Headings",
+  title: 'Typograph/HeadingsNew',
 };
 Headings.args = {
   content: /* html */`
@@ -34,7 +32,7 @@ Headings.args = {
 
 export const Body = Template.bind({});
 Body.parameters = {
-  title: "Typograph/Body",
+  title: 'Typograph/Body',
 };
 Body.args = {
   content: /* html */`
@@ -46,10 +44,9 @@ Body.args = {
         </div>`,
 };
 
-
 export const Code = Template.bind({});
 Code.parameters = {
-  title: "Typograph/Code",
+  title: 'Typograph/Code',
 };
 Code.args = {
   content: /* html */`
@@ -62,7 +59,7 @@ Code.args = {
 
 export const Eyebrow = Template.bind({});
 Eyebrow.parameters = {
-  title: "Typograph/Eyebrow",
+  title: 'Typograph/Eyebrow',
 };
 Eyebrow.args = {
   content: /* html */`
@@ -76,7 +73,7 @@ Eyebrow.args = {
 
 export const Subtitle = Template.bind({});
 Subtitle.parameters = {
-  title: "Typograph/Subtitle",
+  title: 'Typograph/Subtitle',
 };
 Subtitle.args = {
   content: /* html */`
@@ -88,10 +85,9 @@ Subtitle.args = {
         </div>`,
 };
 
-
 export const Blockquote = Template.bind({});
 Blockquote.parameters = {
-  title: "Typograph/Blockquote",
+  title: 'Typograph/Blockquote',
 };
 Blockquote.args = {
   content: /* html */`
@@ -103,10 +99,9 @@ Blockquote.args = {
         </div>`,
 };
 
-
 export const Demo = Template.bind({});
 Demo.parameters = {
-  title: "Typograph/Demo",
+  title: 'Typograph/Demo',
 };
 Demo.args = {
   content: /* html */`
