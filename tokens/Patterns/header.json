@@ -1,0 +1,30 @@
+{
+  "pattern": {
+    "header": {
+      "color": {
+        "background": {
+          "base": {
+            "value": "{semantic.color.background.base}",
+            "type": "color"
+          }
+        }
+      },
+      "size": {
+        "logo": {
+          "width": {
+            "value": "{global.size.400}",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "{global.size.400}",
+            "type": "sizing"
+          }
+        },
+        "height": {
+          "value": "{global.size.900}",
+          "type": "sizing"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "light-theme",
+    "dark-theme",
+    "semantic",
+    "Components/buttons",
+    "Components/form/form",
+    "Components/form/text-field",
+    "Components/form/checkbox",
+    "Patterns/header",
+    "Brands/Rosalind/dark-theme",
+    "Brands/WKND/semantic",
+    "Brands/WKND/pattern",
+    "Brands/WKND/button"
+  ]
+}
