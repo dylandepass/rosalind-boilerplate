@@ -1,5 +1,5 @@
-@import "../../system/breakpoints";
-@import "../../system/mixins";
+@import "../../styles/system/breakpoints";
+@import "../../styles/system/mixins";
 
 body:has(.hero-image) {
 	& header {

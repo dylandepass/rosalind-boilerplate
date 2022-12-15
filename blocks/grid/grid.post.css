@@ -1,4 +1,4 @@
-@import "../../system/mixins";
+@import "../../styles/system/mixins";
 
 .grid {
 	display: grid;
