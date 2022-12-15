@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 20 Nov 2022 19:06:30 GMT
+ * Generated on Thu, 01 Dec 2022 18:07:40 GMT
  */
 
 :root {
@@ -194,7 +194,7 @@
   --ros-font-family-form-input-text: Nunito, sans-serif;
   --ros-font-family-form-input-placeholder: Nunito, sans-serif;
   --ros-font-family-body: Nunito, sans-serif;
-  --ros-font-family-mono: Source Code Pro;
+  --ros-font-family-mono: Source Code Pro, Courier New;
   --ros-font-family-caption: Nunito, sans-serif;
   --ros-font-family-subtitle: Nunito, sans-serif;
   --ros-font-family-eyebrow: Nunito, sans-serif;
@@ -219,7 +219,7 @@
   --ros-typography-mono-font-size: 1rem;
   --ros-typography-mono-line-height: 1.5rem;
   --ros-typography-mono-font-weight: Regular;
-  --ros-typography-mono-font-family: Source Code Pro;
+  --ros-typography-mono-font-family: Source Code Pro, Courier New;
   --ros-typography-eyebrow-min-text-case: none;
   --ros-typography-eyebrow-min-line-height: 1.2375rem;
   --ros-typography-eyebrow-min-font-size: 1.125rem;

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 20 Nov 2022 19:06:30 GMT
+ * Generated on Thu, 01 Dec 2022 18:07:41 GMT
  */
 
 :root {
@@ -194,7 +194,7 @@
   --ros-font-family-form-input-text: Nunito, sans-serif;
   --ros-font-family-form-input-placeholder: Nunito, sans-serif;
   --ros-font-family-body: Nunito, sans-serif;
-  --ros-font-family-mono: Source Code Pro;
+  --ros-font-family-mono: Source Code Pro, Courier New;
   --ros-font-family-caption: Nunito, sans-serif;
   --ros-font-family-subtitle: Nunito, sans-serif;
   --ros-font-family-eyebrow: Nunito, sans-serif;
@@ -219,7 +219,7 @@
   --ros-typography-mono-font-size: 1rem;
   --ros-typography-mono-line-height: 1.5rem;
   --ros-typography-mono-font-weight: Regular;
-  --ros-typography-mono-font-family: Source Code Pro;
+  --ros-typography-mono-font-family: Source Code Pro, Courier New;
   --ros-typography-eyebrow-min-text-case: none;
   --ros-typography-eyebrow-min-line-height: 1.2375rem;
   --ros-typography-eyebrow-min-font-size: 1.125rem;
@@ -409,6 +409,7 @@
   --ros-color-primary-dark: #001cb2;
   --ros-color-primary-light: #006fff;
   --ros-color-primary-base: #4f46e5;
+  --ros-color-global-tag-background-color: #1e293b;
   --ros-color-global-nav-background-color: #0f172a;
   --ros-color-global-shadow-100: #1f2937;
   --ros-color-global-form-input-border-color: #1f2937;
@@ -627,4 +628,5 @@
   --ros-color-utility-warning-dark: var(--ros-color-ref-yellow-600);
   --ros-color-utility-warning-light: var(--ros-color-ref-yellow-200);
   --ros-color-utility-warning-base: var(--ros-color-ref-yellow-400);
+  --ros-color-global-tag-foreground-color: var(--ros-color-typography-base);
 }
