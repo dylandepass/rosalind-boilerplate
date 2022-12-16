@@ -9,10 +9,12 @@
     "Components/form/text-field",
     "Components/form/checkbox",
     "Patterns/header",
+    "Patterns/footer",
     "Brands/Rosalind/dark-theme",
     "Brands/WKND/semantic",
     "Brands/WKND/pattern",
-    "Brands/WKND/button",
+    "Brands/WKND/Components/button",
+    "Brands/WKND/Patterns/footer",
     "WKND-light",
     "rosalind-dark",
     "rosalind-light"

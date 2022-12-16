@@ -14,28 +14,10 @@
       "Components/form/form": "enabled",
       "light-theme": "disabled",
       "dark-theme": "source",
-      "Components/form/checkbox": "disabled",
-      "Brands/WKND/button": "disabled"
-    },
-    "$figmaStyleReferences": {}
-  },
-  {
-    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
-    "name": "rosalind-light",
-    "selectedTokenSets": {
-      "global": "source",
-      "semantic": "enabled",
-      "Brands/Rosalind/dark-theme": "disabled",
-      "Brands/WKND/semantic": "disabled",
-      "Components/buttons": "enabled",
-      "Patterns/header": "enabled",
-      "Brands/WKND/pattern": "disabled",
-      "Components/form/text-field": "enabled",
-      "Components/form/form": "enabled",
-      "light-theme": "source",
-      "dark-theme": "disabled",
-      "Components/form/checkbox": "disabled",
-      "Brands/WKND/button": "disabled"
+      "Components/form/checkbox": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/WKND/Components/button": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -54,8 +36,10 @@
       "Components/form/form": "enabled",
       "light-theme": "source",
       "dark-theme": "disabled",
-      "Components/form/checkbox": "disabled",
-      "Brands/WKND/button": "enabled"
+      "Components/form/checkbox": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "enabled",
+      "Brands/WKND/Components/button": "enabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -63,7 +47,6 @@
       "semantic.color.foreground.on-primary": "S:7853c47ab46ed59f980db7d3430f0f63476b7dc3,",
       "semantic.color.foreground.on-secondary": "S:5f79a9023f7f389a0080313f16eed8f0be9f72f9,",
       "semantic.color.secondary.base": "S:7512a669040eeabf14fc2c1bd922a7766dcd4520,",
-      "semantic.color.footer.background": "S:2b3642f4d12abd746f2bc12a3eeb184783316837,",
       "pattern.header.color.background.base": "S:1c65fb521fcbd9efd716ff3d5ad72167efd53bad,",
       "component.text-field.color.default.background-color": "S:8597c1095d06bb1ce0767182b2bf12b184ffa62d,",
       "component.text-field.color.default.foreground-color": "S:ccbe07ce80b33fc8220148ded74b36b2d2715332,",
@@ -197,5 +180,27 @@
       "semantic.typography.mobile.eyebrow": "S:8bad5d7d8314a687278f2fa0c29c63444f1f2c1e,",
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,"
     }
+  },
+  {
+    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
+    "name": "rosalind-light",
+    "selectedTokenSets": {
+      "global": "source",
+      "semantic": "enabled",
+      "Brands/Rosalind/dark-theme": "disabled",
+      "Brands/WKND/semantic": "disabled",
+      "Components/buttons": "enabled",
+      "Patterns/header": "enabled",
+      "Brands/WKND/pattern": "disabled",
+      "Components/form/text-field": "enabled",
+      "Components/form/form": "enabled",
+      "light-theme": "source",
+      "dark-theme": "disabled",
+      "Components/form/checkbox": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/WKND/Components/button": "disabled"
+    },
+    "$figmaStyleReferences": {}
   }
 ]
