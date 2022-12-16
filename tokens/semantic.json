@@ -554,6 +554,44 @@
             "type": "spacing"
           }
         }
+      },
+      "typography": {
+        "display": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.lg}",
+            "type": "spacing"
+          }
+        },
+        "subtitle": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.lg}",
+            "type": "spacing"
+          }
+        },
+        "eyebrow": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.sm}",
+            "type": "spacing"
+          }
+        },
+        "heading": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.md}",
+            "type": "spacing"
+          }
+        },
+        "body": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.lg}",
+            "type": "spacing"
+          }
+        },
+        "caption": {
+          "margin-bottom": {
+            "value": "{semantic.spacing.around.component.md}",
+            "type": "spacing"
+          }
+        }
       }
     },
     "line-height": {

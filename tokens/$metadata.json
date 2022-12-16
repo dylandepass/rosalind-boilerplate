@@ -14,9 +14,6 @@
     "Brands/WKND/semantic",
     "Brands/WKND/pattern",
     "Brands/WKND/Components/button",
-    "Brands/WKND/Patterns/footer",
-    "WKND-light",
-    "rosalind-dark",
-    "rosalind-light"
+    "Brands/WKND/Patterns/footer"
   ]
 }
