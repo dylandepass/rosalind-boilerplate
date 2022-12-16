@@ -99,7 +99,7 @@
           "type": "spacing"
         },
         "space-between": {
-          "value": "{semantic.spacing.between.component.sm}",
+          "value": "{semantic.spacing.gap.component.sm}",
           "type": "spacing"
         }
       },
