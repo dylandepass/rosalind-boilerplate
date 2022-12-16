@@ -64,11 +64,9 @@ footer {
 	}
 
 	& :--heading {
-		color: #fff;
+		@mixin h5;
 
-		--min: var(--ros-font-size-heading-5-min);
-		--val: 5vw;
-		--max: var(--ros-font-size-heading-5-max);
+		color: var(--ros-pattern-footer-color-foreground-on-base);
 	}
 
 	& ul {
@@ -76,16 +74,12 @@ footer {
 	}
 
 	& a {
-		color: #fff;
-
-		&:hover {
-			color: var(--ros-color-typography-light);
-		}
+		color: var(--ros-pattern-footer-color-foreground-on-base);
 	}
 }
 
 .section.footer-copy {
-	border-top: 1px solid var(--ros-color-form-input-border-default);
+	border-top: 1px solid var(--ros-semantic-color-border-base);
 	padding: 40px 32px;
 	background-color: rgb(25 33 50 / 100%);
 	font-size: 16px;

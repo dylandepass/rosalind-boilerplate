@@ -1,9 +1,29 @@
-@define-mixin shadow-100 {
-	border-radius: 4px;
+@define-mixin shadow $size{
+	border-radius: var(--ros-semantic-border-radius-default);
 	box-shadow:
-		var(--ros-shadow-100-x)
-		var(--ros-shadow-100-y)
-		var(--ros-shadow-100-blur)
-		var(--ros-shadow-100-spread)
-		var(--ros-color-global-shadow-100);
+		var(--ros-semantic-box-shadow-$(size)-0-x)
+		var(--ros-semantic-box-shadow-$(size)-0-y)
+		var(--ros-semantic-box-shadow-$(size)-0-blur)
+		var(--ros-semantic-box-shadow-$(size)-0-spread)
+		var(--ros-semantic-box-shadow-$(size)-0-color);
+}
+
+@define-mixin shadow-xs {
+	@mixin shadow xs;
+}
+
+@define-mixin shadow-sm {
+	@mixin shadow sm;
+}
+
+@define-mixin shadow-md {
+	@mixin shadow md;
+}
+
+@define-mixin shadow-lg {
+	@mixin shadow lg;
+}
+
+@define-mixin shadow-xl {
+	@mixin shadow xl;
 }

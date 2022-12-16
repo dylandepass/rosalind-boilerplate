@@ -11,7 +11,7 @@ article {
 	& .content {
 		@mixin grid-col-span 1;
 		@mixin grid-md-col-span 8;
-		@mixin shadow-100;
+		@mixin shadow-sm;
 
 		& .hero {
 			@mixin padding-top xl;

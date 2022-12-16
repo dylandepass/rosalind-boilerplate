@@ -23,7 +23,7 @@
 }
 
 .section:has(.img-grid) {
-	border-top: 1px solid var(--ros-color-form-input-border-default);
+	border-top: 1px solid var(--ros-semantic-color-border-base);
 	padding: 20px 10px;
 	min-height: 98px;
 }
@@ -60,22 +60,19 @@
 	gap: 30px;
 
 	& :--heading {
+		@mixin h5;
 		font-weight: 200;
-
-		--min: var(--ros-font-size-heading-5-min);
-		--val: 5vw;
-		--max: var(--ros-font-size-heading-5-max);
 	}
 
 	& svg {
 		width: 40px;
 		height: 40px;
 		transform: rotate(-45deg);
-		color: var(--ros-color-ref-grey-500);
+		color: var(--ros-theme-color-gray-500);
 	}
 
 	& .icon {
-		background-color: var(--ros-color-ref-indigo-100);
+		background-color: var(--ros-theme-color-indigo-100);
 		padding: 20px;
 		width: 60px;
 		height: 60px;
@@ -90,16 +87,16 @@
 	}
 
 	& > div {
-		padding: var(--ros-size-xl);
+		padding: var(--ros-semantic-spacing-around-component-xxxl);
 
-		@mixin shadow-100;
+		@mixin shadow-md;
 
 		& p:not(:has(.icon)) {
 			margin-bottom: 0;
 		}
 
 		&:hover {
-			background-color: var(--ros-color-primary-base);
+			background-color: var(--ros-semantic-color-primary-base);
 			color: #fff;
 
 			& :--heading {

@@ -16,6 +16,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--ros-semantic-color-background-base);
+	color: var(--ros-semantic-color-foreground-on-base);
 	margin: 0;
 	display: none;
 }

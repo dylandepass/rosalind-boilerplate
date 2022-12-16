@@ -23,7 +23,7 @@
 	}
 
 	& u {
-		color: var(--ros-color-primary-base);
+		color: var(--ros-semantic-color-primary-base);
 		text-decoration: none;
 	}
 
@@ -61,7 +61,7 @@
 		position: absolute;
 		width: 100%;
 		bottom: 0;
-		color: var(--ros-color-global-body-background-primary);
+		color: var(--ros-semantic-color-background-base);
 
 		& svg {
 			transform: scale(2);

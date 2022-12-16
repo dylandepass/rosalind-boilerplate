@@ -92,16 +92,15 @@ h5,
 }
 
 p {
+	@mixin body-font;
 	max-width: 75ch;
-	margin-bottom: var(--ros-spacing-typography-paragraph-margin-bottom);
+	margin-bottom: var(--ros-semantic-spacing-typography-body-margin-bottom);
 
 	& a {
-		color: var(--ros-color-typography-link);
+		color: var(--ros-semantic-color-link-base);
 
-		@media (hover: hover) {
-			&:hover {
-				color: var(--ros-color-primary-dark);
-			}
+		&:hover {
+			color: var(--ros-semantic-color-link-hover);
 		}
 	}
 }
@@ -121,34 +120,30 @@ strong {
 }
 
 .caption {
-	font-family: var(--ros-font-family-caption);
-	font-size: var(--ros-font-size-caption);
-	font-weight: var(--ros-font-weight-caption);
-	margin-bottom: var(--ros-spacing-typography-caption-margin-bottom);
-	line-height: var(--ros-line-height-caption);
+	@mixin caption-font;
 }
 
-blockquote {
+blockquote,
+.blockquote {
+	@mixin body-font;
 	padding: 20px;
-	border-left: 10px solid var(--ros-color-primary-base);
-	line-height: var(--ros-line-height-body);
-	color: var(--ros-color-typography-light);
-	max-width: var(--hlx-paragraph-max-width);
-	font-style: italic;
-	margin: 1rem 3em;
+	border-left: 10px solid var(--ros-semantic-color-primary-base);
+	color: var(--ros-semantic-color-foreground-on-base-subtle);
+	max-width: 75ch;
+	margin: 1rem 0;
 	hanging-punctuation: first;
 }
 
-code {
+code, 
+.code {
+	@mixin source-code;
+
 	display: block;
 	background-color: #08090a;
 	padding: 24px;
 	width: 100%;
 	border-radius: 0.6rem;
 	color: #fff;
-	font-family: var(--ros-font-family-mono);
-	font-size: var(--ros-font-size-source-code);
-	line-height: var(--ros-line-height-source-code);
 }
 
 .text-align-right {

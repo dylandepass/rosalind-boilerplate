@@ -34,7 +34,7 @@ StyleDictionary.registerTransform({
   type: 'value',
   matcher(prop) {
     // You can be more specific here if you only want 'em' units for font sizes
-    return ['fontSizes', 'fontSize', 'lineHeights', 'lineHeight'].includes(prop.type) && !prop.name.includes('multiplier');
+    return [''].includes(prop.type) && !prop.name.includes('multiplier');
   },
   transformer(prop) {
     // You can also modify the value here if you want to convert pixels to ems
@@ -83,7 +83,7 @@ async function transformTokens() {
       return true;
     });
 
-    const tokenTransformerArgs = ['token-transformer', '--throwErrorWhenNotResolved', '--expandTypography=false', 'tokens', `./tokens/${theme.name}.json`, sets.join(','), sourceSets.join(',')];
+    const tokenTransformerArgs = ['token-transformer', '--throwErrorWhenNotResolved', '--expandTypography=false', '--expandShadow=true', 'tokens', `./tokens/${theme.name}.json`, sets.join(','), sourceSets.join(',')];
 
     spawnSync('npx', tokenTransformerArgs);
 

@@ -18,11 +18,11 @@ body:has(.hero-image) {
 		& .header.sticky {
 			& nav {
 				& .top-level {
-					color: var(--ros-color-ref-grey-900);
+					color: var(--ros-theme-color-gray-900);
 				}
 
 				& .nav-brand p {
-					color: var(--ros-color-ref-grey-900);
+					color: var(--ros-theme-color-gray-900);
 				}
 			}
 		}
@@ -30,19 +30,19 @@ body:has(.hero-image) {
 }
 
 header {
-	height: var(--ros-size-nav-height);
+	height: var(--ros-pattern-header-size-height);
 	width: 100%;
 	position: fixed;
 	z-index: 1;
 
 	& .header {
-		background-color: var(--ros-color-global-nav-background-color);
+		background-color: var(--ros-pattern-header-color-background-base);
 		transition-property: all;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
 
 		&.sticky {
-			background-color: var(--ros-color-global-nav-background-color);
+			background-color: var(--ros-pattern-header-color-background-base);
 		}
 
 		@media (--ros-screen-lg) {
@@ -51,12 +51,12 @@ header {
 	}
 
 	& nav {
-		max-width: var(--ros-size-section-max-width);
+		max-width: var(--ros-semantic-size-section-max-width);
 		margin: 0 auto;
 		display: flex;
 		align-items: stretch;
-		height: var(--ros-size-nav-height);
-		color: var(--ros-color-ref-grey-900);
+		height: var(--ros-pattern-header-size-height);
+		color: var(--ros-theme-color-gray-900);
 
 		@mixin padding-right md;
 		@mixin padding-lg-horizontal lg;
@@ -88,7 +88,7 @@ header {
 			& .line {
 				width: 25px;
 				height: 2px;
-				background-color: var(--ros-color-ref-grey-900);
+				background-color: var(--ros-theme-color-gray-900);
 				display: block;
 				margin: 4px auto;
 				transition: all 0.3s ease-in-out;
@@ -119,6 +119,8 @@ header {
 			flex-grow: 1;
 
 			& p {
+				@mixin h3;
+				
 				margin: 0;
 				display: flex;
 				align-items: center;
@@ -126,7 +128,7 @@ header {
 			}
 
 			& img {
-				height: calc(var(--ros-size-nav-height) - 30px);
+				height: calc(var(--ros-pattern-header-size-height) - 30px);
 				width: auto;
 			}
 
@@ -173,7 +175,7 @@ header {
 					& + label::before {
 						content: "";
 						position: absolute;
-						background-color: var(--ros-color-ref-grey-900);
+						background-color: var(--ros-theme-color-gray-900);
 					}
 
 					/* Default switch toggle */
@@ -223,7 +225,7 @@ header {
 					text-transform: uppercase;
 					font-weight: 700;
 					user-select: none;
-					color: var(--ros-color-ref-grey-900);
+					color: var(--ros-theme-color-gray-900);
 
 					/* Level 2 Menu - default */
 					& > ul {
@@ -241,7 +243,7 @@ header {
 							display: flex;
 							flex-direction: column;
 							position: absolute;
-							background-color: var(--ros-color-global-nav-background-color);
+							background-color: var(--ros-pattern-header-color-background-base);
 							list-style: none;
 							top: 40px;
 							left: -32px;
@@ -252,10 +254,10 @@ header {
 								white-space: nowrap;
 								padding: 16px 32px;
 								cursor: pointer;
-								color: var(--ros-color-ref-grey-900);
+								color: var(--ros-theme-color-gray-900);
 
 								&:hover {
-									background-color: var(--ros-color-primary-base);
+									background-color: var(--ros-pattern-header-color-background-base);
 									color: #fff;
 								}
 
@@ -278,13 +280,13 @@ header {
 		&[aria-expanded="true"] .nav-menu {
 			position: absolute;
 			align-items: flex-start;
-			background: var(--ros-color-global-body-background-secondary);
+			background: var(--ros-semantic-color-background-layer-1);
 			display: flex;
 			flex-direction: column;
 			z-index: 2;
-			height: calc(100vh - var(--ros-size-nav-height));
+			height: calc(100vh - var(--ros-pattern-header-size-height));
 			width: 100%;
-			top: var(--ros-size-nav-height);
+			top: var(--ros-pattern-header-size-height);
 			overflow: auto;
 
 			/* Level 1 Menu Items */
@@ -300,7 +302,7 @@ header {
 				/* Level 2 Menu - default */
 				& > li {
 					flex-direction: column;
-					color: var(--ros-color-ref-grey-900);
+					color: var(--ros-theme-color-gray-900);
 					font-size: 14px;
 					font-weight: 700;
 					text-transform: uppercase;
@@ -308,7 +310,7 @@ header {
 
 					&::after {
 						content: "";
-						background-color: var(--ros-color-ref-grey-900);
+						background-color: var(--ros-theme-color-gray-900);
 						mask-position: center;
 						mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20width%3D%2218%22%3E%0A%20%20%3Crect%20id%3D%22Canvas%22%20fill%3D%22currentColor%22%20opacity%3D%220%22%20width%3D%2218%22%20height%3D%2218%22%20%2F%3E%3Cpath%20class%3D%22fill%22%20d%3D%22M4%2C7.01a1%2C1%2C0%2C0%2C1%2C1.7055-.7055l3.289%2C3.286%2C3.289-3.286a1%2C1%2C0%2C0%2C1%2C1.437%2C1.3865l-.0245.0245L9.7%2C11.7075a1%2C1%2C0%2C0%2C1-1.4125%2C0L4.293%2C7.716A.9945.9945%2C0%2C0%2C1%2C4%2C7.01Z%22%20%2F%3E%0A%3C%2Fsvg%3E");
 						mask-repeat: no-repeat;
@@ -333,7 +335,7 @@ header {
 
 						& > li {
 							padding: 10px;
-							color: var(--ros-color-typography-base);
+							color: var(--ros-theme-color-gray-900);
 							text-transform: none;
 							width: 100%;
 						}
