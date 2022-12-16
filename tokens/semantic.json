@@ -129,7 +129,7 @@
           "type": "fontSizes"
         },
         "subtitle": {
-          "value": "{global.font-size.4xl}",
+          "value": "{global.font-size.3xl}",
           "type": "fontSizes"
         },
         "eyebrow": {
@@ -570,7 +570,7 @@
         },
         "eyebrow": {
           "margin-bottom": {
-            "value": "{semantic.spacing.around.component.sm}",
+            "value": "0",
             "type": "spacing"
           }
         },
