@@ -68,7 +68,7 @@
         }
       },
       "border-radius": {
-        "value": "{semantic.radii.default}",
+        "value": "{semantic.border-radius.default}",
         "type": "borderRadius"
       },
       "border-width": {
@@ -99,7 +99,7 @@
           "type": "spacing"
         },
         "space-between": {
-          "value": "{semantic.space-between.component.sm}",
+          "value": "{semantic.spacing.between.component.sm}",
           "type": "spacing"
         }
       },

@@ -12,6 +12,9 @@
     "Brands/Rosalind/dark-theme",
     "Brands/WKND/semantic",
     "Brands/WKND/pattern",
-    "Brands/WKND/button"
+    "Brands/WKND/button",
+    "WKND-light",
+    "rosalind-dark",
+    "rosalind-light"
   ]
 }

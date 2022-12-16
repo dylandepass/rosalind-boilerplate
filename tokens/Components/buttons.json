@@ -334,30 +334,30 @@
       },
       "border-radius": {
         "primary": {
-          "value": "{semantic.radii.default}",
+          "value": "{semantic.border-radius.default}",
           "type": "borderRadius"
         },
         "secondary": {
-          "value": "{semantic.radii.default}",
+          "value": "{semantic.border-radius.default}",
           "type": "borderRadius"
         },
         "quiet": {
-          "value": "{semantic.radii.default}",
+          "value": "{semantic.border-radius.default}",
           "type": "borderRadius"
         }
       },
       "spacing": {
         "button": {
           "padding-x": {
-            "value": "{semantic.spacing-around.component.lg}",
+            "value": "{semantic.spacing.around.component.lg}",
             "type": "spacing"
           },
           "padding-y": {
-            "value": "{semantic.spacing-around.component.md}",
+            "value": "{semantic.spacing.around.component.md}",
             "type": "spacing"
           },
           "space-between": {
-            "value": "{semantic.space-between.component.md}",
+            "value": "{semantic.spacing.between.component.md}",
             "type": "spacing"
           }
         }
