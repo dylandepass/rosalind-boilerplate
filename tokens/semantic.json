@@ -570,7 +570,7 @@
         },
         "eyebrow": {
           "margin-bottom": {
-            "value": "{semantic.spacing.around.component.sm}",
+            "value": "0",
             "type": "spacing"
           }
         },
