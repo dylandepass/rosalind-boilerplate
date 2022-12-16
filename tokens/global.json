@@ -459,6 +459,10 @@
             "value": "rgb(81, 81, 211)",
             "type": "color"
           },
+          "750": {
+            "value": "#4f46e5",
+            "type": "color"
+          },
           "800": {
             "value": "rgb(70, 70, 198)",
             "type": "color"

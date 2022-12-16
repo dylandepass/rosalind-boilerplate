@@ -450,6 +450,16 @@
           "value": "{theme.color.gray.400}",
           "type": "color"
         }
+      },
+      "link": {
+        "base": {
+          "value": "{global.color.static.indigo.750}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{global.color.static.indigo.800}",
+          "type": "color"
+        }
       }
     },
     "assets": {
