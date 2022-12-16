@@ -1,0 +1,14 @@
+{
+  "pattern": {
+    "footer": {
+      "color": {
+        "background": {
+          "base": {
+            "value": "{global.color.static.slate.850}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

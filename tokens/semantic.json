@@ -425,12 +425,6 @@
           "type": "color"
         }
       },
-      "footer": {
-        "background": {
-          "value": "{global.color.static.slate.800}",
-          "type": "color"
-        }
-      },
       "transparent": {
         "value": "{global.color.static.transparent.clear}",
         "type": "color"
