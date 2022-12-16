@@ -92,7 +92,7 @@
         "type": "fontFamilies"
       }
     },
-    "radii": {
+    "border-radius": {
       "default": {
         "value": "{global.radii.0}",
         "type": "borderRadius"

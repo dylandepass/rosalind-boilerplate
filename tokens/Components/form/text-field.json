@@ -141,9 +141,9 @@
             "lineHeight": "{component.text-field.line-height.text}",
             "fontSize": "{component.text-field.font-size.text}",
             "letterSpacing": "{component.text-field.letter-spacing.text}",
-            "paragraphSpacing": "{semantic.paragraph-spacing.default}",
-            "textDecoration": "{semantic.text-decoration.none}",
-            "textCase": "{semantic.text-case.none}"
+            "paragraphSpacing": "{component.text-field.paragraph-spacing.text}",
+            "textDecoration": "{component.text-field.text-decoration.text}",
+            "textCase": "{component.text-field.text-case.text}"
           },
           "type": "typography"
         }
@@ -151,6 +151,24 @@
       "min-width": {
         "value": "{global.size.2400}",
         "type": "sizing"
+      },
+      "text-decoration": {
+        "text": {
+          "value": "none",
+          "type": "textDecoration"
+        }
+      },
+      "text-case": {
+        "text": {
+          "value": "none",
+          "type": "textCase"
+        }
+      },
+      "paragraph-spacing": {
+        "text": {
+          "value": "0",
+          "type": "paragraphSpacing"
+        }
       }
     }
   }

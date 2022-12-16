@@ -39,9 +39,9 @@
             "lineHeight": "{component.button.line-height.label}",
             "fontSize": "{component.button.font-size.label}",
             "letterSpacing": "{component.button.letter-spacing.label}",
-            "paragraphSpacing": "{semantic.paragraph-spacing.default}",
-            "textDecoration": "{semantic.text-decoration.none}",
-            "textCase": "{semantic.text-case.none}"
+            "paragraphSpacing": "{component.button.paragraph-spacing.label}",
+            "textDecoration": "{component.button.text-decoration.label}",
+            "textCase": "{component.button.text-case.label}"
           },
           "type": "typography"
         }
@@ -360,6 +360,24 @@
             "value": "{semantic.spacing.between.component.md}",
             "type": "spacing"
           }
+        }
+      },
+      "paragraph-spacing": {
+        "label": {
+          "value": "0",
+          "type": "paragraphSpacing"
+        }
+      },
+      "text-decoration": {
+        "label": {
+          "value": "none",
+          "type": "textDecoration"
+        }
+      },
+      "text-case": {
+        "label": {
+          "value": "none",
+          "type": "textCase"
         }
       }
     }
