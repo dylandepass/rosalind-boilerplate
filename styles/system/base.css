@@ -12,10 +12,10 @@ body {
 body {
 	@mixin body-font;
 
-	-moz-osx-font-smoothing: grayscale;
 	text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
-	background-color: var(--ros-color-global-body-background-primary);
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--ros-semantic-color-background-base);
 	margin: 0;
 	display: none;
 }
@@ -25,7 +25,7 @@ body.appear {
 }
 
 main {
-	padding-top: var(--ros-size-nav-height);
+	padding-top: var(--ros-pattern-header-size-height);
 }
 
 * {
@@ -43,18 +43,18 @@ hr {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	border: 0;
-	border-bottom: 1px solid var(--ros-color-ref-grey-700);
+	border-bottom: 1px solid var(--ros-semantic-color-border-base);
 }
 
 .default-content-wrapper {
 	text-align: center;
-	margin-bottom: var(--ros-spacing-default-content-wrapper-margin-bottom);
+	margin-bottom: var(--ros-semantic-size-default-content-wrapper-margin-bottom);
 }
 
 pre,
 kbd,
 samp {
-	font-family: var(--ros-font-family-mono);
+	font-family: var(--ros-semantic-font-family-mono);
 }
 
 a,
@@ -66,12 +66,10 @@ button {
 
 a {
 	background-color: transparent;
-	color: var(--ros-color-typography-link);
+	color: var(--ros-semantic-color-link-base);
 
-	@media (hover: hover) {
-		&:hover {
-			color: var(--ros-color-primary-base);
-		}
+	&:hover {
+		color: var(--ros-semantic-color-link-hover);
 	}
 }
 

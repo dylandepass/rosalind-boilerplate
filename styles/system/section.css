@@ -13,6 +13,7 @@
 		background-color: var(--ros-semantic-color-background-layer-1);
 	}
 
+	/* TODO: Finish Fluid */
 	&.fluid {
 		max-width: var(--hlx-max-width-limit);
 	}
