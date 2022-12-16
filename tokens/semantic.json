@@ -55,35 +55,35 @@
     "font-size": {
       "desktop": {
         "display-1": {
-          "value": "{global.font-size.9xl}",
+          "value": "128",
           "type": "fontSizes"
         },
         "display-2": {
-          "value": "{global.font-size.7xl}",
+          "value": "102.40",
           "type": "fontSizes"
         },
         "display-3": {
-          "value": "{global.font-size.6xl}",
+          "value": "81.92",
           "type": "fontSizes"
         },
         "heading-1": {
-          "value": "{global.font-size.5xl}",
+          "value": "48",
           "type": "fontSizes"
         },
         "heading-2": {
-          "value": "{global.font-size.4xl}",
+          "value": "38.40",
           "type": "fontSizes"
         },
         "heading-3": {
-          "value": "{global.font-size.3xl}",
+          "value": "30.72",
           "type": "fontSizes"
         },
         "heading-4": {
-          "value": "{global.font-size.2xl}",
+          "value": "24.58",
           "type": "fontSizes"
         },
         "heading-5": {
-          "value": "{global.font-size.lg}",
+          "value": "19.66",
           "type": "fontSizes"
         },
         "subtitle": {
@@ -97,35 +97,35 @@
       },
       "mobile": {
         "display-1": {
-          "value": "{global.font-size.6xl}",
+          "value": "40",
           "type": "fontSizes"
         },
         "display-2": {
-          "value": "{global.font-size.5xl}",
+          "value": "33.33",
           "type": "fontSizes"
         },
         "display-3": {
-          "value": "{global.font-size.4xl}",
+          "value": "27.78",
           "type": "fontSizes"
         },
         "heading-1": {
-          "value": "{global.font-size.4xl}",
+          "value": "40",
           "type": "fontSizes"
         },
         "heading-2": {
-          "value": "{global.font-size.3xl}",
+          "value": "33.33",
           "type": "fontSizes"
         },
         "heading-3": {
-          "value": "{global.font-size.2xl}",
+          "value": "27.78",
           "type": "fontSizes"
         },
         "heading-4": {
-          "value": "{global.font-size.xl}",
+          "value": "23.15",
           "type": "fontSizes"
         },
         "heading-5": {
-          "value": "{global.font-size.lg}",
+          "value": "19.29",
           "type": "fontSizes"
         },
         "subtitle": {
