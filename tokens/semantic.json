@@ -1156,8 +1156,24 @@
       }
     },
     "box-shadow": {
-      "card": {
+      "xs": {
+        "value": "{global.shadow.primary.100}",
+        "type": "boxShadow"
+      },
+      "sm": {
         "value": "{global.shadow.primary.200}",
+        "type": "boxShadow"
+      },
+      "md": {
+        "value": "{global.shadow.primary.300}",
+        "type": "boxShadow"
+      },
+      "lg": {
+        "value": "{global.shadow.primary.400}",
+        "type": "boxShadow"
+      },
+      "xl": {
+        "value": "{global.shadow.primary.500}",
         "type": "boxShadow"
       }
     }
