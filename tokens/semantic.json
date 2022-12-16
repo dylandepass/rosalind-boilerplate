@@ -507,7 +507,7 @@
           }
         }
       },
-      "between": {
+      "gap": {
         "component": {
           "sm": {
             "value": "{global.space.100}",

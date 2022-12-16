@@ -347,19 +347,17 @@
         }
       },
       "spacing": {
-        "button": {
-          "padding-x": {
-            "value": "{semantic.spacing.around.component.lg}",
-            "type": "spacing"
-          },
-          "padding-y": {
-            "value": "{semantic.spacing.around.component.md}",
-            "type": "spacing"
-          },
-          "space-between": {
-            "value": "{semantic.spacing.between.component.md}",
-            "type": "spacing"
-          }
+        "padding-x": {
+          "value": "{semantic.spacing.around.component.lg}",
+          "type": "spacing"
+        },
+        "padding-y": {
+          "value": "{semantic.spacing.around.component.md}",
+          "type": "spacing"
+        },
+        "gap": {
+          "value": "{semantic.spacing.gap.component.md}",
+          "type": "spacing"
         }
       },
       "paragraph-spacing": {
