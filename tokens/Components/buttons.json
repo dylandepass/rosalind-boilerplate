@@ -377,6 +377,18 @@
           "value": "none",
           "type": "textCase"
         }
+      },
+      "sizing": {
+        "icon": {
+          "width": {
+            "value": "{semantic.size.icon.md.width}",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "{semantic.size.icon.md.height}",
+            "type": "sizing"
+          }
+        }
       }
     }
   }
