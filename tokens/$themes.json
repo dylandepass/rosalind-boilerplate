@@ -13,7 +13,29 @@
       "Components/form/text-field": "enabled",
       "Components/form/form": "enabled",
       "light-theme": "disabled",
-      "dark-theme": "source",
+      "dark-theme": "enabled",
+      "Components/form/checkbox": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/WKND/Components/button": "disabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
+    "name": "rosalind-light",
+    "selectedTokenSets": {
+      "global": "source",
+      "semantic": "enabled",
+      "Brands/Rosalind/dark-theme": "disabled",
+      "Brands/WKND/semantic": "disabled",
+      "Components/buttons": "enabled",
+      "Patterns/header": "enabled",
+      "Brands/WKND/pattern": "disabled",
+      "Components/form/text-field": "enabled",
+      "Components/form/form": "enabled",
+      "light-theme": "enabled",
+      "dark-theme": "disabled",
       "Components/form/checkbox": "enabled",
       "Patterns/footer": "enabled",
       "Brands/WKND/Patterns/footer": "disabled",
@@ -34,7 +56,7 @@
       "Brands/WKND/pattern": "enabled",
       "Components/form/text-field": "enabled",
       "Components/form/form": "enabled",
-      "light-theme": "source",
+      "light-theme": "enabled",
       "dark-theme": "disabled",
       "Components/form/checkbox": "enabled",
       "Patterns/footer": "enabled",
@@ -180,27 +202,5 @@
       "semantic.typography.mobile.eyebrow": "S:8bad5d7d8314a687278f2fa0c29c63444f1f2c1e,",
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,"
     }
-  },
-  {
-    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
-    "name": "rosalind-light",
-    "selectedTokenSets": {
-      "global": "source",
-      "semantic": "enabled",
-      "Brands/Rosalind/dark-theme": "disabled",
-      "Brands/WKND/semantic": "disabled",
-      "Components/buttons": "enabled",
-      "Patterns/header": "enabled",
-      "Brands/WKND/pattern": "disabled",
-      "Components/form/text-field": "enabled",
-      "Components/form/form": "enabled",
-      "light-theme": "source",
-      "dark-theme": "disabled",
-      "Components/form/checkbox": "enabled",
-      "Patterns/footer": "enabled",
-      "Brands/WKND/Patterns/footer": "disabled",
-      "Brands/WKND/Components/button": "disabled"
-    },
-    "$figmaStyleReferences": {}
   }
 ]
