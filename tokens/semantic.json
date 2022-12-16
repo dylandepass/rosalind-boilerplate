@@ -503,6 +503,10 @@
     "spacing": {
       "around": {
         "component": {
+          "xs": {
+            "value": "{global.space.50}",
+            "type": "spacing"
+          },
           "sm": {
             "value": "{global.space.100}",
             "type": "spacing"
@@ -513,6 +517,18 @@
           },
           "lg": {
             "value": "{global.space.200}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{global.space.250}",
+            "type": "spacing"
+          },
+          "xxl": {
+            "value": "{global.space.300}",
+            "type": "spacing"
+          },
+          "xxxl": {
+            "value": "{global.space.400}",
             "type": "spacing"
           }
         }
