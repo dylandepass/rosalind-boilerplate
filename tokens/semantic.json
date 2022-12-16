@@ -1154,6 +1154,12 @@
         "value": "0",
         "type": "paragraphSpacing"
       }
+    },
+    "box-shadow": {
+      "card": {
+        "value": "{global.shadow.primary.200}",
+        "type": "boxShadow"
+      }
     }
   }
 }
