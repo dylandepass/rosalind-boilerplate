@@ -9,9 +9,12 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const fs = require('fs').promises;
-const cp = require('child_process');
-const StyleDictionary = require('style-dictionary');
+
+/* eslint-disable import/no-extraneous-dependencies */
+
+import { promises as fs } from 'fs';
+import { spawnSync } from 'child_process';
+import StyleDictionary from 'style-dictionary';
 
 StyleDictionary.registerTransform({
   name: 'sizes/px',
@@ -45,7 +48,7 @@ function getStyleDictionaryConfig(theme, files) {
     platforms: {
       css: {
         transformGroup: 'css',
-        buildPath: 'styles/',
+        buildPath: 'styles/themes/',
         prefix: 'ros',
         files: [{
           destination: `${theme}.css`,
@@ -53,6 +56,7 @@ function getStyleDictionaryConfig(theme, files) {
           options: {
             outputReferences: true,
           },
+          filter: (token) => (typeof token.value !== 'object'),
         }],
         transforms: ['attribute/cti', 'name/cti/kebab', 'time/seconds', 'content/icon', 'sizes/px', 'sizes/rem', 'color/css'],
       },
@@ -79,12 +83,15 @@ async function transformTokens() {
       return true;
     });
 
-    const tokenTransformerArgs = ['token-transformer', '--throwErrorWhenNotResolved', '--expandTypography=true', 'tokens', `./tokens/${theme.name}.json`, sets.join(','), sourceSets.join(',')];
+    const tokenTransformerArgs = ['token-transformer', '--throwErrorWhenNotResolved', '--expandTypography=false', 'tokens', `./tokens/${theme.name}.json`, sets.join(','), sourceSets.join(',')];
 
-    cp.spawnSync('npx', tokenTransformerArgs);
+    spawnSync('npx', tokenTransformerArgs);
 
     const sd = StyleDictionary.extend(getStyleDictionaryConfig(theme.name, [`./tokens/${theme.name}.json`]));
     sd.buildAllPlatforms();
+
+    // Cleanup build
+    fs.unlink(`./tokens/${theme.name}.json`);
   });
 }
 
