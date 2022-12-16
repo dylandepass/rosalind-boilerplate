@@ -98,7 +98,7 @@
           "value": "{global.size.75}",
           "type": "spacing"
         },
-        "space-between": {
+        "gap": {
           "value": "{semantic.spacing.gap.component.sm}",
           "type": "spacing"
         }
