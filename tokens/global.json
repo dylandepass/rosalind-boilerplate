@@ -763,6 +763,10 @@
         "value": "{global.space.base} * .25",
         "type": "spacing"
       },
+      "50": {
+        "value": "{global.space.base} * .625",
+        "type": "spacing"
+      },
       "100": {
         "value": "{global.space.base} * 1",
         "type": "spacing"
