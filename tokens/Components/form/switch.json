@@ -138,14 +138,14 @@
       "typography": {
         "label": {
           "value": {
-            "fontFamily": "{component.checkbox.font-family.label}",
-            "fontWeight": "{component.checkbox.font-weight.label}",
-            "lineHeight": "{component.checkbox.line-height.label}",
-            "fontSize": "{component.checkbox.font-size.label}",
-            "letterSpacing": "{component.checkbox.letter-spacing.label}",
+            "fontFamily": "{component.switch.font-family.label}",
+            "fontWeight": "{component.switch.font-weight.label}",
+            "lineHeight": "{component.switch.line-height.label}",
+            "fontSize": "{component.switch.font-size.label}",
+            "letterSpacing": "{component.switch.letter-spacing.label}",
             "paragraphSpacing": "",
-            "textDecoration": "{component.checkbox.text-decoration.label}",
-            "textCase": "{component.checkbox.text-case.label}"
+            "textDecoration": "{component.switch.text-decoration.label}",
+            "textCase": "{component.switch.text-case.label}"
           },
           "type": "typography"
         }
