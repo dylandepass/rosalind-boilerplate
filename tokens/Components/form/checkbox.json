@@ -161,6 +161,16 @@
           "value": "none",
           "type": "textCase"
         }
+      },
+      "sizing": {
+        "width": {
+          "value": "{global.size.250}",
+          "type": "sizing"
+        },
+        "height": {
+          "value": "{global.size.250}",
+          "type": "sizing"
+        }
       }
     }
   }
