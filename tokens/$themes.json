@@ -18,7 +18,8 @@
       "Brands/WKND/Patterns/footer": "enabled",
       "Brands/WKND/Components/button": "enabled",
       "Components/form/switch": "enabled",
-      "Components/form/checkbox": "enabled"
+      "Components/form/checkbox": "enabled",
+      "Components/form/radio": "enabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -179,7 +180,8 @@
       "Brands/WKND/Patterns/footer": "disabled",
       "Brands/WKND/Components/button": "disabled",
       "Components/form/switch": "enabled",
-      "Components/form/checkbox": "enabled"
+      "Components/form/checkbox": "enabled",
+      "Components/form/radio": "enabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -202,7 +204,8 @@
       "Brands/WKND/Patterns/footer": "disabled",
       "Brands/WKND/Components/button": "disabled",
       "Components/form/switch": "enabled",
-      "Components/form/checkbox": "enabled"
+      "Components/form/checkbox": "enabled",
+      "Components/form/radio": "enabled"
     },
     "$figmaStyleReferences": {}
   }

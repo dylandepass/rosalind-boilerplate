@@ -9,6 +9,7 @@
     "Components/form/text-field",
     "Components/form/switch",
     "Components/form/checkbox",
+    "Components/form/radio",
     "Patterns/header",
     "Patterns/footer",
     "Brands/Rosalind/dark-theme",

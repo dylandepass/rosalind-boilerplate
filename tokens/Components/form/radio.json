@@ -1,0 +1,189 @@
+{
+  "component": {
+    "radio": {
+      "color": {
+        "default": {
+          "background-color": {
+            "value": "{semantic.color.background.input}",
+            "type": "color"
+          },
+          "foreground-color": {
+            "value": "{semantic.color.foreground.on-input}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{semantic.color.border.base}",
+            "type": "color"
+          }
+        },
+        "checked": {
+          "background-color": {
+            "value": "{semantic.color.primary.base}",
+            "type": "color"
+          },
+          "foreground-color": {
+            "value": "{semantic.color.foreground.on-input}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{semantic.color.border.base}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "value": "{semantic.color.background.input}",
+            "type": "color"
+          },
+          "foreground-color": {
+            "value": "{semantic.color.foreground.on-input}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{semantic.color.border.hover}",
+            "type": "color"
+          }
+        },
+        "key-focus": {
+          "background-color": {
+            "value": "{semantic.color.background.input}",
+            "type": "color"
+          },
+          "foreground-color": {
+            "value": "{semantic.color.foreground.on-input}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{semantic.color.border.focus}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "value": "{semantic.color.background.disabled}",
+            "type": "color"
+          },
+          "foreground-color": {
+            "value": "{semantic.color.foreground.on-disabled}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{semantic.color.border.disabled}",
+            "type": "color"
+          }
+        },
+        "label": {
+          "value": "{global.color.static.white}",
+          "type": "color"
+        }
+      },
+      "border-radius": {
+        "value": "{semantic.border-radius.default}",
+        "type": "borderRadius"
+      },
+      "border-width": {
+        "default": {
+          "value": "{semantic.border-width.sm}",
+          "type": "borderWidth"
+        },
+        "hover": {
+          "value": "{semantic.border-width.sm}",
+          "type": "borderWidth"
+        },
+        "key-focus": {
+          "value": "{semantic.border-width.lg}",
+          "type": "borderWidth"
+        },
+        "disabled": {
+          "value": "{semantic.border-width.sm}",
+          "type": "borderWidth"
+        }
+      },
+      "spacing": {
+        "space-between": {
+          "value": "{semantic.spacing.gap.component.sm}",
+          "type": "spacing"
+        }
+      },
+      "font-size": {
+        "label": {
+          "value": "{global.font-size.sm}",
+          "type": "fontSizes"
+        }
+      },
+      "font-family": {
+        "label": {
+          "value": "Nunito, sans-serif",
+          "type": "fontFamilies"
+        }
+      },
+      "line-height": {
+        "label": {
+          "value": "{semantic.line-height.body}",
+          "type": "lineHeights"
+        }
+      },
+      "font-weight": {
+        "label": {
+          "value": "{semantic.font-weight.normal}",
+          "type": "fontWeights"
+        }
+      },
+      "letter-spacing": {
+        "label": {
+          "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing"
+        }
+      },
+      "typography": {
+        "label": {
+          "value": {
+            "fontFamily": "{component.radio.font-family.label}",
+            "fontWeight": "{component.radio.font-weight.label}",
+            "lineHeight": "{component.radio.line-height.label}",
+            "fontSize": "{component.radio.font-size.label}",
+            "letterSpacing": "{component.radio.letter-spacing.label}",
+            "paragraphSpacing": "",
+            "textDecoration": "{component.radio.text-decoration.label}",
+            "textCase": "{component.radio.text-case.label}"
+          },
+          "type": "typography"
+        }
+      },
+      "text-decoration": {
+        "label": {
+          "value": "none",
+          "type": "textDecoration"
+        }
+      },
+      "text-case": {
+        "label": {
+          "value": "none",
+          "type": "textCase"
+        }
+      },
+      "sizing": {
+        "background": {
+          "width": {
+            "value": "{global.size.250}",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "{global.size.250}",
+            "type": "sizing"
+          }
+        },
+        "toggle": {
+          "width": {
+            "value": "{global.size.125}",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "{global.size.125}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}
