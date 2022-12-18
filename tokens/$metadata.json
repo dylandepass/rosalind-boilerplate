@@ -7,6 +7,7 @@
     "Components/buttons",
     "Components/form/form",
     "Components/form/text-field",
+    "Components/form/switch",
     "Components/form/checkbox",
     "Patterns/header",
     "Patterns/footer",

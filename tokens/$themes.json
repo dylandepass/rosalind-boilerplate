@@ -1,49 +1,5 @@
 [
   {
-    "id": "204385e5d7141334bab00c1b5b1e32ab072c391f",
-    "name": "rosalind-dark",
-    "selectedTokenSets": {
-      "global": "source",
-      "semantic": "enabled",
-      "Brands/Rosalind/dark-theme": "enabled",
-      "Brands/WKND/semantic": "disabled",
-      "Components/buttons": "enabled",
-      "Patterns/header": "enabled",
-      "Brands/WKND/pattern": "disabled",
-      "Components/form/text-field": "enabled",
-      "Components/form/form": "enabled",
-      "light-theme": "disabled",
-      "dark-theme": "enabled",
-      "Components/form/checkbox": "enabled",
-      "Patterns/footer": "enabled",
-      "Brands/WKND/Patterns/footer": "disabled",
-      "Brands/WKND/Components/button": "disabled"
-    },
-    "$figmaStyleReferences": {}
-  },
-  {
-    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
-    "name": "rosalind-light",
-    "selectedTokenSets": {
-      "global": "source",
-      "semantic": "enabled",
-      "Brands/Rosalind/dark-theme": "disabled",
-      "Brands/WKND/semantic": "disabled",
-      "Components/buttons": "enabled",
-      "Patterns/header": "enabled",
-      "Brands/WKND/pattern": "disabled",
-      "Components/form/text-field": "enabled",
-      "Components/form/form": "enabled",
-      "light-theme": "enabled",
-      "dark-theme": "disabled",
-      "Components/form/checkbox": "enabled",
-      "Patterns/footer": "enabled",
-      "Brands/WKND/Patterns/footer": "disabled",
-      "Brands/WKND/Components/button": "disabled"
-    },
-    "$figmaStyleReferences": {}
-  },
-  {
     "id": "4094953309ec2600273730012f52d17fc7ae6847",
     "name": "WKND-light",
     "selectedTokenSets": {
@@ -58,10 +14,11 @@
       "Components/form/form": "enabled",
       "light-theme": "enabled",
       "dark-theme": "disabled",
-      "Components/form/checkbox": "enabled",
       "Patterns/footer": "enabled",
       "Brands/WKND/Patterns/footer": "enabled",
-      "Brands/WKND/Components/button": "enabled"
+      "Brands/WKND/Components/button": "enabled",
+      "Components/form/switch": "enabled",
+      "Components/form/checkbox": "enabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -202,5 +159,51 @@
       "semantic.typography.mobile.eyebrow": "S:8bad5d7d8314a687278f2fa0c29c63444f1f2c1e,",
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,"
     }
+  },
+  {
+    "id": "3836424bac3ba90d1d5878c7573e4381770aefb8",
+    "name": "rosalind-light",
+    "selectedTokenSets": {
+      "global": "source",
+      "semantic": "enabled",
+      "Brands/Rosalind/dark-theme": "disabled",
+      "Brands/WKND/semantic": "disabled",
+      "Components/buttons": "enabled",
+      "Patterns/header": "enabled",
+      "Brands/WKND/pattern": "disabled",
+      "Components/form/text-field": "enabled",
+      "Components/form/form": "enabled",
+      "light-theme": "enabled",
+      "dark-theme": "disabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/WKND/Components/button": "disabled",
+      "Components/form/switch": "enabled",
+      "Components/form/checkbox": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "204385e5d7141334bab00c1b5b1e32ab072c391f",
+    "name": "rosalind-dark",
+    "selectedTokenSets": {
+      "global": "source",
+      "semantic": "enabled",
+      "Brands/Rosalind/dark-theme": "enabled",
+      "Brands/WKND/semantic": "disabled",
+      "Components/buttons": "enabled",
+      "Patterns/header": "enabled",
+      "Brands/WKND/pattern": "disabled",
+      "Components/form/text-field": "enabled",
+      "Components/form/form": "enabled",
+      "light-theme": "disabled",
+      "dark-theme": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/WKND/Components/button": "disabled",
+      "Components/form/switch": "enabled",
+      "Components/form/checkbox": "enabled"
+    },
+    "$figmaStyleReferences": {}
   }
 ]

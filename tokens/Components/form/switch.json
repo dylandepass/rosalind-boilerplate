@@ -1,6 +1,6 @@
 {
   "component": {
-    "checkbox": {
+    "switch": {
       "color": {
         "default": {
           "background-color": {
