@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 19 Dec 2022 18:36:47 GMT
+ * Generated on Mon, 19 Dec 2022 20:32:07 GMT
  */
 
 :root {
@@ -329,13 +329,13 @@
   --ros-semantic-color-foreground-on-primary-muted: #b1b1b1;
   --ros-semantic-color-foreground-on-primary-subtle: #e6e6e6;
   --ros-semantic-color-foreground-on-primary: #ffffff;
-  --ros-semantic-color-foreground-on-layer-2-muted: #b1b1b1;
+  --ros-semantic-color-foreground-on-layer-2-muted: #909090;
   --ros-semantic-color-foreground-on-layer-2-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-layer-2: #222222;
-  --ros-semantic-color-foreground-on-layer-1-muted: #b1b1b1;
+  --ros-semantic-color-foreground-on-layer-1-muted: #909090;
   --ros-semantic-color-foreground-on-layer-1-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-layer-1: #222222;
-  --ros-semantic-color-foreground-on-base-muted: #6d6d6d;
+  --ros-semantic-color-foreground-on-base-muted: #464646;
   --ros-semantic-color-foreground-on-base-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-base: #222222;
   --ros-semantic-color-background-input: #00000000;
@@ -508,7 +508,7 @@
   --ros-component-text-field-border-width-default: 1px;
   --ros-component-text-field-border-radius: 4px;
   --ros-component-text-field-color-icon: #e6e6e6;
-  --ros-component-text-field-color-placeholder: #b1b1b1;
+  --ros-component-text-field-color-placeholder: #909090;
   --ros-component-text-field-color-disabled-border-color: #b1b1b1;
   --ros-component-text-field-color-disabled-foreground-color: #b1b1b1;
   --ros-component-text-field-color-disabled-background-color: #d5d5d5;

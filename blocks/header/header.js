@@ -126,12 +126,14 @@ export default async function decorate(block) {
         const selection = event.target.value;
         theme.setAttribute('href', `/styles/themes/${selection}.css`);
         localStorage.setItem('theme', selection);
+        const el = document.querySelector('.logo');
+        el.style.display = 'none';
         setTimeout(() => {
-          const el = document.querySelector('.logo');
           if (el) {
             el.style.setProperty('background-image', `url("${getComputedStyle(document.documentElement).getPropertyValue('--ros-semantic-assets-logo')}"`);
+            el.style.display = 'block';
           }
-        }, 100);
+        }, 300);
       }
     });
 

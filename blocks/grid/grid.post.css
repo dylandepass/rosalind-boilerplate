@@ -68,11 +68,11 @@
 		width: 40px;
 		height: 40px;
 		transform: rotate(-45deg);
-		color: var(--ros-theme-color-gray-500);
+		color: var(--ros-semantic-color-foreground-on-layer-2);
 	}
 
 	& .icon {
-		background-color: var(--ros-theme-color-indigo-100);
+		background-color: var(--ros-semantic-color-background-layer-2);
 		padding: 20px;
 		width: 60px;
 		height: 60px;
