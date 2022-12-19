@@ -349,7 +349,7 @@
           "type": "color"
         },
         "on-input": {
-          "value": "{global.color.static.white}",
+          "value": "{theme.color.gray.800}",
           "type": "color"
         }
       },
