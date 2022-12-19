@@ -219,8 +219,8 @@
     "name": "Vader",
     "selectedTokenSets": {
       "global": "source",
-      "light-theme": "enabled",
-      "dark-theme": "disabled",
+      "light-theme": "disabled",
+      "dark-theme": "enabled",
       "semantic": "enabled",
       "Components/buttons": "enabled",
       "Components/form/form": "enabled",
