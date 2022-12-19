@@ -90,7 +90,7 @@ export default async function decorate(block) {
     nav.setAttribute('aria-expanded', 'false');
     block.append(nav);
 
-    const themesBuffer = await fetch('../../tokens/$themes.json');
+    const themesBuffer = await fetch('../../themes.txt');
     const themes = await themesBuffer.json();
 
     const toolsContainer = document.createElement('div');
@@ -123,8 +123,9 @@ export default async function decorate(block) {
     themeSelect.addEventListener('change', (event) => {
       const theme = document.getElementById('theme');
       if (theme && event.target && event.target.value !== '0') {
-        theme.setAttribute('href', `/styles/themes/${event.target.value}.css`);
-        localStorage.setItem('theme', event.target.value);
+        const selection = event.target.value;
+        theme.setAttribute('href', `/styles/themes/${selection}.css`);
+        localStorage.setItem('theme', selection);
         setTimeout(() => {
           const el = document.querySelector('.logo');
           if (el) {

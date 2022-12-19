@@ -65,6 +65,7 @@ function getStyleDictionaryConfig(theme, files) {
 }
 
 async function transformTokens() {
+  await fs.copyFile('./tokens/$themes.json', './themes.txt');
   const tokenThemesBuffer = await fs.readFile('./tokens/$themes.json');
   const themesJson = JSON.parse(tokenThemesBuffer.toString());
 
