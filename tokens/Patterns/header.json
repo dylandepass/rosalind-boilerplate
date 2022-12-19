@@ -24,6 +24,14 @@
           "value": "{global.size.900}",
           "type": "sizing"
         }
+      },
+      "logo": {
+        "text": {
+          "visible": {
+            "value": "true",
+            "type": "other"
+          }
+        }
       }
     }
   }

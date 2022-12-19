@@ -16,6 +16,7 @@
     "Brands/WKND/semantic",
     "Brands/WKND/pattern",
     "Brands/WKND/Components/button",
+    "Brands/WKND/Patterns/header",
     "Brands/WKND/Patterns/footer"
   ]
 }

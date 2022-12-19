@@ -1,0 +1,14 @@
+{
+  "pattern": {
+    "header": {
+      "logo": {
+        "text": {
+          "visible": {
+            "value": "false",
+            "type": "other"
+          }
+        }
+      }
+    }
+  }
+}
