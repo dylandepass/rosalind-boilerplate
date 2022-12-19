@@ -27,8 +27,30 @@
 	font-display: swap;
 	src:
 		local(""),
-		url("./fonts/nunito-v25-latin-400.woff2") format("woff2"),
-		url("./fonts/nunito-v25-latin-400.woff") format("woff");
+		url("./fonts/nunito-v25-latin-regular.woff2") format("woff2"),
+		url("./fonts/nunito-v25-latin-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: Nunito;
+	font-style: medium;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		local(""),
+		url("./fonts/nunito-v25-latin-500.woff2") format("woff2"),
+		url("./fonts/nunito-v25-latin-500.woff") format("woff");
+}
+
+@font-face {
+	font-family: Nunito;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-display: swap;
+	src:
+		local(""),
+		url("./fonts/nunito-v25-latin-600.woff2") format("woff2"),
+		url("./fonts/nunito-v25-latin-600.woff") format("woff");
 }
 
 @font-face {
@@ -40,6 +62,40 @@
 		local(""),
 		url("./fonts/nunito-v25-latin-700.woff2") format("woff2"),
 		url("./fonts/nunito-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		local(""),
+		url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+		url("./fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: medium;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		local(""),
+		url("./fonts/roboto-v30-latin-500.woff2") format("woff2"),
+		url("./fonts/roboto-v30-latin-500.woff") format("woff");
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: bold;
+	font-weight: 700;
+	font-display: swap;
+	src:
+		local(""),
+		url("./fonts/roboto-v30-latin-700.woff2") format("woff2"),
+		url("./fonts/roboto-v30-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .display1 {

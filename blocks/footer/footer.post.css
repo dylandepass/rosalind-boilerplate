@@ -5,8 +5,8 @@ footer {
 }
 
 .footer {
-	background-color: rgb(25 33 50 / 100%);
-	color: #fff;
+	background-color: var(--ros-pattern-footer-color-background-base);
+	color: var(--ros-pattern-footer-color-foreground-on-base);
 
 	& > div {
 		display: grid;
@@ -79,9 +79,9 @@ footer {
 }
 
 .section.footer-copy {
-	border-top: 1px solid var(--ros-semantic-color-border-base);
+	border-top: 1px solid var(--ros-pattern-footer-color-seperator-on-base);
 	padding: 40px 32px;
-	background-color: rgb(25 33 50 / 100%);
+	background-color: var(--ros-pattern-footer-color-background-base);
 	font-size: 16px;
 	color: #fff;
 	font-weight: 600;

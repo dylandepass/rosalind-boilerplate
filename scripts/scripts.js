@@ -160,12 +160,21 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+export function loadTheme() {
+  const themeLink = document.getElementById('theme');
+  const theme = localStorage.getItem('theme');
+  if (theme && themeLink) {
+    themeLink.setAttribute('href', `${window.hlx.codeBasePath}/styles/themes/${theme}.css`);
+  }
+}
+
 /**
  * loads everything needed to get to LCP.
  */
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  loadTheme();
   const main = doc.querySelector('main');
   decorateTemplate(main);
   if (main) {

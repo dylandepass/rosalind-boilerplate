@@ -4,6 +4,19 @@
 body:has(.hero-image) {
 	& header {
 		& nav {
+			& .nav-tools {
+				& .select { 
+					& select {
+						color: #fff;
+						border-color: #fff;
+					}
+
+					&::after {
+						background-color: #fff;
+					}
+				}
+			}
+
 			@media (--ros-screen-lg) {
 				& .top-level {
 					color: #fff;
@@ -125,6 +138,17 @@ header {
 				display: flex;
 				align-items: center;
 				gap: 15px;
+
+				& .logo {
+					background-size: var(--ros-pattern-header-size-logo-width) var(--ros-pattern-header-size-logo-height);
+					width: var(--ros-pattern-header-size-logo-width);
+					height: var(--ros-pattern-header-size-logo-height);
+					background-repeat: no-repeat;
+				}
+
+				& a {
+					display: var(--ros-pattern-header-logo-text-display);
+				}
 			}
 
 			& img {
@@ -142,59 +166,10 @@ header {
 			align-items: center;
 			justify-content: flex-end;
 
-			& .theme-switcher {
-				position: relative;
-
-				& .switch {
-					transform: scale(1.5);
-					width: var(--ros-size-form-switch-width);
-					height: var(--ros-size-form-switch-height);
-
-					& + label {
-						width: 0;
-						transform: scale(1.5);
-
-						& .icon-moon {
-							position: absolute;
-							top: -4px;
-							left: 16px;
-							transform: scale(0.5);
-							color: #fff;
-						}
-
-						& .icon-sun {
-							position: absolute;
-							top: -4px;
-							left: -1px;
-							transform: scale(0.5);
-							color: #f1d972;
-						}
-					}
-
-					/* Default switch state */
-					& + label::before {
-						content: "";
-						position: absolute;
-						background-color: var(--ros-theme-color-gray-900);
-					}
-
-					/* Default switch toggle */
-					& + label::after {
-						border-width: 0;
-					}
-
-					/* Checked switch toggle */
-					&:checked + label::after {
-						background-color: #000;
-					}
-
-					&:checked {
-						& + label {
-							& .icon-moon {
-								display: none;
-							}
-						}
-					}
+			& .select { 
+				@mixin margin-right md;
+				& select {
+					min-width: 150px;
 				}
 			}
 		}
@@ -248,7 +223,7 @@ header {
 							top: 40px;
 							left: -32px;
 
-							@mixin shadow-100;
+							@mixin shadow-sm;
 
 							& li {
 								white-space: nowrap;
@@ -257,13 +232,18 @@ header {
 								color: var(--ros-theme-color-gray-900);
 
 								&:hover {
-									background-color: var(--ros-pattern-header-color-background-base);
+									background-color: var(--ros-semantic-color-primary-base);
 									color: #fff;
 								}
 
 								&:first-of-type {
-									border-top-left-radius: 3px;
-									border-top-right-radius: 3px;
+									border-top-left-radius: var(--ros-semantic-border-radius-default);
+									border-top-right-radius: var(--ros-semantic-border-radius-default);
+								}
+
+								&:last-of-type {
+									border-bottom-left-radius: var(--ros-semantic-border-radius-default);
+									border-bottom-right-radius: var(--ros-semantic-border-radius-default);
 								}
 							}
 						}

@@ -46,8 +46,8 @@
 
 .button .icon,
 .button .icon svg {
-	width: var(--ros-component-button-sizing-icon-width);
-	height: var(--ros-component-button-sizing-icon-height);
+	width: var(--ros-semantic-size-icon-md-width);
+	height: var(--ros-semantic-size-icon-md-height);
 }
 
 .button.primary {

@@ -23,7 +23,7 @@
 }
 
 .section:has(.img-grid) {
-	border-top: 1px solid var(--ros-semantic-color-border-base);
+	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
 	padding: 20px 10px;
 	min-height: 98px;
 }
@@ -61,7 +61,7 @@
 
 	& :--heading {
 		@mixin h5;
-		font-weight: 200;
+		font-weight: 400;
 	}
 
 	& svg {

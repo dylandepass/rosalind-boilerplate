@@ -46,6 +46,13 @@ export default async function decorate(block) {
       if (section) section.classList.add(`nav-${e}`);
     });
 
+    const brand = nav.querySelector('.nav-brand p');
+    const logo = document.createElement('span');
+    logo.classList.add('logo');
+    brand?.prepend(logo);
+    logo.style.setProperty('background-image', `url("${getComputedStyle(document.documentElement)
+      .getPropertyValue('--ros-semantic-assets-logo')}"`);
+
     const navMenu = [...nav.children][1];
     if (navMenu) {
       navMenu.querySelectorAll(':scope > ul > li').forEach((navSection) => {
@@ -83,44 +90,47 @@ export default async function decorate(block) {
     nav.setAttribute('aria-expanded', 'false');
     block.append(nav);
 
+    const themesBuffer = await fetch('../../tokens/$themes.json');
+    const themes = await themesBuffer.json();
+
     const toolsContainer = document.createElement('div');
     toolsContainer.classList.add('nav-tools');
 
-    const themeSwitchContainer = document.createElement('div');
-    themeSwitchContainer.classList.add('theme-switcher');
+    const themeSelectContainer = document.createElement('div');
+    themeSelectContainer.classList.add('select');
+    themeSelectContainer.classList.add('theme-switcher');
 
-    const themeSwitch = document.createElement('input');
-    themeSwitch.type = 'checkbox';
-    themeSwitch.classList.add('switch');
+    const themeSelect = document.createElement('select');
 
-    const label = document.createElement('label');
-    label.innerHTML = '&nbsp;';
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '0';
+    defaultOption.innerText = 'Select a Theme';
+    themeSelect.append(defaultOption);
 
-    const darkIcon = document.createElement('span');
-    darkIcon.classList.add('icon');
-    darkIcon.classList.add('icon-moon');
-    label.append(darkIcon);
+    themes.forEach((theme) => {
+      const option = document.createElement('option');
+      option.value = theme.name;
+      option.innerText = theme.name;
+      themeSelect.append(option);
+    });
 
-    const lightIcon = document.createElement('span');
-    lightIcon.classList.add('icon');
-    lightIcon.classList.add('icon-sun');
-    label.append(lightIcon);
+    themeSelectContainer.append(themeSelect);
 
-    themeSwitchContainer.append(themeSwitch);
-    themeSwitchContainer.append(label);
-
-    toolsContainer.append(themeSwitchContainer);
+    toolsContainer.append(themeSelectContainer);
 
     nav.appendChild(toolsContainer);
 
-    themeSwitch.addEventListener('change', (event) => {
+    themeSelect.addEventListener('change', (event) => {
       const theme = document.getElementById('theme');
-      if (event.target && theme) {
-        if (event.target.checked === true) {
-          theme.setAttribute('href', '/styles/dark-theme.css');
-        } else {
-          theme.setAttribute('href', '/styles/light-theme.css');
-        }
+      if (theme && event.target && event.target.value !== '0') {
+        theme.setAttribute('href', `/styles/themes/${event.target.value}.css`);
+        localStorage.setItem('theme', event.target.value);
+        setTimeout(() => {
+          const el = document.querySelector('.logo');
+          if (el) {
+            el.style.setProperty('background-image', `url("${getComputedStyle(document.documentElement).getPropertyValue('--ros-semantic-assets-logo')}"`);
+          }
+        }, 100);
       }
     });
 
