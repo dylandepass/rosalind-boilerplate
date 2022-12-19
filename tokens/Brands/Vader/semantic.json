@@ -84,11 +84,11 @@
       "size": {
         "logo": {
           "width": {
-            "value": "151",
+            "value": "110",
             "type": "sizing"
           },
           "height": {
-            "value": "48",
+            "value": "35",
             "type": "sizing"
           }
         }
