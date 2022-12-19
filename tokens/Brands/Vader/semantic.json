@@ -71,6 +71,10 @@
         "down": {
           "value": "{global.color.static.magenta.500}",
           "type": "color"
+        },
+        "focus": {
+          "value": "{global.color.static.magenta.500}",
+          "type": "color"
         }
       }
     },
