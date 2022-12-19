@@ -20,7 +20,8 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "disabled"
+      "Brands/WKND/Patterns/header": "disabled",
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -45,7 +46,8 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "disabled"
+      "Brands/WKND/Patterns/header": "disabled",
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -70,7 +72,8 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "enabled"
+      "Brands/WKND/Patterns/header": "enabled",
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -145,8 +148,7 @@
       "semantic.color.secondary.dark": "S:9d4dd36ce1aa59a1e498a44711ceec715a095937,",
       "semantic.color.secondary.darker": "S:eedee6bb17f5f21a18948486fd635cf75af385d2,",
       "semantic.color.background.base": "S:c12aff5f6063976ca75d67f70e6349b7f00bdc86,",
-      "semantic.color.background.layer-1": "S:9b7d82681b7b331d8baf61c0ac201a8b0ff16316,",
-      "semantic.color.background.layer-2": "S:c2bc0f3eeb509ec17e748601241567694ef22837,",
+      "semantic.color.background.layer-1": "S:c2bc0f3eeb509ec17e748601241567694ef22837,",
       "semantic.color.background.disabled": "S:2468a1ea7a27d3b79b5d93bf0b4b85491354508e,",
       "semantic.color.background.input": "S:600113b87437117572d52926be8d3eac4b60ab81,",
       "semantic.color.foreground.on-base": "S:42fc4655bc342a2177b05fa912479944b7fe3d39,",
@@ -211,5 +213,31 @@
       "semantic.typography.mobile.eyebrow": "S:8bad5d7d8314a687278f2fa0c29c63444f1f2c1e,",
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,"
     }
+  },
+  {
+    "id": "733faabcd747aa066e501c73ebbf1dc8aa59f4ce",
+    "name": "Vader",
+    "selectedTokenSets": {
+      "global": "source",
+      "light-theme": "enabled",
+      "dark-theme": "disabled",
+      "semantic": "enabled",
+      "Components/buttons": "enabled",
+      "Components/form/form": "enabled",
+      "Components/form/text-field": "enabled",
+      "Components/form/switch": "enabled",
+      "Components/form/checkbox": "enabled",
+      "Components/form/radio": "enabled",
+      "Patterns/header": "enabled",
+      "Patterns/footer": "enabled",
+      "Brands/Rosalind/dark-theme": "disabled",
+      "Brands/WKND/semantic": "disabled",
+      "Brands/WKND/pattern": "disabled",
+      "Brands/WKND/Components/button": "disabled",
+      "Brands/WKND/Patterns/header": "disabled",
+      "Brands/WKND/Patterns/footer": "disabled",
+      "Brands/Vader/semantic": "enabled"
+    },
+    "$figmaStyleReferences": {}
   }
 ]

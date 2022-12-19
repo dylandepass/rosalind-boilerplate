@@ -297,7 +297,7 @@
           "type": "color"
         },
         "on-base-muted": {
-          "value": "{theme.color.gray.600}",
+          "value": "{theme.color.gray.700}",
           "type": "color"
         },
         "on-layer-1": {
@@ -309,7 +309,7 @@
           "type": "color"
         },
         "on-layer-1-muted": {
-          "value": "{theme.color.gray.400}",
+          "value": "{theme.color.gray.500}",
           "type": "color"
         },
         "on-layer-2": {
@@ -321,7 +321,7 @@
           "type": "color"
         },
         "on-layer-2-muted": {
-          "value": "{theme.color.gray.400}",
+          "value": "{theme.color.gray.500}",
           "type": "color"
         },
         "on-primary": {

@@ -1,0 +1,114 @@
+{
+  "semantic": {
+    "color": {
+      "background": {
+        "base": {
+          "value": "{global.color.static.black}",
+          "type": "color"
+        },
+        "layer-1": {
+          "value": "{global.color.static.stone.900}",
+          "type": "color"
+        },
+        "layer-2": {
+          "value": "{global.color.static.stone.800}",
+          "type": "color"
+        }
+      },
+      "foreground": {
+        "on-base": {
+          "value": "{global.color.static.white}",
+          "type": "color"
+        },
+        "on-layer-1": {
+          "value": "{global.color.static.white}",
+          "type": "color"
+        },
+        "on-layer-2": {
+          "value": "{global.color.static.gray.200}",
+          "type": "color"
+        }
+      },
+      "primary": {
+        "base": {
+          "value": "{global.color.static.magenta.500}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "base": {
+          "value": "{global.color.static.orange.600}",
+          "type": "color"
+        }
+      },
+      "seperator": {
+        "on-base": {
+          "value": "#222",
+          "type": "color"
+        }
+      }
+    },
+    "font-family": {
+      "heading": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      },
+      "body": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      },
+      "subtitle": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      }
+    },
+    "assets": {
+      "logo": {
+        "value": "https://i.imgur.com/YRFzZF2.png",
+        "type": "asset"
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "font-family": {
+        "label": {
+          "value": "Inter",
+          "type": "fontFamilies"
+        }
+      }
+    }
+  },
+  "pattern": {
+    "header": {
+      "size": {
+        "logo": {
+          "width": {
+            "value": "151",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "48",
+            "type": "sizing"
+          }
+        }
+      }
+    },
+    "footer": {
+      "color": {
+        "background": {
+          "base": {
+            "value": "#111",
+            "type": "color"
+          }
+        },
+        "seperator": {
+          "on-base": {
+            "value": "#333",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
