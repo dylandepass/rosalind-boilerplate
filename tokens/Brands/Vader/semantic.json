@@ -62,6 +62,16 @@
           "value": "{global.color.static.stone.800}",
           "type": "color"
         }
+      },
+      "border": {
+        "hover": {
+          "value": "{global.color.static.magenta.500}",
+          "type": "color"
+        },
+        "down": {
+          "value": "{global.color.static.magenta.500}",
+          "type": "color"
+        }
       }
     },
     "font-family": {
