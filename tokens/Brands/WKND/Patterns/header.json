@@ -3,8 +3,8 @@
     "header": {
       "logo": {
         "text": {
-          "visible": {
-            "value": "false",
+          "display": {
+            "value": "none",
             "type": "other"
           }
         }

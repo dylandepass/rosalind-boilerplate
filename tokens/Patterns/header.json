@@ -27,8 +27,8 @@
       },
       "logo": {
         "text": {
-          "visible": {
-            "value": "true",
+          "display": {
+            "value": "block",
             "type": "other"
           }
         }
