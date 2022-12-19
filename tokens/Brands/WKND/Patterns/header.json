@@ -8,6 +8,18 @@
             "type": "other"
           }
         }
+      },
+      "size": {
+        "logo": {
+          "width": {
+            "value": "120",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "50",
+            "type": "sizing"
+          }
+        }
       }
     }
   }
