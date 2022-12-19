@@ -21,10 +21,7 @@
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
       "Brands/WKND/Patterns/header": "disabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -50,10 +47,7 @@
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
       "Brands/WKND/Patterns/header": "disabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -79,10 +73,7 @@
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
       "Brands/WKND/Patterns/header": "enabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/semantic": "disabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -223,7 +214,7 @@
     }
   },
   {
-    "id": "3d13aa8ed165552ec1c0550c6d6f310d80b7fd7d",
+    "id": "733faabcd747aa066e501c73ebbf1dc8aa59f4ce",
     "name": "Vader",
     "selectedTokenSets": {
       "global": "source",
@@ -244,10 +235,7 @@
       "Brands/WKND/Components/button": "disabled",
       "Brands/WKND/Patterns/header": "disabled",
       "Brands/WKND/Patterns/footer": "disabled",
-      "Brands/Vader/semantic": "enabled",
-      "Brands/Vader/Components/button": "enabled",
-      "Brands/Vader/Patterns/header": "enabled",
-      "Brands/Vader/Patterns/footer": "enabled"
+      "Brands/Vader/semantic": "enabled"
     },
     "$figmaStyleReferences": {}
   }
