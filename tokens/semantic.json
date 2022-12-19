@@ -460,6 +460,16 @@
           "value": "{global.color.static.indigo.800}",
           "type": "color"
         }
+      },
+      "seperator": {
+        "on-base": {
+          "value": "{global.color.static.gray.200}",
+          "type": "color"
+        },
+        "on-layer-1": {
+          "value": "{global.color.static.gray.300}",
+          "type": "color"
+        }
       }
     },
     "assets": {

@@ -20,6 +20,16 @@
           "value": "{global.color.static.slate.700}",
           "type": "color"
         }
+      },
+      "seperator": {
+        "on-base": {
+          "value": "{global.color.static.slate.800}",
+          "type": "color"
+        },
+        "on-layer-1": {
+          "value": "{global.color.static.slate.700}",
+          "type": "color"
+        }
       }
     }
   }
