@@ -122,6 +122,16 @@
             "type": "spacing"
           }
         }
+      },
+      "color": {
+        "label": {
+          "value": "{theme.color.gray.800}",
+          "type": "color"
+        },
+        "help": {
+          "value": "{theme.color.gray.800}",
+          "type": "color"
+        }
       }
     }
   }
