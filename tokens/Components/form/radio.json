@@ -18,11 +18,11 @@
         },
         "checked": {
           "background-color": {
-            "value": "{semantic.color.primary.base}",
+            "value": "{semantic.color.background.input}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input}",
+            "value": "{semantic.color.primary.base}",
             "type": "color"
           },
           "border-color": {
