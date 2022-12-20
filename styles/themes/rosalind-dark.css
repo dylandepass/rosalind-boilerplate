@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 19 Dec 2022 20:32:07 GMT
+ * Generated on Tue, 20 Dec 2022 19:39:21 GMT
  */
 
 :root {
@@ -258,6 +258,11 @@
   --ros-component-button-line-height-label: 150%;
   --ros-component-button-font-family-label: Nunito, sans-serif;
   --ros-component-button-font-size-label: 16;
+  --ros-component-form-color-help: #ebebeb;
+  --ros-component-form-color-label: #ebebeb;
+  --ros-component-form-spacing-group-margin-bottom: 16px;
+  --ros-component-form-spacing-help-padding-top: 8px;
+  --ros-component-form-spacing-label-padding-bottom: 5px;
   --ros-component-form-sizing-input-min-width: 96px;
   --ros-component-form-text-decoration-help: none;
   --ros-component-form-text-decoration-label: none;
@@ -281,12 +286,12 @@
   --ros-component-text-field-font-weight-text: 400;
   --ros-component-text-field-line-height-text: 150%;
   --ros-component-text-field-font-family-text: Nunito, sans-serif;
-  --ros-component-text-field-font-size-text: 14;
+  --ros-component-text-field-font-size-text: 16;
   --ros-component-text-field-spacing-space-between: 8px;
   --ros-component-text-field-spacing-padding-y: 6px;
   --ros-component-text-field-spacing-padding-x: 10px;
   --ros-component-text-field-border-width-disabled: 1px;
-  --ros-component-text-field-border-width-key-focus: 3px;
+  --ros-component-text-field-border-width-key-focus: 2px;
   --ros-component-text-field-border-width-hover: 1px;
   --ros-component-text-field-border-width-default: 1px;
   --ros-component-text-field-border-radius: 4px;
@@ -317,7 +322,7 @@
   --ros-component-switch-font-size-label: 14;
   --ros-component-switch-spacing-space-between: 8px;
   --ros-component-switch-border-width-disabled: 1px;
-  --ros-component-switch-border-width-key-focus: 3px;
+  --ros-component-switch-border-width-key-focus: 2px;
   --ros-component-switch-border-width-hover: 1px;
   --ros-component-switch-border-width-default: 1px;
   --ros-component-switch-border-radius: 9999px;
@@ -348,7 +353,7 @@
   --ros-component-checkbox-font-size-label: 14;
   --ros-component-checkbox-spacing-space-between: 8px;
   --ros-component-checkbox-border-width-disabled: 1px;
-  --ros-component-checkbox-border-width-key-focus: 3px;
+  --ros-component-checkbox-border-width-key-focus: 2px;
   --ros-component-checkbox-border-width-hover: 1px;
   --ros-component-checkbox-border-width-default: 1px;
   --ros-component-checkbox-border-radius: 4px;
@@ -381,7 +386,7 @@
   --ros-component-radio-font-size-label: 14;
   --ros-component-radio-spacing-space-between: 8px;
   --ros-component-radio-border-width-disabled: 1px;
-  --ros-component-radio-border-width-key-focus: 3px;
+  --ros-component-radio-border-width-key-focus: 2px;
   --ros-component-radio-border-width-hover: 1px;
   --ros-component-radio-border-width-default: 1px;
   --ros-component-radio-border-radius: 4px;
@@ -396,8 +401,8 @@
   --ros-component-radio-color-hover-foreground-color: #ebebeb;
   --ros-component-radio-color-hover-background-color: #00000000;
   --ros-component-radio-color-checked-border-color: #334155;
-  --ros-component-radio-color-checked-foreground-color: #ebebeb;
-  --ros-component-radio-color-checked-background-color: #5c5ce0;
+  --ros-component-radio-color-checked-foreground-color: #5c5ce0;
+  --ros-component-radio-color-checked-background-color: #00000000;
   --ros-component-radio-color-default-border-color: #334155;
   --ros-component-radio-color-default-foreground-color: #ebebeb;
   --ros-component-radio-color-default-background-color: #00000000;
