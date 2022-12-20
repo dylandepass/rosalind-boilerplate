@@ -17,6 +17,7 @@ jobs:
         node-version: '14'
     - run: npm install
     - run: node transform.mjs
+    - run: npm run postcss:build
       env:
         CI: true
     - uses: stefanzweifel/git-auto-commit-action@v4
