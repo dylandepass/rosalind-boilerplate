@@ -1,10 +1,8 @@
 @define-mixin form-element $type, $state {
 	color: var(--ros-component-$(type)-color-$(state)-foreground-color);
-	border-width: var(--ros-component-$(type)-border-width-$(state));
 	border-radius: var(--ros-component-$(type)-border-radius);
 	border-color: var(--ros-component-$(type)-color-$(state)-border-color);
 	background-color: var(--ros-component-$(type)-color-$(state)-background-color);
-	margin: calc(var(--ros-component-$(type)-border-width-$(state)) * -1);
 }
 
 @define-mixin base-text-field $type {
@@ -12,6 +10,7 @@
 	border-style: solid;
 	font-family: inherit;
 	min-width: 250px;
+	font-size: var(--ros-component-text-field-font-size-text);
 
 	@mixin form-element $type, default;
 
@@ -23,13 +22,10 @@
 		@mixin form-element $type, active;
 	}
 
-	&:focus-visible {
+	&:focus {
 		@mixin form-element $type, key-focus;
-		
-		outline-style:
-			var(--ros-component-$(type)-border-width-key-focus)
-			solid
-			var(--ros-component-$(type)-color-key-focus-border-color);
+		outline: none;
+		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-key-focus-border-color);
 	}
 
 	&:disabled {
@@ -37,9 +33,7 @@
 	}
 
 	&::placeholder {
-		font-size: var(--ros-component-$(type)-font-size-text);
-		font-weight: var(--ros-component-$(type)-font-weight-text);
-		color: var(--ros-color-form-typography-placeholder);
+		color: var(--ros-component-text-field-color-placeholder);
 	}
 }
 

@@ -169,7 +169,7 @@ header {
 			& .select { 
 				@mixin margin-right md;
 				& select {
-					min-width: 150px;
+					min-width: 200px;
 				}
 			}
 		}
