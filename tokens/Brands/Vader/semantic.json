@@ -17,7 +17,7 @@
       },
       "primary": {
         "base": {
-          "value": "#f30",
+          "value": "{global.color.static.magenta.500}",
           "type": "color"
         },
         "dark": {
