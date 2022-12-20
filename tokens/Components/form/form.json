@@ -102,6 +102,26 @@
           "value": "{global.size.1200}",
           "type": "sizing"
         }
+      },
+      "spacing": {
+        "label": {
+          "padding-bottom": {
+            "value": "{global.space.50}",
+            "type": "spacing"
+          }
+        },
+        "help": {
+          "padding-top": {
+            "value": "{global.space.100}",
+            "type": "spacing"
+          }
+        },
+        "group": {
+          "margin-bottom": {
+            "value": "{global.space.200}",
+            "type": "spacing"
+          }
+        }
       }
     }
   }

@@ -91,7 +91,7 @@
           "type": "borderWidth"
         },
         "key-focus": {
-          "value": "{semantic.border-width.lg}",
+          "value": "{semantic.border-width.md}",
           "type": "borderWidth"
         },
         "disabled": {

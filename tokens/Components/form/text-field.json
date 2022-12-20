@@ -81,7 +81,7 @@
           "type": "borderWidth"
         },
         "key-focus": {
-          "value": "{semantic.border-width.lg}",
+          "value": "{semantic.border-width.md}",
           "type": "borderWidth"
         },
         "disabled": {
@@ -105,7 +105,7 @@
       },
       "font-size": {
         "text": {
-          "value": "{global.font-size.sm}",
+          "value": "{global.font-size.md}",
           "type": "fontSizes"
         }
       },
