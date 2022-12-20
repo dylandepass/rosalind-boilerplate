@@ -1,0 +1,18 @@
+{
+  "pattern": {
+    "header": {
+      "size": {
+        "logo": {
+          "width": {
+            "value": "{global.size.900}",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "{global.size.400}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}

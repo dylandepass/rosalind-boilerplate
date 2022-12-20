@@ -1,0 +1,24 @@
+{
+  "component": {
+    "button": {
+      "color": {
+        "primary": {
+          "down": {
+            "background-color": {
+              "value": "{global.color.static.black}",
+              "type": "color"
+            },
+            "foreground-color": {
+              "value": "{global.color.static.white}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{semantic.color.transparent}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    }
+  }
+}

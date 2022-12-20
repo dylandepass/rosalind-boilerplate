@@ -1,0 +1,25 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "light-theme",
+    "dark-theme",
+    "semantic",
+    "Components/buttons",
+    "Components/form/form",
+    "Components/form/text-field",
+    "Components/form/switch",
+    "Components/form/checkbox",
+    "Components/form/radio",
+    "Patterns/header",
+    "Patterns/footer",
+    "Brands/Rosalind/dark-theme",
+    "Brands/WKND/semantic",
+    "Brands/WKND/pattern",
+    "Brands/WKND/Components/button",
+    "Brands/WKND/Patterns/header",
+    "Brands/WKND/Patterns/footer",
+    "Brands/Vader/semantic",
+    "Brands/Vader/Components/button",
+    "Brands/Vader/Patterns/footer"
+  ]
+}

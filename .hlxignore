@@ -7,3 +7,4 @@ package-lock.json
 test/*
 src/*
 .storybook/
+**/*.post.css

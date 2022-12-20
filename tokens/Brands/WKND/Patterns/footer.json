@@ -1,0 +1,20 @@
+{
+  "pattern": {
+    "footer": {
+      "color": {
+        "background": {
+          "base": {
+            "value": "{global.color.static.zinc.900}",
+            "type": "color"
+          }
+        },
+        "seperator": {
+          "on-base": {
+            "value": "{global.color.static.zinc.800}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
