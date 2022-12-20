@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Dec 2022 20:22:06 GMT
+ * Generated on Tue, 20 Dec 2022 20:25:23 GMT
  */
 
 :root {
@@ -397,7 +397,7 @@
   --ros-semantic-color-primary-secondary: #000000;
   --ros-semantic-color-primary-darker: #bc1c74;
   --ros-semantic-color-primary-dark: #ca2982;
-  --ros-semantic-color-primary-base: #dfbf00;
+  --ros-semantic-color-primary-base: #d83790;
   --ros-semantic-color-background-input: #00000000;
   --ros-semantic-color-background-disabled: #545454;
   --ros-semantic-color-background-layer-2: #222;
@@ -483,7 +483,7 @@
   --ros-component-switch-color-hover-background-color: #00000000;
   --ros-component-switch-color-checked-border-color: #3f3f3f;
   --ros-component-switch-color-checked-foreground-color: #ebebeb;
-  --ros-component-switch-color-checked-background-color: #dfbf00;
+  --ros-component-switch-color-checked-background-color: #d83790;
   --ros-component-switch-color-default-border-color: #3f3f3f;
   --ros-component-switch-color-default-foreground-color: #ebebeb;
   --ros-component-switch-color-default-background-color: #00000000;
@@ -514,7 +514,7 @@
   --ros-component-checkbox-color-hover-background-color: #00000000;
   --ros-component-checkbox-color-checked-border-color: #3f3f3f;
   --ros-component-checkbox-color-checked-foreground-color: #ebebeb;
-  --ros-component-checkbox-color-checked-background-color: #dfbf00;
+  --ros-component-checkbox-color-checked-background-color: #d83790;
   --ros-component-checkbox-color-default-border-color: #3f3f3f;
   --ros-component-checkbox-color-default-foreground-color: #ebebeb;
   --ros-component-checkbox-color-default-background-color: #00000000;
@@ -546,7 +546,7 @@
   --ros-component-radio-color-hover-foreground-color: #ebebeb;
   --ros-component-radio-color-hover-background-color: #00000000;
   --ros-component-radio-color-checked-border-color: #3f3f3f;
-  --ros-component-radio-color-checked-foreground-color: #dfbf00;
+  --ros-component-radio-color-checked-foreground-color: #d83790;
   --ros-component-radio-color-checked-background-color: #00000000;
   --ros-component-radio-color-default-border-color: #3f3f3f;
   --ros-component-radio-color-default-foreground-color: #ebebeb;
@@ -583,7 +583,7 @@
   --ros-component-button-color-quiet-disabled-foreground-color: #505050;
   --ros-component-button-color-quiet-disabled-background-color: #00000000;
   --ros-component-button-color-quiet-key-focus-border-color: #d83790;
-  --ros-component-button-color-quiet-key-focus-foreground-color: #dfbf00;
+  --ros-component-button-color-quiet-key-focus-foreground-color: #d83790;
   --ros-component-button-color-quiet-key-focus-background-color: #00000000;
   --ros-component-button-color-quiet-down-border-color: #00000000;
   --ros-component-button-color-quiet-down-foreground-color: #bc1c74;
@@ -592,7 +592,7 @@
   --ros-component-button-color-quiet-hover-foreground-color: #ca2982;
   --ros-component-button-color-quiet-hover-background-color: #00000000;
   --ros-component-button-color-quiet-default-border-color: #00000000;
-  --ros-component-button-color-quiet-default-foreground-color: #dfbf00;
+  --ros-component-button-color-quiet-default-foreground-color: #d83790;
   --ros-component-button-color-quiet-default-background-color: #00000000;
   --ros-component-button-color-secondary-disabled-border-color: #707070;
   --ros-component-button-color-secondary-disabled-foreground-color: #707070;
@@ -614,13 +614,13 @@
   --ros-component-button-color-primary-disabled-background-color: #545454;
   --ros-component-button-color-primary-key-focus-border-color: #d83790;
   --ros-component-button-color-primary-key-focus-foreground-color: #000000;
-  --ros-component-button-color-primary-key-focus-background-color: #dfbf00;
+  --ros-component-button-color-primary-key-focus-background-color: #d83790;
   --ros-component-button-color-primary-hover-border-color: #00000000;
   --ros-component-button-color-primary-hover-foreground-color: #000000;
   --ros-component-button-color-primary-hover-background-color: #ca2982;
   --ros-component-button-color-primary-default-border-color: #00000000;
   --ros-component-button-color-primary-default-foreground-color: #000000;
-  --ros-component-button-color-primary-default-background-color: #dfbf00;
+  --ros-component-button-color-primary-default-background-color: #d83790;
   --ros-component-button-color-primary-down-border-color: #00000000;
   --ros-component-button-color-primary-down-foreground-color: #ffffff;
   --ros-component-button-color-primary-down-background-color: #000000;
