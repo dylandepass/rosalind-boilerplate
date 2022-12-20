@@ -3,7 +3,6 @@ name: Build Design System
 on:
   push:
     branches:
-      - '**'        # matches every branch
       - '!master'   # excludes master
 
 jobs:
