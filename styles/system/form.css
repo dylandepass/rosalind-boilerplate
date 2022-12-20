@@ -4,23 +4,33 @@ form .group {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-bottom: var(--ros-size-form-group-margin-bottom);
+	margin-bottom: var(--ros-component-form-spacing-group-margin-bottom);
 }
 
 form .group label {
-	color: var(--ros-color-form-typography-label);
-	font-size: var(--ros-font-size-form-group-label);
-	font-weight: var(--ros-font-weight-form-group-label);
-	line-height: var(--ros-line-height-form-group-label);
-	padding-bottom: var(--ros-size-form-group-label-padding-bottom);
+	color: var(--ros-component-form-color-label);
+	font-family: var(--ros-component-form-font-family-label);
+	font-size: var(--ros-component-form-font-size-label);
+	font-weight: var(--ros-component-form-font-weight-label);
+	line-height: var(--ros-component-form-line-height-label);
+	letter-spacing: var(--ros-component-form-letter-spacing-label);
+	text-transform: var(--ros-component-form-text-case-label);
+	text-decoration: var(--ros-component-form-text-decoration-label);
+
+	padding-bottom: var(--ros-component-form-spacing-label-padding-top);
 }
 
 form .group span {
-	color: var(--ros-color-form-typography-help);
-	font-size: var(--ros-font-size-form-group-help);
-	font-weight: var(--ros-font-weight-form-group-help);
-	line-height: var(--ros-line-height-form-group-help);
-	padding-top: var(--ros-size-form-group-help-padding-top);
+	color: var(--ros-component-form-color-help);
+	font-family: var(--ros-component-form-font-family-help);
+	font-size: var(--ros-component-form-font-size-help);
+	font-weight: var(--ros-component-form-font-weight-help);
+	line-height: var(--ros-component-form-line-height-help);
+	letter-spacing: var(--ros-component-form-letter-spacing-help);
+	text-transform: var(--ros-component-form-text-case-help);
+	text-decoration: var(--ros-component-form-text-decoration-help);
+
+	padding-top: var(--ros-component-form-spacing-help-padding-top);
 }
 
 input[type="text"],
@@ -33,7 +43,8 @@ select {
 }
 
 /* Checkbox */
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
 	opacity: 0;
 	appearance: none;
 	outline: none;
@@ -185,6 +196,9 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] {
+	appearance: none;
+	position: relative;
+
 	/* Default radio background */
 	& + label::before {
 		border-radius: 50%;
@@ -209,11 +223,13 @@ input[type="radio"] {
 	/* Checked radio background */
 	&:checked + label::before {
 		border-color: var(--ros-component-radio-color-checked-border-color);
+		background-color: var(--ros-component-radio-color-default-background-color);
 	}
 
 	/* Checked radio check */
 	&:checked + label::after {
 		opacity: 1;
+		background-color: var(--ros-component-radio-color-checked-background-color);
 	}
 }
 
