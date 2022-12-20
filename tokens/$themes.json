@@ -20,11 +20,7 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "disabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/WKND/Patterns/header": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -49,11 +45,7 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "disabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/WKND/Patterns/header": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -78,11 +70,7 @@
       "Components/form/switch": "enabled",
       "Components/form/checkbox": "enabled",
       "Components/form/radio": "enabled",
-      "Brands/WKND/Patterns/header": "enabled",
-      "Brands/Vader/semantic": "disabled",
-      "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/header": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/WKND/Patterns/header": "enabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -221,34 +209,5 @@
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,",
       "semantic.color.secondary.base": "S:7512a669040eeabf14fc2c1bd922a7766dcd4520,"
     }
-  },
-  {
-    "id": "3d13aa8ed165552ec1c0550c6d6f310d80b7fd7d",
-    "name": "Vader",
-    "selectedTokenSets": {
-      "global": "source",
-      "light-theme": "disabled",
-      "dark-theme": "enabled",
-      "semantic": "enabled",
-      "Components/buttons": "enabled",
-      "Components/form/form": "enabled",
-      "Components/form/text-field": "enabled",
-      "Components/form/switch": "enabled",
-      "Components/form/checkbox": "enabled",
-      "Components/form/radio": "enabled",
-      "Patterns/header": "enabled",
-      "Patterns/footer": "enabled",
-      "Brands/Rosalind/dark-theme": "disabled",
-      "Brands/WKND/semantic": "disabled",
-      "Brands/WKND/pattern": "disabled",
-      "Brands/WKND/Components/button": "disabled",
-      "Brands/WKND/Patterns/header": "disabled",
-      "Brands/WKND/Patterns/footer": "disabled",
-      "Brands/Vader/semantic": "enabled",
-      "Brands/Vader/Components/button": "enabled",
-      "Brands/Vader/Patterns/header": "enabled",
-      "Brands/Vader/Patterns/footer": "enabled"
-    },
-    "$figmaStyleReferences": {}
   }
 ]
