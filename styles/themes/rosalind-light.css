@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Dec 2022 20:15:07 GMT
+ * Generated on Wed, 21 Dec 2022 17:52:49 GMT
  */
 
 :root {
@@ -415,7 +415,7 @@
   --ros-component-button-border-width-quiet-down: 0px;
   --ros-component-button-border-width-quiet-hover: 0px;
   --ros-component-button-border-width-quiet-default: 0px;
-  --ros-component-button-border-width-secondary-disabled: 0px;
+  --ros-component-button-border-width-secondary-disabled: 1px;
   --ros-component-button-border-width-secondary-key-focus: 3px;
   --ros-component-button-border-width-secondary-down: 0px;
   --ros-component-button-border-width-secondary-hover: 0px;
@@ -442,18 +442,18 @@
   --ros-component-button-color-quiet-default-background-color: #00000000;
   --ros-component-button-color-secondary-disabled-border-color: #b1b1b1;
   --ros-component-button-color-secondary-disabled-foreground-color: #b1b1b1;
-  --ros-component-button-color-secondary-disabled-background-color: #d5d5d5;
+  --ros-component-button-color-secondary-disabled-background-color: #00000000;
   --ros-component-button-color-secondary-key-focus-border-color: #9d64e1;
-  --ros-component-button-color-secondary-key-focus-foreground-color: #864ccc;
+  --ros-component-button-color-secondary-key-focus-foreground-color: #5c5ce0;
   --ros-component-button-color-secondary-key-focus-background-color: #00000000;
-  --ros-component-button-color-secondary-down-border-color: #864ccc;
+  --ros-component-button-color-secondary-down-border-color: #4646c6;
   --ros-component-button-color-secondary-down-foreground-color: #ffffff;
-  --ros-component-button-color-secondary-down-background-color: #6f38b1;
-  --ros-component-button-color-secondary-hover-border-color: #864ccc;
+  --ros-component-button-color-secondary-down-background-color: #4646c6;
+  --ros-component-button-color-secondary-hover-border-color: #5151d3;
   --ros-component-button-color-secondary-hover-foreground-color: #ffffff;
-  --ros-component-button-color-secondary-hover-background-color: #864ccc;
-  --ros-component-button-color-secondary-default-border-color: #864ccc;
-  --ros-component-button-color-secondary-default-foreground-color: #864ccc;
+  --ros-component-button-color-secondary-hover-background-color: #5151d3;
+  --ros-component-button-color-secondary-default-border-color: #5c5ce0;
+  --ros-component-button-color-secondary-default-foreground-color: #5c5ce0;
   --ros-component-button-color-secondary-default-background-color: #00000000;
   --ros-component-button-color-primary-disabled-border-color: #00000000;
   --ros-component-button-color-primary-disabled-foreground-color: #b1b1b1;
