@@ -223,13 +223,13 @@ input[type="radio"] {
 	/* Checked radio background */
 	&:checked + label::before {
 		border-color: var(--ros-component-radio-color-checked-border-color);
-		background-color: var(--ros-component-radio-color-default-background-color);
+		background-color: var(--ros-component-radio-color-checked-background-color);
 	}
 
 	/* Checked radio check */
 	&:checked + label::after {
 		opacity: 1;
-		background-color: var(--ros-component-radio-color-checked-background-color);
+		background-color: var(--ros-component-radio-color-checked-foreground-color);
 	}
 }
 
@@ -240,7 +240,7 @@ select {
 .select {
 	position: relative;
 
-	&::after {
+	&:after {
 		content: "";
 		background-color: var(--ros-component-text-field-color-default-foreground-color);
 		mask-position: center;
@@ -249,7 +249,7 @@ select {
 		mask-size: cover;
 		display: inline-block;
 		position: absolute;
-		top: 5px;
+		top: 7px;
 		right: 5px;
 		height: 20px;
 		width: 20px;
