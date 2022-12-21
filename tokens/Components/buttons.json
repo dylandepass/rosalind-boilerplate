@@ -126,17 +126,17 @@
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.base}",
               "type": "color"
             },
             "border-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.base}",
               "type": "color"
             }
           },
           "hover": {
             "background-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.dark}",
               "type": "color"
             },
             "foreground-color": {
@@ -144,13 +144,13 @@
               "type": "color"
             },
             "border-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.dark}",
               "type": "color"
             }
           },
           "down": {
             "background-color": {
-              "value": "{semantic.color.secondary.darker}",
+              "value": "{semantic.color.primary.darker}",
               "type": "color"
             },
             "foreground-color": {
@@ -158,7 +158,7 @@
               "type": "color"
             },
             "border-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.darker}",
               "type": "color"
             }
           },
@@ -168,7 +168,7 @@
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.secondary.base}",
+              "value": "{semantic.color.primary.base}",
               "type": "color"
             },
             "border-color": {
@@ -178,7 +178,7 @@
           },
           "disabled": {
             "background-color": {
-              "value": "{semantic.color.background.disabled}",
+              "value": "{semantic.color.transparent}",
               "type": "color"
             },
             "foreground-color": {
@@ -305,7 +305,7 @@
             "type": "borderWidth"
           },
           "disabled": {
-            "value": "{semantic.border-width.none}",
+            "value": "{semantic.border-width.sm}",
             "type": "borderWidth"
           }
         },
