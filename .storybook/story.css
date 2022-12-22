@@ -1,13 +1,3 @@
-.row.visible {
-  background-color: #dbeaff;
-  outline: 1px dashed #97c1ff;
-}
-
-.row.visible [class*="col"] {
-  background-color: #dbeaff;
-  outline: 1px dashed #97c1ff;
-}
-
-.row.visible > div > div {
-  background-color: #edf4ff;
-}
+/* stylelint-disable */
+/* Generated File: Do not edit directly */
+#root main,#root main .section{padding:0}.button-stories h3{margin-top:var(--ros-semantic-spacing-around-component-xl)}.button-grid{display:inline-grid;grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:768px){.button-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}

@@ -4,10 +4,9 @@ module.exports = {
     "../**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
-    "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@dylandepass/franklin-storybook-addon"
   ],
   "framework": "@storybook/html",
-  "staticDirs": ['./', '../styles/'],
+  "staticDirs": ['./', '../styles/', { from: '../icons', to: '/icons' }],
 }
