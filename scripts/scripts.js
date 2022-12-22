@@ -13,6 +13,8 @@ import {
   getMetadata,
 } from './lib-franklin.js';
 
+// Scripts
+
 const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
