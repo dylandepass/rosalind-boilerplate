@@ -2,7 +2,7 @@
 
 #root {
 	& main {
-		padding: 0;
+		padding: 15px;
 
 		& .section {
 			padding: 0;
