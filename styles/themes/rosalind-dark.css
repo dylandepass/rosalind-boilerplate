@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Dec 2022 20:15:08 GMT
+ * Generated on Thu, 22 Dec 2022 22:32:30 GMT
  */
 
 :root {
@@ -198,7 +198,7 @@
   --ros-component-button-border-width-quiet-down: 0px;
   --ros-component-button-border-width-quiet-hover: 0px;
   --ros-component-button-border-width-quiet-default: 0px;
-  --ros-component-button-border-width-secondary-disabled: 0px;
+  --ros-component-button-border-width-secondary-disabled: 1px;
   --ros-component-button-border-width-secondary-key-focus: 3px;
   --ros-component-button-border-width-secondary-down: 0px;
   --ros-component-button-border-width-secondary-hover: 0px;
@@ -225,18 +225,18 @@
   --ros-component-button-color-quiet-default-background-color: #00000000;
   --ros-component-button-color-secondary-disabled-border-color: #707070;
   --ros-component-button-color-secondary-disabled-foreground-color: #707070;
-  --ros-component-button-color-secondary-disabled-background-color: #545454;
+  --ros-component-button-color-secondary-disabled-background-color: #00000000;
   --ros-component-button-color-secondary-key-focus-border-color: #9d64e1;
-  --ros-component-button-color-secondary-key-focus-foreground-color: #864ccc;
+  --ros-component-button-color-secondary-key-focus-foreground-color: #5c5ce0;
   --ros-component-button-color-secondary-key-focus-background-color: #00000000;
-  --ros-component-button-color-secondary-down-border-color: #864ccc;
+  --ros-component-button-color-secondary-down-border-color: #4646c6;
   --ros-component-button-color-secondary-down-foreground-color: #ffffff;
-  --ros-component-button-color-secondary-down-background-color: #6f38b1;
-  --ros-component-button-color-secondary-hover-border-color: #864ccc;
+  --ros-component-button-color-secondary-down-background-color: #4646c6;
+  --ros-component-button-color-secondary-hover-border-color: #5151d3;
   --ros-component-button-color-secondary-hover-foreground-color: #ffffff;
-  --ros-component-button-color-secondary-hover-background-color: #864ccc;
-  --ros-component-button-color-secondary-default-border-color: #864ccc;
-  --ros-component-button-color-secondary-default-foreground-color: #864ccc;
+  --ros-component-button-color-secondary-hover-background-color: #5151d3;
+  --ros-component-button-color-secondary-default-border-color: #5c5ce0;
+  --ros-component-button-color-secondary-default-foreground-color: #5c5ce0;
   --ros-component-button-color-secondary-default-background-color: #00000000;
   --ros-component-button-color-primary-disabled-border-color: #00000000;
   --ros-component-button-color-primary-disabled-foreground-color: #707070;
@@ -326,7 +326,7 @@
   --ros-component-switch-border-width-hover: 1px;
   --ros-component-switch-border-width-default: 1px;
   --ros-component-switch-border-radius: 9999px;
-  --ros-component-switch-color-label: #ffffff;
+  --ros-component-switch-color-label: #ebebeb;
   --ros-component-switch-color-disabled-border-color: #707070;
   --ros-component-switch-color-disabled-foreground-color: #707070;
   --ros-component-switch-color-disabled-background-color: #545454;
@@ -337,10 +337,10 @@
   --ros-component-switch-color-hover-foreground-color: #ebebeb;
   --ros-component-switch-color-hover-background-color: #00000000;
   --ros-component-switch-color-checked-border-color: #334155;
-  --ros-component-switch-color-checked-foreground-color: #ebebeb;
+  --ros-component-switch-color-checked-foreground-color: #ffffff;
   --ros-component-switch-color-checked-background-color: #5c5ce0;
   --ros-component-switch-color-default-border-color: #334155;
-  --ros-component-switch-color-default-foreground-color: #ebebeb;
+  --ros-component-switch-color-default-foreground-color: #d3d3d3;
   --ros-component-switch-color-default-background-color: #00000000;
   --ros-component-checkbox-sizing-background-height: 20px;
   --ros-component-checkbox-sizing-background-width: 20px;
@@ -357,7 +357,7 @@
   --ros-component-checkbox-border-width-hover: 1px;
   --ros-component-checkbox-border-width-default: 1px;
   --ros-component-checkbox-border-radius: 4px;
-  --ros-component-checkbox-color-label: #ffffff;
+  --ros-component-checkbox-color-label: #ebebeb;
   --ros-component-checkbox-color-disabled-border-color: #707070;
   --ros-component-checkbox-color-disabled-foreground-color: #707070;
   --ros-component-checkbox-color-disabled-background-color: #545454;
@@ -368,7 +368,7 @@
   --ros-component-checkbox-color-hover-foreground-color: #ebebeb;
   --ros-component-checkbox-color-hover-background-color: #00000000;
   --ros-component-checkbox-color-checked-border-color: #334155;
-  --ros-component-checkbox-color-checked-foreground-color: #ebebeb;
+  --ros-component-checkbox-color-checked-foreground-color: #ffffff;
   --ros-component-checkbox-color-checked-background-color: #5c5ce0;
   --ros-component-checkbox-color-default-border-color: #334155;
   --ros-component-checkbox-color-default-foreground-color: #ebebeb;
@@ -390,7 +390,7 @@
   --ros-component-radio-border-width-hover: 1px;
   --ros-component-radio-border-width-default: 1px;
   --ros-component-radio-border-radius: 4px;
-  --ros-component-radio-color-label: #ffffff;
+  --ros-component-radio-color-label: #ebebeb;
   --ros-component-radio-color-disabled-border-color: #707070;
   --ros-component-radio-color-disabled-foreground-color: #707070;
   --ros-component-radio-color-disabled-background-color: #545454;

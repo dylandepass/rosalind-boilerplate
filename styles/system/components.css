@@ -30,7 +30,7 @@
 	font-style: initial;
 	user-select: none;
 	transition-property: color, background-color, border-color, fill, stroke, opacity;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
 }
 
 /* TODO: Support small and large buttons */
@@ -58,16 +58,16 @@
 	@mixin rosalind-button primary, hover;
 }
 
-.button.primary:active {
-	@mixin rosalind-button primary, active;
-}
-
 .button.primary:focus {
-	@mixin rosalind-button primary, focus;
+	@mixin rosalind-button primary, default;
 }
 
 .button.primary:focus-visible {
-	@mixin rosalind-button primary, focus-visible;
+	@mixin rosalind-button primary, key-focus;
+}
+
+.button.primary:active {
+	@mixin rosalind-button primary, down;
 }
 
 .button.primary.disabled {
@@ -82,16 +82,16 @@
 	@mixin rosalind-button secondary, hover;
 }
 
-.button.secondary:active {
-	@mixin rosalind-button secondary, active;
-}
-
 .button.secondary:focus {
-	@mixin rosalind-button secondary, focus;
+	@mixin rosalind-button secondary, default;
 }
 
 .button.secondary:focus-visible {
-	@mixin rosalind-button secondary, focus-visible;
+	@mixin rosalind-button secondary, key-focus;
+}
+
+.button.secondary:active {
+	@mixin rosalind-button secondary, down;
 }
 
 .button.secondary.disabled {
@@ -106,16 +106,16 @@
 	@mixin rosalind-button quiet, hover;
 }
 
-.button.quiet:active {
-	@mixin rosalind-button quiet, active;
-}
-
 .button.quiet:focus {
-	@mixin rosalind-button quiet, focus;
+	@mixin rosalind-button quiet, default;
 }
 
 .button.quiet:focus-visible {
-	@mixin rosalind-button quiet, focus-visible;
+	@mixin rosalind-button quiet, key-focus;
+}
+
+.button.quiet:active {
+	@mixin rosalind-button quiet, down;
 }
 
 .button.quiet.disabled {

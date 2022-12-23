@@ -29,14 +29,15 @@
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@babel/eslint-parser": "7.19.1",
+    "@dylandepass/franklin-storybook-addon": "^0.0.30",
     "@esm-bundle/chai": "4.3.4-fix.0",
     "@storybook/addon-essentials": "6.5.10",
     "@storybook/html": "6.5.10",
     "@web/test-runner": "0.14.0",
     "@web/test-runner-commands": "0.6.5",
     "chai": "4.3.6",
-    "cssnano": "5.1.14",
     "concurrently": "7.5.0",
+    "cssnano": "5.1.14",
     "eslint": "8.24.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
@@ -53,9 +54,9 @@
     "postcss-mixins": "9.0.2",
     "postcss-preset-env": "7.8.2",
     "sinon": "14.0.1",
+    "style-dictionary": "^3.7.1",
     "stylelint": "14.14.0",
     "stylelint-config-standard": "29.0.0",
-    "style-dictionary": "^3.7.1",
     "token-transformer": "0.0.28"
   },
   "dependencies": {
