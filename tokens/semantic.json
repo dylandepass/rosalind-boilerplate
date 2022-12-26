@@ -501,12 +501,12 @@
         "value": "{global.border-width.200}",
         "type": "borderWidth"
       },
-      "none": {
-        "value": "{global.border-width.0}",
-        "type": "borderWidth"
-      },
       "lg": {
         "value": "{global.border-width.300}",
+        "type": "borderWidth"
+      },
+      "none": {
+        "value": "{global.border-width.0}",
         "type": "borderWidth"
       }
     },
@@ -1165,25 +1165,27 @@
         "type": "paragraphSpacing"
       }
     },
-    "box-shadow": {
-      "xs": {
-        "value": "{global.shadow.primary.100}",
-        "type": "boxShadow"
-      },
+    "drop-shadow": {
       "sm": {
-        "value": "{global.shadow.primary.200}",
+        "value": "{global.shadow.drop.100}",
         "type": "boxShadow"
       },
       "md": {
-        "value": "{global.shadow.primary.300}",
+        "value": "{global.shadow.drop.200}",
         "type": "boxShadow"
       },
       "lg": {
-        "value": "{global.shadow.primary.400}",
+        "value": "{global.shadow.drop.300}",
         "type": "boxShadow"
       },
       "xl": {
-        "value": "{global.shadow.primary.500}",
+        "value": "{global.shadow.drop.400}",
+        "type": "boxShadow"
+      }
+    },
+    "inner-shadow": {
+      "sm": {
+        "value": "{global.shadow.inner.100}",
         "type": "boxShadow"
       }
     }

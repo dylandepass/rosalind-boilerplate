@@ -8,7 +8,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{global.color.static.gray.400}",
+            "value": "{semantic.color.foreground.on-input}",
             "type": "color"
           },
           "border-color": {
@@ -22,7 +22,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{global.color.static.white}",
+            "value": "{semantic.color.foreground.on-input}",
             "type": "color"
           },
           "border-color": {
@@ -73,7 +73,7 @@
           }
         },
         "label": {
-          "value": "{semantic.color.foreground.on-base}",
+          "value": "{global.color.static.white}",
           "type": "color"
         }
       },

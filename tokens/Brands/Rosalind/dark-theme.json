@@ -32,5 +32,27 @@
         }
       }
     }
+  },
+  "theme": {
+    "color": {
+      "shadow": {
+        "50": {
+          "value": "rgba(31,41,55,0.5)",
+          "type": "color"
+        },
+        "100": {
+          "value": "rgba(31,41,55,0.6)",
+          "type": "color"
+        },
+        "200": {
+          "value": "rgba(31,41,55,0.7)",
+          "type": "color"
+        },
+        "300": {
+          "value": "rgba(31,41,55,0.8)",
+          "type": "color"
+        }
+      }
+    }
   }
 }
