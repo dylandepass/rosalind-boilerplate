@@ -183,7 +183,6 @@ h5,
 
 p {
 	@mixin body-font;
-	max-width: 75ch;
 	margin-bottom: var(--ros-semantic-spacing-typography-body-margin-bottom);
 
 	& a {
@@ -219,7 +218,6 @@ blockquote,
 	padding: 20px;
 	border-left: 10px solid var(--ros-semantic-color-primary-base);
 	color: var(--ros-semantic-color-foreground-on-base-subtle);
-	max-width: 75ch;
 	margin: 1rem 0;
 	hanging-punctuation: first;
 }
