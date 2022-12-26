@@ -1,14 +1,14 @@
 /**
  * Do not edit directly
- * Generated on Mon, 26 Dec 2022 17:58:53 GMT
+ * Generated on Mon, 26 Dec 2022 18:49:10 GMT
  */
 
 :root {
   --ros-theme-color-shadow-400: #00000066;
   --ros-theme-color-shadow-300: #00000040;
   --ros-theme-color-shadow-200: #0000001a;
-  --ros-theme-color-shadow-100: rgba(0,0,0,0.0.6);
-  --ros-theme-color-shadow-50: rgba(0,0,0,0.0.4);
+  --ros-theme-color-shadow-100: #0000000f;
+  --ros-theme-color-shadow-50: #0000000a;
   --ros-theme-color-yellow-1300: #362500;
   --ros-theme-color-yellow-1200: #483300;
   --ros-theme-color-yellow-1100: #5b4300;
@@ -196,7 +196,7 @@
   --ros-semantic-inner-shadow-sm-0-type: innerShadow;
   --ros-semantic-inner-shadow-sm-0-color: #0000000f;
   --ros-semantic-drop-shadow-xl-1-type: dropShadow;
-  --ros-semantic-drop-shadow-xl-1-color: rgba(0,0,0,0.0.6);
+  --ros-semantic-drop-shadow-xl-1-color: #0000000f;
   --ros-semantic-drop-shadow-xl-1-spread: 0px;
   --ros-semantic-drop-shadow-xl-1-blur: 25px;
   --ros-semantic-drop-shadow-xl-1-y: 20px;
@@ -206,9 +206,9 @@
   --ros-semantic-drop-shadow-xl-0-y: 10px;
   --ros-semantic-drop-shadow-xl-0-x: 0px;
   --ros-semantic-drop-shadow-xl-0-type: dropShadow;
-  --ros-semantic-drop-shadow-xl-0-color: rgba(0,0,0,0.0.4);
+  --ros-semantic-drop-shadow-xl-0-color: #0000000a;
   --ros-semantic-drop-shadow-lg-1-type: dropShadow;
-  --ros-semantic-drop-shadow-lg-1-color: rgba(0,0,0,0.0.6);
+  --ros-semantic-drop-shadow-lg-1-color: #0000000f;
   --ros-semantic-drop-shadow-lg-1-spread: 0px;
   --ros-semantic-drop-shadow-lg-1-blur: 6px;
   --ros-semantic-drop-shadow-lg-1-y: 4px;
@@ -230,7 +230,7 @@
   --ros-semantic-drop-shadow-md-0-y: 2px;
   --ros-semantic-drop-shadow-md-0-x: 0px;
   --ros-semantic-drop-shadow-md-0-type: dropShadow;
-  --ros-semantic-drop-shadow-md-0-color: rgba(0,0,0,0.0.6);
+  --ros-semantic-drop-shadow-md-0-color: #0000000f;
   --ros-semantic-drop-shadow-sm-1-type: dropShadow;
   --ros-semantic-drop-shadow-sm-1-color: #0000001a;
   --ros-semantic-drop-shadow-sm-1-spread: 0px;
@@ -242,7 +242,7 @@
   --ros-semantic-drop-shadow-sm-0-y: 1px;
   --ros-semantic-drop-shadow-sm-0-x: 0px;
   --ros-semantic-drop-shadow-sm-0-type: dropShadow;
-  --ros-semantic-drop-shadow-sm-0-color: rgba(0,0,0,0.0.6);
+  --ros-semantic-drop-shadow-sm-0-color: #0000000f;
   --ros-semantic-paragraph-spacing-source-code: 0;
   --ros-semantic-paragraph-spacing-caption: 0;
   --ros-semantic-paragraph-spacing-body: 0;
