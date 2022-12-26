@@ -23,7 +23,8 @@
       "Brands/WKND/Patterns/header": "disabled",
       "Brands/Vader/semantic": "disabled",
       "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/Patterns/footer": "disabled",
+      "Brands/Vader/Patterns/header": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -51,7 +52,8 @@
       "Brands/WKND/Patterns/header": "disabled",
       "Brands/Vader/semantic": "disabled",
       "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/Patterns/footer": "disabled",
+      "Brands/Vader/Patterns/header": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -79,7 +81,8 @@
       "Brands/WKND/Patterns/header": "enabled",
       "Brands/Vader/semantic": "disabled",
       "Brands/Vader/Components/button": "disabled",
-      "Brands/Vader/Patterns/footer": "disabled"
+      "Brands/Vader/Patterns/footer": "disabled",
+      "Brands/Vader/Patterns/header": "disabled"
     },
     "$figmaStyleReferences": {
       "semantic.color.primary.base": "S:d7082593a0070c54409160c382becba4e56332f7,",
@@ -236,14 +239,15 @@
       "Patterns/header": "enabled",
       "Patterns/footer": "enabled",
       "Brands/Rosalind/dark-theme": "disabled",
-      "Brands/WKND/semantic": "enabled",
-      "Brands/WKND/pattern": "enabled",
-      "Brands/WKND/Components/button": "enabled",
-      "Brands/WKND/Patterns/header": "enabled",
-      "Brands/WKND/Patterns/footer": "enabled",
+      "Brands/WKND/semantic": "disabled",
+      "Brands/WKND/pattern": "disabled",
+      "Brands/WKND/Components/button": "disabled",
+      "Brands/WKND/Patterns/header": "disabled",
+      "Brands/WKND/Patterns/footer": "disabled",
       "Brands/Vader/semantic": "enabled",
       "Brands/Vader/Components/button": "enabled",
-      "Brands/Vader/Patterns/footer": "enabled"
+      "Brands/Vader/Patterns/footer": "enabled",
+      "Brands/Vader/Patterns/header": "enabled"
     },
     "$figmaStyleReferences": {}
   }
