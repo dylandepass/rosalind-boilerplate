@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 26 Dec 2022 18:49:12 GMT
+ * Generated on Mon, 26 Dec 2022 18:56:23 GMT
  */
 
 :root {
@@ -321,6 +321,9 @@
   --ros-semantic-border-width-lg: 3px;
   --ros-semantic-border-width-md: 2px;
   --ros-semantic-border-width-sm: 1px;
+  --ros-semantic-border-radius-none: 0px;
+  --ros-semantic-border-radius-round: 9999px;
+  --ros-semantic-border-radius-default: 4px;
   --ros-semantic-size-default-content-wrapper-margin-bottom: 72px;
   --ros-semantic-size-icon-xl-height: 40px;
   --ros-semantic-size-icon-xl-width: 40px;
@@ -364,15 +367,12 @@
   --ros-semantic-letter-spacing-heading: -1%;
   --ros-semantic-letter-spacing-display: -1%;
   --ros-semantic-letter-spacing-default: 0%;
-  --ros-semantic-border-radius-none: 0px;
-  --ros-semantic-border-radius-round: 9999px;
-  --ros-semantic-border-radius-default: 0px;
   --ros-semantic-assets-logo: "https://i.imgur.com/YRFzZF2.png";
   --ros-semantic-font-family-mono: Source Code Pro, Courier New;
-  --ros-semantic-font-family-caption: Roboto;
-  --ros-semantic-font-family-subtitle: Roboto;
-  --ros-semantic-font-family-eyebrow: Roboto;
-  --ros-semantic-font-family-display: Roboto;
+  --ros-semantic-font-family-caption: Nunito, sans-serif;
+  --ros-semantic-font-family-subtitle: Nunito, sans-serif;
+  --ros-semantic-font-family-eyebrow: Nunito, sans-serif;
+  --ros-semantic-font-family-display: Nunito, sans-serif;
   --ros-semantic-font-family-body: Inter;
   --ros-semantic-font-family-heading: Inter;
   --ros-semantic-color-link-hover: #4646c6;
@@ -394,12 +394,13 @@
   --ros-semantic-color-positive-down: #33ab84;
   --ros-semantic-color-positive-hover: #2d9d78;
   --ros-semantic-color-positive-default: #268e6c;
-  --ros-semantic-color-footer-background: #18181b;
   --ros-semantic-color-foreground-on-input: #ebebeb;
   --ros-semantic-color-foreground-on-disabled-subtle: #505050;
   --ros-semantic-color-foreground-on-disabled: #707070;
+  --ros-semantic-color-foreground-on-secondary: #ffffff;
   --ros-semantic-color-foreground-on-primary-muted: #707070;
   --ros-semantic-color-foreground-on-primary-subtle: #3f3f3f;
+  --ros-semantic-color-foreground-on-primary: #ffffff;
   --ros-semantic-color-foreground-on-layer-2-muted: #909090;
   --ros-semantic-color-foreground-on-layer-2-subtle: #b2b2b2;
   --ros-semantic-color-foreground-on-layer-2: #ebebeb;
@@ -409,8 +410,6 @@
   --ros-semantic-color-foreground-on-base-muted: #d1d1d1;
   --ros-semantic-color-foreground-on-base-subtle: #b2b2b2;
   --ros-semantic-color-foreground-on-base: #ebebeb;
-  --ros-semantic-color-foreground-on-secondary: #ffffff;
-  --ros-semantic-color-foreground-on-primary: #000000;
   --ros-semantic-color-border-disabled: #707070;
   --ros-semantic-color-border-base: #3f3f3f;
   --ros-semantic-color-border-focus: #d83790;
@@ -423,7 +422,6 @@
   --ros-semantic-color-secondary-dark: #cb6f10;
   --ros-semantic-color-secondary-base: #da7b11;
   --ros-semantic-color-primary-light: #7575f1;
-  --ros-semantic-color-primary-secondary: #000000;
   --ros-semantic-color-primary-darker: #bc1c74;
   --ros-semantic-color-primary-dark: #ca2982;
   --ros-semantic-color-primary-base: #d83790;
@@ -468,7 +466,7 @@
   --ros-component-text-field-border-width-key-focus: 2px;
   --ros-component-text-field-border-width-hover: 1px;
   --ros-component-text-field-border-width-default: 1px;
-  --ros-component-text-field-border-radius: 0px;
+  --ros-component-text-field-border-radius: 4px;
   --ros-component-text-field-color-icon: #3f3f3f;
   --ros-component-text-field-color-placeholder: #909090;
   --ros-component-text-field-color-disabled-border-color: #707070;
@@ -530,7 +528,7 @@
   --ros-component-checkbox-border-width-key-focus: 2px;
   --ros-component-checkbox-border-width-hover: 1px;
   --ros-component-checkbox-border-width-default: 1px;
-  --ros-component-checkbox-border-radius: 0px;
+  --ros-component-checkbox-border-radius: 4px;
   --ros-component-checkbox-color-label: #ffffff;
   --ros-component-checkbox-color-disabled-border-color: #707070;
   --ros-component-checkbox-color-disabled-foreground-color: #707070;
@@ -563,7 +561,7 @@
   --ros-component-radio-border-width-key-focus: 2px;
   --ros-component-radio-border-width-hover: 1px;
   --ros-component-radio-border-width-default: 1px;
-  --ros-component-radio-border-radius: 0px;
+  --ros-component-radio-border-radius: 4px;
   --ros-component-radio-color-label: #ffffff;
   --ros-component-radio-color-disabled-border-color: #707070;
   --ros-component-radio-color-disabled-foreground-color: #707070;
@@ -586,9 +584,9 @@
   --ros-component-button-spacing-gap: 12px;
   --ros-component-button-spacing-padding-y: 12px;
   --ros-component-button-spacing-padding-x: 16px;
-  --ros-component-button-border-radius-quiet: 0px;
-  --ros-component-button-border-radius-secondary: 0px;
-  --ros-component-button-border-radius-primary: 0px;
+  --ros-component-button-border-radius-quiet: 4px;
+  --ros-component-button-border-radius-secondary: 4px;
+  --ros-component-button-border-radius-primary: 4px;
   --ros-component-button-border-width-quiet-disabled: 0px;
   --ros-component-button-border-width-quiet-key-focus: 3px;
   --ros-component-button-border-width-quiet-down: 0px;
@@ -604,10 +602,6 @@
   --ros-component-button-border-width-primary-down: 0px;
   --ros-component-button-border-width-primary-hover: 0px;
   --ros-component-button-border-width-primary-default: 0px;
-  --ros-component-button-letter-spacing-label: 0%;
-  --ros-component-button-font-weight-label: 400;
-  --ros-component-button-line-height-label: 150%;
-  --ros-component-button-font-size-label: 16;
   --ros-component-button-color-quiet-disabled-border-color: #00000000;
   --ros-component-button-color-quiet-disabled-foreground-color: #505050;
   --ros-component-button-color-quiet-disabled-background-color: #00000000;
@@ -642,24 +636,28 @@
   --ros-component-button-color-primary-disabled-foreground-color: #707070;
   --ros-component-button-color-primary-disabled-background-color: #545454;
   --ros-component-button-color-primary-key-focus-border-color: #d83790;
-  --ros-component-button-color-primary-key-focus-foreground-color: #000000;
+  --ros-component-button-color-primary-key-focus-foreground-color: #ffffff;
   --ros-component-button-color-primary-key-focus-background-color: #d83790;
-  --ros-component-button-color-primary-hover-border-color: #00000000;
-  --ros-component-button-color-primary-hover-foreground-color: #000000;
-  --ros-component-button-color-primary-hover-background-color: #ca2982;
-  --ros-component-button-color-primary-default-border-color: #00000000;
-  --ros-component-button-color-primary-default-foreground-color: #000000;
-  --ros-component-button-color-primary-default-background-color: #d83790;
   --ros-component-button-color-primary-down-border-color: #00000000;
   --ros-component-button-color-primary-down-foreground-color: #ffffff;
-  --ros-component-button-color-primary-down-background-color: #000000;
+  --ros-component-button-color-primary-down-background-color: #bc1c74;
+  --ros-component-button-color-primary-hover-border-color: #00000000;
+  --ros-component-button-color-primary-hover-foreground-color: #ffffff;
+  --ros-component-button-color-primary-hover-background-color: #ca2982;
+  --ros-component-button-color-primary-default-border-color: #00000000;
+  --ros-component-button-color-primary-default-foreground-color: #ffffff;
+  --ros-component-button-color-primary-default-background-color: #d83790;
+  --ros-component-button-letter-spacing-label: 0%;
+  --ros-component-button-font-weight-label: 400;
+  --ros-component-button-line-height-label: 150%;
+  --ros-component-button-font-size-label: 16;
   --ros-component-button-font-family-label: Inter;
-  --ros-pattern-header-color-background-base: #000000;
-  --ros-pattern-header-logo-text-display: none;
-  --ros-pattern-header-size-height: 72px;
-  --ros-pattern-header-size-logo-height: 35px;
-  --ros-pattern-header-size-logo-width: 110px;
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
-  --ros-pattern-footer-color-background-base: #18181b;
+  --ros-pattern-footer-color-background-base: #192132;
   --ros-pattern-footer-color-seperator-on-base: #333;
+  --ros-pattern-header-color-background-base: #000000;
+  --ros-pattern-header-size-height: 72px;
+  --ros-pattern-header-size-logo-height: 50px;
+  --ros-pattern-header-size-logo-width: 120px;
+  --ros-pattern-header-logo-text-display: none;
 }
