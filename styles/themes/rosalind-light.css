@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 22 Dec 2022 22:32:30 GMT
+ * Generated on Fri, 23 Dec 2022 19:28:53 GMT
  */
 
 :root {
@@ -295,7 +295,7 @@
   --ros-semantic-border-radius-none: 0px;
   --ros-semantic-border-radius-round: 9999px;
   --ros-semantic-border-radius-default: 4px;
-  --ros-semantic-assets-logo: https://i.imgur.com/KXoW4Em.png;
+  --ros-semantic-assets-logo: "https://i.imgur.com/KXoW4Em.png";
   --ros-semantic-color-seperator-on-layer-1: #eaeaea;
   --ros-semantic-color-seperator-on-base: #f4f4f4;
   --ros-semantic-color-link-hover: #4646c6;

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 22 Dec 2022 22:32:32 GMT
+ * Generated on Fri, 23 Dec 2022 19:28:55 GMT
  */
 
 :root {
@@ -338,7 +338,7 @@
   --ros-semantic-border-radius-none: 0px;
   --ros-semantic-border-radius-round: 9999px;
   --ros-semantic-border-radius-default: 0px;
-  --ros-semantic-assets-logo: https://i.imgur.com/YRFzZF2.png;
+  --ros-semantic-assets-logo: "https://i.imgur.com/YRFzZF2.png";
   --ros-semantic-font-family-mono: Source Code Pro, Courier New;
   --ros-semantic-font-family-caption: Roboto;
   --ros-semantic-font-family-subtitle: Roboto;
