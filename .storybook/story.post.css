@@ -1,18 +1,41 @@
 @import url("../styles/system/mixins");
 
-#root {
-	& main {
-		padding: 15px;
-
-		& .section {
-			padding: 0;
-		}
+html {
+	& body {
+		overflow-y: auto;
 	}
 }
 
-.button-stories {
-	& h3 {
-		@mixin margin-top xl;
+.section.storybook-heading {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+
+	& h1 {
+		@mixin h2;
+	}
+}
+
+#root {
+	& main {
+		padding: 0;
+	}
+
+	& .section {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		& h3 {
+			@mixin margin-top xl;
+		}
+	}
+
+	& h1 {
+		@mixin h4;
+	}
+
+	& h2 {
+		@mixin h5;
 	}
 }
 
@@ -21,4 +44,23 @@
 
 	@mixin grid-cols 1;
 	@mixin grid-md-cols 3;
+}
+
+.demo-grid {
+	display: grid;
+	gap: 10px;
+
+	@mixin grid-cols 12;
+
+	& .col {
+		background-color: var(--ros-theme-color-red-100);
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	& .span3 {
+		@mixin grid-col-span 3;
+	}
 }
