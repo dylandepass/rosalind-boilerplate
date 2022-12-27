@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 27 Dec 2022 01:48:54 GMT
+ * Generated on Tue, 27 Dec 2022 02:13:32 GMT
  */
 
 :root {
@@ -658,8 +658,8 @@
   --ros-component-button-font-size-label: 16;
   --ros-component-button-font-family-label: Inter;
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
-  --ros-pattern-footer-color-background-base: #192132;
   --ros-pattern-footer-color-seperator-on-base: #333;
+  --ros-pattern-footer-color-background-base: #111;
   --ros-pattern-header-color-background-base: #000000;
   --ros-pattern-header-size-height: 72px;
   --ros-pattern-header-size-logo-height: 50px;
