@@ -748,28 +748,6 @@
           "value": "#f9e961",
           "type": "color"
         }
-      },
-      "shadow": {
-        "50": {
-          "value": "{global.color.static.transparent.white.50}",
-          "type": "color"
-        },
-        "100": {
-          "value": "{global.color.static.transparent.white.100}",
-          "type": "color"
-        },
-        "200": {
-          "value": "{global.color.static.transparent.white.200}",
-          "type": "color"
-        },
-        "300": {
-          "value": "{global.color.static.transparent.white.300}",
-          "type": "color"
-        },
-        "400": {
-          "value": "{global.color.static.transparent.white.400}",
-          "type": "color"
-        }
       }
     }
   }
