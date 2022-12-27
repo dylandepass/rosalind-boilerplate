@@ -1188,6 +1188,28 @@
         "value": "{global.shadow.inner.100}",
         "type": "boxShadow"
       }
+    },
+    "opacity": {
+      "25": {
+        "value": "{global.opacity.25}",
+        "type": "opacity"
+      },
+      "50": {
+        "value": "{global.opacity.50}",
+        "type": "opacity"
+      },
+      "75": {
+        "value": "{global.opacity.75}",
+        "type": "opacity"
+      },
+      "100": {
+        "value": "{global.opacity.100}",
+        "type": "opacity"
+      },
+      "none": {
+        "value": "{global.opacity.0}",
+        "type": "opacity"
+      }
     }
   }
 }
