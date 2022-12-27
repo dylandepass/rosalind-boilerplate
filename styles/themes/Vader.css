@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 27 Dec 2022 01:25:04 GMT
+ * Generated on Tue, 27 Dec 2022 01:48:54 GMT
  */
 
 :root {
@@ -199,7 +199,7 @@
   --ros-semantic-inner-shadow-sm-0-y: 2px;
   --ros-semantic-inner-shadow-sm-0-x: 0px;
   --ros-semantic-inner-shadow-sm-0-type: innerShadow;
-  --ros-semantic-inner-shadow-sm-0-color: #0000000f;
+  --ros-semantic-inner-shadow-sm-0-color: #ffffff0f;
   --ros-semantic-drop-shadow-xl-1-type: dropShadow;
   --ros-semantic-drop-shadow-xl-1-color: #ffffff0f;
   --ros-semantic-drop-shadow-xl-1-spread: 0px;
@@ -665,4 +665,6 @@
   --ros-pattern-header-size-logo-height: 50px;
   --ros-pattern-header-size-logo-width: 120px;
   --ros-pattern-header-logo-text-display: none;
+  --ros-patterns-modal-color-background: #000000;
+  --ros-patterns-modal-color-overlay: #000000bf;
 }

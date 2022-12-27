@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 27 Dec 2022 01:25:04 GMT
+ * Generated on Tue, 27 Dec 2022 01:48:55 GMT
  */
 
 :root {
@@ -189,6 +189,8 @@
   --ros-theme-color-gray-100: #f8f8f8;
   --ros-theme-color-gray-75: #fdfdfd;
   --ros-theme-color-gray-50: #fff;
+  --ros-patterns-modal-color-background: #ffffff;
+  --ros-patterns-modal-color-overlay: #161c2dbf;
   --ros-semantic-opacity-none: 0;
   --ros-semantic-opacity-100: 1;
   --ros-semantic-opacity-75: 0.75;

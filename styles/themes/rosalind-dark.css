@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 27 Dec 2022 01:25:03 GMT
+ * Generated on Tue, 27 Dec 2022 01:48:55 GMT
  */
 
 :root {
@@ -234,6 +234,8 @@
   --ros-pattern-footer-color-seperator-on-base: #1e293b;
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
   --ros-pattern-footer-color-background-base: #192132;
+  --ros-patterns-modal-color-background: #0f172a;
+  --ros-patterns-modal-color-overlay: #161c2dbf;
   --ros-theme-color-yellow-1300: #f9e961;
   --ros-theme-color-yellow-1200: #f7d804;
   --ros-theme-color-yellow-1100: #e9c700;
@@ -429,7 +431,7 @@
   --ros-semantic-inner-shadow-sm-0-y: 2px;
   --ros-semantic-inner-shadow-sm-0-x: 0px;
   --ros-semantic-inner-shadow-sm-0-type: innerShadow;
-  --ros-semantic-inner-shadow-sm-0-color: #0000000f;
+  --ros-semantic-inner-shadow-sm-0-color: #1f293799;
   --ros-semantic-drop-shadow-xl-1-type: dropShadow;
   --ros-semantic-drop-shadow-xl-1-color: #1f293799;
   --ros-semantic-drop-shadow-xl-1-spread: 0px;
