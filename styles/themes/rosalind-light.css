@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 26 Dec 2022 18:56:21 GMT
+ * Generated on Tue, 27 Dec 2022 01:25:02 GMT
  */
 
 :root {
@@ -189,6 +189,11 @@
   --ros-theme-color-gray-100: #f8f8f8;
   --ros-theme-color-gray-75: #fdfdfd;
   --ros-theme-color-gray-50: #fff;
+  --ros-semantic-opacity-none: 0;
+  --ros-semantic-opacity-100: 1;
+  --ros-semantic-opacity-75: 0.75;
+  --ros-semantic-opacity-50: 0.5;
+  --ros-semantic-opacity-25: 0.25;
   --ros-semantic-inner-shadow-sm-0-spread: 0px;
   --ros-semantic-inner-shadow-sm-0-blur: 4px;
   --ros-semantic-inner-shadow-sm-0-y: 2px;
