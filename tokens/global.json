@@ -1051,7 +1051,7 @@
         "100": {
           "value": [
             {
-              "color": "rgba(0,0,0,0.06)",
+              "color": "{theme.color.shadow.100}",
               "type": "innerShadow",
               "x": "0",
               "y": "2",

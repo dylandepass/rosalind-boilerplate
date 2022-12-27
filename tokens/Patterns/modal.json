@@ -1,0 +1,16 @@
+{
+  "patterns": {
+    "modal": {
+      "color": {
+        "overlay": {
+          "value": "rgba(22, 28, 45,0.75)",
+          "type": "color"
+        },
+        "background": {
+          "value": "{semantic.color.background.base}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

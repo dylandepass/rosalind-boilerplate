@@ -12,6 +12,7 @@
     "Components/form/radio",
     "Patterns/header",
     "Patterns/footer",
+    "Patterns/modal",
     "Brands/Rosalind/dark-theme",
     "Brands/WKND/semantic",
     "Brands/WKND/pattern",
@@ -21,6 +22,7 @@
     "Brands/Vader/semantic",
     "Brands/Vader/Components/button",
     "Brands/Vader/Patterns/footer",
-    "Brands/Vader/Patterns/header"
+    "Brands/Vader/Patterns/header",
+    "Brands/Vader/Patterns/modal"
   ]
 }
