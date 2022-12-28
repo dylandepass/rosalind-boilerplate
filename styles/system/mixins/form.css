@@ -7,15 +7,21 @@
 
 @define-mixin base-text-field $type {
 	padding: var(--ros-component-$(type)-spacing-padding-y) var(--ros-component-$(type)-spacing-padding-x);
+	font-family: var(--ros-component-$(type)-font-family-text);
+	min-width: var(--ros-component-$(type)-min-width);
+	font-size: var(--ros-component-$(type)-font-size-text);
+	font-weight: var(--ros-component-$(type)-font-weight-text);
+	text-decoration: var(--ros-component-$(type)-text-decoration-text);
+	text-transform: var(--ros-component-$(type)-text-case-text);
+	letter-spacing: var(--ros-component-$(type)-letter-spacing-text);
 	border-style: solid;
-	font-family: inherit;
-	min-width: 250px;
-	font-size: var(--ros-component-text-field-font-size-text);
 
 	@mixin form-element $type, default;
+	border-width: var(--ros-component-$(type)-border-width-default);
 
 	&:hover {
 		@mixin form-element $type, hover;
+		border-width: var(--ros-component-$(type)-border-width-hover);
 	}
 
 	&:active {
