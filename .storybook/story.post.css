@@ -30,13 +30,13 @@ html {
 		}
 	}
 
-	& h1 {
+	/* & h1 {
 		@mixin h4;
 	}
 
 	& h2 {
 		@mixin h5;
-	}
+	} */
 }
 
 .button-grid {
@@ -63,4 +63,35 @@ html {
 	& .span3 {
 		@mixin grid-col-span 3;
 	}
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shadows-demo {
+	display: grid;
+	min-height: 200px;
+
+	@mixin grid-cols 4;
+}
+
+.shadow-sm {
+	@mixin shadow-sm;
+}
+
+.shadow-md {
+	@mixin shadow-md;
+}
+
+.shadow-lg {
+	@mixin shadow-lg;
+}
+
+.shadow-xl {
+	@mixin shadow-xl;
 }

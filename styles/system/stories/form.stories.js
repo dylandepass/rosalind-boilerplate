@@ -4,11 +4,11 @@ export default {
 
 const Template = ({ content }) => content;
 
-export const InputField = Template.bind({});
-InputField.parameters = {
-  title: 'Form/Input',
+export const TextField = Template.bind({});
+TextField.parameters = {
+  title: 'Form/Text Field',
 };
-InputField.args = {
+TextField.args = {
   content: /* html */`
         <div class="section">
           <div class="block-wrapper">
@@ -18,6 +18,20 @@ InputField.args = {
                 <input type="text" id="email" placeholder="Placeholder"/>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
               </div>
+            </form>
+          </div>
+        </div>`,
+};
+
+export const TextArea = Template.bind({});
+TextArea.parameters = {
+  title: 'Form/Text Area',
+};
+TextArea.args = {
+  content: /* html */`
+        <div class="section">
+          <div class="block-wrapper">
+            <form class="row">
               <div class="col-12 group">
                 <label for="email">Description</label>
                 <textarea type="text" id="email" placeholder="Placeholder"></textarea>
@@ -64,6 +78,78 @@ Checkbox.args = {
                 </div>
                 <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
               </div>
+              <div class="group">
+                <div class="select">
+                  <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                  </select>
+                </div>
+            </form>
+          </div>
+        </div>`,
+};
+
+export const Switch = Template.bind({});
+Switch.parameters = {
+  title: 'Form/Switch',
+};
+Switch.args = {
+  content: /* html */`
+        <div class="section">
+          <div class="block-wrapper">
+            <form>  
+              <div class="group">
+                <div>
+                  <input type="checkbox" id="switch" class="switch">
+                  <label for="switch">Enable Awesomeness</label>
+                </div>
+            </form>
+          </div>
+        </div>`,
+};
+
+export const Radio = Template.bind({});
+Switch.parameters = {
+  title: 'Form/Radio',
+};
+Radio.args = {
+  content: /* html */`
+        <div class="section">
+          <div class="block-wrapper">
+            <form>  
+              <div class="group">
+                <div>
+                  <input id="r1d" type="radio" name="radiod">
+                  <label for="r1d">Option 1</label>
+                  <input id="r2d" type="radio" name="radiod">
+                  <label for="r2d">Option 2</label>
+                </div>
+            </form>
+          </div>
+        </div>`,
+};
+
+export const Select = Template.bind({});
+Select.parameters = {
+  title: 'Form/Select',
+};
+Select.args = {
+  content: /* html */`
+        <div class="section">
+          <div class="block-wrapper">
+            <form>  
               <div class="group">
                 <div class="select">
                   <select>
