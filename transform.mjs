@@ -42,7 +42,7 @@ StyleDictionary.registerTransform({
   name: 'sizes/rem',
   type: 'value',
   matcher(prop) {
-    return [''].includes(prop.type) && !prop.name.includes('multiplier');
+    return ['fontSizes'].includes(prop.type) && !prop.name.includes('mobile') && !prop.name.includes('desktop');
   },
   transformer(prop) {
     return `${parseFloat(prop.original.value) * 0.0625}rem`;
