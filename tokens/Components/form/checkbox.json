@@ -73,7 +73,7 @@
           }
         },
         "label": {
-          "value": "{global.color.static.white}",
+          "value": "{semantic.color.foreground.on-base}",
           "type": "color"
         }
       },
