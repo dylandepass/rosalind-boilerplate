@@ -61,7 +61,6 @@ samp {
 a,
 button {
 	cursor: pointer;
-	outline: none;
 	text-decoration: none;
 }
 
