@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Dec 2022 00:14:05 GMT
+ * Generated on Wed, 28 Dec 2022 00:24:41 GMT
  */
 
 :root {
@@ -615,7 +615,7 @@
   --ros-component-switch-border-width-hover: 1px;
   --ros-component-switch-border-width-default: 1px;
   --ros-component-switch-border-radius: 9999px;
-  --ros-component-switch-color-label: #ffffff;
+  --ros-component-switch-color-label: #222222;
   --ros-component-switch-color-disabled-border-color: #b1b1b1;
   --ros-component-switch-color-disabled-foreground-color: #b1b1b1;
   --ros-component-switch-color-disabled-background-color: #d5d5d5;
@@ -646,7 +646,7 @@
   --ros-component-checkbox-border-width-hover: 1px;
   --ros-component-checkbox-border-width-default: 1px;
   --ros-component-checkbox-border-radius: 4px;
-  --ros-component-checkbox-color-label: #ffffff;
+  --ros-component-checkbox-color-label: #222222;
   --ros-component-checkbox-color-disabled-border-color: #b1b1b1;
   --ros-component-checkbox-color-disabled-foreground-color: #b1b1b1;
   --ros-component-checkbox-color-disabled-background-color: #d5d5d5;
@@ -679,7 +679,7 @@
   --ros-component-radio-border-width-hover: 1px;
   --ros-component-radio-border-width-default: 1px;
   --ros-component-radio-border-radius: 4px;
-  --ros-component-radio-color-label: #ffffff;
+  --ros-component-radio-color-label: #222222;
   --ros-component-radio-color-disabled-border-color: #b1b1b1;
   --ros-component-radio-color-disabled-foreground-color: #b1b1b1;
   --ros-component-radio-color-disabled-background-color: #d5d5d5;
