@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Dec 2022 02:34:59 GMT
+ * Generated on Wed, 28 Dec 2022 03:00:58 GMT
  */
 
 :root {
@@ -262,7 +262,7 @@
   --ros-component-button-font-weight-label: 400;
   --ros-component-button-line-height-label: 150%;
   --ros-component-button-font-family-label: Nunito, sans-serif;
-  --ros-component-button-font-size-label: 16;
+  --ros-component-button-font-size-label: 1rem;
   --ros-component-form-color-help: #ebebeb;
   --ros-component-form-color-label: #ebebeb;
   --ros-component-form-spacing-group-margin-bottom: 16px;
@@ -282,8 +282,8 @@
   --ros-component-form-line-height-label: 150%;
   --ros-component-form-font-family-help: Nunito, sans-serif;
   --ros-component-form-font-family-label: Nunito, sans-serif;
-  --ros-component-form-font-size-help: 12;
-  --ros-component-form-font-size-label: 14;
+  --ros-component-form-font-size-help: 0.75rem;
+  --ros-component-form-font-size-label: 0.875rem;
   --ros-component-text-field-paragraph-spacing-text: 0;
   --ros-component-text-field-text-case-text: none;
   --ros-component-text-field-text-decoration-text: none;
@@ -292,7 +292,7 @@
   --ros-component-text-field-font-weight-text: 400;
   --ros-component-text-field-line-height-text: 150%;
   --ros-component-text-field-font-family-text: Nunito, sans-serif;
-  --ros-component-text-field-font-size-text: 16;
+  --ros-component-text-field-font-size-text: 1rem;
   --ros-component-text-field-spacing-space-between: 8px;
   --ros-component-text-field-spacing-padding-y: 6px;
   --ros-component-text-field-spacing-padding-x: 10px;
@@ -329,7 +329,7 @@
   --ros-component-select-font-weight-text: 400;
   --ros-component-select-line-height-text: 150%;
   --ros-component-select-font-family-text: Nunito, sans-serif;
-  --ros-component-select-font-size-text: 16;
+  --ros-component-select-font-size-text: 1rem;
   --ros-component-select-spacing-gap: 8px;
   --ros-component-select-spacing-padding-y: 6px;
   --ros-component-select-spacing-padding-x: 10px;
@@ -368,7 +368,7 @@
   --ros-component-switch-font-weight-label: 400;
   --ros-component-switch-line-height-label: 150%;
   --ros-component-switch-font-family-label: Nunito, sans-serif;
-  --ros-component-switch-font-size-label: 14;
+  --ros-component-switch-font-size-label: 0.875rem;
   --ros-component-switch-spacing-space-between: 8px;
   --ros-component-switch-border-width-disabled: 1px;
   --ros-component-switch-border-width-key-focus: 2px;
@@ -399,7 +399,7 @@
   --ros-component-checkbox-font-weight-label: 400;
   --ros-component-checkbox-line-height-label: 150%;
   --ros-component-checkbox-font-family-label: Nunito, sans-serif;
-  --ros-component-checkbox-font-size-label: 14;
+  --ros-component-checkbox-font-size-label: 0.875rem;
   --ros-component-checkbox-spacing-space-between: 8px;
   --ros-component-checkbox-border-width-disabled: 1px;
   --ros-component-checkbox-border-width-key-focus: 2px;
@@ -432,7 +432,7 @@
   --ros-component-radio-font-weight-label: 400;
   --ros-component-radio-line-height-label: 150%;
   --ros-component-radio-font-family-label: Nunito, sans-serif;
-  --ros-component-radio-font-size-label: 14;
+  --ros-component-radio-font-size-label: 0.875rem;
   --ros-component-radio-spacing-space-between: 8px;
   --ros-component-radio-border-width-disabled: 1px;
   --ros-component-radio-border-width-key-focus: 2px;
@@ -614,9 +614,9 @@
   --ros-semantic-size-breakpoints-screen-lg: 992px;
   --ros-semantic-size-breakpoints-screen-md: 768px;
   --ros-semantic-size-breakpoints-screen-sm: 576px;
-  --ros-semantic-font-size-source-code: 16;
-  --ros-semantic-font-size-caption: 14;
-  --ros-semantic-font-size-body: 16;
+  --ros-semantic-font-size-source-code: 1rem;
+  --ros-semantic-font-size-caption: 0.875rem;
+  --ros-semantic-font-size-body: 1rem;
   --ros-semantic-font-size-mobile-eyebrow: 19;
   --ros-semantic-font-size-mobile-subtitle: 33;
   --ros-semantic-font-size-mobile-heading-5: 12;
