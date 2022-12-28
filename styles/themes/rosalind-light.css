@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Dec 2022 01:17:08 GMT
+ * Generated on Wed, 28 Dec 2022 01:33:44 GMT
  */
 
 :root {
@@ -508,6 +508,7 @@
   --ros-component-form-color-label: #222222;
   --ros-component-form-spacing-group-margin-bottom: 16px;
   --ros-component-form-spacing-help-padding-top: 8px;
+  --ros-component-form-spacing-label-padding-right: 20px;
   --ros-component-form-spacing-label-padding-bottom: 5px;
   --ros-component-form-sizing-input-min-width: 96px;
   --ros-component-form-text-decoration-help: none;
