@@ -108,6 +108,11 @@
           "padding-bottom": {
             "value": "{global.space.50}",
             "type": "spacing"
+          },
+          "padding-right": {
+            "value": "{semantic.spacing.around.component.xl}",
+            "type": "spacing",
+            "description": "Padding of component label, like the label on a checkbox"
           }
         },
         "help": {
