@@ -1,10 +1,39 @@
-@define-mixin rosalind-button $type, $state: default {
+@define-mixin button-style $type, $state: default {
 	color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
 	background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
 	border-width: var(--ros-component-button-border-width-$(type)-$(state));
 	border-radius: var(--ros-component-button-border-radius-$(type));
 	border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
 	margin: calc(var(--ros-component-button-border-width-$(type)-$(state)) * -1);
+}
+
+@define-mixin button $type {
+	@mixin button-style $type, default;
+
+	&:hover {
+		@mixin button-style $type, hover;
+	}
+
+	&:focus {
+		@mixin button-style $type, default;
+	}
+
+	&:focus-visible {
+		@mixin button-style $type, key-focus;
+	}
+
+	&:active {
+		@mixin button-style $type, down;
+	}
+
+	&.disabled {
+		@mixin button-style $type, disabled;
+
+		&:focus,
+		&:focus-visible {
+			outline: initial;
+		}
+	}
 }
 
 .button-container {
@@ -31,6 +60,7 @@
 	user-select: none;
 	transition-property: color, background-color, border-color, fill, stroke, opacity;
 	transition-duration: 0.2s;
+	outline: none;
 }
 
 /* TODO: Support small and large buttons */
@@ -51,73 +81,14 @@
 }
 
 .button.primary {
-	@mixin rosalind-button primary, default;
-}
-
-.button.primary:hover {
-	@mixin rosalind-button primary, hover;
-}
-
-.button.primary:focus {
-	@mixin rosalind-button primary, default;
-}
-
-.button.primary:focus-visible {
-	@mixin rosalind-button primary, key-focus;
-}
-
-.button.primary:active {
-	@mixin rosalind-button primary, down;
-}
-
-.button.primary.disabled {
-	@mixin rosalind-button primary, disabled;
+	@mixin button primary;
 }
 
 .button.secondary {
-	@mixin rosalind-button secondary, default;
-}
-
-.button.secondary:hover {
-	@mixin rosalind-button secondary, hover;
-}
-
-.button.secondary:focus {
-	@mixin rosalind-button secondary, default;
-}
-
-.button.secondary:focus-visible {
-	@mixin rosalind-button secondary, key-focus;
-}
-
-.button.secondary:active {
-	@mixin rosalind-button secondary, down;
-}
-
-.button.secondary.disabled {
-	@mixin rosalind-button secondary, disabled;
+	@mixin button secondary;
 }
 
 .button.quiet {
-	@mixin rosalind-button quiet, default;
+	@mixin button quiet;
 }
 
-.button.quiet:hover {
-	@mixin rosalind-button quiet, hover;
-}
-
-.button.quiet:focus {
-	@mixin rosalind-button quiet, default;
-}
-
-.button.quiet:focus-visible {
-	@mixin rosalind-button quiet, key-focus;
-}
-
-.button.quiet:active {
-	@mixin rosalind-button quiet, down;
-}
-
-.button.quiet.disabled {
-	@mixin rosalind-button quiet, disabled;
-}

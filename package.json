@@ -29,10 +29,11 @@
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@babel/eslint-parser": "7.19.1",
-    "@dylandepass/franklin-storybook-addon": "^0.0.30",
+    "@dylandepass/franklin-storybook-addon": "0.0.30",
     "@esm-bundle/chai": "4.3.4-fix.0",
-    "@storybook/addon-essentials": "6.5.10",
-    "@storybook/html": "6.5.10",
+    "@etchteam/storybook-addon-css-variables-theme": "^1.4.0",
+    "@storybook/addon-essentials": "6.5.15",
+    "@storybook/html": "6.5.15",
     "@web/test-runner": "0.14.0",
     "@web/test-runner-commands": "0.6.5",
     "chai": "4.3.6",
@@ -54,12 +55,9 @@
     "postcss-mixins": "9.0.2",
     "postcss-preset-env": "7.8.2",
     "sinon": "14.0.1",
-    "style-dictionary": "^3.7.1",
+    "style-dictionary": "3.7.1",
     "stylelint": "14.14.0",
     "stylelint-config-standard": "29.0.0",
     "token-transformer": "0.0.28"
-  },
-  "dependencies": {
-    "@rosalind/rosalind-dna": "1.0.28"
   }
 }

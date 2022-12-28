@@ -68,3 +68,15 @@
 		grid-column: span $(cols)/span $(cols) !important;
 	}
 }
+
+.gap-sm {
+	gap: var(--ros-semantic-spacing-gap-component-sm);
+}
+
+.gap-md {
+	gap: var(--ros-semantic-spacing-gap-component-md);
+}
+
+.gap-lg {
+	gap: var(--ros-semantic-spacing-gap-component-lg);
+}

@@ -140,3 +140,17 @@
 	font-weight: var(--ros-semantic-font-weight-source-code-regular);
 	line-height: var(--ros-semantic-line-height-source-code);
 }
+
+@define-mixin on-foreground-color $type {
+	.on-$(type) {
+		color: var(--ros-semantic-color-foreground-on-$(type))
+	}
+
+	.on-$(type)-subtle {
+		color: var(--ros-semantic-color-foreground-on-$(type)-subtle)
+	}
+
+	.on-$(type)-muted {
+		color: var(--ros-semantic-color-foreground-on-$(type)-muted)
+	}
+}

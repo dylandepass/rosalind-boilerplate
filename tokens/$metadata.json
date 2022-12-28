@@ -7,6 +7,7 @@
     "Components/buttons",
     "Components/form/form",
     "Components/form/text-field",
+    "Components/form/select",
     "Components/form/switch",
     "Components/form/checkbox",
     "Components/form/radio",
@@ -20,6 +21,7 @@
     "Brands/WKND/Patterns/footer",
     "Brands/Vader/semantic",
     "Brands/Vader/Components/button",
+    "Brands/Vader/Patterns/header",
     "Brands/Vader/Patterns/footer"
   ]
 }

@@ -5,7 +5,8 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-essentials",
-    "@dylandepass/franklin-storybook-addon"
+    "@dylandepass/franklin-storybook-addon",
+    "@etchteam/storybook-addon-css-variables-theme"
   ],
   "framework": "@storybook/html",
   "staticDirs": ['./', '../styles/', { from: '../icons', to: '/icons' }],

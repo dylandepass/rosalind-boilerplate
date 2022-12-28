@@ -5,38 +5,15 @@ import { loadPage } from '../../../scripts/scripts.js';
 import style from '../../system.css';
 
 const GutterTemplate = () => /* html */`<div>
-            <h2>12 column grid</h2>
-            <div class="demo-grid">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-            </div>
-
-            <h2>12 column grid</h2>
-            <div class="demo-grid">
-              <div class="col span3">3 col span</div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
+            <h2>Shadow</h2>
+            <div class="shadows-demo">
+              <div class="box shadow-sm">sm</div>
+              <div class="box shadow-md">md</div>
+              <div class="box shadow-lg">lg</div>
+              <div class="box shadow-xl">xl</div>
             </div>
         </div>`;
 function decorate(block) {
-  console.log(block);
   const grid = document.createElement('div');
   grid.innerHTML = GutterTemplate();
 
@@ -46,15 +23,15 @@ function decorate(block) {
 export const Buttons = (args, context) => FranklinTemplate(loadPage, args, context, decorate);
 
 Buttons.parameters = {
-  path: '/storybook/grid.plain.html',
+  path: '/storybook/shadows.plain.html',
   selector: 'div',
   index: 0,
 };
 
-Buttons.storyName = 'Buttons';
+Buttons.storyName = 'Shadows';
 
 export default {
-  title: 'Layout/Grid',
+  title: 'Shadows',
 };
 
 // export const Small = GutterTemplate.bind({});

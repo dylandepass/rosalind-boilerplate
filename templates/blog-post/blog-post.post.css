@@ -32,7 +32,6 @@ article {
 
 		& :--heading {
 			margin: 0 auto;
-			max-width: 75ch;
 		}
 
 		& .default-content-wrapper {

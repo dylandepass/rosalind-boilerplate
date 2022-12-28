@@ -50,8 +50,8 @@ export default async function decorate(block) {
     const logo = document.createElement('span');
     logo.classList.add('logo');
     brand?.prepend(logo);
-    logo.style.setProperty('background-image', `url("${getComputedStyle(document.documentElement)
-      .getPropertyValue('--ros-semantic-assets-logo')}"`);
+    logo.style.setProperty('background-image', `url(${getComputedStyle(document.documentElement)
+      .getPropertyValue('--ros-semantic-assets-logo')}`);
 
     const navMenu = [...nav.children][1];
     if (navMenu) {
@@ -130,7 +130,7 @@ export default async function decorate(block) {
         el.style.display = 'none';
         setTimeout(() => {
           if (el) {
-            el.style.setProperty('background-image', `url("${getComputedStyle(document.documentElement).getPropertyValue('--ros-semantic-assets-logo')}"`);
+            el.style.setProperty('background-image', `url(${getComputedStyle(document.documentElement).getPropertyValue('--ros-semantic-assets-logo')}`);
             el.style.display = 'block';
           }
         }, 300);
