@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Dec 2022 00:24:42 GMT
+ * Generated on Wed, 28 Dec 2022 01:17:10 GMT
  */
 
 :root {
@@ -554,10 +554,10 @@
   --ros-component-switch-color-hover-foreground-color: #222222;
   --ros-component-switch-color-hover-background-color: #00000000;
   --ros-component-switch-color-checked-border-color: #e6e6e6;
-  --ros-component-switch-color-checked-foreground-color: #222222;
+  --ros-component-switch-color-checked-foreground-color: #ffffff;
   --ros-component-switch-color-checked-background-color: #dfbf00;
   --ros-component-switch-color-default-border-color: #e6e6e6;
-  --ros-component-switch-color-default-foreground-color: #222222;
+  --ros-component-switch-color-default-foreground-color: #d3d3d3;
   --ros-component-switch-color-default-background-color: #00000000;
   --ros-component-checkbox-sizing-background-height: 20px;
   --ros-component-checkbox-sizing-background-width: 20px;
@@ -585,7 +585,7 @@
   --ros-component-checkbox-color-hover-foreground-color: #222222;
   --ros-component-checkbox-color-hover-background-color: #00000000;
   --ros-component-checkbox-color-checked-border-color: #e6e6e6;
-  --ros-component-checkbox-color-checked-foreground-color: #222222;
+  --ros-component-checkbox-color-checked-foreground-color: #ffffff;
   --ros-component-checkbox-color-checked-background-color: #dfbf00;
   --ros-component-checkbox-color-default-border-color: #e6e6e6;
   --ros-component-checkbox-color-default-foreground-color: #222222;
