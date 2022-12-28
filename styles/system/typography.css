@@ -194,6 +194,10 @@ p {
 	}
 }
 
+@mixin on-foreground-color base;
+@mixin on-foreground-color layer-1;
+@mixin on-foreground-color layer-2;
+
 b,
 strong {
 	font-weight: 700;
