@@ -64,7 +64,7 @@ footer {
 	}
 
 	& :--heading {
-		@mixin h5;
+		@mixin h3;
 
 		color: var(--ros-pattern-footer-color-foreground-on-base);
 	}
@@ -80,7 +80,7 @@ footer {
 
 .section.footer-copy {
 	border-top: 1px solid var(--ros-pattern-footer-color-seperator-on-base);
-	padding: 40px 32px;
+	padding: 40px 32px !important;
 	background-color: var(--ros-pattern-footer-color-background-base);
 	font-size: 16px;
 	color: #fff;
