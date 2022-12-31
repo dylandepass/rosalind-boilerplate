@@ -21,6 +21,13 @@ form .group label {
 	padding-right: 20px;
 }
 
+form .group:has(input:required) > label:after,
+form .group:has(textarea:required) > label:after,
+form .group:has(select:required) > label:after {
+	content:" *";
+	color: var(--ros-semantic-color-negative-default);
+}
+
 form .group span {
 	color: var(--ros-component-form-color-help);
 	font-family: var(--ros-component-form-font-family-help);
