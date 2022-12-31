@@ -1,8 +1,17 @@
 @import "../breakpoints";
 
 /* CSS GRID */
+@define-mixin auto-grid $col-width  {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax($(col-width), 1fr));
+}
+
 @define-mixin grid-cols $cols {
 	grid-template-columns: repeat($(cols), minmax(0, 1fr));
+}
+
+@define-mixin gap $size {
+	gap: var(--ros-semantic-spacing-gap-component-$(size));
 }
 
 @define-mixin grid-xxl-cols $cols {
@@ -67,16 +76,4 @@
 	@media (--ros-screen-sm) {
 		grid-column: span $(cols)/span $(cols) !important;
 	}
-}
-
-.gap-sm {
-	gap: var(--ros-semantic-spacing-gap-component-sm);
-}
-
-.gap-md {
-	gap: var(--ros-semantic-spacing-gap-component-md);
-}
-
-.gap-lg {
-	gap: var(--ros-semantic-spacing-gap-component-lg);
 }
