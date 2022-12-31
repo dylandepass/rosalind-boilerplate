@@ -6,6 +6,11 @@ html {
 	}
 }
 
+code {
+	display: inline-block !important;
+	width: auto !important;
+}
+
 .section.storybook-heading {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -16,7 +21,7 @@ html {
 	}
 }
 
-#root {
+/* #root {
 	& main {
 		padding: 0;
 	}
@@ -29,14 +34,29 @@ html {
 			@mixin margin-top xl;
 		}
 	}
+} */
 
-	/* & h1 {
-		@mixin h4;
+#docs-root {
+	& .section {
+		background-color: var(--ros-semantic-color-background-base);
+		color: var(--ros-semantic-color-foreground-on-base);
+
+		@mixin padding sm;
 	}
 
-	& h2 {
-		@mixin h5;
-	} */
+	& .sbdocs-preview {
+		border-radius: 8px;
+
+		& .docs-story {
+			@mixin body-font;
+
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			background-color: var(--ros-semantic-color-background-base);
+			color: var(--ros-semantic-color-foreground-on-base);
+			border-radius: 8px;
+		}
+	}
 }
 
 .button-grid {
@@ -46,23 +66,37 @@ html {
 	@mixin grid-md-cols 3;
 }
 
-.demo-grid {
+.twelve-col-grid {
 	display: grid;
 	gap: 10px;
 
 	@mixin grid-cols 12;
 
-	& .col {
-		background-color: var(--ros-theme-color-red-100);
-		height: 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	& .span4 {
+		@mixin grid-col-span 4;
 	}
 
-	& .span3 {
-		@mixin grid-col-span 3;
+	& .span8 {
+		@mixin grid-col-span 8;
 	}
+}
+
+.auto-grid {
+	@mixin auto-grid 100px;
+	@mixin gap lg;
+}
+
+.auto-flex {
+	@mixin auto-flex 200px;
+	@mixin gap lg;
+}
+
+.col {
+	background-color: var(--ros-theme-color-red-100);
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .box {
@@ -75,7 +109,6 @@ html {
 
 .shadows-demo {
 	display: grid;
-	min-height: 200px;
 
 	@mixin grid-cols 4;
 }
