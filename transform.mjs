@@ -49,6 +49,11 @@ StyleDictionary.registerTransform({
   },
 });
 
+StyleDictionary.registerTransformGroup({
+  name: 'tokens-json',
+  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css'],
+});
+
 function getStyleDictionaryConfig(theme, files) {
   return {
     source: files,
@@ -66,6 +71,17 @@ function getStyleDictionaryConfig(theme, files) {
           filter: (token) => (typeof token.value !== 'object'),
         }],
         transforms: ['asset/stringify', 'attribute/cti', 'name/cti/kebab', 'time/seconds', 'content/icon', 'sizes/px', 'sizes/rem', 'color/css'],
+      },
+      'web/js': {
+        transformGroup: 'tokens-json',
+        buildPath: 'styles/themes/',
+        prefix: 'token',
+        files: [
+          {
+            destination: `${theme}.json`,
+            format: 'json/nested',
+          },
+        ],
       },
     },
   };
