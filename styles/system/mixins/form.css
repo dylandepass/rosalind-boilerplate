@@ -24,10 +24,6 @@
 		border-width: var(--ros-component-$(type)-border-width-hover);
 	}
 
-	&:active {
-		@mixin form-element $type, active;
-	}
-
 	&:focus {
 		@mixin form-element $type, key-focus;
 		outline: none;
@@ -40,6 +36,20 @@
 
 	&::placeholder {
 		color: var(--ros-component-text-field-color-placeholder);
+	}
+
+	&:optional {
+		@mixin form-element $type, default;
+	}
+
+	&:required:focus:valid {
+		@mixin form-element $type, success;		
+		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-success-border-color);
+	}
+
+	&:focus:invalid {
+		@mixin form-element $type, error;
+		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-error-border-color);
 	}
 }
 

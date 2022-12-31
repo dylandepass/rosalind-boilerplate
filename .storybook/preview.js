@@ -9,12 +9,12 @@ export const parameters = {
   host: 'https://main--rosalind-boilerplate--dylandepass.hlx.page',
   cssVariables: {
     files: {
-      'Light Theme': light,
-      'Dark Theme': dark,
-      'WKND Theme': WKND,
-      'Vader Theme': vader,
+      'rosalind-light': light,
+      'rosalind-dark': dark,
+      'WKND-light': WKND,
+      'Vader': vader,
     },
-    defaultTheme: 'Light Theme'
+    defaultTheme: 'rosalind-light'
   }
 };
 

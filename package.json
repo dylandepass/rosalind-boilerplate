@@ -32,6 +32,8 @@
     "@dylandepass/franklin-storybook-addon": "0.0.30",
     "@esm-bundle/chai": "4.3.4-fix.0",
     "@etchteam/storybook-addon-css-variables-theme": "^1.4.0",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-a11y": "^6.5.15",
     "@storybook/addon-essentials": "6.5.15",
     "@storybook/html": "6.5.15",
     "@web/test-runner": "0.14.0",

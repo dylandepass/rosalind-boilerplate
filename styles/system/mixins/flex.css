@@ -11,8 +11,21 @@
 @define-mixin flex-cols $cols {
 	@mixin col;
 
+	display: flex;
 	flex: 0 0 calc(($(cols) / 12) * 100%);
 	max-width: calc(($(cols) / 12) * 100%);
+}
+
+@define-mixin auto-flex $col-width {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    text-align: center;
+
+	& > div {
+		width: $(col-width);
+	}
 }
 
 @define-mixin flex-xxl-cols $cols {

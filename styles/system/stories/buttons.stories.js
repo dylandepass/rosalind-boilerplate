@@ -2,7 +2,6 @@
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
 import { decorateIcons } from '../../../scripts/lib-franklin.js';
 import { loadPage } from '../../../scripts/scripts.js';
-import style from '../../system.css';
 
 function decorate(block) {
   decorateIcons(block);

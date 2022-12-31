@@ -1,0 +1,48 @@
+<!-- Colors.stories.mdx -->
+
+import { Meta, Canvas, Story, ColorPalette, ColorItem, Preview, Source } from '@storybook/addon-docs';
+
+<Meta title="test"/>
+
+# Shadows
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our
+Markdown documentation.
+
+<Canvas withSource="none">
+  <h2>Some here</h2>
+  <MyComponent />
+</Canvas>
+
+<Canvas>
+<div class="shadows-demo">
+    <div class="box shadow-sm">sm</div>
+    <div class="box shadow-md">md</div>
+    <div class="box shadow-lg">lg</div>
+    <div class="box shadow-xl">xl</div>
+</div>
+</Canvas>
+
+### Shadow Mixins
+<Source
+  language='css'
+  dark
+  format={false}
+  code={
+`.shadow-sm {
+  @mixin shadow-sm;
+}
+.shadow-md {
+  @mixin shadow-md;
+}
+.shadow-lg {
+  @mixin shadow-lg;
+}
+.shadow-xl {
+  @mixin shadow-xl;
+}`
+  }
+/>
+<>
+<Story id="buttons--buttons" inline={true}/>
+</>

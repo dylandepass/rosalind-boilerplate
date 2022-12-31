@@ -1,0 +1,90 @@
+import { Meta, Canvas, Story, ColorPalette, ColorItem, Preview, Source } from '@storybook/addon-docs';
+
+# Forms
+
+HTML Forms are widely used in websites and web applications to collect information from users. 
+
+Forms are composed of multiple elements which can accept input, such as checkboxes, text fields, and radio buttons. The information can either be submitted to the server or used in the client-side script. 
+
+In Franklin, HTML Forms can be authored in a spreadsheet or manually created by developers using javascript. The [Franklin Forms Service](https://www.hlx.live/developer/forms) can be used to persist form data in a spreadsheet.
+
+## TextField
+
+Text fields allow users to enter free form text data such as names, email addresses and other text.
+
+<Canvas>
+  <Story id="form-text-field--default"/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story id="form-text-field--required"/>
+</Canvas>
+
+## TextArea
+
+Text areas are a type of text input whereby users can enter multiple lines of text into the same field. Text areas also provide built-in features like scroll bars or resizing, which allow flexibility when writing a long form text.
+
+<Canvas>
+<form class="row">
+  <div class="group">
+    <label for="email">Description</label>
+    <textarea type="text" id="email" placeholder="Placeholder"></textarea>
+    <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
+  </div>
+</form>
+</Canvas>
+
+## Checkbox
+
+Checkboxes allow a user to select one or more options from a set of predefined choices.
+
+<Canvas>
+<form>  
+  <div class="group">
+    <input type="checkbox" id="checkbox"/>
+    <label for="checkbox">Completed Task</label>
+  </div>
+</form>
+</Canvas>
+
+## Switch
+
+Switch elements or toggles show an on and off state that users can interact with. They are a useful way to turn on and off features or as a way to choose between two or more options. 
+
+<Canvas>
+  <Story id="form-switch--default"/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story id="form-switch--required"/>
+</Canvas>
+
+## Radio
+
+Radio buttons are used in HTML forms to give users the ability to select one predetermined item from a predefined list of options. 
+
+<Canvas>
+  <Story id="form-radio--default"/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story id="form-radio--required"/>
+</Canvas>
+
+## Select
+
+<Canvas>
+  <Story id="form-select--default"/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story id="form-select--required"/>
+</Canvas>
