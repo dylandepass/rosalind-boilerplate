@@ -1,52 +1,45 @@
+import docs from './typography.mdx';
+
 export default {
   title: 'Typography',
+  parameters: {
+    docs: {
+      page: docs,
+    },
+  },
 };
 
 const Template = ({ content }) => content;
 
 export const Display = Template.bind({});
 Display.parameters = {
-  title: 'Typograph/Display',
+  title: 'Display',
 };
 Display.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h1 class="display1">Display 1</h1>
-                    <h1 class="display2">Display 2</h1>
-                    <h1 class="display3">Display 3</h1>
-                </div>
-            </div> 
-          </div>
-        </div>`,
+  content: /* html */`<div>
+  <h1 class="display1">Display 1</h1>
+  <h1 class="display2">Display 2</h1>
+  <h1 class="display3">Display 3</h1>
+</div>`,
 };
 
 export const Headings = Template.bind({});
 Headings.parameters = {
-  title: 'Typograph/Headings',
+  title: 'Headings',
 };
 Headings.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h1>h1. This is a very large header.</h1>
-                    <h2>h2. This is a large header</h2>
-                    <h3>h3. This is a medium header</h3>
-                    <h4>h4. This is a moderate header</h4>
-                    <h5>h5. This is a small header</h5>
-                </div>
-            </div> 
-          </div>
-        </div>`,
+  content: /* html */`<div>
+    <h1>h1. This is a very large header.</h1>
+    <h2>h2. This is a large header</h2>
+    <h3>h3. This is a medium header</h3>
+    <h4>h4. This is a moderate header</h4>
+    <h5>h5. This is a small header</h5>
+</div>`,
 };
 
 export const Body = Template.bind({});
 Body.parameters = {
-  title: 'Typograph/Body',
+  title: 'Body',
 };
 Body.args = {
   content: /* html */`
@@ -60,74 +53,55 @@ Body.args = {
 
 export const Code = Template.bind({});
 Code.parameters = {
-  title: 'Typograph/Code',
+  title: 'Code',
 };
 Code.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <code>const foo = 'bar';</code>
-          </div>
-        </div>`,
+  content: /* html */'<code>const foo = \'bar\';</code>',
 };
 
 export const Eyebrow = Template.bind({});
 Eyebrow.parameters = {
-  title: 'Typograph/Eyebrow',
+  title: 'Eyebrow',
 };
 Eyebrow.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <p class='eyebrow'>Augmented Reality</p>
-            <h1 class="on-base-muted">A new world all around you</h1>
-          </div>
-        </div>`,
+  content: /* html */`<div>
+  <p class='eyebrow'>Augmented Reality</p>
+</div>`,
 };
 
 export const Subtitle = Template.bind({});
 Subtitle.parameters = {
-  title: 'Typograph/Subtitle',
+  title: 'Subtitle',
 };
 Subtitle.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <h1 class="on-base-muted">Video editing made simple</h1>
-            <p class='subtitle'>Create videos with a single click. Add subtitles, transcript audio and more.</p>
-          </div>
-        </div>`,
+  content: /* html */`<div>
+  <p class='subtitle'>Create videos with a single click. Add subtitles, transcript audio and more.</p>
+</div>`,
 };
 
 export const Caption = Template.bind({});
 Caption.parameters = {
-  title: 'Typograph/Caption',
+  title: 'Caption',
 };
 Caption.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <p class="caption">This is a caption</p>
-          </div>
-        </div>`,
+  content: /* html */`<div>
+  <p class="caption">This is a caption</p>
+</div>`,
 };
 
 export const Blockquote = Template.bind({});
 Blockquote.parameters = {
-  title: 'Typograph/Blockquote',
+  title: 'Blockquote',
 };
 Blockquote.args = {
-  content: /* html */`
-        <div class="section">
-          <div class="block-wrapper">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-          </div>
-        </div>`,
+  content: /* html */`<div>
+  <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+</div>`,
 };
 
 export const Demo = Template.bind({});
 Demo.parameters = {
-  title: 'Typograph/Demo',
+  title: 'Demo',
 };
 Demo.args = {
   content: /* html */`

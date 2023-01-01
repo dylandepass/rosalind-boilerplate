@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
-import { decorateIcons } from '../../../scripts/lib-franklin.js';
-import { loadPage } from '../../../scripts/scripts.js';
-import style from '../../system.css';
+import { decorateIcons } from '../../../../scripts/lib-franklin.js';
+import { loadPage } from '../../../../scripts/scripts.js';
+import style from '../../../system.css';
 
 const GridExamples = () => /* html */`<div>
     <h2>12 column grid</h2>
