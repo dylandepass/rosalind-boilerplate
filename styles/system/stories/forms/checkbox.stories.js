@@ -1,10 +1,10 @@
-import mdx from './form.mdx';
+import docs from './form.mdx';
 
 export default {
   title: 'Form/Checkbox',
   parameters: {
     docs: {
-      page: mdx,
+      page: docs,
     },
   },
 };
