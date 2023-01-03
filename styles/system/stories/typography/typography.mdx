@@ -1,90 +1,83 @@
 import { Meta, Canvas, Story, ColorPalette, ColorItem, Preview, Source } from '@storybook/addon-docs';
 
-# Forms
+# Typography
 
-HTML Forms are widely used in websites and web applications to collect information from users. 
+Typography is an integral part of web design, playing an important role in conveying a company’s message, setting the tone and enhancing the overall user experience. 
 
-Forms are composed of multiple elements which can accept input, such as checkboxes, text fields, and radio buttons. The information can either be submitted to the server or used in the client-side script. 
+Typography is an important tool for guiding users through website design, helping to channel their attention to the most important elements on the page. The right typography choices can help to make a website appear easier to read, friendlier and more professional. 
 
-In Franklin, HTML Forms can be authored in a spreadsheet or manually created by developers using javascript. The [Franklin Forms Service](https://www.hlx.live/developer/forms) can be used to persist form data in a spreadsheet.
+It can also help to create a visual brand identity, with the right typefaces being associated with a particular brand or look and feel. When employed correctly, typography may be almost invisible to the user, yet its impact remains essential, helping to effectively communicate a website's content and create an impressive, aesthetically pleasing design for users to enjoy.
 
-## TextField
+Rosalind uses a Fluid Typography system (Responsive Type). Fluid typography refers to the practice of using a type system that scale in size according to the size of the user's screen or device. 
 
-Text fields allow users to enter free form text data such as names, email addresses and other text.
+The type system in Rosalind uses relative font sizes with a base font size of `16px`.
+
+[More information](https://utopia.fyi/blog/designing-with-fluid-type-scales) on Fluid typography.
+
+
+## Display
+
+Display Typography is used to create a visually striking impact. It is generally used for headlines and logos and often features larger fonts and eye-catching features such as bolding, italics, and all-caps.
 
 <Canvas>
   <Story id="typography--display"/>
 </Canvas>
 
-### Required
+
+## Headings
+
+Headings are an important element of web design, as they are the first thing that viewers often look at when they view a page. Not only do headings help to organize the page and make it easier to read, they can also draw people in and help to create an engaging experience. It is important to use headings effectively and to ensure that they provide structure and show clear hierarchies.
 
 <Canvas>
-  <Story id="form-text-field--required"/>
+  <Story id="typography--headings"/>
 </Canvas>
 
-## TextArea
+## Subtitles
 
-Text areas are a type of text input whereby users can enter multiple lines of text into the same field. Text areas also provide built-in features like scroll bars or resizing, which allow flexibility when writing a long form text.
+Subtitles can be an integral part of a web design and should be thoughtfully placed and tailored to the overall message and content of your page. They can also be a great way to create structure and hierarchy within a page, making it easier to scan and navigate. When used strategically, subtitles can be an effective tool to enhance the user experience and engage visitors on your website.
 
 <Canvas>
-<form class="row">
-  <div class="group">
-    <label for="email">Description</label>
-    <textarea type="text" id="email" placeholder="Placeholder"></textarea>
-    <span>This is some help text that breaks onto a new line and may extend more than one line.</span>
-  </div>
-</form>
+  <Story id="typography--subtitle"/>
 </Canvas>
 
-## Checkbox
+## Eyebrow
 
-Checkboxes allow a user to select one or more options from a set of predefined choices.
+Eyebrow text is a descriptive keyword or phrase placed above the main headline and blurb. It appears in a smaller font and sums up the content in just a few words. When users scan the headline, they'll also scan the eyebrow.
 
 <Canvas>
-<form>  
-  <div class="group">
-    <input type="checkbox" id="checkbox"/>
-    <label for="checkbox">Completed Task</label>
-  </div>
-</form>
+  <Story id="typography--eyebrow"/>
 </Canvas>
 
-## Switch
+### Body
 
-Switch elements or toggles show an on and off state that users can interact with. They are a useful way to turn on and off features or as a way to choose between two or more options. 
+The body font in web design is a critical element that contributes to the overall aesthetics of a website. Using the right font can provide an inviting and clean environment, while using a wrong one can make it appear cluttered and difficult to read. Therefore, when designing a website, it is important to take time to select an appropriate font for the body that is both modern and legible, and that has the right size and line spacing.
 
 <Canvas>
-  <Story id="form-switch--default"/>
+  <Story id="typography--body"/>
 </Canvas>
 
-### Required
+## Caption
+
+Caption fonts are used to provide concise yet descriptive text at a glance. Caption fonts are typically smaller than other text on the page and help provide context to specific element on a page, such as images or video content. 
 
 <Canvas>
-  <Story id="form-switch--required"/>
+  <Story id="typography--caption"/>
 </Canvas>
 
-## Radio
+### Blockquote
 
-Radio buttons are used in HTML forms to give users the ability to select one predetermined item from a predefined list of options. 
+The blockquote is a great web design tool to draw attention to key messages or visually break up large chunks of content. This gives the page an aesthetically pleasing look while also highlighting important points. 
 
-<Canvas>
-  <Story id="form-radio--default"/>
-</Canvas>
-
-### Required
+By using the blockquote, designers can emphasize the words that they want to stand out, allowing them to control the focus of their reader’s attention and create an impactful design. Furthermore, the blockquote also enables designers to give quotes from reliable sources or draw upon emotion-evoking language to strengthen their design.
 
 <Canvas>
-  <Story id="form-radio--required"/>
+  <Story id="typography--blockquote"/>
 </Canvas>
 
 ## Select
 
-<Canvas>
-  <Story id="form-select--default"/>
-</Canvas>
-
-### Required
+The `<code>` element is used to show content as a fragment of computer code. By default, monospace font style is used to display the text/piece of code.
 
 <Canvas>
-  <Story id="form-select--required"/>
+  <Story id="typography--code"/>
 </Canvas>
