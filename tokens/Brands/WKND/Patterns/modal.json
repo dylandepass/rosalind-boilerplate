@@ -1,0 +1,12 @@
+{
+  "pattern": {
+    "modal": {
+      "color": {
+        "overlay": {
+          "value": "rgba(185,153,0,0.4)",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
