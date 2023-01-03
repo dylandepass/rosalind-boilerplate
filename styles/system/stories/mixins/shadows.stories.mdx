@@ -2,17 +2,19 @@
 
 import { Meta, Canvas, Story, ColorPalette, ColorItem, Preview, Source } from '@storybook/addon-docs';
 
-<Meta title="test"/>
+<Meta 
+  title="CSS Mixins/Shadows"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { 
+      canvas: { hidden: true } 
+     },
+  }}/>
 
 # Shadows
 
 With `MDX`, we can define a story for `Checkbox` right in the middle of our
 Markdown documentation.
-
-<Canvas withSource="none">
-  <h2>Some here</h2>
-  <MyComponent />
-</Canvas>
 
 <Canvas>
 <div class="shadows-demo">
@@ -23,7 +25,8 @@ Markdown documentation.
 </div>
 </Canvas>
 
-### Shadow Mixins
+## Mixins
+
 <Source
   language='css'
   dark
@@ -43,6 +46,3 @@ Markdown documentation.
 }`
   }
 />
-<>
-<Story id="buttons--buttons" inline={true}/>
-</>

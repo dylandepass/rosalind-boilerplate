@@ -48,6 +48,11 @@ header {
 	position: fixed;
 	z-index: 1;
 
+	/* Don't use a stickey headers on small mobile devices */
+	@media (--ros-screen-xs) {
+		position: absolute;
+	}
+
 	& .header {
 		background-color: var(--ros-pattern-header-color-background-base);
 		transition-property: all;
@@ -170,6 +175,10 @@ header {
 				@mixin margin-right md;
 				& select {
 					min-width: 200px;
+				}
+
+				@media (--ros-screen-xs) {
+					display: none;
 				}
 			}
 		}
