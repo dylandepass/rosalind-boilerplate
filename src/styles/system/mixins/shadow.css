@@ -1,9 +1,0 @@
-@define-mixin shadow-100 {
-	border-radius: 4px;
-	box-shadow:
-		var(--ros-shadow-100-x)
-		var(--ros-shadow-100-y)
-		var(--ros-shadow-100-blur)
-		var(--ros-shadow-100-spread)
-		var(--ros-color-global-shadow-100);
-}

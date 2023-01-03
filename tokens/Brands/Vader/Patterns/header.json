@@ -1,0 +1,26 @@
+{
+  "pattern": {
+    "header": {
+      "size": {
+        "logo": {
+          "width": {
+            "value": "110",
+            "type": "sizing"
+          },
+          "height": {
+            "value": "35",
+            "type": "sizing"
+          }
+        }
+      },
+      "logo": {
+        "text": {
+          "display": {
+            "value": "none",
+            "type": "other"
+          }
+        }
+      }
+    }
+  }
+}

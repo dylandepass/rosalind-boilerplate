@@ -160,12 +160,21 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+export function loadTheme() {
+  const themeLink = document.getElementById('theme');
+  const theme = localStorage.getItem('theme');
+  if (theme && themeLink) {
+    themeLink.setAttribute('href', `${window.hlx.codeBasePath}/styles/themes/${theme}.css`);
+  }
+}
+
 /**
  * loads everything needed to get to LCP.
  */
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  loadTheme();
   const main = doc.querySelector('main');
   decorateTemplate(main);
   if (main) {
@@ -203,8 +212,10 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
+  if (!window.STORYBOOK_ENV) {
+    loadHeader(doc.querySelector('header'));
+    loadFooter(doc.querySelector('footer'));
+  }
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.svg`);
@@ -224,13 +235,15 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
-async function loadPage() {
+export async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
 }
 
-loadPage();
+if (!window.STORYBOOK_ENV) {
+  loadPage();
+}
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('performance')) {

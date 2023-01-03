@@ -1,0 +1,107 @@
+@import "../../styles/system/mixins";
+
+.grid {
+	display: grid;
+	gap: 30px;
+
+	&.two-cols {
+		@mixin grid-cols 1;
+		@mixin grid-lg-cols 2;
+	}
+
+	&.bulleted {
+		& > div {
+			display: flex;
+
+			& .icon {
+				@mixin flex-cols 1;
+				@mixin padding-top xs;
+				@mixin padding-horizontal xs;
+			}
+		}
+	}
+}
+
+.section:has(.img-grid) {
+	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
+	padding: 20px 10px;
+	min-height: 98px;
+}
+
+.img-grid {
+	@mixin grid-cols 1;
+	@mixin grid-sm-cols 3;
+	@mixin grid-md-cols 3;
+	@mixin grid-lg-cols 5;
+
+	& > div {
+		display: flex;
+		justify-content: center;
+	}
+
+	& a {
+		all: unset;
+	}
+
+	& img {
+		max-height: 50px;
+		width: auto;
+	}
+}
+
+.icon-cards {
+	@mixin grid-cols 1;
+	@mixin grid-sm-cols 2;
+	@mixin grid-md-cols 2;
+	@mixin grid-lg-cols 3;
+	@mixin grid-xl-cols 4;
+
+	text-align: center;
+	gap: 30px;
+
+	& :--heading {
+		@mixin h5;
+		font-weight: 400;
+	}
+
+	& svg {
+		width: 40px;
+		height: 40px;
+		transform: rotate(-45deg);
+		color: var(--ros-semantic-color-foreground-on-layer-2);
+	}
+
+	& .icon {
+		background-color: var(--ros-semantic-color-background-layer-2);
+		padding: 20px;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		border-radius: 10px;
+		transform: rotate(45deg);
+		margin: 0 auto;
+		opacity: 0.7;
+	}
+
+	& > div {
+		padding: var(--ros-semantic-spacing-around-component-xxxl);
+
+		@mixin shadow-md;
+
+		& p:not(:has(.icon)) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background-color: var(--ros-semantic-color-primary-base);
+			color: #fff;
+
+			& :--heading {
+				color: #fff;
+			}
+		}
+	}
+}

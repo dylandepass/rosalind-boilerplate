@@ -1,8 +1,0 @@
-@define-mixin form-element $state: default {
-	color: var(--ros-color-form-input-foreground-$(state));
-	border-width: var(--ros-border-width-form-input-$(state));
-	border-radius: var(--ros-radius-form-input);
-	border-color: var(--ros-color-form-input-border-$(state));
-	background-color: var(--ros-color-form-input-background-$(state));
-	margin: calc(var(--ros-border-width-form-input-$(state)) * -1);
-}

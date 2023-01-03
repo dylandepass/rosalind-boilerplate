@@ -7,3 +7,7 @@ package-lock.json
 test/*
 src/*
 .storybook/
+**/*.post.css
+tokens/*
+postcss.config.js
+gulpfile.js
