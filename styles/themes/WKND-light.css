@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 04 Jan 2023 19:46:48 GMT
+ * Generated on Wed, 04 Jan 2023 20:33:07 GMT
  */
 
 :root {
@@ -410,22 +410,22 @@
   --ros-semantic-color-secondary-darker: #000000;
   --ros-semantic-color-secondary-dark: #000000;
   --ros-semantic-color-secondary-base: #000000;
-  --ros-semantic-color-foreground-on-input: #222222;
+  --ros-semantic-color-foreground-on-input-default: #222222;
   --ros-semantic-color-foreground-on-disabled-subtle: #505050;
-  --ros-semantic-color-foreground-on-disabled: #b1b1b1;
-  --ros-semantic-color-foreground-on-primary-muted: #b1b1b1;
-  --ros-semantic-color-foreground-on-primary-subtle: #e6e6e6;
+  --ros-semantic-color-foreground-on-disabled-default: #b1b1b1;
   --ros-semantic-color-foreground-on-layer-2-muted: #909090;
   --ros-semantic-color-foreground-on-layer-2-subtle: #6d6d6d;
-  --ros-semantic-color-foreground-on-layer-2: #222222;
+  --ros-semantic-color-foreground-on-layer-2-default: #222222;
   --ros-semantic-color-foreground-on-layer-1-muted: #909090;
   --ros-semantic-color-foreground-on-layer-1-subtle: #6d6d6d;
-  --ros-semantic-color-foreground-on-layer-1: #222222;
+  --ros-semantic-color-foreground-on-layer-1-default: #222222;
   --ros-semantic-color-foreground-on-base-muted: #909090;
   --ros-semantic-color-foreground-on-base-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-base-default: #222222;
-  --ros-semantic-color-foreground-on-secondary: #ffffff;
-  --ros-semantic-color-foreground-on-primary: #000000;
+  --ros-semantic-color-foreground-on-secondary-default: #ffffff;
+  --ros-semantic-color-foreground-on-primary-muted: #b1b1b1;
+  --ros-semantic-color-foreground-on-primary-subtle: #e6e6e6;
+  --ros-semantic-color-foreground-on-primary-default: #000000;
   --ros-semantic-color-primary-light: #7575f1;
   --ros-semantic-color-primary-secondary: #000000;
   --ros-semantic-color-primary-darker: #c4a600;
