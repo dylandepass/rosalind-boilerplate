@@ -34,9 +34,13 @@ import { GroupColorItem } from '../utils/color.jsx';
 
 ## Foreground
 <ColorPalette>
-  {Object.entries(theme.semantic.color.foreground).map(([key, value]) => (
-    <ColorItem key={key} title={key} subtitle={`--ros-semantic-color-foreground-${key}`} colors={[value]} />
-  ))}
+  <GroupColorItem title="on-base" tokenGroup={theme.semantic.color.foreground['on-base']} tokenName="--ros-semantic-color-foreground-on-base-{type}"/>
+  <GroupColorItem title="on-layer-1" tokenGroup={theme.semantic.color.foreground['on-layer-1']} tokenName="--ros-semantic-color-foreground-on-layer-1-{type}"/>
+  <GroupColorItem title="on-layer-2" tokenGroup={theme.semantic.color.foreground['on-layer-2']} tokenName="--ros-semantic-color-foreground-on-layer-2-{type}"/>
+  <GroupColorItem title="on-primary" tokenGroup={theme.semantic.color.foreground['on-primary']} tokenName="--ros-semantic-color-foreground-on-primary-{type}"/>
+  <GroupColorItem title="on-secondary" tokenGroup={theme.semantic.color.foreground['on-secondary']} tokenName="--ros-semantic-color-foreground-on-secondary-{type}"/>
+  <GroupColorItem title="on-disabled" tokenGroup={theme.semantic.color.foreground['on-disabled']} tokenName="--ros-semantic-color-foreground-on-disabled-{type}"/>
+  <GroupColorItem title="on-input" tokenGroup={theme.semantic.color.foreground['on-input']} tokenName="--ros-semantic-color-foreground-on-input-{type}"/>
 </ColorPalette>
 
 ## Border
