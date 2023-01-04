@@ -783,19 +783,31 @@
           "subtle": "#6d6d6d",
           "muted": "#909090"
         },
-        "on-layer-1": "#222222",
-        "on-layer-1-subtle": "#6d6d6d",
-        "on-layer-1-muted": "#909090",
-        "on-layer-2": "#222222",
-        "on-layer-2-subtle": "#6d6d6d",
-        "on-layer-2-muted": "#909090",
-        "on-primary": "#ffffff",
-        "on-primary-subtle": "#e6e6e6",
-        "on-primary-muted": "#b1b1b1",
-        "on-secondary": "#ffffff",
-        "on-disabled": "#b1b1b1",
-        "on-disabled-subtle": "#505050",
-        "on-input": "#222222"
+        "on-layer-1": {
+          "default": "#222222",
+          "subtle": "#6d6d6d",
+          "muted": "#909090"
+        },
+        "on-layer-2": {
+          "default": "#222222",
+          "subtle": "#6d6d6d",
+          "muted": "#909090"
+        },
+        "on-primary": {
+          "default": "#ffffff",
+          "subtle": "#e6e6e6",
+          "muted": "#b1b1b1"
+        },
+        "on-secondary": {
+          "default": "#ffffff"
+        },
+        "on-disabled": {
+          "default": "#b1b1b1",
+          "subtle": "#505050"
+        },
+        "on-input": {
+          "default": "#222222"
+        }
       },
       "positive": {
         "default": "#268e6c",
