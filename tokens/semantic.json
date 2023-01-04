@@ -289,16 +289,18 @@
       },
       "foreground": {
         "on-base": {
-          "value": "{theme.color.gray.800}",
-          "type": "color"
-        },
-        "on-base-subtle": {
-          "value": "{theme.color.gray.600}",
-          "type": "color"
-        },
-        "on-base-muted": {
-          "value": "{theme.color.gray.500}",
-          "type": "color"
+          "default": {
+            "value": "{theme.color.gray.800}",
+            "type": "color"
+          },
+          "subtle": {
+            "value": "{theme.color.gray.600}",
+            "type": "color"
+          },
+          "muted": {
+            "value": "{theme.color.gray.500}",
+            "type": "color"
+          }
         },
         "on-layer-1": {
           "value": "{theme.color.gray.800}",
