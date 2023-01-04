@@ -1,5 +1,10 @@
 {
   "pattern": {
+    "modal": {
+      "color": {
+        "overlay": "#00000099"
+      }
+    },
     "footer": {
       "color": {
         "seperator": {

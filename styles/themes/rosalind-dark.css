@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 03 Jan 2023 19:28:18 GMT
+ * Generated on Tue, 03 Jan 2023 20:19:27 GMT
  */
 
 :root {
@@ -463,6 +463,7 @@
   --ros-pattern-footer-color-seperator-on-base: #1e293b;
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
   --ros-pattern-footer-color-background-base: #192132;
+  --ros-pattern-modal-color-overlay: #0f172a66;
   --ros-semantic-inner-shadow-sm-0-spread: 0px;
   --ros-semantic-inner-shadow-sm-0-blur: 4px;
   --ros-semantic-inner-shadow-sm-0-y: 2px;

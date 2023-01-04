@@ -623,6 +623,11 @@
     }
   },
   "pattern": {
+    "modal": {
+      "color": {
+        "overlay": "#0f172a66"
+      }
+    },
     "footer": {
       "color": {
         "background": {

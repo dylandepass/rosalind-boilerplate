@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 03 Jan 2023 19:28:19 GMT
+ * Generated on Tue, 03 Jan 2023 20:19:26 GMT
  */
 
 :root {
@@ -704,4 +704,5 @@
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
   --ros-pattern-footer-color-background-base: #111;
   --ros-pattern-footer-color-seperator-on-base: #333;
+  --ros-pattern-modal-color-overlay: #00000099;
 }

@@ -1,5 +1,10 @@
 {
   "pattern": {
+    "modal": {
+      "color": {
+        "overlay": "#b9990066"
+      }
+    },
     "footer": {
       "color": {
         "background": {
