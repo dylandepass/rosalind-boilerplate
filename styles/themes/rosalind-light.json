@@ -414,7 +414,7 @@
       "spacing": {
         "padding-x": 10,
         "padding-y": 6,
-        "space-between": 8
+        "gap": 8
       },
       "font-size": {
         "text": 16
