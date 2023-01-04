@@ -778,9 +778,11 @@
         "input": "#00000000"
       },
       "foreground": {
-        "on-base": "#222222",
-        "on-base-subtle": "#6d6d6d",
-        "on-base-muted": "#909090",
+        "on-base": {
+          "default": "#222222",
+          "subtle": "#6d6d6d",
+          "muted": "#909090"
+        },
         "on-layer-1": "#222222",
         "on-layer-1-subtle": "#6d6d6d",
         "on-layer-1-muted": "#909090",

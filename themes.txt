@@ -121,9 +121,6 @@
       "semantic.color.background.layer-1": "S:c2bc0f3eeb509ec17e748601241567694ef22837,",
       "semantic.color.background.disabled": "S:2468a1ea7a27d3b79b5d93bf0b4b85491354508e,",
       "semantic.color.background.input": "S:600113b87437117572d52926be8d3eac4b60ab81,",
-      "semantic.color.foreground.on-base": "S:42fc4655bc342a2177b05fa912479944b7fe3d39,",
-      "semantic.color.foreground.on-base-subtle": "S:624d2fdc5df5037293bb5122a3054e0220caf2b2,",
-      "semantic.color.foreground.on-base-muted": "S:7bf17a066692f40c2d87cf9dcf8507aa37c96d31,",
       "semantic.color.foreground.on-layer-1": "S:f98baaf8883cedb031064bbd5a6468a41efcc676,",
       "semantic.color.foreground.on-layer-1-subtle": "S:fcf4607a3a2bedd95f86518342a435b1afdd72f8,",
       "semantic.color.foreground.on-layer-1-muted": "S:511ed7b34812eb30414d82c9a638fb359fef9bfc,",
@@ -182,7 +179,10 @@
       "semantic.typography.mobile.heading-5": "S:d9378099b4278b1fea00d10e9e79900bae3a90e4,",
       "semantic.typography.mobile.eyebrow": "S:8bad5d7d8314a687278f2fa0c29c63444f1f2c1e,",
       "semantic.typography.mobile.subtitle": "S:3bac7844eaae61f5d50fed23575d8d5702118364,",
-      "semantic.color.secondary.base": "S:7512a669040eeabf14fc2c1bd922a7766dcd4520,"
+      "semantic.color.secondary.base": "S:7512a669040eeabf14fc2c1bd922a7766dcd4520,",
+      "semantic.color.foreground.on-base.default": "S:42fc4655bc342a2177b05fa912479944b7fe3d39,",
+      "semantic.color.foreground.on-base.subtle": "S:624d2fdc5df5037293bb5122a3054e0220caf2b2,",
+      "semantic.color.foreground.on-base.muted": "S:7bf17a066692f40c2d87cf9dcf8507aa37c96d31,"
     }
   },
   {

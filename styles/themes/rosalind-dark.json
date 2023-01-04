@@ -32,9 +32,11 @@
         "darker": "#6f38b1"
       },
       "foreground": {
-        "on-base": "#ebebeb",
-        "on-base-subtle": "#b2b2b2",
-        "on-base-muted": "#909090",
+        "on-base": {
+          "default": "#ebebeb",
+          "subtle": "#b2b2b2",
+          "muted": "#909090"
+        },
         "on-layer-1": "#ebebeb",
         "on-layer-1-subtle": "#b2b2b2",
         "on-layer-1-muted": "#909090",
