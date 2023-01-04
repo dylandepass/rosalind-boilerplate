@@ -10,3 +10,15 @@ alloy('configure', {
   orgId: '0F7667C2524450620A490D4C@AdobeOrg',
   debugEnabled: true,
 });
+
+alloy('sendEvent', {
+  xdm: {
+    web: {
+      webPageDetails: {
+        pageViews: {
+          value: 1,
+        },
+      },
+    },
+  },
+});
