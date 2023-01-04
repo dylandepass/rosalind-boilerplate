@@ -27,12 +27,16 @@
       },
       "foreground": {
         "on-primary": {
-          "value": "{global.color.static.black}",
-          "type": "color"
+          "default": {
+            "value": "{global.color.static.black}",
+            "type": "color"
+          }
         },
         "on-secondary": {
-          "value": "{global.color.static.white}",
-          "type": "color"
+          "default": {
+            "value": "{global.color.static.white}",
+            "type": "color"
+          }
         }
       },
       "secondary": {
