@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 03 Jan 2023 20:19:26 GMT
+ * Generated on Wed, 04 Jan 2023 20:38:17 GMT
  */
 
 :root {
@@ -394,6 +394,22 @@
   --ros-semantic-color-positive-down: #33ab84;
   --ros-semantic-color-positive-hover: #2d9d78;
   --ros-semantic-color-positive-default: #268e6c;
+  --ros-semantic-color-foreground-on-input-default: #ebebeb;
+  --ros-semantic-color-foreground-on-disabled-subtle: #505050;
+  --ros-semantic-color-foreground-on-disabled-default: #707070;
+  --ros-semantic-color-foreground-on-secondary-default: #ffffff;
+  --ros-semantic-color-foreground-on-primary-muted: #707070;
+  --ros-semantic-color-foreground-on-primary-subtle: #3f3f3f;
+  --ros-semantic-color-foreground-on-primary-default: #ffffff;
+  --ros-semantic-color-foreground-on-layer-2-muted: #909090;
+  --ros-semantic-color-foreground-on-layer-2-subtle: #b2b2b2;
+  --ros-semantic-color-foreground-on-layer-2-default: #ebebeb;
+  --ros-semantic-color-foreground-on-layer-1-muted: #909090;
+  --ros-semantic-color-foreground-on-layer-1-subtle: #b2b2b2;
+  --ros-semantic-color-foreground-on-layer-1-default: #ebebeb;
+  --ros-semantic-color-foreground-on-base-muted: #909090;
+  --ros-semantic-color-foreground-on-base-subtle: #b2b2b2;
+  --ros-semantic-color-foreground-on-base-default: #ebebeb;
   --ros-semantic-color-border-disabled: #707070;
   --ros-semantic-color-border-base: #3f3f3f;
   --ros-semantic-color-border-focus: #d83790;
@@ -409,22 +425,6 @@
   --ros-semantic-color-primary-darker: #bc1c74;
   --ros-semantic-color-primary-dark: #ca2982;
   --ros-semantic-color-primary-base: #d83790;
-  --ros-semantic-color-foreground-on-input: #ebebeb;
-  --ros-semantic-color-foreground-on-disabled-subtle: #505050;
-  --ros-semantic-color-foreground-on-disabled: #707070;
-  --ros-semantic-color-foreground-on-secondary: #ffffff;
-  --ros-semantic-color-foreground-on-primary-muted: #707070;
-  --ros-semantic-color-foreground-on-primary-subtle: #3f3f3f;
-  --ros-semantic-color-foreground-on-primary: #ffffff;
-  --ros-semantic-color-foreground-on-layer-2-muted: #909090;
-  --ros-semantic-color-foreground-on-layer-2-subtle: #b2b2b2;
-  --ros-semantic-color-foreground-on-layer-1-muted: #909090;
-  --ros-semantic-color-foreground-on-layer-1-subtle: #b2b2b2;
-  --ros-semantic-color-foreground-on-base-muted: #909090;
-  --ros-semantic-color-foreground-on-base-subtle: #b2b2b2;
-  --ros-semantic-color-foreground-on-layer-2: #ffffff;
-  --ros-semantic-color-foreground-on-layer-1: #ffffff;
-  --ros-semantic-color-foreground-on-base: #ffffff;
   --ros-semantic-color-background-input: #00000000;
   --ros-semantic-color-background-disabled: #545454;
   --ros-semantic-color-background-layer-2: #222;
@@ -542,7 +542,7 @@
   --ros-component-switch-border-width-hover: 1px;
   --ros-component-switch-border-width-default: 1px;
   --ros-component-switch-border-radius: 9999px;
-  --ros-component-switch-color-label: #ffffff;
+  --ros-component-switch-color-label: #ebebeb;
   --ros-component-switch-color-disabled-border-color: #707070;
   --ros-component-switch-color-disabled-foreground-color: #707070;
   --ros-component-switch-color-disabled-background-color: #545454;
@@ -573,7 +573,7 @@
   --ros-component-checkbox-border-width-hover: 1px;
   --ros-component-checkbox-border-width-default: 1px;
   --ros-component-checkbox-border-radius: 4px;
-  --ros-component-checkbox-color-label: #ffffff;
+  --ros-component-checkbox-color-label: #ebebeb;
   --ros-component-checkbox-color-disabled-border-color: #707070;
   --ros-component-checkbox-color-disabled-foreground-color: #707070;
   --ros-component-checkbox-color-disabled-background-color: #545454;
@@ -606,7 +606,7 @@
   --ros-component-radio-border-width-hover: 1px;
   --ros-component-radio-border-width-default: 1px;
   --ros-component-radio-border-radius: 4px;
-  --ros-component-radio-color-label: #ffffff;
+  --ros-component-radio-color-label: #ebebeb;
   --ros-component-radio-color-disabled-border-color: #707070;
   --ros-component-radio-color-disabled-foreground-color: #707070;
   --ros-component-radio-color-disabled-background-color: #545454;
