@@ -148,6 +148,31 @@ import { GroupColorItem } from '../utils/color.jsx';
   <GroupColorItem title="Disabled State" tokenGroup={theme.component.switch.color.disabled} tokenName="--ros-component-switch-color-disabled-{type}"/>
 </ColorPalette>
 
+## Patterns
+
+### Header
+<ColorPalette>
+  <GroupColorItem title="background" tokenGroup={theme.pattern.header.color.background} tokenName="--ros-pattern-header-color-background-{type}"/>
+</ColorPalette>
+
+#### Nav Item Level-0
+<ColorPalette>
+  <GroupColorItem title="Default State" tokenGroup={theme.pattern.header.color['nav-item']['level-0'].default} tokenName="--ros-pattern-header-color-nav-item-level-0-default-{type}"/>
+  <GroupColorItem title="Hover State" tokenGroup={theme.pattern.header.color['nav-item']['level-0'].hover} tokenName="--ros-pattern-header-color-nav-item-level-0-hover-{type}"/>
+  <GroupColorItem title="Down" tokenGroup={theme.pattern.header.color['nav-item']['level-0'].down} tokenName="--ros-pattern-header-color-nav-item-level-0-down-{type}"/>
+  <GroupColorItem title="Key Focus State" tokenGroup={theme.pattern.header.color['nav-item']['level-0']['key-focus']} tokenName="--ros-pattern-header-color-nav-item-level-0-key-focus-{type}"/>
+  <GroupColorItem title="Disabled State" tokenGroup={theme.pattern.header.color['nav-item']['level-0'].disabled} tokenName="--ros-pattern-header-color-nav-item-level-0-disabled-{type}"/>
+</ColorPalette>
+
+#### Nav Item Level-1
+<ColorPalette>
+  <GroupColorItem title="Default State" tokenGroup={theme.pattern.header.color['nav-item']['level-1'].default} tokenName="--ros-pattern-header-color-nav-item-level-1-default-{type}"/>
+  <GroupColorItem title="Hover State" tokenGroup={theme.pattern.header.color['nav-item']['level-1'].hover} tokenName="--ros-pattern-header-color-nav-item-level-1-hover-{type}"/>
+  <GroupColorItem title="Down" tokenGroup={theme.pattern.header.color['nav-item']['level-1'].down} tokenName="--ros-pattern-header-color-nav-item-level-1-down-{type}"/>
+  <GroupColorItem title="Key Focus State" tokenGroup={theme.pattern.header.color['nav-item']['level-1']['key-focus']} tokenName="--ros-pattern-header-color-nav-item-level-1-key-focus-{type}"/>
+  <GroupColorItem title="Disabled State" tokenGroup={theme.pattern.header.color['nav-item']['level-1'].disabled} tokenName="--ros-pattern-header-color-nav-item-level-1-disabled-{type}"/>
+</ColorPalette>
+
 ## Theme
 <ColorPalette>
   {Object.entries(theme.theme.color).map(([k, v]) => {
