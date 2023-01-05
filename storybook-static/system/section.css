@@ -1,0 +1,58 @@
+.section {
+	margin: auto;
+	width: 100%;
+	padding: var(--ros-semantic-spacing-section-mobile-padding-y) var(--ros-semantic-spacing-section-mobile-padding-x);
+	max-width: var(--ros-semantic-size-section-max-width);
+
+	&[data-section-status="loading"],
+	&[data-section-status="initialized"] {
+		display: none;
+	}
+
+	&.secondary-background {
+		background-color: var(--ros-semantic-color-background-layer-1);
+	}
+
+	/* TODO: Finish Fluid */
+	&.fluid {
+		max-width: var(--hlx-max-width-limit);
+	}
+
+	&.full-width {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	&.full-width-section {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+
+		& > div:not(.default-content-wrapper) {
+			max-width: var(--ros-semantic-size-section-max-width);
+			margin: auto;
+		}
+
+		@media (--ros-screen-lg) {
+			padding: var(--ros-semantic-spacing-section-desktop-padding-y) var(--ros-semantic-spacing-section-desktop-padding-x);
+		}
+	}
+
+	@media (--ros-screen-sm) {
+		padding: var(--ros-semantic-spacing-section-desktop-padding-y) var(--ros-semantic-spacing-section-desktop-padding-x);
+	}
+
+	@media (--ros-screen-md) {
+		& > div {
+			max-width: var(--ros-semantic-size-section-max-width);
+		}
+	}
+}
+
+.default-content-wrapper {
+	max-width: var(--ros-semantic-size-section-max-width);
+	margin-left: auto;
+	margin-right: auto;
+}
