@@ -9,7 +9,11 @@ export default async function decorate(block) {
   const cfg = readBlockConfig(block);
   block.textContent = '';
 
-  const footerPath = cfg.footer || '/footer';
+  let footerPath = cfg.footer || '/footer';
+  if (window.location.host.includes('github.io')) {
+    footerPath = 'https://rosalind.experience-adobe.com/footer';
+  }
+
   const resp = await fetch(`${footerPath}.plain.html`);
   const html = await resp.text();
   const footer = document.createElement('div');

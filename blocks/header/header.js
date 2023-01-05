@@ -32,7 +32,11 @@ export default async function decorate(block) {
   block.textContent = '';
 
   // fetch nav content
-  const navPath = cfg.nav || '/nav';
+  let navPath = cfg.nav || '/nav';
+  if (window.location.host.includes('github.io')) {
+    navPath = 'https://rosalind.experience-adobe.com/nav';
+  }
+
   const resp = await fetch(`${navPath}.plain.html`);
   if (resp.ok) {
     const html = await resp.text();
