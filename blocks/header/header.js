@@ -1,4 +1,5 @@
 import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import { isMobile } from '../../scripts/scripts.js';
 
 /**
  * collapses all open nav sections
@@ -63,9 +64,20 @@ export default async function decorate(block) {
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         });
 
-        navSection.addEventListener('click', () => {
-          const child = navSection.querySelector(':scope > ul');
-          child?.classList.toggle('open');
+        navSection.addEventListener('click', (event) => {
+          const parent = event.target.parentElement;
+          const hasChildren = parent.querySelector('ul') !== null;
+          if (isMobile()) {
+            // If we clicked on a top level element don't navigate and expand instead
+            if (hasChildren && parent.classList.contains('top-level')) {
+              event.preventDefault();
+            }
+          }
+
+          if (hasChildren) {
+            const child = navSection.querySelector(':scope > ul');
+            child?.classList.toggle('open');
+          }
         });
       });
     }

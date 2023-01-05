@@ -1,6 +1,61 @@
 @import "../../styles/system/breakpoints";
 @import "../../styles/system/mixins";
 
+@define-mixin fade {
+	transition-property: background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.5s;
+}
+
+@define-mixin nav-item-state $level, $state {
+	background-color: var(--ros-pattern-header-color-nav-item-$(level)-$(state)-background-color);
+	border-color: var(--ros-pattern-header-color-nav-item-$(level)-$(state)-border-color);
+	color: var(--ros-pattern-header-color-nav-item-$(level)-$(state)-foreground-color);
+}
+
+@define-mixin nav-item $level {
+	font-family: var(--ros-pattern-header-font-family-nav-item-$(level));
+	font-size: var(--ros-pattern-header-font-size-nav-item-$(level));
+	font-weight: var(--ros-pattern-header-font-weight-nav-item-$(level));
+	line-height: var(--ros-pattern-header-line-height-nav-item-$(level));
+	text-transform: var(--ros-pattern-header-text-case-nav-item-$(level));
+	text-decoration: var(--ros-pattern-header-text-decoration-nav-item-$(level));
+	letter-spacing: var(--ros-pattern-header-letter-spacing-nav-item-$(level));
+
+	@mixin nav-item-state $level, default;
+	@mixin fade;
+
+	&:hover {
+		@mixin nav-item-state $level, hover;
+	}
+
+	&:focus {
+		@mixin nav-item-state $level, default;
+	}
+
+	&:active {
+		@mixin nav-item-state $level, down;
+	}
+
+	&.disabled {
+		@mixin nav-item-state $level, disabled;
+
+		&:focus,
+		&:focus-visible {
+			outline: initial;
+		}
+	}
+
+	& a {
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 0px 2px var(--ros-pattern-header-color-nav-item-level-0-key-focus-border-color);
+			border-radius: var(--ros-semantic-border-radius-default);
+		}
+	}
+}
+
+/* When nav has hero image below it */
 body:has(.hero-image) {
 	& header {
 		& nav {
@@ -13,6 +68,16 @@ body:has(.hero-image) {
 
 					&::after {
 						background-color: #fff;
+					}
+				}
+			}
+
+			& .nav-menu {
+				& li {
+					background-color: var(--ros-semantic-color-transparent);
+
+					&:hover {
+						background-color: var(--ros-semantic-color-transparent);
 					}
 				}
 			}
@@ -30,12 +95,27 @@ body:has(.hero-image) {
 
 		& .header.sticky {
 			& nav {
-				& .top-level {
-					color: var(--ros-theme-color-gray-900);
+				& .nav-tools {
+					& .select { 
+						& select {
+							color: unset;
+							border-color: unset;
+						}
+
+						&::after {
+							background-color: unset;
+						}
+					}
 				}
 
-				& .nav-brand p {
-					color: var(--ros-theme-color-gray-900);
+				@media (--ros-screen-lg) {
+					& .top-level {
+						color: unset;
+					}
+
+					& .nav-brand p {
+						color: unset;
+					}
 				}
 			}
 		}
@@ -55,9 +135,7 @@ header {
 
 	& .header {
 		background-color: var(--ros-pattern-header-color-background-base);
-		transition-property: all;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 0.5s;
+		@mixin fade;
 
 		&.sticky {
 			background-color: var(--ros-pattern-header-color-background-base);
@@ -74,7 +152,6 @@ header {
 		display: flex;
 		align-items: stretch;
 		height: var(--ros-pattern-header-size-height);
-		color: var(--ros-theme-color-gray-900);
 
 		@mixin padding-right md;
 		@mixin padding-lg-horizontal lg;
@@ -167,7 +244,7 @@ header {
 		}
 
 		& .nav-tools {
-			width: 127px;
+			width: 212px;
 			align-items: center;
 			justify-content: flex-end;
 
@@ -190,28 +267,23 @@ header {
 			align-items: center;
 			position: relative;
 
-			/* Level 1 Menu */
+			/* Level 0 Menu */
 			& > ul {
 				display: flex;
-				font-weight: 500;
 				list-style: none;
-				padding-left: 50px;
 				height: 100%;
 				gap: 50px;
-				font-size: 13px;
 				cursor: pointer;
 
-				/* Level 1 Menu Items */
+				/* Level 0 Menu Items */
 				& > li {
+					@mixin nav-item level-0;
 					height: 100%;
 					display: flex;
 					align-items: center;
-					text-transform: uppercase;
-					font-weight: 700;
 					user-select: none;
-					color: var(--ros-theme-color-gray-900);
 
-					/* Level 2 Menu - default */
+					/* Level 1 Menu - default */
 					& > ul {
 						margin-top: 20px;
 						display: none;
@@ -222,12 +294,12 @@ header {
 					&:hover {
 						position: relative;
 
-						/* Level 2 Menu */
+						/* Level 1 Menu */
 						& ul {
 							display: flex;
 							flex-direction: column;
 							position: absolute;
-							background-color: var(--ros-pattern-header-color-background-base);
+							background-color: var(--ros-pattern-header-color-background-level-1);
 							list-style: none;
 							top: 40px;
 							left: -32px;
@@ -235,24 +307,20 @@ header {
 							@mixin shadow-sm;
 
 							& li {
+								@mixin nav-item level-1;
+
 								white-space: nowrap;
 								padding: 16px 32px;
 								cursor: pointer;
-								color: var(--ros-theme-color-gray-900);
-
-								&:hover {
-									background-color: var(--ros-semantic-color-primary-base);
-									color: #fff;
-								}
 
 								&:first-of-type {
-									border-top-left-radius: var(--ros-semantic-border-radius-default);
-									border-top-right-radius: var(--ros-semantic-border-radius-default);
+									border-top-left-radius: var(--ros-pattern-header-border-radius-level-1);
+									border-top-right-radius: var(--ros-pattern-header-border-radius-level-1);
 								}
 
 								&:last-of-type {
-									border-bottom-left-radius: var(--ros-semantic-border-radius-default);
-									border-bottom-right-radius: var(--ros-semantic-border-radius-default);
+									border-bottom-left-radius: var(--ros-pattern-header-border-radius-level-1);
+									border-bottom-right-radius: var(--ros-pattern-header-border-radius-level-1);
 								}
 							}
 						}
@@ -266,10 +334,11 @@ header {
 			}
 		}
 
+		/* Mobile nav */
 		&[aria-expanded="true"] .nav-menu {
 			position: absolute;
 			align-items: flex-start;
-			background: var(--ros-semantic-color-background-layer-1);
+			background: var(--ros-semantic-color-background-base);
 			display: flex;
 			flex-direction: column;
 			z-index: 2;
@@ -282,20 +351,34 @@ header {
 			& > ul {
 				flex-direction: column;
 				height: unset;
-				gap: 25px;
-				padding-left: 30px;
-				top: 20px;
+				gap: 0;
+				top: 10px;
 				position: absolute;
 				width: 100%;
 
 				/* Level 2 Menu - default */
 				& > li {
 					flex-direction: column;
-					color: var(--ros-theme-color-gray-900);
-					font-size: 14px;
-					font-weight: 700;
-					text-transform: uppercase;
 					align-items: flex-start;
+
+					& > a {
+						@mixin h3;
+						@mixin padding-vertical lg;
+						@mixin padding-left lg;
+						margin-bottom: 0;
+						width: 100%;
+						&:hover {
+							background-color: var(--ros-pattern-header-color-nav-item-level-1-hover-background-color);
+							color: var(--ros-pattern-header-color-nav-item-level-1-hover-foreground-color);
+							border-radius: 0;
+						}
+					}
+
+					&:hover {
+						& > ul > li {
+							background-color: unset;
+						}
+					}
 
 					&::after {
 						content: "";
@@ -306,7 +389,7 @@ header {
 						mask-size: cover;
 						position: absolute;
 						right: 0;
-						margin-top: 2px;
+						margin-top: 15px;
 						margin-right: 10px;
 						height: 20px;
 						width: 20px;
@@ -319,14 +402,25 @@ header {
 						position: relative;
 						background-color: unset;
 						list-style: none;
-						margin-top: 5px;
+						margin-top: 0;
 						display: none;
+						left: 0;
+						&:hover {
+							background-color: unset;
+						}
 
 						& > li {
-							padding: 10px;
-							color: var(--ros-theme-color-gray-900);
-							text-transform: none;
-							width: 100%;
+							padding: 16px 32px;
+							& > a {
+								@mixin h3;
+								width: 100%;
+							}
+
+							&:hover {
+								background-color: var(--ros-pattern-header-color-nav-item-level-1-hover-background-color);
+								color: var(--ros-pattern-header-color-nav-item-level-1-hover-foreground-color);
+								border-radius: 0;
+							}
 						}
 					}
 
@@ -342,7 +436,6 @@ header {
 
 						& > ul {
 							box-shadow: unset;
-							padding-left: 20px;
 						}
 					}
 				}

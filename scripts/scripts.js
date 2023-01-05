@@ -168,6 +168,10 @@ export function loadTheme() {
   }
 }
 
+export function isMobile() {
+  return window.innerWidth < 900;
+}
+
 /**
  * loads everything needed to get to LCP.
  */
