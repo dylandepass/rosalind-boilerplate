@@ -92,7 +92,7 @@
                 "type": "color"
               },
               "background-color": {
-                "value": "{semantic.color.background.base}",
+                "value": "{semantic.color.background.layer-1}",
                 "type": "color"
               },
               "border-color": {
@@ -130,7 +130,7 @@
             },
             "key-focus": {
               "background-color": {
-                "value": "{semantic.color.background.base}",
+                "value": "{semantic.color.background.layer-1}",
                 "type": "color"
               },
               "foreground-color": {
@@ -144,7 +144,7 @@
             },
             "disabled": {
               "background-color": {
-                "value": "{semantic.color.background.base}",
+                "value": "{semantic.color.background.layer-1}",
                 "type": "color"
               },
               "foreground-color": {
