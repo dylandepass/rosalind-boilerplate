@@ -10,8 +10,10 @@ export default async function decorate(block) {
   block.textContent = '';
 
   let footerPath = cfg.footer || '/footer';
+
+  // Load from storybook directory if running on github.io
   if (window.location.host.includes('github.io')) {
-    footerPath = 'https://rosalind.experience-adobe.com/footer';
+    footerPath = 'https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/footer';
   }
 
   const resp = await fetch(`${footerPath}.plain.html`);
