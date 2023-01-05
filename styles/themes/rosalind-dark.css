@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 05 Jan 2023 03:48:33 GMT
+ * Generated on Thu, 05 Jan 2023 15:35:30 GMT
  */
 
 :root {
@@ -477,7 +477,7 @@
   --ros-pattern-header-color-nav-item-level-1-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-1-disabled-foreground-color: #707070;
   --ros-pattern-header-color-nav-item-level-1-disabled-background-color: #1e293b;
-  --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #5c5ce0;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #9d64e1;
   --ros-pattern-header-color-nav-item-level-1-key-focus-foreground-color: #ebebeb;
   --ros-pattern-header-color-nav-item-level-1-key-focus-background-color: #1e293b;
   --ros-pattern-header-color-nav-item-level-1-down-border-color: #00000000;
@@ -492,7 +492,7 @@
   --ros-pattern-header-color-nav-item-level-0-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-0-disabled-foreground-color: #707070;
   --ros-pattern-header-color-nav-item-level-0-disabled-background-color: #0f172a;
-  --ros-pattern-header-color-nav-item-level-0-key-focus-border-color: #5c5ce0;
+  --ros-pattern-header-color-nav-item-level-0-key-focus-border-color: #9d64e1;
   --ros-pattern-header-color-nav-item-level-0-key-focus-foreground-color: #ebebeb;
   --ros-pattern-header-color-nav-item-level-0-key-focus-background-color: #0f172a;
   --ros-pattern-header-color-nav-item-level-0-down-border-color: #00000000;

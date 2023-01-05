@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 05 Jan 2023 03:48:32 GMT
+ * Generated on Thu, 05 Jan 2023 15:35:29 GMT
  */
 
 :root {
@@ -716,7 +716,7 @@
   --ros-pattern-header-color-nav-item-level-1-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-1-disabled-foreground-color: #b1b1b1;
   --ros-pattern-header-color-nav-item-level-1-disabled-background-color: #f4f4f4;
-  --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #dfbf00;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #000000;
   --ros-pattern-header-color-nav-item-level-1-key-focus-foreground-color: #222222;
   --ros-pattern-header-color-nav-item-level-1-key-focus-background-color: #f4f4f4;
   --ros-pattern-header-color-nav-item-level-1-down-border-color: #00000000;
@@ -731,7 +731,7 @@
   --ros-pattern-header-color-nav-item-level-0-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-0-disabled-foreground-color: #b1b1b1;
   --ros-pattern-header-color-nav-item-level-0-disabled-background-color: #ffffff;
-  --ros-pattern-header-color-nav-item-level-0-key-focus-border-color: #dfbf00;
+  --ros-pattern-header-color-nav-item-level-0-key-focus-border-color: #000000;
   --ros-pattern-header-color-nav-item-level-0-key-focus-foreground-color: #222222;
   --ros-pattern-header-color-nav-item-level-0-key-focus-background-color: #ffffff;
   --ros-pattern-header-color-nav-item-level-0-down-border-color: #00000000;

@@ -681,7 +681,7 @@
             "key-focus": {
               "background-color": "#0f172a",
               "foreground-color": "#ebebeb",
-              "border-color": "#5c5ce0"
+              "border-color": "#9d64e1"
             },
             "disabled": {
               "background-color": "#0f172a",
@@ -708,7 +708,7 @@
             "key-focus": {
               "background-color": "#1e293b",
               "foreground-color": "#ebebeb",
-              "border-color": "#5c5ce0"
+              "border-color": "#9d64e1"
             },
             "disabled": {
               "background-color": "#1e293b",
