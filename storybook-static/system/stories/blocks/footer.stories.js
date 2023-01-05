@@ -1,16 +1,22 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
-import { loadFooter } from '../../../../scripts/lib-franklin.js';
+import {
+  loadHeader,
+  buildBlock,
+  loadBlock,
+  decorateBlock,
+} from '../../../../scripts/lib-franklin.js';
 import style from '../../../../blocks/footer/footer.css';
 
-const Template = (args, context) => {
-  const block = document.createElement('div');
+const Template = (context) => {
   const footer = document.createElement('footer');
-  block.append(footer);
-  loadFooter(block.querySelector('footer'));
-  return block;
+  const footerBlock = buildBlock('footer', '');
+  footer.append(footerBlock);
+  decorateBlock(footerBlock);
+  loadBlock(footerBlock, context.parameters.host);
+  return footer;
 };
 
-export const Footer = () => Template();
+export const Footer = (args, context) => Template(context);
 
 Footer.storyName = 'Footer';
 
