@@ -294,6 +294,12 @@
             "type": "letterSpacing"
           }
         }
+      },
+      "border-radius": {
+        "level-1": {
+          "value": "{semantic.border-radius.default}",
+          "type": "borderRadius"
+        }
       }
     }
   }
