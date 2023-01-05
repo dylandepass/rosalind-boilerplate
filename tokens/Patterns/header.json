@@ -66,7 +66,7 @@
                 "type": "color"
               },
               "border-color": {
-                "value": "{semantic.color.primary.base}",
+                "value": "{semantic.color.border.focus}",
                 "type": "color"
               }
             },
@@ -138,7 +138,7 @@
                 "type": "color"
               },
               "border-color": {
-                "value": "{semantic.color.primary.base}",
+                "value": "{semantic.color.border.focus}",
                 "type": "color"
               }
             },
