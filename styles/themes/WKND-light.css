@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 05 Jan 2023 02:34:19 GMT
+ * Generated on Thu, 05 Jan 2023 03:27:59 GMT
  */
 
 :root {
@@ -714,10 +714,10 @@
   --ros-pattern-header-font-family-nav-item-level-0: Roboto;
   --ros-pattern-header-color-nav-item-level-1-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-1-disabled-foreground-color: #b1b1b1;
-  --ros-pattern-header-color-nav-item-level-1-disabled-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-1-disabled-background-color: #f4f4f4;
   --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #dfbf00;
   --ros-pattern-header-color-nav-item-level-1-key-focus-foreground-color: #222222;
-  --ros-pattern-header-color-nav-item-level-1-key-focus-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-background-color: #f4f4f4;
   --ros-pattern-header-color-nav-item-level-1-down-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-1-down-foreground-color: #ffffff;
   --ros-pattern-header-color-nav-item-level-1-down-background-color: #c4a600;
@@ -725,7 +725,7 @@
   --ros-pattern-header-color-nav-item-level-1-hover-foreground-color: #ffffff;
   --ros-pattern-header-color-nav-item-level-1-hover-background-color: #dfbf00;
   --ros-pattern-header-color-nav-item-level-1-default-border-color: #00000000;
-  --ros-pattern-header-color-nav-item-level-1-default-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-1-default-background-color: #f4f4f4;
   --ros-pattern-header-color-nav-item-level-1-default-foreground-color: #222222;
   --ros-pattern-header-color-nav-item-level-0-disabled-border-color: #00000000;
   --ros-pattern-header-color-nav-item-level-0-disabled-foreground-color: #b1b1b1;

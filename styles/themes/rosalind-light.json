@@ -55,7 +55,7 @@
           "level-1": {
             "default": {
               "foreground-color": "#222222",
-              "background-color": "#ffffff",
+              "background-color": "#f4f4f4",
               "border-color": "#00000000"
             },
             "hover": {
@@ -69,12 +69,12 @@
               "border-color": "#00000000"
             },
             "key-focus": {
-              "background-color": "#ffffff",
+              "background-color": "#f4f4f4",
               "foreground-color": "#222222",
               "border-color": "#5c5ce0"
             },
             "disabled": {
-              "background-color": "#ffffff",
+              "background-color": "#f4f4f4",
               "foreground-color": "#b1b1b1",
               "border-color": "#00000000"
             }
