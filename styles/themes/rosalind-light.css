@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 04 Jan 2023 20:38:19 GMT
+ * Generated on Thu, 05 Jan 2023 16:40:07 GMT
  */
 
 :root {
@@ -696,10 +696,56 @@
   --ros-component-radio-color-default-border-color: #e6e6e6;
   --ros-component-radio-color-default-foreground-color: #222222;
   --ros-component-radio-color-default-background-color: #00000000;
+  --ros-pattern-header-border-radius-level-1: 4px;
+  --ros-pattern-header-letter-spacing-nav-item-level-1: 0%;
+  --ros-pattern-header-letter-spacing-nav-item-level-0: 0%;
+  --ros-pattern-header-text-decoration-nav-item-level-1: none;
+  --ros-pattern-header-text-decoration-nav-item-level-0: none;
+  --ros-pattern-header-text-case-nav-item-level-1: uppercase;
+  --ros-pattern-header-text-case-nav-item-level-0: uppercase;
+  --ros-pattern-header-line-height-nav-item-level-1: 150%;
+  --ros-pattern-header-line-height-nav-item-level-0: 150%;
+  --ros-pattern-header-font-weight-nav-item-level-1: 700;
+  --ros-pattern-header-font-weight-nav-item-level-0: 700;
+  --ros-pattern-header-font-size-nav-item-level-1: 0.875rem;
+  --ros-pattern-header-font-size-nav-item-level-0: 0.875rem;
+  --ros-pattern-header-font-family-nav-item-level-1: Nunito, sans-serif;
+  --ros-pattern-header-font-family-nav-item-level-0: Nunito, sans-serif;
   --ros-pattern-header-logo-text-display: block;
   --ros-pattern-header-size-height: 72px;
   --ros-pattern-header-size-logo-height: 32px;
   --ros-pattern-header-size-logo-width: 32px;
+  --ros-pattern-header-color-nav-item-level-1-disabled-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-1-disabled-foreground-color: #b1b1b1;
+  --ros-pattern-header-color-nav-item-level-1-disabled-background-color: #f4f4f4;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-border-color: #9d64e1;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-foreground-color: #222222;
+  --ros-pattern-header-color-nav-item-level-1-key-focus-background-color: #f4f4f4;
+  --ros-pattern-header-color-nav-item-level-1-down-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-1-down-foreground-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-1-down-background-color: #4646c6;
+  --ros-pattern-header-color-nav-item-level-1-hover-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-1-hover-foreground-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-1-hover-background-color: #5c5ce0;
+  --ros-pattern-header-color-nav-item-level-1-default-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-1-default-background-color: #f4f4f4;
+  --ros-pattern-header-color-nav-item-level-1-default-foreground-color: #222222;
+  --ros-pattern-header-color-nav-item-level-0-disabled-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-0-disabled-foreground-color: #b1b1b1;
+  --ros-pattern-header-color-nav-item-level-0-disabled-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-0-key-focus-border-color: #9d64e1;
+  --ros-pattern-header-color-nav-item-level-0-key-focus-foreground-color: #222222;
+  --ros-pattern-header-color-nav-item-level-0-key-focus-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-0-down-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-0-down-foreground-color: #5c5ce0;
+  --ros-pattern-header-color-nav-item-level-0-down-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-0-hover-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-0-hover-foreground-color: #5c5ce0;
+  --ros-pattern-header-color-nav-item-level-0-hover-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-0-default-border-color: #00000000;
+  --ros-pattern-header-color-nav-item-level-0-default-background-color: #ffffff;
+  --ros-pattern-header-color-nav-item-level-0-default-foreground-color: #222222;
+  --ros-pattern-header-color-background-level-1: #f4f4f4;
   --ros-pattern-header-color-background-base: #ffffff;
   --ros-pattern-footer-color-seperator-on-base: #1e293b;
   --ros-pattern-footer-color-foreground-on-base: #ffffff;
