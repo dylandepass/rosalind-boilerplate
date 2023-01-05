@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 05 Jan 2023 03:28:00 GMT
+ * Generated on Thu, 05 Jan 2023 03:48:34 GMT
  */
 
 :root {
@@ -696,6 +696,7 @@
   --ros-component-radio-color-default-border-color: #e6e6e6;
   --ros-component-radio-color-default-foreground-color: #222222;
   --ros-component-radio-color-default-background-color: #00000000;
+  --ros-pattern-header-border-radius-level-1: 4px;
   --ros-pattern-header-letter-spacing-nav-item-level-1: 0%;
   --ros-pattern-header-letter-spacing-nav-item-level-0: 0%;
   --ros-pattern-header-text-decoration-nav-item-level-1: none;

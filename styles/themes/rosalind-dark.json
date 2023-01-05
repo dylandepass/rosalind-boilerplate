@@ -793,6 +793,9 @@
           "level-0": "0%",
           "level-1": "0%"
         }
+      },
+      "border-radius": {
+        "level-1": 4
       }
     }
   },

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 05 Jan 2023 03:27:59 GMT
+ * Generated on Thu, 05 Jan 2023 03:48:32 GMT
  */
 
 :root {
@@ -698,6 +698,7 @@
   --ros-component-button-color-primary-down-border-color: #00000000;
   --ros-component-button-color-primary-down-foreground-color: #ffffff;
   --ros-component-button-color-primary-down-background-color: #000000;
+  --ros-pattern-header-border-radius-level-1: 0px;
   --ros-pattern-header-letter-spacing-nav-item-level-1: 0%;
   --ros-pattern-header-letter-spacing-nav-item-level-0: 0%;
   --ros-pattern-header-text-decoration-nav-item-level-1: none;
