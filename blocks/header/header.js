@@ -33,8 +33,10 @@ export default async function decorate(block) {
 
   // fetch nav content
   let navPath = cfg.nav || '/nav';
+
+  // Load from storybook directory if running on github.io
   if (window.location.host.includes('github.io')) {
-    navPath = 'https://rosalind.experience-adobe.com/nav';
+    navPath = 'https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/nav';
   }
 
   const resp = await fetch(`${navPath}.plain.html`);
