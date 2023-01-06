@@ -28,7 +28,7 @@
 	min-height: 98px;
 }
 
-.img-grid {
+.logo-grid {
 	@mixin grid-cols 1;
 	@mixin grid-sm-cols 3;
 	@mixin grid-md-cols 3;
@@ -47,6 +47,12 @@
 		max-height: 50px;
 		width: auto;
 	}
+}
+
+.section:has(.logo-grid) {
+    @mixin padding-vertical xl;
+	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
+	min-height: 98px;
 }
 
 .icon-cards {

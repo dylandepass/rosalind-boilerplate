@@ -1,12 +1,8 @@
 @import "../breakpoints";
 
 /* CSS GRID */
-@define-mixin auto-grid $col-width  {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax($(col-width), 1fr));
-}
-
 @define-mixin grid-cols $cols {
+	display: grid;
 	grid-template-columns: repeat($(cols), minmax(0, 1fr));
 }
 
