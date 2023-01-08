@@ -1,7 +1,6 @@
 @define-mixin responsive-font {
 	--fluid-min-width: 360;
-  	--fluid-max-width: 1200;
-
+	--fluid-max-width: 1200;
 	--fluid-screen: 100vw;
 	--fluid-bp: calc(
 		(var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
@@ -15,121 +14,120 @@
 	}
 }
 
-@define-mixin base-display {
+@define-mixin base-display $weight {
 	font-family: var(--ros-semantic-font-family-display);
-	font-weight: var(--ros-semantic-font-weight-display-regular);
+	font-weight: var(--ros-semantic-font-weight-display-$(weight));
 	line-height: var(--ros-semantic-line-height-display);
 	margin-bottom: var(--ros-semantic-spacing-typography-display-margin-bottom);
 	text-transform: var(--ros-semantic-text-case-heading);
 }
 
-@define-mixin display1 {
-	@mixin base-display;
+@define-mixin display1 $weight: regular {
+	@mixin base-display $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-display-1);
 	--max: var(--ros-semantic-font-size-desktop-display-1);
 }
 
-@define-mixin display2 {
+@define-mixin display2 $weight: regular {
 	@mixin base-display;
 
 	--min: var(--ros-semantic-font-size-mobile-display-2);
 	--max: var(--ros-semantic-font-size-desktop-display-2);
 }
 
-@define-mixin display3 {
+@define-mixin display3 $weight: regular {
 	@mixin base-display;
 
 	--min: var(--ros-semantic-font-size-mobile-display-3);
 	--max: var(--ros-semantic-font-size-desktop-display-3);
 }
 
-@define-mixin base-heading {
+@define-mixin base-heading $weight {
 	@mixin responsive-font;
 
 	margin-top: 0;
 	font-family: var(--ros-semantic-font-family-heading);
-	font-weight: var(--ros-semantic-font-weight-heading-regular);
+	font-weight: var(--ros-semantic-font-weight-heading-$(weight));
 	line-height: var(--ros-semantic-line-height-heading);
 	margin-bottom: var(--ros-semantic-spacing-typography-heading-margin-bottom);
 	text-transform: var(--ros-semantic-text-case-heading);
 }
 
-@define-mixin h1 {
-	@mixin base-heading;
+@define-mixin h1 $weight: regular {
+	@mixin base-heading $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-heading-1);
 	--max: var(--ros-semantic-font-size-desktop-heading-1);
 }
 
-@define-mixin h2 {
-	@mixin base-heading;
+@define-mixin h2 $weight: regular {
+	@mixin base-heading $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-heading-2);
 	--max: var(--ros-semantic-font-size-desktop-heading-2);
 }
 
-@define-mixin h3 {
-	@mixin base-heading;
+@define-mixin h3 $weight: regular {
+	@mixin base-heading $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-heading-3);
 	--max: var(--ros-semantic-font-size-desktop-heading-3);
 }
 
-@define-mixin h4 {
-	@mixin base-heading;
+@define-mixin h4 $weight: regular {
+	@mixin base-heading $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-heading-4);
 	--max: var(--ros-semantic-font-size-desktop-heading-4);
 }
 
-@define-mixin h5 {
-	@mixin base-heading;
+@define-mixin h5 $weight: regular {
+	@mixin base-heading $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-heading-5);
 	--max: var(--ros-semantic-font-size-desktop-heading-5);
 }
 
-@define-mixin subtitle {
-	@mixin responsive-font;
+@define-mixin subtitle $weight: regular {
+	@mixin responsive-font $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-subtitle);
 	--max: var(--ros-semantic-font-size-desktop-subtitle);
 
 	font-family: var(--ros-semantic-font-family-subtitle);
-	font-weight: var(--ros-semantic-font-weight-subtitle-regular);
+	font-weight: var(--ros-semantic-font-weight-subtitle-$(weight));
 	line-height: var(--ros-semantic-line-height-subtitle);
 	margin-bottom: var(--ros-semantic-spacing-typography-subtitle-margin-bottom);
 	text-transform: var(--ros-semantic-text-case-subtitle);
 }
 
-@define-mixin eyebrow {
-	@mixin responsive-font;
+@define-mixin eyebrow $weight: regular {
+	@mixin responsive-font $weight;
 
 	--min: var(--ros-semantic-font-size-mobile-eyebrow);
 	--max: var(--ros-semantic-font-size-desktop-eyebrow);
 
 	font-family: var(--ros-semantic-font-family-eyebrow);
-	text-transform: var(--ros-semantic-text-case-eyebrow);
-	font-weight: var(--ros-semantic-font-weight-eyebrow-regular);
+	font-weight: var(--ros-semantic-font-weight-eyebrow-$(weight));
 	line-height: var(--ros-semantic-line-height-eyebrow);
 	margin: 0;
 	margin-bottom: var(--ros-semantic-spacing-typography-eyebrow-margin-bottom);
 	text-transform: var(--ros-semantic-text-case-eyebrow);
 }
 
-@define-mixin body-font {
+@define-mixin body-font $weight: regular {
 	font-size: var(--ros-semantic-font-size-body);
 	font-family: var(--ros-semantic-font-family-body);
-	font-weight: var(--ros-semantic-font-weight-body-regular);
+	font-weight: var(--ros-semantic-font-weight-body-$(weight));
 	line-height: var(--ros-semantic-line-height-body);
 	text-transform: var(--ros-semantic-text-case-body);
 }
 
-@define-mixin caption-font {
+@define-mixin caption-font $weight: regular {
 	font-size: var(--ros-semantic-font-size-caption);
 	font-family: var(--ros-semantic-font-family-caption);
-	font-weight: var(--ros-semantic-font-weight-caption-regular);
+	font-weight: var(--ros-semantic-font-weight-caption-$(weight));
 	line-height: var(--ros-semantic-line-height-caption);
 	text-transform: var(--ros-semantic-text-case-caption);
 }
@@ -141,16 +139,6 @@
 	line-height: var(--ros-semantic-line-height-source-code);
 }
 
-@define-mixin on-foreground-color $type {
-	.on-$(type) {
-		color: var(--ros-semantic-color-foreground-on-$(type)-default)
-	}
-
-	.on-$(type)-subtle {
-		color: var(--ros-semantic-color-foreground-on-$(type)-subtle)
-	}
-
-	.on-$(type)-muted {
-		color: var(--ros-semantic-color-foreground-on-$(type)-muted)
-	}
+@define-mixin foreground-color $type, $style: default {
+	color: var(--ros-semantic-color-foreground-on-$(type)-$(style));
 }
