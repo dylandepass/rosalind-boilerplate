@@ -559,16 +559,32 @@
       },
       "gap": {
         "component": {
-          "sm": {
+          "xs": {
             "value": "{global.space.100}",
             "type": "spacing"
           },
-          "md": {
+          "sm": {
             "value": "{global.space.150}",
             "type": "spacing"
           },
-          "lg": {
+          "md": {
             "value": "{global.space.200}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{global.space.300}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{global.space.450}",
+            "type": "spacing"
+          },
+          "xxl": {
+            "value": "{global.space.600}",
+            "type": "spacing"
+          },
+          "xxxl": {
+            "value": "{global.space.700}",
             "type": "spacing"
           }
         }

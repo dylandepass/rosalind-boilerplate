@@ -356,7 +356,7 @@
           "type": "spacing"
         },
         "gap": {
-          "value": "{semantic.spacing.gap.component.md}",
+          "value": "{semantic.spacing.gap.component.sm}",
           "type": "spacing"
         }
       },

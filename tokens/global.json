@@ -845,6 +845,10 @@
         "value": "{global.space.base} * 4",
         "type": "spacing"
       },
+      "450": {
+        "value": "{global.space.base} * 4.5",
+        "type": "spacing"
+      },
       "500": {
         "value": "{global.space.base} * 5",
         "type": "spacing"
