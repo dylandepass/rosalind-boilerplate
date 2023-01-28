@@ -56,7 +56,7 @@
             "key-focus": {
               "background-color": "#000000",
               "foreground-color": "#ebebeb",
-              "border-color": "#d83790"
+              "border-color": "#9d64e1"
             },
             "disabled": {
               "background-color": "#000000",
@@ -83,7 +83,7 @@
             "key-focus": {
               "background-color": "#111",
               "foreground-color": "#ebebeb",
-              "border-color": "#d83790"
+              "border-color": "#9d64e1"
             },
             "disabled": {
               "background-color": "#111",
@@ -211,7 +211,7 @@
           "key-focus": {
             "background-color": "#d83790",
             "foreground-color": "#ffffff",
-            "border-color": "#d83790"
+            "border-color": "#9d64e1"
           },
           "disabled": {
             "background-color": "#545454",
@@ -238,7 +238,7 @@
           "key-focus": {
             "background-color": "#00000000",
             "foreground-color": "#da7b11",
-            "border-color": "#d83790"
+            "border-color": "#9d64e1"
           },
           "disabled": {
             "background-color": "#545454",
@@ -265,7 +265,7 @@
           "key-focus": {
             "background-color": "#00000000",
             "foreground-color": "#d83790",
-            "border-color": "#d83790"
+            "border-color": "#9d64e1"
           },
           "disabled": {
             "background-color": "#00000000",
@@ -337,7 +337,7 @@
         "key-focus": {
           "background-color": "#00000000",
           "foreground-color": "#ebebeb",
-          "border-color": "#d83790"
+          "border-color": "#9d64e1"
         },
         "disabled": {
           "background-color": "#545454",
@@ -420,7 +420,7 @@
         "key-focus": {
           "background-color": "#00000000",
           "foreground-color": "#ebebeb",
-          "border-color": "#d83790"
+          "border-color": "#9d64e1"
         },
         "disabled": {
           "background-color": "#545454",
@@ -499,7 +499,7 @@
         "key-focus": {
           "background-color": "#00000000",
           "foreground-color": "#ebebeb",
-          "border-color": "#d83790"
+          "border-color": "#9d64e1"
         },
         "disabled": {
           "background-color": "#545454",
@@ -577,7 +577,7 @@
         "key-focus": {
           "background-color": "#00000000",
           "foreground-color": "#ebebeb",
-          "border-color": "#d83790"
+          "border-color": "#9d64e1"
         },
         "success": {
           "background-color": "#00000000",
@@ -662,7 +662,7 @@
         "key-focus": {
           "background-color": "#00000000",
           "foreground-color": "#ebebeb",
-          "border-color": "#d83790"
+          "border-color": "#9d64e1"
         },
         "success": {
           "background-color": "#00000000",
@@ -797,8 +797,14 @@
         }
       },
       "color": {
-        "label": "#ebebeb",
-        "help": "#ebebeb"
+        "foreground": {
+          "label": {
+            "default": "#ebebeb"
+          },
+          "help": {
+            "default": "#ebebeb"
+          }
+        }
       }
     }
   },
@@ -832,21 +838,25 @@
         "down": "#d83790",
         "focus": "#d83790",
         "base": "#3f3f3f",
+        "key-focus": "#9d64e1",
         "disabled": "#707070"
       },
       "foreground": {
         "on-base": {
           "default": "#ebebeb",
+          "heading": "#ebebeb",
           "subtle": "#b2b2b2",
           "muted": "#909090"
         },
         "on-layer-1": {
           "default": "#ebebeb",
+          "heading": "#ebebeb",
           "subtle": "#b2b2b2",
           "muted": "#909090"
         },
         "on-layer-2": {
           "default": "#ebebeb",
+          "heading": "#ebebeb",
           "subtle": "#b2b2b2",
           "muted": "#909090"
         },
@@ -940,12 +950,18 @@
         "subtitle": 23,
         "eyebrow": 19
       },
-      "body": 16,
+      "body": {
+        "xs": 12,
+        "sm": 14,
+        "md": 16,
+        "lg": 19
+      },
       "caption": 14,
       "source-code": 16
     },
     "size": {
       "breakpoints": {
+        "screen-xs": 375,
         "screen-sm": 576,
         "screen-md": 768,
         "screen-lg": 992,
@@ -996,8 +1012,15 @@
           "md": 12,
           "lg": 16,
           "xl": 20,
-          "xxl": 24,
-          "xxxl": 32
+          "2xl": 24,
+          "3xl": 32,
+          "4xl": 40,
+          "5xl": 48,
+          "6xl": 56,
+          "7xl": 64,
+          "8xl": 72,
+          "9xl": 80,
+          "10xl": 96
         }
       },
       "gap": {
@@ -1007,8 +1030,15 @@
           "md": 16,
           "lg": 24,
           "xl": 36,
-          "xxl": 48,
-          "xxxl": 56
+          "2xl": 48,
+          "3xl": 56,
+          "4xl": 64,
+          "5xl": 72,
+          "6xl": 80,
+          "7xl": 96,
+          "8xl": 128,
+          "9xl": 160,
+          "10xl": 176
         }
       },
       "section": {
@@ -1092,14 +1122,46 @@
     },
     "typography": {
       "body": {
-        "fontFamily": "Inter",
-        "fontWeight": 400,
-        "lineHeight": "150%",
-        "fontSize": 16,
-        "paragraphSpacing": 0,
-        "letterSpacing": "0%",
-        "textDecoration": "none",
-        "textCase": "none"
+        "xs": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 12,
+          "paragraphSpacing": 0,
+          "letterSpacing": "0%",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "sm": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 14,
+          "paragraphSpacing": 0,
+          "letterSpacing": "0%",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "base": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 16,
+          "paragraphSpacing": 0,
+          "letterSpacing": "0%",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "lg": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 19,
+          "paragraphSpacing": 0,
+          "letterSpacing": "0%",
+          "textDecoration": "none",
+          "textCase": "none"
+        }
       },
       "caption": {
         "fontFamily": "Nunito, sans-serif",

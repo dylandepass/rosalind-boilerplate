@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 Jan 2023 21:07:19 GMT
+ * Generated on Sat, 28 Jan 2023 21:29:04 GMT
  */
 
 :root {
@@ -307,15 +307,29 @@
   --ros-semantic-spacing-section-mobile-padding-x: 20px;
   --ros-semantic-spacing-section-desktop-padding-y: 96px;
   --ros-semantic-spacing-section-desktop-padding-x: 32px;
-  --ros-semantic-spacing-gap-component-xxxl: 56px;
-  --ros-semantic-spacing-gap-component-xxl: 48px;
+  --ros-semantic-spacing-gap-component-10xl: 176px;
+  --ros-semantic-spacing-gap-component-9xl: 160px;
+  --ros-semantic-spacing-gap-component-8xl: 128px;
+  --ros-semantic-spacing-gap-component-7xl: 96px;
+  --ros-semantic-spacing-gap-component-6xl: 80px;
+  --ros-semantic-spacing-gap-component-5xl: 72px;
+  --ros-semantic-spacing-gap-component-4xl: 64px;
+  --ros-semantic-spacing-gap-component-3xl: 56px;
+  --ros-semantic-spacing-gap-component-2xl: 48px;
   --ros-semantic-spacing-gap-component-xl: 36px;
   --ros-semantic-spacing-gap-component-lg: 24px;
   --ros-semantic-spacing-gap-component-md: 16px;
   --ros-semantic-spacing-gap-component-sm: 12px;
   --ros-semantic-spacing-gap-component-xs: 8px;
-  --ros-semantic-spacing-around-component-xxxl: 32px;
-  --ros-semantic-spacing-around-component-xxl: 24px;
+  --ros-semantic-spacing-around-component-10xl: 96px;
+  --ros-semantic-spacing-around-component-9xl: 80px;
+  --ros-semantic-spacing-around-component-8xl: 72px;
+  --ros-semantic-spacing-around-component-7xl: 64px;
+  --ros-semantic-spacing-around-component-6xl: 56px;
+  --ros-semantic-spacing-around-component-5xl: 48px;
+  --ros-semantic-spacing-around-component-4xl: 40px;
+  --ros-semantic-spacing-around-component-3xl: 32px;
+  --ros-semantic-spacing-around-component-2xl: 24px;
   --ros-semantic-spacing-around-component-xl: 20px;
   --ros-semantic-spacing-around-component-lg: 16px;
   --ros-semantic-spacing-around-component-md: 12px;
@@ -334,7 +348,7 @@
   --ros-semantic-color-link-hover: #4646c6;
   --ros-semantic-color-link-base: #4f46e5;
   --ros-semantic-color-border-disabled: #b1b1b1;
-  --ros-semantic-color-border-focus: #9d64e1;
+  --ros-semantic-color-border-key-focus: #9d64e1;
   --ros-semantic-color-border-down: #5c5ce0;
   --ros-semantic-color-border-hover: #5c5ce0;
   --ros-semantic-color-border-base: #e6e6e6;
@@ -364,12 +378,15 @@
   --ros-semantic-color-foreground-on-primary-default: #ffffff;
   --ros-semantic-color-foreground-on-layer-2-muted: #909090;
   --ros-semantic-color-foreground-on-layer-2-subtle: #6d6d6d;
+  --ros-semantic-color-foreground-on-layer-2-heading: #222222;
   --ros-semantic-color-foreground-on-layer-2-default: #222222;
   --ros-semantic-color-foreground-on-layer-1-muted: #909090;
   --ros-semantic-color-foreground-on-layer-1-subtle: #6d6d6d;
+  --ros-semantic-color-foreground-on-layer-1-heading: #222222;
   --ros-semantic-color-foreground-on-layer-1-default: #222222;
   --ros-semantic-color-foreground-on-base-muted: #909090;
   --ros-semantic-color-foreground-on-base-subtle: #6d6d6d;
+  --ros-semantic-color-foreground-on-base-heading: #222222;
   --ros-semantic-color-foreground-on-base-default: #222222;
   --ros-semantic-color-background-input: #00000000;
   --ros-semantic-color-background-disabled: #d5d5d5;
@@ -399,9 +416,13 @@
   --ros-semantic-size-breakpoints-screen-lg: 992px;
   --ros-semantic-size-breakpoints-screen-md: 768px;
   --ros-semantic-size-breakpoints-screen-sm: 576px;
+  --ros-semantic-size-breakpoints-screen-xs: 375px;
   --ros-semantic-font-size-source-code: 1rem;
   --ros-semantic-font-size-caption: 0.875rem;
-  --ros-semantic-font-size-body: 1rem;
+  --ros-semantic-font-size-body-lg: 1.1875rem;
+  --ros-semantic-font-size-body-md: 1rem;
+  --ros-semantic-font-size-body-sm: 0.875rem;
+  --ros-semantic-font-size-body-xs: 0.75rem;
   --ros-semantic-font-size-mobile-eyebrow: 19;
   --ros-semantic-font-size-mobile-subtitle: 23;
   --ros-semantic-font-size-mobile-heading-5: 12;
@@ -508,8 +529,8 @@
   --ros-component-button-line-height-label: 150%;
   --ros-component-button-font-family-label: Nunito, sans-serif;
   --ros-component-button-font-size-label: 1rem;
-  --ros-component-form-color-help: #222222;
-  --ros-component-form-color-label: #222222;
+  --ros-component-form-color-foreground-help-default: #222222;
+  --ros-component-form-color-foreground-label-default: #222222;
   --ros-component-form-spacing-group-margin-bottom: 16px;
   --ros-component-form-spacing-help-padding-top: 8px;
   --ros-component-form-spacing-label-padding-right: 20px;
