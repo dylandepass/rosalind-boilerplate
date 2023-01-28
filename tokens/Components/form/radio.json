@@ -54,7 +54,7 @@
             "type": "color"
           },
           "border-color": {
-            "value": "{semantic.color.border.focus}",
+            "value": "{semantic.color.border.key-focus}",
             "type": "color"
           }
         },

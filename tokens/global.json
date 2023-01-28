@@ -212,6 +212,48 @@
             "type": "color"
           }
         },
+        "gray-steel": {
+          "50": {
+            "value": "#EBF2F7",
+            "type": "color"
+          },
+          "100": {
+            "value": "#D2DFE6",
+            "type": "color"
+          },
+          "200": {
+            "value": "#B7C9D3",
+            "type": "color"
+          },
+          "300": {
+            "value": "#9BB3C0",
+            "type": "color"
+          },
+          "400": {
+            "value": "#84A1B0",
+            "type": "color"
+          },
+          "500": {
+            "value": "#6E8FA1",
+            "type": "color"
+          },
+          "600": {
+            "value": "#61808F",
+            "type": "color"
+          },
+          "700": {
+            "value": "#516B78",
+            "type": "color"
+          },
+          "800": {
+            "value": "#435762",
+            "type": "color"
+          },
+          "900": {
+            "value": "#31414A",
+            "type": "color"
+          }
+        },
         "blue": {
           "200": {
             "value": "rgb(90, 169, 250)",
@@ -633,6 +675,10 @@
       }
     },
     "breakpoints": {
+      "50": {
+        "value": "375",
+        "type": "sizing"
+      },
       "100": {
         "value": "576",
         "type": "sizing"

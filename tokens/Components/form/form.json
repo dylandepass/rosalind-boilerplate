@@ -129,13 +129,19 @@
         }
       },
       "color": {
-        "label": {
-          "value": "{theme.color.gray.800}",
-          "type": "color"
-        },
-        "help": {
-          "value": "{theme.color.gray.800}",
-          "type": "color"
+        "foreground": {
+          "label": {
+            "default": {
+              "value": "{theme.color.gray.800}",
+              "type": "color"
+            }
+          },
+          "help": {
+            "default": {
+              "value": "{theme.color.gray.800}",
+              "type": "color"
+            }
+          }
         }
       }
     }
