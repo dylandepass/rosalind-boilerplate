@@ -4,11 +4,11 @@
       "color": {
         "default": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -18,7 +18,7 @@
         },
         "checked": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
@@ -32,11 +32,11 @@
         },
         "hover": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -46,11 +46,11 @@
         },
         "key-focus": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -73,7 +73,7 @@
           }
         },
         "label": {
-          "value": "{semantic.color.foreground.on-base.default}",
+          "value": "{component.form.color.foreground.label.default}",
           "type": "color"
         }
       },
