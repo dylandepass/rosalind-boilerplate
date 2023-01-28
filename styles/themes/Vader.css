@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 28 Jan 2023 21:29:01 GMT
+ * Generated on Sat, 28 Jan 2023 22:42:28 GMT
  */
 
 :root {
@@ -416,7 +416,6 @@
   --ros-semantic-color-positive-down: #33ab84;
   --ros-semantic-color-positive-hover: #2d9d78;
   --ros-semantic-color-positive-default: #268e6c;
-  --ros-semantic-color-foreground-on-input-default: #ebebeb;
   --ros-semantic-color-foreground-on-disabled-subtle: #505050;
   --ros-semantic-color-foreground-on-disabled-default: #707070;
   --ros-semantic-color-foreground-on-secondary-default: #ffffff;
@@ -451,11 +450,12 @@
   --ros-semantic-color-primary-darker: #bc1c74;
   --ros-semantic-color-primary-dark: #ca2982;
   --ros-semantic-color-primary-base: #d83790;
-  --ros-semantic-color-background-input: #00000000;
   --ros-semantic-color-background-disabled: #545454;
   --ros-semantic-color-background-layer-2: #222;
   --ros-semantic-color-background-layer-1: #111;
   --ros-semantic-color-background-base: #000000;
+  --ros-component-form-color-background-input-default: #00000000;
+  --ros-component-form-color-foreground-input-default: #ebebeb;
   --ros-component-form-color-foreground-help-default: #ebebeb;
   --ros-component-form-color-foreground-label-default: #ebebeb;
   --ros-component-form-spacing-group-margin-bottom: 16px;
@@ -463,18 +463,25 @@
   --ros-component-form-spacing-label-padding-right: 20px;
   --ros-component-form-spacing-label-padding-bottom: 5px;
   --ros-component-form-sizing-input-min-width: 96px;
+  --ros-component-form-text-decoration-placeholder: none;
   --ros-component-form-text-decoration-help: none;
   --ros-component-form-text-decoration-label: none;
+  --ros-component-form-letter-spacing-placeholder: 0%;
   --ros-component-form-letter-spacing-help: 0%;
   --ros-component-form-letter-spacing-label: 0%;
+  --ros-component-form-text-case-placeholder: none;
   --ros-component-form-text-case-help: none;
   --ros-component-form-text-case-label: none;
+  --ros-component-form-font-weight-placeholder: 400;
   --ros-component-form-font-weight-help: 400;
   --ros-component-form-font-weight-label: 500;
+  --ros-component-form-line-height-placeholder: 150%;
   --ros-component-form-line-height-help: 150%;
   --ros-component-form-line-height-label: 150%;
+  --ros-component-form-font-family-placeholder: Inter;
   --ros-component-form-font-family-help: Inter;
   --ros-component-form-font-family-label: Inter;
+  --ros-component-form-font-size-placeholder: 1rem;
   --ros-component-form-font-size-help: 0.75rem;
   --ros-component-form-font-size-label: 0.875rem;
   --ros-component-text-field-paragraph-spacing-text: 0;

@@ -5,8 +5,7 @@
         "base": "#0f172a",
         "layer-1": "#1e293b",
         "layer-2": "#334155",
-        "disabled": "#545454",
-        "input": "#00000000"
+        "disabled": "#545454"
       },
       "border": {
         "base": "#334155",
@@ -61,9 +60,6 @@
         "on-disabled": {
           "default": "#707070",
           "subtle": "#505050"
-        },
-        "on-input": {
-          "default": "#ebebeb"
         }
       },
       "positive": {
@@ -1277,27 +1273,33 @@
     "form": {
       "font-size": {
         "label": 14,
-        "help": 12
+        "help": 12,
+        "placeholder": 16
       },
       "font-family": {
         "label": "Nunito, sans-serif",
-        "help": "Nunito, sans-serif"
+        "help": "Nunito, sans-serif",
+        "placeholder": "Nunito, sans-serif"
       },
       "line-height": {
         "label": "150%",
-        "help": "150%"
+        "help": "150%",
+        "placeholder": "150%"
       },
       "font-weight": {
         "label": 500,
-        "help": 400
+        "help": 400,
+        "placeholder": 400
       },
       "text-case": {
         "label": "none",
-        "help": "none"
+        "help": "none",
+        "placeholder": "none"
       },
       "letter-spacing": {
         "label": "0%",
-        "help": "0%"
+        "help": "0%",
+        "placeholder": "0%"
       },
       "typography": {
         "label": {
@@ -1317,11 +1319,21 @@
           "letterSpacing": "0%",
           "textDecoration": "none",
           "textCase": "none"
+        },
+        "placeholder": {
+          "fontFamily": "Nunito, sans-serif",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "textDecoration": "none",
+          "textCase": "none"
         }
       },
       "text-decoration": {
         "label": "none",
-        "help": "none"
+        "help": "none",
+        "placeholder": "none"
       },
       "sizing": {
         "input-min-width": 96
@@ -1345,6 +1357,14 @@
           },
           "help": {
             "default": "#ebebeb"
+          },
+          "input": {
+            "default": "#ebebeb"
+          }
+        },
+        "background": {
+          "input": {
+            "default": "#00000000"
           }
         }
       }
