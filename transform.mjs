@@ -51,7 +51,7 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerTransformGroup({
   name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css'],
+  transforms: ['asset/stringify', 'attribute/cti', 'name/cti/kebab', 'time/seconds', 'content/icon', 'sizes/px', 'sizes/rem', 'color/css'],
 });
 
 function getStyleDictionaryConfig(theme, files) {

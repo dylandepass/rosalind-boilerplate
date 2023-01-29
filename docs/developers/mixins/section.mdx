@@ -1,0 +1,23 @@
+import { Meta, Story } from '@storybook/blocks';
+import theme from '../../../styles/themes/rosalind-light.json';
+import { Code } from '../../stories/util';
+
+<Meta title="Docs/Developers/Mixins/Section"/>
+
+# Section Mixins
+
+Rosalind provides the following mixins to work with sections in Franklin
+
+## Section Max width
+
+Wesco sites typically impose a ma- width on section content that is centered horizontally. This token can be used with the mixin below.
+
+```css
+@mixin section-max-width;
+```
+
+The will be replaced with the following style
+
+```css
+max-width: var(--ros-semantic-size-section-max-width);
+```

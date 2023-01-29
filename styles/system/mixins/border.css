@@ -1,0 +1,39 @@
+@define-mixin border-default {
+  @mixin border-width sm;
+  @mixin border-radius md;
+  @mixin border-color base;
+    
+  border-style: solid;
+}
+
+@define-mixin border-width $size {
+  border-width: var(--ros-semantic-border-width-$(size));
+}
+
+@define-mixin border-color $type {
+  border-color: var(--ros-semantic-color-border-$(type));
+}
+
+@define-mixin border-radius $size {
+  border-radius: var(--ros-semantic-border-radius-$(size));
+}
+
+@define-mixin border-radius-top $size {
+  border-top-left-radius: var(--ros-semantic-border-radius-$(size));
+  border-top-right-radius: var(--ros-semantic-border-radius-$(size));
+}
+
+@define-mixin border-radius-bottom $size {
+  border-top-left-radius: var(--ros-semantic-border-radius-$(size));
+  border-top-right-radius: var(--ros-semantic-border-radius-$(size));
+}
+
+@define-mixin border-radius-left $size {
+  border-top-left-radius: var(--ros-semantic-border-radius-$(size));
+  border-bottom-right-radius: var(--ros-semantic-border-radius-$(size));
+}
+
+@define-mixin border-radius-right $size {
+  border-top-right-radius: var(--ros-semantic-border-radius-$(size));
+  border-bottom-right-radius: var(--ros-semantic-border-radius-$(size));
+}

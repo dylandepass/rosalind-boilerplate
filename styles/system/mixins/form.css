@@ -1,55 +1,78 @@
 @define-mixin form-element $type, $state {
-	color: var(--ros-component-$(type)-color-$(state)-foreground-color);
-	border-radius: var(--ros-component-$(type)-border-radius);
-	border-color: var(--ros-component-$(type)-color-$(state)-border-color);
-	background-color: var(--ros-component-$(type)-color-$(state)-background-color);
+  color: var(--ros-component-$(type)-color-$(state)-foreground-color);
+  border-radius: var(--ros-component-$(type)-border-radius);
+  border-color: var(--ros-component-$(type)-color-$(state)-border-color);
+  background-color: var(--ros-component-$(type)-color-$(state)-background-color);
 }
 
 @define-mixin base-text-field $type {
-	padding: var(--ros-component-$(type)-spacing-padding-y) var(--ros-component-$(type)-spacing-padding-x);
-	font-family: var(--ros-component-$(type)-font-family-text);
-	min-width: var(--ros-component-$(type)-min-width);
-	font-size: var(--ros-component-$(type)-font-size-text);
-	font-weight: var(--ros-component-$(type)-font-weight-text);
-	text-decoration: var(--ros-component-$(type)-text-decoration-text);
-	text-transform: var(--ros-component-$(type)-text-case-text);
-	letter-spacing: var(--ros-component-$(type)-letter-spacing-text);
-	border-style: solid;
+  padding: var(--ros-component-$(type)-spacing-padding-y) var(--ros-component-$(type)-spacing-padding-x);
+  font-family: var(--ros-component-$(type)-font-family-text);
+  min-width: var(--ros-component-$(type)-min-width);
+  font-size: var(--ros-component-$(type)-font-size-text);
+  font-weight: var(--ros-component-$(type)-font-weight-text);
+  text-decoration: var(--ros-component-$(type)-text-decoration-text);
+  text-transform: var(--ros-component-$(type)-text-case-text);
+  letter-spacing: var(--ros-component-$(type)-letter-spacing-text);
+  border-style: solid;
 
-	@mixin form-element $type, default;
-	border-width: var(--ros-component-$(type)-border-width-default);
+  @mixin form-element $type, default;
 
-	&:hover {
-		@mixin form-element $type, hover;
-		border-width: var(--ros-component-$(type)-border-width-hover);
-	}
+  border-width: var(--ros-component-$(type)-border-width-default);
 
-	&:focus {
-		@mixin form-element $type, key-focus;
-		outline: none;
-		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-key-focus-border-color);
-	}
+  &:hover {
+    @mixin form-element $type, hover;
 
-	&:disabled {
-		@mixin form-element disabled;
-	}
+    border-width: var(--ros-component-$(type)-border-width-hover);
+  }
 
-	&::placeholder {
-		color: var(--ros-component-text-field-color-placeholder);
-	}
+  &:focus {
+    @mixin form-element $type, key-focus;
 
-	&:optional {
-		@mixin form-element $type, default;
-	}
+    outline: none;
+    box-shadow: 0 0 0 var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-key-focus-border-color);
+  }
 
-	&:required:focus:valid {
-		@mixin form-element $type, success;		
-		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-success-border-color);
-	}
+  &:disabled {
+    @mixin form-element $type, disabled;
 
-	&:focus:invalid {
-		@mixin form-element $type, error;
-		box-shadow: 0 0 0px var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-error-border-color);
-	}
+    &::placeholder {
+      color: var(--ros-component-form-color-foreground-color-placeholder-disable);
+    }
+  }
+
+  &::placeholder {
+    color: var(--ros-component-form-color-foreground-color-placeholder-default);
+    font-family: var(--ros-component-form-font-family-placeholder);
+    line-height: var(--ros-component-form-line-height-placeholder);
+    font-size: var(--ros-component-form-font-size-placeholder);
+    font-weight: var(--ros-component-form-font-weight-placeholder);
+    text-transform: var(--ros-component-form-text-case-placeholder);
+    letter-spacing: var(--ros-component-form-letter-spacing-placeholder);
+    text-decoration: var(--ros-component-form-text-decoration-placeholder);
+  }
+
+  &:optional {
+    @mixin form-element $type, default;
+  }
+
+  &:optional:disabled {
+    @mixin form-element $type, disabled;
+
+    &::placeholder {
+      color: var(--ros-component-form-color-foreground-color-placeholder-disable);
+    }
+  }
+
+  &:required:focus:valid {
+    @mixin form-element $type, success;		
+
+    box-shadow: 0 0 0 var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-success-border-color);
+  }
+
+  &:focus:invalid {
+    @mixin form-element $type, error;
+
+    box-shadow: 0 0 0 var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-error-border-color);
+  }
 }
-

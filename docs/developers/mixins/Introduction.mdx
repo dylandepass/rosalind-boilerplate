@@ -1,0 +1,176 @@
+import { Meta, Story } from '@storybook/blocks';
+
+<Meta title="Docs/Developers/Mixins/Introduction"/>
+
+# CSS Mixins
+CSS Mixins offer an alternative approach to working with the Rosalind. They are an integral part of the systems construction, but they are not a requirement to utilize the system.
+
+The goal is to speed up development when working with the system and to avoid having to remember each token name in the system. To address this issue, there are two solutions offered: CSS Utility classes and Mixins.
+
+## What are CSS Mixins?
+Mixins are a reusable piece of code which can be leveraged throughout a website’s CSS. Mixins allow developers to manage code more efficiently and ensure their code is DRY (Don't Repeat Yourself) by separating complex style declarations into small manageable functions, and eliminate unnecessary redundancy while maximizing code maintainability.
+
+Having all the core patterns of the design system codified in mixins helps create a consistent and unified look and feel for the product. For design and development teams it not only helps ensure consistency but also leads to faster development time by avoiding the need to write custom style declarations every time.
+
+## Advantage of using CSS Mixins
+Below are a list of some benefits to using CSS Mixins.
+
+### Improved code efficiency and readability
+CSS Mixins promote uniformity between styles while reducing the amount of code you have to write and eliminating the need to memorize token names.
+
+#### Example
+Let say we have a design for a card that requires large padding around it.
+
+In pure CSS we would require the name of the large padding token to do this.
+
+```css 
+.card {
+    padding: var(--ros-semantic-spacing-around-component-lg);
+}
+```
+
+Alternativly, you could use the padding mixin and achive the same result without having to remember the token name.
+
+```css 
+.card {
+    @mixin padding lg;
+}
+```
+
+### Increased code modularity
+CSS Mixins allow you to break down complex code into small chunks that can be reused and referenced throughout your project, making development and maintenance easier. 
+
+#### Example
+Let's take a simplifed example of a TextField form element that defines specific tokens for `color`, `border-color` and `background-color` for both the `default` and `hover` state.
+
+```css
+:root {
+    --ros-component-text-field-color-default-foreground-color: #222222;
+    --ros-component-text-field-color-default-border-color: #646464;
+    --ros-component-text-field-color-default-background-color: #00000000;
+
+    --ros-component-text-field-color-hover-foreground-color: #C6C6C6;
+    --ros-component-text-field-color-hover-border-color: #2D7966;
+    --ros-component-text-field-color-hover-background-color: #00000000;
+}
+```
+
+Without mixins the declaration would look like this.
+
+```css
+input[type="text"] {
+    color: var(--ros-component-text-field-color-default-foreground-color);
+	border-color: var(--ros-component-text-field-color-default-border-color);
+	background-color: var(--ros-component-text-field-color-default-background-color);
+
+    &:hover {
+        color: var(--ros-component-text-field-color-hover-foreground-color);
+        border-color: var(--ros-component-text-field-color-hover-border-color);
+        background-color: var(--ros-component-text-field-color-hover-background-color);
+    }
+}
+```
+
+Now if we introduce a mixin for the common code we can reduce the number of times we have to redeclare `color`, `border-color` and `background-color`;
+
+```css
+/* A text-field mixin that accepts 1 parameter called state used in creating the token */
+@define-mixin text-field $state {
+	color: var(--ros-component-text-field-color-$(state)-foreground-color);
+	border-color: var(--ros-component-text-field-color-$(state)-border-color);
+	background-color: var(--ros-component-text-field-color-$(state)-background-color);
+}
+
+input[type="text"] {
+    @mixin text-field default;
+
+    &:hover {
+        @mixin text-field hover;
+    }
+}
+```
+
+In reality, we have tokens that not only map to the `default` and `hover` state but also to the `focus`, `active`, `required` and `disabled` states. With that in mind you can see how modularity in mixins makes development and maintenance easier. 
+
+The implmentation of [buttons](https://github.com/WESCO-International/-dna/blob/main/system/components.css#L1) in Rosalind is a great example of how CSS Mixins promote modularity and improve code maintenance.
+
+### Only include what you need
+PostCSS only includes mixins the transpiled mixin in the final CSS if they are actually used within that file. So there is no performance or size impact to your css files when you import `/mixins`.
+
+## How to use css mixins
+
+The documentation for Mixins within PostCSS can be found [here](https://github.com/postcss/postcss-mixins/blob/main/README.md).
+
+### Creating mixins 
+
+The `@define-mixin` keyword is used to create a mixin.
+
+```css
+@define-mixin padding-horizontal $size {
+	padding-left: var(--ros-semantic-spacing-around-component-$(size));
+	padding-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+```
+
+#### Mixin Parameters
+Mixins can have optional parameters that can be used within the body of the mixin. The example above accepts a `size` parameter that can then be references inside the mixing using `$(size)`.
+
+Mulitple parameters are also supported by seperating each parameter with a comma.
+
+```css
+@define-mixin button-style $type, $state: default {
+	color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
+	background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
+	border-width: var(--ros-component-button-border-width-$(type)-$(state));
+}
+```
+
+#### Default Parameter values
+Mixin paramters can also define default values using colon.
+
+```css
+@define-mixin padding-horizontal $size: lg {
+	padding-left: var(--ros-semantic-spacing-around-component-$(size));
+	padding-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+```
+
+In the example above if no size is provided the `lg` size will be used.
+
+
+### Using mixins
+
+Mixins will only work in files that are pre-processed by PostCSS (*.post.css). If you want to use the mixins provided by Rosalind you will need to import them into your PostCSS file. The path is relative so it will need to be updated based on the location of your file in the project.
+
+```css
+@import "./mixins";
+```
+
+The `@mixin` keyword allow you to use a mixin.
+
+```css
+    .button {
+        @mixin padding-horizontal md;
+    }
+```
+
+If the mixin supports mulitple parameters than each parameter should be seperated by a comma. In the example below we are using the `button-style` mixin and passing in `primary` and `default` as parameters.
+
+```css
+    .button {
+        @mixin button-style primary, default;
+    }
+```
+
+> In order to use the mixins created by Rosalind you will need to import them into your PostCSS file.
+
+
+## Best practices for css mixins 
+
+* Utilizing descriptive names for your mixins so that you can easily understand their purpose when using them again in the future. 
+* Try to maintaining consistency in naming conventions.
+* Designing mixins to be as versatile as possible, so that they can be used across multiple pages of your application.
+* Avoid including unnecessary styles that do not contribute to intended purpose of the mixin.
+
+## Conclusion 
+CSS Mixins are a powerful tool that can drastically reduce development time and create a cohesive look for WESCO sites. They allow developers to quickly and easily modify and update style elements across an entire codebase, and provide an elegant way of ensuring consistency. Mixins are easy to understand, use, and maintain, and the time saving benefits that they provide make them a excellent choice for building design systems.

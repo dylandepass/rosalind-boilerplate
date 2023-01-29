@@ -118,7 +118,6 @@
       "semantic.color.background.base": "S:c12aff5f6063976ca75d67f70e6349b7f00bdc86,",
       "semantic.color.background.layer-1": "S:c2bc0f3eeb509ec17e748601241567694ef22837,",
       "semantic.color.background.disabled": "S:2468a1ea7a27d3b79b5d93bf0b4b85491354508e,",
-      "semantic.color.background.input": "S:600113b87437117572d52926be8d3eac4b60ab81,",
       "semantic.color.positive.default": "S:2901a9a6edf72488f4ab34e4abc173ff35275b11,",
       "semantic.color.positive.hover": "S:e02bcc64fd007622df67bb79ba9e5a65c7883800,",
       "semantic.color.positive.down": "S:1a4c15dee2654309fe34d7751bc237d50e407317,",
@@ -139,12 +138,10 @@
       "semantic.color.border.base": "S:3a256523018830f50f12c05a855fa8e8692542ad,",
       "semantic.color.border.hover": "S:46d5c82a4476a909e379a952875f50ead8fa50c5,",
       "semantic.color.border.down": "S:bca0701dd530a26760439542e46fd782e95e5293,",
-      "semantic.color.border.focus": "S:bee908b0cc62aaf24256457b1cf7dd7340dbbdf8,",
       "semantic.color.border.disabled": "S:3b6950ab62613b6d11d4bddf937cf1110f406e4f,",
       "component.text-field.typography.text": "S:cbe749ce2f32d8fb32abebf7d770a3be0dd2c6c3,",
       "component.form.typography.label": "S:c1f20e6ff6f91e869b098c178639dd84c9a57cd3,",
       "component.form.typography.help": "S:971185022c2651a0067c5ec34537d9814e990a03,",
-      "semantic.typography.body": "S:4ccd2438c06eebeab1a5685c260f550a3acb379c,",
       "semantic.typography.caption": "S:8f239fbceba6c660eef6da70ae5ae30e02174c12,",
       "semantic.typography.source-code": "S:a08272769bf7f8b9513ab234af64befa677bff0f,",
       "semantic.typography.desktop.display-1": "S:e66033f81b6b9b0866777a282dc0920d6f05ad10,",
@@ -182,7 +179,9 @@
       "semantic.color.foreground.on-primary.muted": "S:76912ca4172432e5b63483ab532148fd75b0e550,",
       "semantic.color.foreground.on-secondary.default": "S:5f79a9023f7f389a0080313f16eed8f0be9f72f9,",
       "semantic.color.foreground.on-disabled1.default": "S:7c0e099c1581dd09a059cf208eec6c9e0769f1ce,",
-      "semantic.color.foreground.on-input2.default": "S:1e49a43c4dee28153b60306cebeed8f38b1cf6a0,"
+      "semantic.color.foreground.on-input2.default": "S:1e49a43c4dee28153b60306cebeed8f38b1cf6a0,",
+      "semantic.color.border.key-focus": "S:bee908b0cc62aaf24256457b1cf7dd7340dbbdf8,",
+      "semantic.typography.body1.base": "S:4ccd2438c06eebeab1a5685c260f550a3acb379c,"
     }
   },
   {

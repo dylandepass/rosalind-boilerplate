@@ -4,11 +4,11 @@
       "color": {
         "default": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -18,11 +18,11 @@
         },
         "hover": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -32,25 +32,25 @@
         },
         "key-focus": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
-            "value": "{semantic.color.border.focus}",
+            "value": "{semantic.color.border.key-focus}",
             "type": "color"
           }
         },
         "success": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {
@@ -60,11 +60,11 @@
         },
         "error": {
           "background-color": {
-            "value": "{semantic.color.background.input}",
+            "value": "{component.form.color.background.input.default}",
             "type": "color"
           },
           "foreground-color": {
-            "value": "{semantic.color.foreground.on-input.default}",
+            "value": "{component.form.color.foreground.input.default}",
             "type": "color"
           },
           "border-color": {

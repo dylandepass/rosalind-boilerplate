@@ -182,7 +182,7 @@ h5,
 }
 
 p {
-	@mixin body-font;
+	@mixin body-text;
 	margin-bottom: var(--ros-semantic-spacing-typography-body-margin-bottom);
 
 	& a {
@@ -209,12 +209,12 @@ strong {
 }
 
 .caption {
-	@mixin caption-font;
+	@mixin caption;
 }
 
 blockquote,
 .blockquote {
-	@mixin body-font;
+	@mixin body-text;
 	padding: 20px;
 	border-left: 10px solid var(--ros-semantic-color-primary-base);
 	color: var(--ros-semantic-color-foreground-on-base-subtle);

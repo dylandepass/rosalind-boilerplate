@@ -1,0 +1,48 @@
+import { Meta, Story } from '@storybook/blocks';
+import * as FormStories from '../stories/forms/forms.stories';
+
+<Meta title="Docs/Developers/Forms"/>
+
+# Forms
+
+HTML Forms are widely used in websites and web applications to collect information from users. 
+
+Forms are composed of multiple elements which can accept input, such as checkboxes, text fields, and radio buttons. The information can either be submitted to the server or used in the client-side script. 
+
+In Franklin, HTML Forms can be authored in a spreadsheet or manually created by developers using javascript. The [Franklin Forms Service](https://www.hlx.live/developer/forms) can be used to persist form data in a spreadsheet.
+
+## TextField
+
+Text fields allow users to enter free form text data such as names, email addresses and other text.
+
+<Story of={FormStories.TextField}/>
+
+## TextArea
+
+Text areas are a type of text input whereby users can enter multiple lines of text into the same field. Text areas also provide built-in features like scroll bars or resizing, which allow flexibility when writing a long form text.
+
+<Story of={FormStories.TextArea}/>
+
+## Select
+
+The select input in an HTML form provides a user with a dropdown list of predefined options to choose from.
+
+<Story of={FormStories.Select}/>
+
+## Checkbox
+
+Checkboxes allow a user to select one or more options from a set of predefined choices.
+
+<Story of={FormStories.Checkbox}/>
+
+## Switch
+
+Switch elements or toggles show an on and off state that users can interact with. They are a useful way to turn on and off features or as a way to choose between two or more options. 
+
+<Story of={FormStories.Switch}/>
+
+## Radio
+
+Radio buttons are used in HTML forms to give users the ability to select one predetermined item from a predefined list of options. 
+
+<Story of={FormStories.Radio}/>

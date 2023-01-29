@@ -1,0 +1,174 @@
+import { Meta, Story } from '@storybook/blocks';
+import theme from '../../../styles/themes/rosalind-light.json';
+import { Code } from '../../stories/util';
+
+<Meta title="Docs/Developers/Mixins/Spacing"/>
+
+# Spacing Mixins
+
+Rosalind provides the following mixins to work with paddings, margin and gutters.
+
+## Padding Mixins
+
+Each mixins includes a required `size` parameter that is used to determine this size of the padding to use.
+
+### Mixins
+
+Set the padding on all sides (padding-top, padding-right, padding-bottom, padding-left).
+
+```css
+@mixin padding {size};
+```
+
+Set the padding of an individual side.
+
+```css
+@mixin padding-top {size};
+
+@mixin padding-bottom {size};
+
+@mixin padding-left {size};
+
+@mixin padding-right {size};
+```
+
+Set the vertical or horizontal padding.
+
+```css
+@mixin padding-vertical {size};
+
+@mixin padding-horizontal {size};
+```
+#### Size Parameter
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>{ Object.entries(theme.semantic.spacing.around['component']).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-space--docs#space-around-components-tokens"/>) }</div>
+    </div>
+</div>
+
+#### Padding by breakpoint
+
+Setting the padding based on a breakpoint is also supported.
+
+```css
+@mixin padding-{breakpoint} {size};
+
+@mixin padding-{breakpoint}-top {size};
+
+@mixin padding-{breakpoint}-bottom {size};
+
+@mixin padding-{breakpoint}-left {size};
+
+@mixin padding-{breakpoint}-right {size};
+
+@mixin padding-{breakpoint}-vertical {size};
+
+@mixin padding-{breakpoint}-horizontal {size};
+```
+
+#### Parameters
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>{ Object.entries(theme.semantic.size.breakpoints).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-size--docs#breakpoint-tokens"/>) }</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>{ Object.entries(theme.semantic.spacing.around['component']).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-space--docs#space-around-components-tokens"/>) }</div>
+    </div>
+</div>
+
+## Margin Mixins
+
+Rosalind provides the following mixins to work with margins.
+
+Each mixins includes a required `size` parameter that is used to determine this size of the padding to use.
+
+### Mixins
+
+Set the margin on all sides (margin-top, margin-right, margin-bottom, padding-left).
+
+```css
+@mixin margin {size};
+```
+
+Set the margin of an individual side.
+
+```css
+@mixin margin-top {size};
+
+@mixin margin-bottom {size};
+
+@mixin margin-left {size};
+
+@mixin margin-right {size};
+```
+
+Set the vertical or horizontal margin.
+
+```css
+@mixin margin-vertical {size};
+
+@mixin margin-horizontal {size};
+```
+
+#### Size Parameter
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>{ Object.entries(theme.semantic.spacing.around['component']).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-space--docs#space-around-components-tokens"/>) }</div>
+    </div>
+</div>
+
+#### Margin by breakpoint
+
+Setting the margin based on a breakpoint is also supported.
+
+```css
+@mixin margin-{breakpoint} {size};
+
+@mixin margin-{breakpoint}-top {size};
+
+@mixin margin-{breakpoint}-bottom {size};
+
+@mixin margin-{breakpoint}-left {size};
+
+@mixin margin-{breakpoint}-right {size};
+
+@mixin margin-{breakpoint}-vertical {size};
+
+@mixin margin-{breakpoint}-horizontal {size};
+```
+
+#### Parameters
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>{ Object.entries(theme.semantic.size.breakpoints).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/docs-developers-tokens-space--docs#breakpoint-tokens"/>) }</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>{ Object.entries(theme.semantic.spacing.around['component']).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/docs-developers-tokens-space--docs#space-around-components-tokens"/>) }</div>
+    </div>
+</div>

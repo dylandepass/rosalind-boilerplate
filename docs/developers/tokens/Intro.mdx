@@ -1,0 +1,118 @@
+import { Meta, Story } from '@storybook/blocks';
+
+<Meta title="Docs/Developers/Tokens/Introduction"/>
+
+# Introduction to Design Tokens
+
+## What are Design Tokens?
+
+Design tokens are all the values needed to construct and maintain a design system — spacing, color, typography, object styles, animation, etc. — represented as data. These can represent anything defined by design: a color as a RGB value, an opacity as a number, an animation ease as Bezier coordinates. They’re used in place of hard-coded values in order to ensure flexibility and unity across all product experiences.
+
+## Why use Design Tokens?
+
+Using design tokens can help create a unified design language across surfaces, improve maintainability, and enable designers to rapidly develop and deploy solutions without conflicts created by highly-specific hard-coded values. 
+
+## Token Naming
+
+When naming tokens it can become a battle between flexibility or specificity. A flexible token name like `--color-success` leaves it's purpose open to interpretation by the developer and could result it in be used as a background or text color. Flexibility is often accompanied by a decrease in accuracy and precision. For this reason the tokens in Rosalind try to be more specific than flexible.
+
+Design tokens names are made of up of multiple levels, the more levels used in a tokens name the more complex it is, but the greater the precision implied by it's name.
+
+### Token levels
+
+#### Namespace: 
+All tokens contain the namespace level. The namespace level prevents conflicts arising from the use of the same token from different systems.
+
+#### Tier
+All tokens contain a tier. One of `global`, `semantic`, `component` and `pattern`.
+
+#### Category
+The category level spans visual style concerns and includes things like `color`, `size`, `spacing`, `border-wdth`, `font-family` etc.
+
+#### Modifier
+The use of modifiers helps increase how explicit the token is. Various modifiers can be used in the same token and the use of modifiers is optional.
+
+<div className="table margin-top">
+  <div>
+    <div>Modifier</div>
+    <div>Description</div>
+    <div>Examples</div>
+    <div>Optional</div>
+  </div>
+  <div>
+    <div>variant</div>
+    <div>A variant distinguishes alternative use cases</div>
+    <div>`primary`, `secondary`, `positive`, `error`</div>
+    <div>true</div>
+  </div>
+  <div>
+    <div>state</div>
+    <div>Tokens can specify properties based on interactive states</div>
+    <div>`default`, `hover`, `focus`, `disabled`</div>
+    <div>true</div>
+  </div>
+  <div>
+    <div>scale</div>
+    <div>Tokens scale choices of varying size, space and other options applied to and between things. Numeric scales should be used where possible in `global tokens` while t-shirt sizes should be used for `semantic tokens`.</div>
+    <div>`100`, `200`, `300`, `sm`, `md`, `lg`</div>
+    <div>true</div>
+  </div>
+  <div>
+    <div>mode</div>
+    <div>Tokens can employ a mode modifier to distinguish values across two or more surface/background settings on which elements appear.</div>
+    <div>`on-base`, `on-layer1`, `on-secondary`, `on-primary`</div>
+    <div>true</div>
+  </div>
+</div>
+
+## Token Tiers
+
+There are 5 different tiers of tokens used in the Rosalind Design System. `global`, `theme`, `semantic`, `component` and `pattern` tokens. 
+
+### Global Tokens
+
+Global tokens contain raw values and are aliased by semantic, component and pattern tokens. Global token names should reflect the values they store but still provide some level of abstraction so that any values they store can be altered. For example, naming a global token `global.size.16px` or `global.size.16` (and it's value is 16) should be avoided as its value cannot be changed since its explicity implied in the name.
+
+Typically global token names use some sort of numeric scales. For example `global.color.red.100`, `global.color.red.200`, `global.size.breakpoint.100`, `global.size.breakpoint.200` etc. This allows the value to be changed and leaves room for new in-between values to be included in the future such as `global.color.red.150` or `global.size.breakpoint.150`.
+
+Since global tokens are aliased by higher tier tokens they are not be exported as styles and only used as a source token.
+
+#### Global tokens naming structure
+
+`--ros-global-{category}-{modifiers}`
+
+### Theme Tokens
+
+Theme tokens define contrasting color tokens appropriate for light or dark theming. When design for brands require light and dark modes these tokens should be used for most uses of color, such as when the color will be applied to text, icons, or the borders of a component. They should be used for anything that needs to meet a WCAG contrast minimum.
+
+Theme tokens are included in the system and available to developers. These color tokens have no semantic meaning applied to them and can be used in cases where larger patterns require colors that are outside the ones available at the semantic level.
+
+#### Theme tokens naming structure
+
+`--ros-theme-color-{variant}-{scale}`
+
+### Semantic Tokens
+
+Semantic tokens reference `global tokens` and indicate their intended purpose. Therefore, their names should only describe what the token is meant to be used for, and not the value. 
+
+Semantic tokens can be referenced by `component tokens` or `pattern tokens` or used more generally across the user interface. Ideally, semantic tokens they only reference `global` or `theme` tokens and never contain raw values.
+
+#### Semantic tokens naming structure
+
+`--ros-semantic-{category}-{modifiers}`
+
+### Component Tokens
+
+Component tokens reference `semantic tokens` or `global tokens` and are used to store design decisions things like form elements or buttons.
+
+#### Pattern tokens naming structure
+
+`--ros-component-{category}-{modifiers}`
+
+### Pattern Tokens
+
+Pattern tokens reference `semantic tokens` or `global tokens` and are used within larger UI patterns like the header or footer. Typically design systems don't include pattern specific tokens and instead utilize the `semantic tokens` directly for patterns.
+
+#### Pattern tokens naming structure
+
+`--ros-pattern-{category}-{modifiers}`
