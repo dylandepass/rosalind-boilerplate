@@ -1,0 +1,4 @@
+@define-mixin icon $size {
+  width: var(--ros-semantic-size-icon-$(size)-width);
+  height: var(--ros-semantic-size-icon-$(size)-height);
+}

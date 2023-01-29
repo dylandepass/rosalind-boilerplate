@@ -1,0 +1,6 @@
+@custom-media --ros-screen-xs (max-width: 375px);
+@custom-media --ros-screen-sm (min-width: 576px);
+@custom-media --ros-screen-md (min-width: 768px);
+@custom-media --ros-screen-lg (min-width: 992px);
+@custom-media --ros-screen-xl (min-width: 1200px);
+@custom-media --ros-screen-xxl (min-width: 1440px);

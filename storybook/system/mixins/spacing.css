@@ -1,0 +1,601 @@
+/* padding */
+@define-mixin padding $size {
+  padding: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-top $size {
+  padding-top: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-bottom $size {
+  padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-left $size {
+  padding-left: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-right $size {
+  padding-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-horizontal $size {
+  padding-left: var(--ros-semantic-spacing-around-component-$(size));
+  padding-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin padding-vertical $size {
+  padding-top: var(--ros-semantic-spacing-around-component-$(size));
+  padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+/* sm breakpoint */
+@define-mixin padding-xs $size {
+  @media (--ros-screen-xs) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-xs-top $size {
+  @media (--ros-screen-xs) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-xs-bottom $size {
+  @media (--ros-screen-xs) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-xs-left $size {
+  @media (--ros-screen-xs) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-xs-right $size {
+  @media (--ros-screen-xs) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-xs-horizontal $size {
+  @media (--ros-screen-xs) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-xs-vertical $size {
+  @media (--ros-screen-xs) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* sm breakpoint */
+@define-mixin padding-sm $size {
+  @media (--ros-screen-sm) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-sm-top $size {
+  @media (--ros-screen-sm) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-sm-bottom $size {
+  @media (--ros-screen-sm) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-sm-left $size {
+  @media (--ros-screen-sm) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-sm-right $size {
+  @media (--ros-screen-sm) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-sm-horizontal $size {
+  @media (--ros-screen-sm) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-sm-vertical $size {
+  @media (--ros-screen-sm) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* md breakpoint */
+@define-mixin padding-md $size {
+  @media (--ros-screen-md) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-md-top $size {
+  @media (--ros-screen-md) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-md-bottom $size {
+  @media (--ros-screen-md) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-md-left $size {
+  @media (--ros-screen-md) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-md-right $size {
+  @media (--ros-screen-md) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-md-horizontal $size {
+  @media (--ros-screen-md) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-md-vertical $size {
+  @media (--ros-screen-md) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* lg breakpoint */
+@define-mixin padding-lg $size {
+  @media (--ros-screen-lg) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-lg-top $size {
+  @media (--ros-screen-lg) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-lg-bottom $size {
+  @media (--ros-screen-lg) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-lg-left $size {
+  @media (--ros-screen-lg) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-lg-right $size {
+  @media (--ros-screen-lg) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-lg-horizontal $size {
+  @media (--ros-screen-lg) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-lg-vertical $size {
+  @media (--ros-screen-lg) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* xl breakpoint */
+@define-mixin padding-xl $size {
+  @media (--ros-screen-xl) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-xl-top $size {
+  @media (--ros-screen-xl) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-xl-bottom $size {
+  @media (--ros-screen-xl) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-xl-left $size {
+  @media (--ros-screen-xl) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-xl-right $size {
+  @media (--ros-screen-xl) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-xl-horizontal $size {
+  @media (--ros-screen-xl) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-xl-vertical $size {
+  @media (--ros-screen-xl) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* xxl breakpoint */
+@define-mixin padding-xxl $size {
+  @media (--ros-screen-xxl) {
+    @mixin padding $size;
+  }
+}
+
+@define-mixin padding-xxl-top $size {
+  @media (--ros-screen-xxl) {
+    @mixin padding-top $size;
+  }
+}
+
+@define-mixin padding-xxl-bottom $size {
+  @media (--ros-screen-xxl) {
+    @mixin padding-bottom $size;
+  }
+}
+
+@define-mixin padding-xxl-left $size {
+  @media (--ros-screen-xxl) {
+    @mixin padding-left $size;
+  }
+}
+
+@define-mixin padding-xxl-right $size {
+  @media (--ros-screen-xxl) {
+    @mixin padding-right $size;
+  }
+}
+
+@define-mixin padding-xxl-horizontal $size {
+  @media (--ros-screen-xxl) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin padding-xxl-vertical $size {
+  @media (--ros-screen-xxl) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* margin */
+@define-mixin margin $size {
+  padding: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-top $size {
+  margin-top: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-bottom $size {
+  margin-bottom: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-left $size {
+  margin-left: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-right $size {
+  margin-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-horizontal $size {
+  margin-left: var(--ros-semantic-spacing-around-component-$(size));
+  margin-right: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+@define-mixin margin-vertical $size {
+  margin-top: var(--ros-semantic-spacing-around-component-$(size));
+  margin-bottom: var(--ros-semantic-spacing-around-component-$(size));
+}
+
+/* xs breakpoint */
+@define-mixin margin-xs $size {
+  @media (--ros-screen-xs) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-xs-top $size {
+  @media (--ros-screen-xs) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-xs-bottom $size {
+  @media (--ros-screen-xs) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-xs-left $size {
+  @media (--ros-screen-xs) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-xs-right $size {
+  @media (--ros-screen-xs) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-xs-horizontal $size {
+  @media (--ros-screen-xs) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-xs-vertical $size {
+  @media (--ros-screen-xs) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* sm breakpoint */
+@define-mixin margin-sm $size {
+  @media (--ros-screen-sm) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-sm-top $size {
+  @media (--ros-screen-sm) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-sm-bottom $size {
+  @media (--ros-screen-sm) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-sm-left $size {
+  @media (--ros-screen-sm) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-sm-right $size {
+  @media (--ros-screen-sm) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-sm-horizontal $size {
+  @media (--ros-screen-sm) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-sm-vertical $size {
+  @media (--ros-screen-sm) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* md breakpoint */
+@define-mixin margin-md $size {
+  @media (--ros-screen-md) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-md-top $size {
+  @media (--ros-screen-md) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-md-bottom $size {
+  @media (--ros-screen-md) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-md-left $size {
+  @media (--ros-screen-md) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-md-right $size {
+  @media (--ros-screen-md) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-md-horizontal $size {
+  @media (--ros-screen-md) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-md-vertical $size {
+  @media (--ros-screen-md) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* lg breakpoint */
+@define-mixin margin-lg $size {
+  @media (--ros-screen-lg) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-lg-top $size {
+  @media (--ros-screen-lg) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-lg-bottom $size {
+  @media (--ros-screen-lg) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-lg-left $size {
+  @media (--ros-screen-lg) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-lg-right $size {
+  @media (--ros-screen-lg) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-lg-horizontal $size {
+  @media (--ros-screen-lg) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-lg-vertical $size {
+  @media (--ros-screen-lg) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* xl breakpoint */
+@define-mixin margin-xl $size {
+  @media (--ros-screen-xl) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-xl-top $size {
+  @media (--ros-screen-xl) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-xl-bottom $size {
+  @media (--ros-screen-xl) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-xl-left $size {
+  @media (--ros-screen-xl) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-xl-right $size {
+  @media (--ros-screen-xl) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-xl-horizontal $size {
+  @media (--ros-screen-xl) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-xl-vertical $size {
+  @media (--ros-screen-xl) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+/* xxl breakpoint */
+@define-mixin margin-xxl $size {
+  @media (--ros-screen-xxl) {
+    @mixin margin $size;
+  }
+}
+
+@define-mixin margin-xxl-top $size {
+  @media (--ros-screen-xxl) {
+    @mixin margin-top $size;
+  }
+}
+
+@define-mixin margin-xxl-bottom $size {
+  @media (--ros-screen-xxl) {
+    @mixin margin-bottom $size;
+  }
+}
+
+@define-mixin margin-xxl-left $size {
+  @media (--ros-screen-xxl) {
+    @mixin margin-left $size;
+  }
+}
+
+@define-mixin margin-xxl-right $size {
+  @media (--ros-screen-xxl) {
+    @mixin margin-right $size;
+  }
+}
+
+@define-mixin margin-xxl-horizontal $size {
+  @media (--ros-screen-xxl) {
+    padding-left: var(--ros-semantic-spacing-around-component-$(size));
+    padding-right: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}
+
+@define-mixin margin-xxl-vertical $size {
+  @media (--ros-screen-xxl) {
+    padding-top: var(--ros-semantic-spacing-around-component-$(size));
+    padding-bottom: var(--ros-semantic-spacing-around-component-$(size));
+  }
+}

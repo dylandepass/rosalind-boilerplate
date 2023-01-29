@@ -1,0 +1,3 @@
+@define-mixin max-section-width {
+  max-width: var(--ros-semantic-size-section-max-width);
+}

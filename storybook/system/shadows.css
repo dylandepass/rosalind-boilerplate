@@ -1,0 +1,21 @@
+@import './mixins';
+
+.shadow-sm {
+  @mixin drop-shadow sm;
+}
+
+.shadow-md {
+  @mixin drop-shadow md;
+}
+
+.shadow-lg {
+  @mixin drop-shadow lg;
+}
+
+.shadow-xl {
+  @mixin drop-shadow xl;
+}
+
+.inner-shadow-sm {
+  @mixin inner-shadow sm;
+}

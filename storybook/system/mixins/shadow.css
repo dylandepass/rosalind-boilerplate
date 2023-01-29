@@ -1,0 +1,25 @@
+@define-mixin drop-shadow $size{
+  border-radius: var(--ros-semantic-border-radius-default);
+  box-shadow:
+    var(--ros-semantic-drop-shadow-$(size)-0-x)
+    var(--ros-semantic-drop-shadow-$(size)-0-y)
+    var(--ros-semantic-drop-shadow-$(size)-0-blur)
+    var(--ros-semantic-drop-shadow-$(size)-0-spread)
+    var(--ros-semantic-drop-shadow-$(size)-0-color),
+    var(--ros-semantic-drop-shadow-$(size)-1-x)
+    var(--ros-semantic-drop-shadow-$(size)-1-y)
+    var(--ros-semantic-drop-shadow-$(size)-1-blur)
+    var(--ros-semantic-drop-shadow-$(size)-1-spread)
+    var(--ros-semantic-drop-shadow-$(size)-1-color)
+}
+
+@define-mixin inner-shadow $size{
+  border-radius: var(--ros-semantic-border-radius-default);
+  box-shadow:
+    inset
+    var(--ros-semantic-inner-shadow-$(size)-0-x)
+    var(--ros-semantic-inner-shadow-$(size)-0-y)
+    var(--ros-semantic-inner-shadow-$(size)-0-blur)
+    var(--ros-semantic-inner-shadow-$(size)-0-spread)
+    var(--ros-semantic-inner-shadow-$(size)-0-color)
+}

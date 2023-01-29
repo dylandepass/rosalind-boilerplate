@@ -1,0 +1,82 @@
+@import '../breakpoints';
+
+/* CSS Flexbox */
+@define-mixin col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  max-width: 100%;
+}
+
+@define-mixin flex-cols $cols {
+  @mixin col;
+
+  display: flex;
+  flex: 0 0 calc(($(cols) / 12) * 100%);
+  max-width: calc(($(cols) / 12) * 100%);
+}
+
+@define-mixin flex-xxl-cols $cols {
+  @media (--ros-screen-xxl) {
+    @mixin flex-cols $cols;
+  }
+}
+
+@define-mixin flex-xl-cols $cols {
+  @media (--ros-screen-xl) {
+    @mixin flex-cols $cols;
+  }
+}
+
+@define-mixin flex-lg-cols $cols {
+  @media (--ros-screen-lg) {
+    @mixin flex-cols $cols;
+  }
+}
+
+@define-mixin flex-md-cols $cols {
+  @media (--ros-screen-md) {
+    @mixin flex-cols $cols;
+  }
+}
+
+@define-mixin flex-sm-cols $cols {
+  @media (--ros-screen-sm) {
+    @mixin flex-cols $cols;
+  }
+}
+
+/* col offset */
+@define-mixin flex-cols-offset $cols {
+  margin-left: calc(($(cols) / 12) * 100%);
+}
+
+@define-mixin flex-xxl-cols-offset $cols {
+  @media (--ros-screen-xxl) {
+    margin-left: calc(($(cols) / 12) * 100%);
+  }
+}
+
+@define-mixin flex-xl-cols-offset $cols {
+  @media (--ros-screen-xl) {
+    margin-left: calc(($(cols) / 12) * 100%);
+  }
+}
+
+@define-mixin flex-lg-cols-offset $cols {
+  @media (--ros-screen-lg) {
+    margin-left: calc(($(cols) / 12) * 100%);
+  }
+}
+
+@define-mixin flex-md-cols-offset $cols {
+  @media (--ros-screen-md) {
+    margin-left: calc(($(cols) / 12) * 100%);
+  }
+}
+
+@define-mixin flex-sm-cols-offset $cols {
+  @media (--ros-screen-sm) {
+    margin-left: calc(($(cols) / 12) * 100%);
+  }
+}

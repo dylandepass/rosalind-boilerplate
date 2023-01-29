@@ -1,0 +1,80 @@
+@import "./mixins";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
+
+body {
+	@mixin body-text;
+
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--ros-semantic-color-background-base);
+	color: var(--ros-semantic-color-foreground-on-base-default);
+	margin: 0;
+	display: none;
+}
+
+body.appear {
+	display: unset;
+}
+
+main {
+	padding-top: var(--ros-pattern-header-size-height);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+hr {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	border: 0;
+	border-bottom: 1px solid var(--ros-semantic-color-seperator-on-base);
+}
+
+.default-content-wrapper {
+	text-align: center;
+	margin-bottom: var(--ros-semantic-size-default-content-wrapper-margin-bottom);
+}
+
+pre,
+kbd,
+samp {
+	font-family: var(--ros-semantic-font-family-mono);
+}
+
+a,
+button {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a {
+	background-color: transparent;
+	color: var(--ros-semantic-color-link-base);
+
+	&:hover {
+		color: var(--ros-semantic-color-link-hover);
+	}
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
