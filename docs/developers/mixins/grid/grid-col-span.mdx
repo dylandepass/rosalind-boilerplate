@@ -1,0 +1,59 @@
+import { Meta, Story } from '@storybook/blocks';
+import * as GridStories from '../../../stories/grid/grid.stories';
+
+<Meta title="Docs/Developers/Mixins/Grid/grid-col-span"/>
+
+# grid-col-span
+
+The `grid-col-span` mixin can be used to span grid columns.
+
+<Story of={GridStories.SpanColumns}/>
+
+```html
+<div class="grid-demo-span-columns">
+    <div>col (span 3)</div>
+    <div>col (span 9)</div>
+    <div>col (span 3)</div>
+    <div>col (span 9)</div>
+</div>
+```
+
+```css
+.grid-demo-span-columns {
+    display: grid;
+    @mixin grid-cols 12;
+
+    & > div {
+        &:nth-child(even) {
+            @mixin grid-col-span 9;
+        }
+
+        &:nth-child(odd) {
+            @mixin grid-col-span 3;
+        }
+    }
+}
+```
+
+### Responsive Column Span
+
+The column span can be adjusted by breakpoint using the responsive versions of the column span mixins.
+
+```css
+@mixin grid-{breakpoint}-col-span {columns};
+```
+
+<div className="table margin-bottom">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>`sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+    <div>
+        <div>`columns`</div>
+        <div>The number of columns to span</div>
+    </div>
+</div>

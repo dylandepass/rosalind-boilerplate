@@ -1,0 +1,233 @@
+import { Meta, Story } from '@storybook/blocks';
+import theme from '../../../styles/themes/rosalind-light.json';
+import { Code } from '../../stories/util';
+import * as TypographyStories from '../../stories/typography/typography.stories.js';
+
+<Meta title="Docs/Developers/Mixins/Typography"/>
+
+# Typography Mixins
+
+Rosalind provides the following mixins to work with typography.
+
+## Typography Mixins
+
+The mixins below allow you to easily customize type in CSS for any element on the page.
+
+> The `semi-bold` weight option and the `size` parameter are currently only supported on text with the `body-text` mixin.
+
+> The font mixins below declare the `font-size`, `font-family`, `font-weight` and `line-height` styles but make not adjustments for text color.
+
+```css
+@mixin h1 {weight};
+
+@mixin h2 {weight};
+
+@mixin h3 {weight};
+
+@mixin h4 {weight};
+
+@mixin h5 {weight};
+
+@mixin subtitle {weight};
+
+@mixin eyebrow {weight};
+
+@mixin body-text {weight} {size};
+
+@mixin caption {weight};
+
+@mixin source-code {weight};
+```
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+        <div>Default</div>
+    </div>
+    <div>
+        <div>`weight`</div>
+        <div>`regular` `bold` `semi-bold`</div>
+        <div>`regular`</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>{ Object.entries(theme.semantic['font-size'].body).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-typography--docs#static-typography"/>) }</div>
+        <div>`md`</div>
+    </div>
+</div>
+
+## CSS Utility Classes for Typography
+
+Rosalind provides a set of CSS Utility Classes for working with type. These may come in handy if DOM elements are decorated using javascript. In most cases though the mixins should cover the majority of usecases. 
+
+### Typography Size CSS Utilities
+
+#### Demo
+<Story of={TypographyStories.FontSizeUtilities}/>
+
+##### Code Example
+```html
+<div>
+  <h1>This is an h1</h1>
+  <h2 class="h4">This is an h2, with the size of an h4</h2>
+</div>
+```
+
+#### Supported Classes
+
+The follow CSS Utility classes are supported by Rosalind DNA.
+
+<div className="table">
+  <div>
+    <div>Class</div>
+    <div>Description</div>
+  </div>
+  <div>
+    <div>.h1</div>
+    <div>Heading 1</div>
+  </div>
+  <div>
+    <div>.h2</div>
+    <div>Heading 2</div>
+  </div>
+  <div>
+    <div>.h3</div>
+    <div>Heading 3</div>
+  </div>
+  <div>
+    <div>.h4</div>
+    <div>Heading 4</div>
+  </div>
+  <div>
+    <div>.h5</div>
+    <div>Heading 5</div>
+  </div>
+  <div>
+    <div>.subtitle</div>
+    <div>Subtitle</div>
+  </div>
+  <div>
+    <div>.eyebrow</div>
+    <div>Eyebrow</div>
+  </div>
+  <div>
+    <div>.caption</div>
+    <div>Caption</div>
+  </div>
+  <div>
+    <div>.blockquote</div>
+    <div>Blockquote</div>
+  </div>
+  <div>
+    <div>.code</div>
+    <div>Code</div>
+  </div>
+</div> 
+
+### Semantic ordering of Headings
+
+Keeping the correct semantic ordering of headings on a page is important for accessibility. The sequencing of headings impacts the navigation of the content when accessed through a screen reader. Incorrect ordering of headings can cause difficulties in comprehending the text for those using a screen reader.
+
+For example you should never have an `h1` followed by an `h3` and skip `h2`.
+
+There are situations though where you want the semantic ordering of headings to be correct but visually you may want the text to be a different size. For these cases, Rosalind provides some Mixins and CCS Utility classes that allow you to render type in a different size.
+
+## Typography Weight Mixins
+
+There may be a situation where you need to set the font weight on some text directly. Ideally, the correct token is used and not a hardcoded weight value.
+
+The `font-weight` mixin will set the correct weight given it's semantic name.
+
+```css
+@mixin font-weight {type}
+```
+
+<div className="table margin-top">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`type`</div>
+        <div>`thin` `extra-light` `light` `normal` `medium` `semi-bold` `bold` `extra-bold` `black`</div>
+    </div>
+</div>
+
+## Typography Weight CSS Utilities
+
+Rosalind provides a set of utility classes for working with font weights. Font weight handling is handled by default by the system. So if a piece of text is bolded by an author in Word this will carry through on the front end and will use the correct bold font weight for the brand. 
+
+There may be situations though where a developer wants to change the font weight by decorating a `div` or `span` in the dom. The font weight utility classes can be used for this.
+
+### Demo
+<Story of={TypographyStories.FontWeightUtilities}/>
+
+#### Code Example
+```html
+<div>
+  <h3>This is an <span class="bold">h3</span></h3>
+</div>
+```
+
+### Supported Classes
+
+The follow CSS Utility classes are supported by Rosalind.
+
+> The `semi-bold` class is currently only supported on text within a `p`.
+
+<div className="table">
+  <div className="row">
+    <div>Class</div>
+    <div>Description</div>
+  </div>
+  <div className="row">
+    <div>.bold</div>
+    <div>Adds a bold styling to the text</div>
+  </div>
+  <div className="row">
+    <div>.semi-bold</div>
+    <div>Adds a semi-bold styling to the text</div>
+  </div>
+</div> 
+
+## Text Alignment Utilities
+
+Rosalind provides a set of utility classes for working with text alignment. 
+
+Developers can add these classes to DOM elements or authors could add these classes to block names to control text alignment.
+
+### Demo
+<Story of={TypographyStories.TextAlignmentUtilities}/>
+
+#### Code Example
+```html
+<div>
+  <div class="text-align-left">Let Aligned</div>
+  <div class="text-align-center">Center Aligned</div>
+  <div class="text-align-right">Right Aligned</div>
+</div>
+```
+
+### Supported Classes
+
+The follow CSS Utility classes are supported by Rosalind.
+
+<div className="table">
+  <div className="row">
+    <div>Class</div>
+    <div>Description</div>
+  </div>
+  <div className="row">
+    <div>.text-align-left</div>
+    <div>Left aligned text</div>
+  </div>
+  <div className="row">
+    <div>.text-align-center</div>
+    <div>Center aligned text</div>
+  </div>
+  <div className="row">
+    <div>.text-align-right</div>
+    <div>Right aligned text</div>
+  </div>
+</div> 

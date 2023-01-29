@@ -1,0 +1,170 @@
+import { Meta, Story } from '@storybook/blocks';
+import * as GridStories from '../../../stories/grid/grid.stories';
+
+<Meta title="Docs/Developers/Mixins/Grid/gap"/>
+
+# gap
+
+The `gap`, `gap-x` and `gap-y` mixins can be used to add spacing between grid/flex columns and rows.
+
+## Gap
+
+The `gap` mixin can be used to add uniform spacing between grid columns and rows.
+
+<Story of={GridStories.Gap}/>
+
+```html
+<div class="grid-demo-gap">
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+</div>
+```
+
+```css
+.grid-demo-gap {
+    display: grid;
+    @mixin grid-cols 4;
+    @mixin gap 2xl;
+
+    & > div {
+        @mixin layer-1;
+        text-align: center;
+    }
+}
+```
+### Responsive Gap
+
+The `gap` can be adjusted by breakpoint using the responsive versions of the `gap` mixins.
+
+```css
+@mixin gap-{breakpoint} {size};
+```
+
+<div className="table margin-bottom">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>`sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>The gap size, one of `sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+</div>
+
+## Gap X
+
+The `gap-x` mixin can be used to add spacing between grid columns.
+
+<Story of={GridStories.GapX}/>
+
+```html
+<div class="grid-demo-gap-x">
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+</div>
+```
+
+```css
+.grid-demo-gap-x {
+    display: grid;
+    @mixin grid-cols 4;
+    @mixin gap-x 2xl;
+    
+    & > div {
+        @mixin layer-1;
+        text-align: center;
+    }
+}
+```
+### Responsive Gap X
+
+The `gap-x` can be adjusted by breakpoint using the responsive versions of the `gap-x` mixins.
+
+```css
+@mixin gap-{breakpoint}-x {size};
+```
+
+<div className="table margin-bottom">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>`sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>The gap size, one of `sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+</div>
+
+## Gap Y
+
+The `gap-y` mixin can be used to add spacing between grid rows.
+
+<Story of={GridStories.GapY}/>
+
+```html
+<div class="grid-demo-gap-y">
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+    <div>col</div>
+</div>
+```
+
+```css
+.grid-demo-gap-y {
+    display: grid;
+    @mixin grid-cols 4;
+    @mixin gap-y 2xl;
+    
+    & > div {
+        @mixin layer-1;
+        text-align: center;
+    }
+}
+```
+### Responsive Gap Y
+
+The `gap-y` can be adjusted by breakpoint using the responsive versions of the `gap-y` mixins.
+
+```css
+@mixin gap-{breakpoint}-y {size};
+```
+
+<div className="table margin-bottom">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>`sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+    <div>
+        <div>`size`</div>
+        <div>The gap size, one of `sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+</div>

@@ -1,75 +1,495 @@
-@import "../breakpoints";
+@import '../breakpoints';
 
 /* CSS GRID */
+
+/* CSS Grid Autoflow Column */
+
+@define-mixin grid-auto-flow-col {
+  grid-auto-flow: column;
+}
+
+@define-mixin grid-sm-auto-flow-col {
+  @media (--ros-screen-sm) {
+    grid-auto-flow: column;
+  }
+}
+
+@define-mixin grid-md-auto-flow-col {
+  @media (--ros-screen-md) {
+    grid-auto-flow: column;
+  }
+}
+
+@define-mixin grid-lg-auto-flow-col {
+  @media (--ros-screen-lg) {
+    grid-auto-flow: column;
+  }
+}
+
+@define-mixin grid-xl-auto-flow-col {
+  @media (--ros-screen-xl) {
+    grid-auto-flow: column;
+  }
+}
+
+@define-mixin grid-xxl-auto-flow-col {
+  @media (--ros-screen-xxl) {
+    grid-auto-flow: column;
+  }
+}
+
+/* CSS Grid Autoflow Row */
+
+@define-mixin grid-auto-flow-row {
+  grid-auto-flow: row;
+}
+
+@define-mixin grid-sm-auto-flow-row {
+  @media (--ros-screen-sm) {
+    grid-auto-flow: row;
+  }
+}
+
+@define-mixin grid-md-auto-flow-row {
+  @media (--ros-screen-md) {
+    grid-auto-flow: row;
+  }
+}
+
+@define-mixin grid-lg-auto-flow-row {
+  @media (--ros-screen-lg) {
+    grid-auto-flow: row;
+  }
+}
+
+@define-mixin grid-xl-auto-flow-row {
+  @media (--ros-screen-xl) {
+    grid-auto-flow: row;
+  }
+}
+
+@define-mixin grid-xxl-auto-flow-row {
+  @media (--ros-screen-xxl) {
+    grid-auto-flow: row;
+  }
+}
+
+/* Cols */
 @define-mixin grid-cols $cols {
-	display: grid;
-	grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: repeat($(cols), minmax(0, 1fr));
 }
 
-@define-mixin gap $size {
-	gap: var(--ros-semantic-spacing-gap-component-$(size));
-}
-
-@define-mixin grid-xxl-cols $cols {
-	@media (--ros-screen-xxl) {
-		grid-template-columns: repeat($(cols), minmax(0, 1fr));
-	}
-}
-
-@define-mixin grid-xl-cols $cols {
-	@media (--ros-screen-xl) {
-		grid-template-columns: repeat($(cols), minmax(0, 1fr));
-	}
-}
-
-@define-mixin grid-lg-cols $cols {
-	@media (--ros-screen-lg) {
-		grid-template-columns: repeat($(cols), minmax(0, 1fr));
-	}
-}
-
-@define-mixin grid-md-cols $cols {
-	@media (--ros-screen-md) {
-		grid-template-columns: repeat($(cols), minmax(0, 1fr));
-	}
+@define-mixin grid-xs-cols $cols {
+  @media (--ros-screen-xs) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
 }
 
 @define-mixin grid-sm-cols $cols {
-	@media (--ros-screen-sm) {
-		grid-template-columns: repeat($(cols), minmax(0, 1fr));
-	}
+  @media (--ros-screen-sm) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
 }
 
+@define-mixin grid-md-cols $cols {
+  @media (--ros-screen-md) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
+}
+
+@define-mixin grid-lg-cols $cols {
+  @media (--ros-screen-lg) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
+}
+
+@define-mixin grid-xl-cols $cols {
+  @media (--ros-screen-xl) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
+}
+
+@define-mixin grid-xxl-cols $cols {
+  @media (--ros-screen-xxl) {
+    grid-template-columns: repeat($(cols), minmax(0, 1fr));
+  }
+}
+
+/* Span Column */
 @define-mixin grid-col-span $cols {
-	grid-column: span $(cols)/span $(cols) !important;
+  grid-column: span $(cols)/span $(cols) !important;
 }
 
-@define-mixin grid-xxl-col-span $cols {
-	@media (--ros-screen-xxl) {
-		grid-column: span $(cols)/span $(cols) !important;
-	}
-}
-
-@define-mixin grid-xl-col-span $cols {
-	@media (--ros-screen-xl) {
-		grid-column: span $(cols)/span $(cols) !important;
-	}
-}
-
-@define-mixin grid-lg-col-span $cols {
-	@media (--ros-screen-lg) {
-		grid-column: span $(cols)/span $(cols) !important;
-	}
-}
-
-@define-mixin grid-md-col-span $cols {
-	@media (--ros-screen-md) {
-		grid-column: span $(cols)/span $(cols) !important;
-	}
+@define-mixin grid-xs-col-span $cols {
+  @media (--ros-screen-xs) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
 }
 
 @define-mixin grid-sm-col-span $cols {
-	@media (--ros-screen-sm) {
-		grid-column: span $(cols)/span $(cols) !important;
-	}
+  @media (--ros-screen-sm) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
+}
+
+@define-mixin grid-md-col-span $cols {
+  @media (--ros-screen-md) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
+}
+
+@define-mixin grid-lg-col-span $cols {
+  @media (--ros-screen-lg) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
+}
+
+@define-mixin grid-xl-col-span $cols {
+  @media (--ros-screen-xl) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
+}
+
+@define-mixin grid-xxl-col-span $cols {
+  @media (--ros-screen-xxl) {
+    grid-column: span $(cols)/span $(cols) !important;
+  }
+}
+
+/* Span Row */
+
+@define-mixin grid-row-span $rows {
+  grid-row: span $(rows)/span $(rows) !important;
+}
+
+@define-mixin grid-xs-row-span $rows {
+  @media (--ros-screen-xs) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+@define-mixin grid-sm-row-span $rows {
+  @media (--ros-screen-sm) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+@define-mixin grid-md-row-span $rows {
+  @media (--ros-screen-md) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+@define-mixin grid-lg-row-span $rows {
+  @media (--ros-screen-lg) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+@define-mixin grid-xl-row-span $rows {
+  @media (--ros-screen-xl) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+@define-mixin grid-xxl-row-span $rows {
+  @media (--ros-screen-xxl) {
+    grid-row: span $(rows)/span $(rows) !important;
+  }
+}
+
+/* Col Start */
+
+@define-mixin grid-col-start $pos {
+  grid-column-start: $(pos);
+}
+
+@define-mixin grid-xs-col-start $pos {
+  @media (--ros-screen-xs) {
+    grid-column-start: $(pos);
+  }
+}
+
+@define-mixin grid-sm-col-start $pos {
+  @media (--ros-screen-sm) {
+    grid-column-start: $(pos);
+  }
+}
+
+@define-mixin grid-md-col-start $pos {
+  @media (--ros-screen-md) {
+    grid-column-start: $(pos);
+  }
+}
+
+@define-mixin grid-lg-col-start $pos {
+  @media (--ros-screen-lg) {
+    grid-column-start: $(pos);
+  }
+}
+
+@define-mixin grid-xl-col-start $pos {
+  @media (--ros-screen-xl) {
+    grid-column-start: $(pos);
+  }
+}
+
+@define-mixin grid-xxl-col-start $pos {
+  @media (--ros-screen-xxl) {
+    grid-column-start: $(pos);
+  }
+}
+
+/* Col End */
+
+@define-mixin grid-col-end $pos {
+  grid-column-end: $(pos);
+}
+
+@define-mixin grid-xs-col-end $pos {
+  @media (--ros-screen-xs) {
+    grid-column-end: $(pos);
+  }
+}
+
+@define-mixin grid-sm-col-end $pos {
+  @media (--ros-screen-sm) {
+    grid-column-end: $(pos);
+  }
+}
+
+@define-mixin grid-md-col-end $pos {
+  @media (--ros-screen-md) {
+    grid-column-end: $(pos);
+  }
+}
+
+@define-mixin grid-lg-col-end $pos {
+  @media (--ros-screen-lg) {
+    grid-column-end: $(pos);
+  }
+}
+
+@define-mixin grid-xl-col-end $pos {
+  @media (--ros-screen-xl) {
+    grid-column-end: $(pos);
+  }
+}
+
+@define-mixin grid-xxl-col-end $pos {
+  @media (--ros-screen-xxl) {
+    grid-column-end: $(pos);
+  }
+}
+
+/* Row Start */
+
+@define-mixin grid-row-start $pos {
+  grid-row-start: $(pos);
+}
+
+@define-mixin grid-xs-row-start $pos {
+  @media (--ros-screen-xs) {
+    grid-row-start: $(pos);
+  }
+}
+
+@define-mixin grid-sm-row-start $pos {
+  @media (--ros-screen-sm) {
+    grid-row-start: $(pos);
+  }
+}
+
+@define-mixin grid-md-row-start $pos {
+  @media (--ros-screen-md) {
+    grid-row-start: $(pos);
+  }
+}
+
+@define-mixin grid-lg-row-start $pos {
+  @media (--ros-screen-lg) {
+    grid-row-start: $(pos);
+  }
+}
+
+@define-mixin grid-xl-row-start $pos {
+  @media (--ros-screen-xl) {
+    grid-row-start: $(pos);
+  }
+}
+
+@define-mixin grid-xxl-row-start $pos {
+  @media (--ros-screen-xxl) {
+    grid-row-start: $(pos);
+  }
+}
+
+/* Row End */
+
+@define-mixin grid-row-end $pos {
+  grid-row-end: $(pos);
+}
+
+@define-mixin grid-xs-row-end $pos {
+  @media (--ros-screen-xs) {
+    grid-row-end: $(pos);
+  }
+}
+
+@define-mixin grid-sm-row-end $pos {
+  @media (--ros-screen-sm) {
+    grid-row-end: $(pos);
+  }
+}
+
+@define-mixin grid-md-row-end $pos {
+  @media (--ros-screen-md) {
+    grid-row-end: $(pos);
+  }
+}
+
+@define-mixin grid-lg-row-end $pos {
+  @media (--ros-screen-lg) {
+    grid-row-end: $(pos);
+  }
+}
+
+@define-mixin grid-xl-row-end $pos {
+  @media (--ros-screen-xl) {
+    grid-row-end: $(pos);
+  }
+}
+
+@define-mixin grid-xxl-row-end $pos {
+  @media (--ros-screen-xxl) {
+    grid-row-end: $(pos);
+  }
+}
+
+/* Gap */
+
+@define-mixin gap $size {
+  gap: var(--ros-semantic-spacing-gap-component-$(size));
+}
+
+@define-mixin gap-xs $cols {
+  @media (--ros-screen-xs) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-sm $cols {
+  @media (--ros-screen-sm) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-md $cols {
+  @media (--ros-screen-md) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-lg $cols {
+  @media (--ros-screen-lg) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xl $cols {
+  @media (--ros-screen-xl) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xxl $cols {
+  @media (--ros-screen-xxl) {
+    gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+
+/* Gap X */
+
+@define-mixin gap-x $size {
+  column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+}
+
+@define-mixin gap-xs-x $cols {
+  @media (--ros-screen-xs) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-sm-x $cols {
+  @media (--ros-screen-sm) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-md-x $cols {
+  @media (--ros-screen-md) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-lg-x $cols {
+  @media (--ros-screen-lg) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xl-x $cols {
+  @media (--ros-screen-xl) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xxl-x $cols {
+  @media (--ros-screen-xxl) {
+    column-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+/* Gap Y */
+
+@define-mixin gap-y $size {
+  row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+}
+
+@define-mixin gap-xs-y $cols {
+  @media (--ros-screen-xs) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-sm-y $cols {
+  @media (--ros-screen-sm) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-md-y $cols {
+  @media (--ros-screen-md) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-lg-y $cols {
+  @media (--ros-screen-lg) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xl-y $cols {
+  @media (--ros-screen-xl) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
+}
+
+@define-mixin gap-xxl-y $cols {
+  @media (--ros-screen-xxl) {
+    row-gap: var(--ros-semantic-spacing-gap-component-$(size));
+  }
 }

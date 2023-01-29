@@ -1,0 +1,31 @@
+import { Meta, Story } from '@storybook/blocks';
+import * as GridStories from '../../../stories/grid/grid.stories';
+
+<Meta title="Docs/Developers/Mixins/Grid/grid-auto-flow-col"/>
+
+# grid-auto-flow-col
+
+The `grid-auto-flow-col` mixin can be used to control how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid. It is functionally equivelent to setting `grid-auto-flow:column`. It is provided as part of Rosalind as convience when working with the responsive versions.
+
+```css
+@mixin grid-auto-flow-col;
+```
+
+### Responsive Grid Auto Flow Column
+
+The `grid-auto-flow-col` mixin can be adjusted by breakpoint using the responsive versions.
+
+```css
+@mixin grid-{breakpoint}-auto-flow-col;
+```
+
+<div className="table margin-bottom">
+    <div>
+        <div>Parameter</div>
+        <div>Options</div>
+    </div>
+    <div>
+        <div>`breakpoint`</div>
+        <div>`sm` `md` `lg` `xl` `xxl`</div>
+    </div>
+</div>

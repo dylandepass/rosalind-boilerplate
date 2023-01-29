@@ -32,31 +32,40 @@ function buildSystem() {
     .pipe(dest('./styles'));
 }
 
-function buildOthers() {
-  return src(['**/*.post.css', '.storybook/**/*.post.css'])
+function buildStorybookCss() {
+  return src('.storybook/story.post.css')
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(postcss())
+    .pipe(header(generatedHeader))
+    .pipe(rename('story.css'))
+    .pipe(dest('.storybook/'));
+}
+
+function buildTemplates() {
+  return src('templates/**/*.post.css')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(postcss())
-    .pipe(rename((file) => {
-      const { dirname, basename } = file;
-      return {
-        dirname: (dirname === '.') ? '.storybook/' : `${dirname}/`,
-        basename: `${basename.replace('.post', '')}`,
+    .pipe(
+      rename((file) => ({
+        dirname: `templates/${file.dirname}/`,
+        basename: `${file.basename.replace('.post', '')}`,
         extname: '.css',
-      };
-    }))
+      })),
+    )
     .pipe(header(generatedHeader))
     .pipe(dest('.'));
 }
 
 function startWatching() {
-  watch(['./**/*.post.css', './styles/system/**/*.css', '.storybook/**/*.post.css'], undefined, series(buildSystem, buildOthers));
+  watch(['./**/*.post.css', './styles/system/**/*.css', '.storybook/**/*.post.css'], undefined, series(buildSystem, buildStorybookCss, buildTemplates));
 }
 
 exports.dev = series(
   buildSystem,
-  buildOthers,
+  buildStorybookCss,
+  buildTemplates,
   startWatching,
 );
 
-exports.build = series(buildSystem, buildOthers);
+exports.build = series(buildSystem, buildStorybookCss, buildTemplates);
