@@ -4,13 +4,13 @@
 	& > div {
 		display: grid;
 		text-align: center;
-		gap: 20px;
 
+		@mixin gap lg;
 		@mixin grid-cols 1;
 		@mixin grid-md-cols 2;
 
 		& > div {
-			margin-bottom: 24px;
+			@mixin margin-bottom 2xl;
 
 			@media (--ros-screen-lg) {
 				margin-bottom: 0;
@@ -28,9 +28,9 @@
 	}
 
 	& .illustration > svg {
+		@mixin padding xl;
 		width: 100%;
 		height: 100%;
-		padding: 20px;
 	}
 
 	@media (--ros-screen-sm) {
@@ -41,7 +41,8 @@
 }
 
 .hero-container:has(.hero-image) {
-	margin-bottom: 88px;
+	@mixin margin-bottom 9xl;
+
 	position: relative;
 	padding: 0;
 	margin: 0;
@@ -96,7 +97,7 @@
 		justify-content: center;
 
 		@media (--ros-screen-lg) {
-			margin-top: 20px;
+			@mixin margin-top xl;
 		}
 
 		& > p {

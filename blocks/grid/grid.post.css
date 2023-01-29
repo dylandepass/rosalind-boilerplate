@@ -1,8 +1,8 @@
 @import "../../styles/system/mixins";
 
 .grid {
+	@mixin gap lg;
 	display: grid;
-	gap: 30px;
 
 	&.two-cols {
 		@mixin grid-cols 1;
@@ -24,7 +24,8 @@
 
 .section:has(.img-grid) {
 	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
-	padding: 20px 10px;
+	@mixin padding-vertical xl;
+	@mixin padding-horizontal md;
 	min-height: 98px;
 }
 
@@ -51,7 +52,7 @@
 
 .section:has(.logo-grid) {
     @mixin padding-vertical xl;
-	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
+	@mixin border-default;
 	min-height: 98px;
 }
 
@@ -61,25 +62,26 @@
 	@mixin grid-md-cols 2;
 	@mixin grid-lg-cols 3;
 	@mixin grid-xl-cols 4;
+	@mixin gap xl;
 
 	text-align: center;
-	gap: 30px;
 
 	& :--heading {
 		@mixin h5;
-		font-weight: 400;
+		@mixin font-weight semi-bold;
 	}
 
 	& svg {
-		width: 40px;
-		height: 40px;
+		@mixin icon xl;
+		@mixin foreground-color layer-2 default;
 		transform: rotate(-45deg);
-		color: var(--ros-semantic-color-foreground-on-layer-2);
 	}
 
 	& .icon {
-		background-color: var(--ros-semantic-color-background-layer-2);
-		padding: 20px;
+		@mixin background-color layer-2;
+		@mixin padding xl;
+
+		/* TODO: Add bigger icon size 2xl */
 		width: 60px;
 		height: 60px;
 		position: relative;
@@ -101,12 +103,8 @@
 		}
 
 		&:hover {
-			background-color: var(--ros-semantic-color-primary-base);
-			color: #fff;
-
-			& :--heading {
-				color: #fff;
-			}
+			@mixin background-color primary;
+			@mixin foreground-color on-primary;
 		}
 	}
 }

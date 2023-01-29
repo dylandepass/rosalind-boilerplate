@@ -9,9 +9,7 @@ footer {
 	background-color: var(--ros-pattern-footer-color-background-base);
 
 	& > div {
-		display: grid;
-		gap: 10px;
-
+		@mixin gap sm;
 		@mixin grid-cols 1;
 		@mixin grid-md-cols 12;
 
@@ -21,8 +19,8 @@ footer {
 
 			& ul {
 				& li {
+					@mixin margin-right xs;
 					display: inline-block;
-					margin-right: 5px;
 				}
 			}
 		}
@@ -46,6 +44,9 @@ footer {
 		& .links {
 			& ul {
 				& li {
+					@mixin padding-left xl;
+					@mixin margin-bottom sm;
+
 					position: relative;
 
 					&::before {
@@ -55,9 +56,6 @@ footer {
 						top: -1px;
 						transform: scale(0.7);
 					}
-
-					padding-left: 20px;
-					margin-bottom: 8px;
 				}
 			}
 		}
@@ -79,13 +77,13 @@ footer {
 }
 
 .section.footer-copy {
+	@mixin font-weight semi-bold;
+	
 	border-top: 1px solid var(--ros-pattern-footer-color-seperator-on-base);
 	/* !important added for storybook rendering */
 	padding: 40px 32px !important;
+	color: var(--ros-pattern-footer-color-foreground-on-base);
 	background-color: var(--ros-pattern-footer-color-background-base);
-	font-size: 16px;
-	color: #fff;
-	font-weight: 600;
 	text-align: center;
 
 	@media (--ros-screen-md) {
