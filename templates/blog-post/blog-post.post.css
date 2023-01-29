@@ -11,7 +11,7 @@ article {
 	& .content {
 		@mixin grid-col-span 1;
 		@mixin grid-md-col-span 8;
-		@mixin shadow-sm;
+		@mixin drop-shadow sm;
 
 		& .hero {
 			@mixin padding-top xl;
@@ -106,7 +106,7 @@ article {
 				@mixin padding-horizontal sm;
 
 				& a {
-					@mixin body-font;
+					@mixin body-text;
 
 					font-size: 0.8rem;
 				}

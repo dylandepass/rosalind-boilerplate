@@ -93,9 +93,8 @@
 	}
 
 	& > div {
-		padding: var(--ros-semantic-spacing-around-component-xxxl);
-
-		@mixin shadow-md;
+		@mixin padding 3xl;
+		@mixin drop-shadow md;
 
 		& p:not(:has(.icon)) {
 			margin-bottom: 0;

@@ -56,18 +56,6 @@
 	& .hero-wrapper {
 		max-width: 100%;
 	}
-
-	& .mask {
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		color: var(--ros-semantic-color-background-base);
-
-		& svg {
-			transform: scale(2);
-			transform-origin: top center;
-		}
-	}
 }
 
 .hero-image {

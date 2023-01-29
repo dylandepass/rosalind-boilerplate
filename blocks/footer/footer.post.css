@@ -5,8 +5,8 @@ footer {
 }
 
 .footer {
-	background-color: var(--ros-pattern-footer-color-background-base);
 	color: var(--ros-pattern-footer-color-foreground-on-base);
+	background-color: var(--ros-pattern-footer-color-background-base);
 
 	& > div {
 		display: grid;

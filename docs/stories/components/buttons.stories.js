@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
-import { decorateIcons } from '../../../../scripts/lib-franklin.js';
-import { loadPage } from '../../../../scripts/scripts.js';
+import { decorateIcons } from '../../../scripts/lib-franklin.js';
+import { loadPage } from '../../../scripts/scripts.js';
 
 function decorate(block) {
   decorateIcons(block);
@@ -22,21 +22,11 @@ function decorate(block) {
   });
 }
 
-export const Buttons = (args, context) => FranklinTemplate(loadPage, args, context, decorate);
-
-Buttons.parameters = {
-  path: '/storybook/buttons.plain.html',
-  selector: 'div',
-  index: 0,
-};
-
-Buttons.storyName = 'Buttons';
-
 /**
  * Default Config
  */
 export default {
-  title: 'Buttons',
+  title: 'Design System/Atoms/Buttons',
   parameters: {
     docs: {
       description: {
@@ -44,4 +34,13 @@ export default {
       },
     },
   },
+};
+
+export const Buttons = {
+  parameters: {
+    path: '/storybook/buttons.plain.html',
+    selector: 'div',
+    index: 0,
+  },
+  render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
 };

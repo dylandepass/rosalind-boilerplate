@@ -7,22 +7,20 @@ import {
 } from '../../../scripts/lib-franklin.js';
 import style from '../../../blocks/footer/footer.css';
 
-const Template = (context) => {
-  const footer = document.createElement('footer');
-  const footerBlock = buildBlock('footer', '');
-  footer.append(footerBlock);
-  decorateBlock(footerBlock);
-  loadBlock(footerBlock, context.parameters.host);
-  return footer;
-};
-
-export const Footer = (args, context) => Template(context);
-
-Footer.storyName = 'Footer';
-
 export default {
   title: 'Blocks/Footer',
   parameters: {
     layout: 'fullscreen',
+  },
+};
+
+export const Footer = {
+  render: (args, context) => {
+    const footer = document.createElement('footer');
+    const footerBlock = buildBlock('footer', '');
+    footer.append(footerBlock);
+    decorateBlock(footerBlock);
+    loadBlock(footerBlock, context.parameters.host);
+    return footer;
   },
 };

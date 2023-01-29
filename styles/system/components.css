@@ -1,3 +1,5 @@
+@import './mixins';
+
 @define-mixin button-style $type, $state: default {
 	color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
 	background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
@@ -47,15 +49,20 @@
 }
 
 .button {
+	&:not(:has(em)) {
+		padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
+	}
+
 	display: flex;
 	justify-content: center;
-	font-family: Nunito, sans-serif;
+	font-family: var(--ros-component-button-font-family-label);
 	font-size: var(--ros-component-button-font-size-label);
-	padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
+	height: var(--ros-component-button-sizing-height);
+	gap: var(--ros-component-button-spacing-gap);
+	line-height: 100%;
 	font-weight: 700;
 	border-style: solid;
 	align-items: center;
-	gap: var(--ros-component-button-spacing-gap);
 	font-style: initial;
 	user-select: none;
 	transition-property: color, background-color, border-color, fill, stroke, opacity;
@@ -63,7 +70,17 @@
 	outline: none;
 }
 
+.button em {
+	display: flex;
+	gap: var(--ros-component-button-spacing-gap);
+	padding: var(--ros-component-button-spacing-default-padding-y) var(--ros-component-button-spacing-default-padding-x);
+	align-items: center;
+	font-style: normal;
+}
+
+
 /* TODO: Support small and large buttons */
+
 /* .button.large {
 	font-size: var(--ros-font-size-button-lg);
 	padding: var(--ros-spacing-button-lg-vertical-padding) var(--ros-spacing-button-lg-horizontal-padding);
@@ -76,8 +93,7 @@
 
 .button .icon,
 .button .icon svg {
-	width: var(--ros-semantic-size-icon-md-width);
-	height: var(--ros-semantic-size-icon-md-height);
+	@mixin icon md;
 }
 
 .button.primary {

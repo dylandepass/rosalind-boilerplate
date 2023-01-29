@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/blocks';
+import { Meta, Story, Canvas } from '@storybook/blocks';
 import theme from '../../../styles/themes/rosalind-light.json';
 import { Code } from '../../stories/util';
 import * as TypographyStories from '../../stories/typography/typography.stories.js';
@@ -52,7 +52,7 @@ The mixins below allow you to easily customize type in CSS for any element on th
     </div>
     <div>
         <div>`size`</div>
-        <div>{ Object.entries(theme.semantic['font-size'].body).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/synergy-design-system-developer-docs-tokens-typography--docs#static-typography"/>) }</div>
+        <div>{ Object.entries(theme.semantic['font-size'].body).map(([k, v]) => <Code k={k} value={v} url="/?path=/docs/docs-developers-tokens-typography--docs#static-typography"/>) }</div>
         <div>`md`</div>
     </div>
 </div>
@@ -64,15 +64,9 @@ Rosalind provides a set of CSS Utility Classes for working with type. These may 
 ### Typography Size CSS Utilities
 
 #### Demo
-<Story of={TypographyStories.FontSizeUtilities}/>
-
-##### Code Example
-```html
-<div>
-  <h1>This is an h1</h1>
-  <h2 class="h4">This is an h2, with the size of an h4</h2>
-</div>
-```
+<Canvas sourceState="shown">
+  <Story of={TypographyStories.FontSizeUtilities}/>
+</Canvas>
 
 #### Supported Classes
 

@@ -7,22 +7,22 @@ import {
 } from '../../../scripts/lib-franklin.js';
 import style from '../../../blocks/header/header.css';
 
-const Template = (context) => {
-  const header = document.createElement('header');
-  const headerBlock = buildBlock('header', '');
-  header.append(headerBlock);
-  decorateBlock(headerBlock);
-  loadBlock(headerBlock, context.parameters.host);
-  return header;
-};
-
-export const Header = (args, context) => Template(context);
-
-Header.storyName = 'Header';
-
 export default {
   title: 'Blocks/Header',
   parameters: {
     layout: 'fullscreen',
+  },
+};
+
+export const Header = {
+  render: (args, context) => {
+    console.log(context);
+    const header = document.createElement('header');
+    const headerBlock = buildBlock('header', '');
+    header.append(headerBlock);
+    decorateBlock(headerBlock);
+    loadBlock(headerBlock, context.parameters.host);
+    console.log(headerBlock);
+    return header;
   },
 };

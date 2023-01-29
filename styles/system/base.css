@@ -10,7 +10,7 @@ body {
 }
 
 body {
-	@mixin body-font;
+	@mixin body-text;
 
 	text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;

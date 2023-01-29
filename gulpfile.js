@@ -41,6 +41,22 @@ function buildStorybookCss() {
     .pipe(dest('.storybook/'));
 }
 
+function buildBlocks() {
+  return src('blocks/**/*.post.css')
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
+    .pipe(postcss())
+    .pipe(
+      rename((file) => ({
+        dirname: `blocks/${file.dirname}/`,
+        basename: `${file.basename.replace('.post', '')}`,
+        extname: '.css',
+      })),
+    )
+    .pipe(header(generatedHeader))
+    .pipe(dest('.'));
+}
+
 function buildTemplates() {
   return src('templates/**/*.post.css')
     .pipe(plumber({ errorHandler: onError }))
@@ -58,14 +74,15 @@ function buildTemplates() {
 }
 
 function startWatching() {
-  watch(['./**/*.post.css', './styles/system/**/*.css', '.storybook/**/*.post.css'], undefined, series(buildSystem, buildStorybookCss, buildTemplates));
+  watch(['./**/*.post.css', './styles/system/**/*.css', '.storybook/**/*.post.css'], undefined, series(buildSystem, buildBlocks, buildStorybookCss, buildTemplates));
 }
 
 exports.dev = series(
   buildSystem,
+  buildBlocks,
   buildStorybookCss,
   buildTemplates,
   startWatching,
 );
 
-exports.build = series(buildSystem, buildStorybookCss, buildTemplates);
+exports.build = series(buildSystem, buildBlocks, buildStorybookCss, buildTemplates);

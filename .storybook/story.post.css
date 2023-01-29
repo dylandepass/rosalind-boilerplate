@@ -64,7 +64,7 @@ code {
 
 	&.token {
 		& > div {
-			grid-template-columns: 1fr 250px 100px;
+			grid-template-columns: 1fr 250px 120px;
 		}
 	}
 
@@ -86,7 +86,7 @@ code {
 	& > div:first-of-type {
 		@mixin h4;
 
-		width: 40px;
+		width: 100px;
 	}
 
 	& span {

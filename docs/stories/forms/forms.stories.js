@@ -10,7 +10,7 @@ export const TextField = {
     disabled: false,
   },
   render: ({
-    label, required, disabled, help, ...args
+    label, required, disabled, help,
   }) =>/* html */`<form>
               <div class="group">
                 <label for="name">${label}</label>
@@ -29,7 +29,7 @@ export const TextArea = {
     disabled: false,
   },
   render: ({
-    label, required, disabled, help, ...args
+    label, required, disabled, help,
   }) => /* html */`<form>
               <div class="group">
                 <label for="name">${label}</label>
@@ -49,7 +49,7 @@ export const Select = {
     disabled: false,
   },
   render: ({
-    label, required, disabled, help, value, ...args
+    label, required, disabled, help,
   }) => /* html */`<form>
               <div class="group">
                 <label for="car">${label}</label>
@@ -86,7 +86,7 @@ export const Checkbox = {
     disabled: false,
   },
   render: ({
-    label, required, checked, disabled, help, value, ...args
+    label, required, checked, disabled, help, value,
   }) => /* html */`<form>
               <div class="group">
                 <label for="terms">${label}</label>
@@ -110,7 +110,7 @@ export const Switch = {
     disabled: false,
   },
   render: ({
-    label, required, checked, disabled, help, value, ...args
+    label, required, checked, disabled, help, value,
   }) => /* html */`<form>
               <div class="group">
                 <label for="wifi">${label}</label>
@@ -134,7 +134,7 @@ export const Radio = {
     disabled: false,
   },
   render: ({
-    label, required, checked, disabled, help, values, ...args
+    label, required, checked, disabled, help, values,
   }) => /* html */`<form>
               <div class="group">
                 <label for="meal">${label}</label>

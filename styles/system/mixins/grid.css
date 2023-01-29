@@ -8,6 +8,12 @@
   grid-auto-flow: column;
 }
 
+@define-mixin grid-xs-auto-flow-col {
+  @media (--ros-screen-xs) {
+    grid-auto-flow: column;
+  }
+}
+
 @define-mixin grid-sm-auto-flow-col {
   @media (--ros-screen-sm) {
     grid-auto-flow: column;
@@ -42,6 +48,12 @@
 
 @define-mixin grid-auto-flow-row {
   grid-auto-flow: row;
+}
+
+@define-mixin grid-xs-auto-flow-row {
+  @media (--ros-screen-xs) {
+    grid-auto-flow: row;
+  }
 }
 
 @define-mixin grid-sm-auto-flow-row {

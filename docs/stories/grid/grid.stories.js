@@ -3,7 +3,7 @@ export default {
 };
 
 export const Demo = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo">
+  render: () => /* html */`<div class="story grid-demo">
       <div>
         <div class="nav">Nav</div>
         <div class="heading">Heading</div>
@@ -17,7 +17,7 @@ export const Demo = {
 };
 
 export const TwelveColumns = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-12-column">
+  render: () => /* html */`<div class="story grid-demo-12-column">
       <div>
         <div>col</div>
         <div>col</div>
@@ -37,7 +37,7 @@ export const TwelveColumns = {
 };
 
 export const TwoColumns = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-2-column">
+  render: () => /* html */`<div class="story grid-demo-2-column">
       <div>
           <div>col</div>
           <div>col</div>
@@ -49,7 +49,7 @@ export const TwoColumns = {
 };
 
 export const SpanColumns = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-span-columns">
+  render: () => /* html */`<div class="story grid-demo-span-columns">
       <div>
           <div>col (span 3)</div>
           <div>col (span 9)</div>
@@ -61,7 +61,7 @@ export const SpanColumns = {
 };
 
 export const SpanRows = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-span-rows">
+  render: () => /* html */`<div class="story grid-demo-span-rows">
       <div>
         <div>col (row 3)</div>
         <div>col (span 9)</div>
@@ -73,7 +73,7 @@ export const SpanRows = {
 };
 
 export const Gap = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-gap">
+  render: () => /* html */`<div class="story grid-demo-gap">
       <div>
           <div>col</div>
           <div>col</div>
@@ -89,7 +89,7 @@ export const Gap = {
 };
 
 export const GapX = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-gap-x">
+  render: () => /* html */`<div class="story grid-demo-gap-x">
       <div>
           <div>col</div>
           <div>col</div>
@@ -105,7 +105,7 @@ export const GapX = {
 };
 
 export const GapY = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-gap-y">
+  render: () => /* html */`<div class="story grid-demo-gap-y">
       <div>
           <div>col</div>
           <div>col</div>
@@ -121,7 +121,7 @@ export const GapY = {
 };
 
 export const ResponsiveColumns = {
-  render: ({ label, ...args }) => /* html */`<div class="story grid-demo-responsive">
+  render: () => /* html */`<div class="story grid-demo-responsive">
       <div>
           <div>col</div>
           <div>col</div>

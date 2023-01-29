@@ -1,0 +1,12 @@
+@define-mixin reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  border-radius: 0;
+  text-align: left;
+  font: inherit;
+}
