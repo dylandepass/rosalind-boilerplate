@@ -10,7 +10,7 @@
     "lint:css": "stylelint 'blocks/**/*.css' 'styles/*.css'",
     "lint": "npm run lint:js && npm run lint:css",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o storybook",
+    "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
     "dev": "concurrently \"npm run franklin:up\" \"npm run postcss:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
     "postcss:dev": "gulp dev",
