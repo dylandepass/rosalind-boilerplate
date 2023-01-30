@@ -13,11 +13,16 @@ article {
 		@mixin grid-md-col-span 8;
 		@mixin drop-shadow sm;
 
+		text-align: left;
+
 		& .hero {
 			@mixin padding-top xl;
 			@mixin padding-horizontal xl;
 
-			text-align: center;
+			& :--heading {
+				text-align: center;
+				margin: 0 auto;
+			}
 
 			& img {
 				border-radius: 8px;
@@ -31,13 +36,11 @@ article {
 		}
 
 		& :--heading {
-			margin: 0 auto;
+			@mixin padding-horizontal xl;
 		}
 
-		& .default-content-wrapper {
-			text-align: left;
-
-			@mixin padding xl;
+		& p {
+			@mixin padding-horizontal xl;
 		}
 
 		& .default-content-wrapper:not(:last-of-type) {
@@ -47,7 +50,7 @@ article {
 
 		& .blockquote {
 			text-align: left;
-			margin-left: 10px;
+			@mixin margin-left xl;
 		}
 	}
 

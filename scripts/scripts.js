@@ -27,30 +27,6 @@ function build2ColHero(main) {
   main.prepend(section);
 }
 
-function buildImageHero(main) {
-  const firstDiv = main.querySelector('div:first-of-type');
-  const img = firstDiv.querySelector('img');
-
-  const backgroundImage = document.createElement('div');
-  backgroundImage.style.backgroundImage = `url('${img.src})`;
-  backgroundImage.classList.add('image');
-  img.closest('p').remove();
-
-  const cover = document.createElement('div');
-  cover.classList.add('cover');
-
-  const content = document.createElement('div');
-  content.classList.add('content');
-  content.append(...firstDiv.childNodes);
-
-  const section = document.createElement('div');
-  const heroBlock = buildBlock('hero', [[{ elems: [cover, backgroundImage] }, content]]);
-  heroBlock.classList.add('hero-image');
-  section.append(heroBlock);
-  firstDiv.remove();
-  main.prepend(section);
-}
-
 /**
  * Loads JS and CSS for a template.
  */
@@ -82,10 +58,10 @@ export async function loadTemplate(main, template) {
   }
 }
 
-function decorateTemplate(main) {
+async function decorateTemplate(main) {
   const template = getMetadata('template');
-  if (template && template !== 'blog' && template !== 'home') {
-    loadTemplate(main, template);
+  if (template && template !== 'home') {
+    await loadTemplate(main, template);
   }
 }
 
@@ -103,8 +79,6 @@ function buildAutoBlocks(main) {
 
     if (template === 'home') {
       build2ColHero(main);
-    } else if (template === 'blog') {
-      buildImageHero(main);
     }
   } catch (error) {
     // eslint-disable-next-line no-console
@@ -156,6 +130,7 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   buildAutoBlocks(main);
+  console.log(main);
   decorateSections(main);
   decorateBlocks(main);
 }
@@ -180,7 +155,7 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
   loadTheme();
   const main = doc.querySelector('main');
-  decorateTemplate(main);
+  await decorateTemplate(main);
   if (main) {
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);
@@ -216,7 +191,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!window.__STORYBOOKAPI__) {
+  if (!window.STORIES) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
@@ -245,7 +220,7 @@ export async function loadPage() {
   loadDelayed();
 }
 
-if (!window.__STORYBOOKAPI__) {
+if (!window.STORIES) {
   loadPage();
 }
 
