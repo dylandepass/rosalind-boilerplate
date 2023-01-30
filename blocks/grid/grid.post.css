@@ -38,6 +38,7 @@
 	& > div {
 		display: flex;
 		justify-content: center;
+		height: 57px;
 	}
 
 	& a {
