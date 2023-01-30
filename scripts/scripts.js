@@ -82,10 +82,10 @@ export async function loadTemplate(main, template) {
   }
 }
 
-function decorateTemplate(main) {
+async function decorateTemplate(main) {
   const template = getMetadata('template');
-  if (template && template !== 'blog' && template !== 'home') {
-    loadTemplate(main, template);
+  if (template && template !== 'home') {
+    await loadTemplate(main, template);
   }
 }
 
@@ -156,6 +156,7 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   buildAutoBlocks(main);
+  console.log(main);
   decorateSections(main);
   decorateBlocks(main);
 }
@@ -180,7 +181,7 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
   loadTheme();
   const main = doc.querySelector('main');
-  decorateTemplate(main);
+  await decorateTemplate(main);
   if (main) {
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);
@@ -216,7 +217,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!window.__STORYBOOKAPI__) {
+  if (!window.STORIES) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
@@ -245,7 +246,7 @@ export async function loadPage() {
   loadDelayed();
 }
 
-if (!window.__STORYBOOKAPI__) {
+if (!window.STORIES) {
   loadPage();
 }
 
