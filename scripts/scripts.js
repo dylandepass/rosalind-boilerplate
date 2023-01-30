@@ -27,30 +27,6 @@ function build2ColHero(main) {
   main.prepend(section);
 }
 
-function buildImageHero(main) {
-  const firstDiv = main.querySelector('div:first-of-type');
-  const img = firstDiv.querySelector('img');
-
-  const backgroundImage = document.createElement('div');
-  backgroundImage.style.backgroundImage = `url('${img.src})`;
-  backgroundImage.classList.add('image');
-  img.closest('p').remove();
-
-  const cover = document.createElement('div');
-  cover.classList.add('cover');
-
-  const content = document.createElement('div');
-  content.classList.add('content');
-  content.append(...firstDiv.childNodes);
-
-  const section = document.createElement('div');
-  const heroBlock = buildBlock('hero', [[{ elems: [cover, backgroundImage] }, content]]);
-  heroBlock.classList.add('hero-image');
-  section.append(heroBlock);
-  firstDiv.remove();
-  main.prepend(section);
-}
-
 /**
  * Loads JS and CSS for a template.
  */
@@ -103,8 +79,6 @@ function buildAutoBlocks(main) {
 
     if (template === 'home') {
       build2ColHero(main);
-    } else if (template === 'blog') {
-      buildImageHero(main);
     }
   } catch (error) {
     // eslint-disable-next-line no-console
