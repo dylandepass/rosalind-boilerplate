@@ -183,7 +183,7 @@ export function addFavIcon(href) {
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
-  if (!window.__STORYBOOK_PREVIEW__) {
+  if (!window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
     await loadBlocks(main);
   }
 
@@ -192,7 +192,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!window.__STORYBOOK_PREVIEW__) {
+  if (!window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
@@ -221,7 +221,7 @@ export async function loadPage() {
   loadDelayed();
 }
 
-if (!window.__STORYBOOK_PREVIEW__) {
+if (!window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
   loadPage();
 }
 
