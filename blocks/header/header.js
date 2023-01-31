@@ -35,7 +35,7 @@ export default async function decorate(block) {
   let navPath = cfg.nav || '/nav';
 
   // Load from storybook directory if running on github.io
-  if (window.location.host.includes('github.io') || !window.__STORYBOOKAPI__) {
+  if (window.location.host.includes('github.io') || !window.__STORYBOOKAPI__) { // eslint-disable-line no-underscore-dangle
     navPath = 'https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/nav';
   }
 

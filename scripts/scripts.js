@@ -130,7 +130,6 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   buildAutoBlocks(main);
-  console.log(main);
   decorateSections(main);
   decorateBlocks(main);
 }

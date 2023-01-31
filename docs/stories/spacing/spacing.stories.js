@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import theme from '../../../styles/themes/rosalind-light.json';
 
 export default {

@@ -22,7 +22,6 @@ export default {
 
 function prepareTemplate(args, context) {
   const template = FranklinTemplate(loadPage, args, context, decorate);
-  console.log(template);
   decorateSections(template);
   return template;
 }
