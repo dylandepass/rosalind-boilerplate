@@ -4,8 +4,8 @@ import {
   buildBlock,
   loadBlock,
   decorateBlock,
-} from '../../../scripts/lib-franklin.js';
-import style from '../../../blocks/footer/footer.css';
+} from '../../scripts/lib-franklin.js';
+import style from './footer.css';
 
 export default {
   title: 'Blocks/Footer',

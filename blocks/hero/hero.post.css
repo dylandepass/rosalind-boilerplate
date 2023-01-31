@@ -1,4 +1,4 @@
-@import "../../styles/system/mixins";
+@import url('../../styles/system/mixins');
 
 .hero-2-cols {
 	& > div {
@@ -23,12 +23,15 @@
 	}
 
 	& u {
-		color: var(--ros-semantic-color-primary-base);
+		background: var(--ros-semantic-color-foreground-on-base-highlighted);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 		text-decoration: none;
 	}
 
 	& .illustration > svg {
 		@mixin padding xl;
+
 		width: 100%;
 		height: 100%;
 	}
@@ -39,5 +42,3 @@
 		}
 	}
 }
-
-

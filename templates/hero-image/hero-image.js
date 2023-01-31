@@ -1,4 +1,4 @@
-import { decorateBlock, buildBlock } from '../../scripts/lib-franklin.js';
+import { buildBlock } from '../../scripts/lib-franklin.js';
 
 export default function decorate(main) {
   const firstDiv = main.querySelector('div:first-of-type');
@@ -18,7 +18,6 @@ export default function decorate(main) {
 
   const section = document.createElement('div');
   const heroBlock = buildBlock('hero', [[{ elems: [cover, backgroundImage] }, content]]);
-  console.log(heroBlock);
   heroBlock.classList.add('hero-image');
 
   // decorateBlock(heroBlock);
