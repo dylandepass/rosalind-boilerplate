@@ -866,11 +866,11 @@
       },
       "foreground": {
         "on-base": {
+          "highlighted": "linear-gradient(225deg, #db2777 0%, #f472b6 100%)",
           "default": "#ebebeb",
           "heading": "#ebebeb",
           "subtle": "#b2b2b2",
-          "muted": "#909090",
-          "highlighted": "linear-gradient(225deg, #d97706 0%, #fbbf24 100%)"
+          "muted": "#909090"
         },
         "on-layer-1": {
           "default": "#ebebeb",
