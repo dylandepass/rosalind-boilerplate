@@ -320,7 +320,7 @@
             "type": "color"
           },
           "highlighted": {
-            "value": "{global.color.gradient.amber.225-deg}",
+            "value": "{global.color.gradient.indigo.225-deg}",
             "type": "color"
           }
         },

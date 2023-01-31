@@ -866,6 +866,7 @@
       },
       "foreground": {
         "on-base": {
+          "highlighted": "linear-gradient(225deg, #db2777 0%, #f472b6 100%)",
           "default": "#ebebeb",
           "heading": "#ebebeb",
           "subtle": "#b2b2b2",

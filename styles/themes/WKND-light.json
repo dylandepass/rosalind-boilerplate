@@ -854,6 +854,7 @@
           "default": "#ffffff"
         },
         "on-base": {
+          "highlighted": "linear-gradient(225deg, #ca8a04 0%, #facc15 100%)",
           "default": "#222222",
           "heading": "#222222",
           "subtle": "#6d6d6d",

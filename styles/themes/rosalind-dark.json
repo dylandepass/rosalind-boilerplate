@@ -36,7 +36,7 @@
           "heading": "#ebebeb",
           "subtle": "#b2b2b2",
           "muted": "#909090",
-          "highlighted": "linear-gradient(225deg, #d97706 0%, #fbbf24 100%)"
+          "highlighted": "linear-gradient(225deg, #4f46e5 0%, #818cf8 100%)"
         },
         "on-layer-1": {
           "default": "#ebebeb",
