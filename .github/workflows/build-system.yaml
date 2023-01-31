@@ -27,7 +27,7 @@ jobs:
         commit_message: Design System Build
     - run: npm run build-storybook
     - name: Deploy Storybook
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          branch: gh-pages
-          folder: storybook # output folder from `npm run build-storybook`
+      uses: JamesIves/github-pages-deploy-action@3.6.2
+      with:
+        branch: gh-pages
+        folder: storybook
