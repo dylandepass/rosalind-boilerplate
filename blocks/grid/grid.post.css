@@ -53,7 +53,8 @@
 
 .section:has(.logo-grid) {
     @mixin padding-vertical xl;
-	@mixin border-default;
+  	border-top: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
+  	border-bottom: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
 	min-height: 98px;
 }
 

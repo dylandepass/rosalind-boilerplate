@@ -23,7 +23,9 @@
 	}
 
 	& u {
-		color: var(--ros-semantic-color-primary-base);
+		background: var(--ros-semantic-color-foreground-on-base-highlighted);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 		text-decoration: none;
 	}
 
