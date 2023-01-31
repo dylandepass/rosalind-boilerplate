@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 31 Jan 2023 02:52:48 GMT
+ * Generated on Tue, 31 Jan 2023 16:43:29 GMT
  */
 
 :root {
@@ -430,7 +430,6 @@
   --ros-semantic-color-foreground-on-layer-1-subtle: #b2b2b2;
   --ros-semantic-color-foreground-on-layer-1-heading: #ebebeb;
   --ros-semantic-color-foreground-on-layer-1-default: #ebebeb;
-  --ros-semantic-color-foreground-on-base-highlighted: linear-gradient(225deg, #d97706 0%, #fbbf24 100%);
   --ros-semantic-color-foreground-on-base-muted: #909090;
   --ros-semantic-color-foreground-on-base-subtle: #b2b2b2;
   --ros-semantic-color-foreground-on-base-heading: #ebebeb;
