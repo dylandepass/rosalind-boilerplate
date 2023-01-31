@@ -1,0 +1,2 @@
+function a(e){e.querySelectorAll(":scope > div").forEach(i=>{i.querySelectorAll(":scope > div").forEach(t=>{if(e.classList.contains("bulleted")){const n=t.querySelector(".icon");if(n){n.remove();const s=document.createElement("div");s.innerHTML=t.innerHTML,t.innerHTML="",t.append(n),t.append(s)}}e.appendChild(t)}),i.remove()}),e.classList.contains("full-width-section")&&(e.classList.remove("full-width-section"),e.parentElement.parentElement.classList.add("full-width-section"))}export{a as default};
+//# sourceMappingURL=grid-ecf8c131.js.map

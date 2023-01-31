@@ -1,8 +1,0 @@
-{
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "wayou.vscode-todo-highlight",
-        "vunguyentuan.vscode-postcss",
-        "stylelint.vscode-stylelint"
-    ]
-}
