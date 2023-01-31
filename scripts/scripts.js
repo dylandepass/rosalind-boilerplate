@@ -223,6 +223,9 @@ export async function loadPage() {
 
 if (!window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
   loadPage();
+} else {
+  const { href, search } = window.parent.location;
+  window.hlx.codeBasePath = href.replace(search, '');
 }
 
 const params = new URLSearchParams(window.location.search);
