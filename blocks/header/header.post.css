@@ -1,5 +1,5 @@
-@import "../../styles/system/breakpoints";
-@import "../../styles/system/mixins";
+@import url('../../styles/system/breakpoints');
+@import url('../../styles/system/mixins');
 
 @define-mixin fade {
 	transition-property: background-color;
@@ -49,7 +49,7 @@
 	& a {
 		&:focus-visible {
 			outline: none;
-			box-shadow: 0 0 0px 2px var(--ros-pattern-header-color-nav-item-level-0-key-focus-border-color);
+			box-shadow: 0 0 0 2px var(--ros-pattern-header-color-nav-item-level-0-key-focus-border-color);
 			border-radius: var(--ros-semantic-border-radius-default);
 		}
 	}
@@ -60,7 +60,7 @@ body:has(.hero-image) {
 	& header {
 		& nav {
 			& .nav-tools {
-				& .select { 
+				& .select {
 					& select {
 						color: #fff;
 						border-color: #fff;
@@ -96,7 +96,7 @@ body:has(.hero-image) {
 		& .header.sticky {
 			& nav {
 				& .nav-tools {
-					& .select { 
+					& .select {
 						& select {
 							color: unset;
 							border-color: unset;
@@ -135,6 +135,7 @@ header {
 
 	& .header {
 		background-color: var(--ros-pattern-header-color-background-base);
+
 		@mixin fade;
 
 		&.sticky {
@@ -215,7 +216,7 @@ header {
 
 			& p {
 				@mixin h3;
-				
+
 				margin: 0;
 				display: flex;
 				align-items: center;
@@ -248,8 +249,9 @@ header {
 			align-items: center;
 			justify-content: flex-end;
 
-			& .select { 
+			& .select {
 				@mixin margin-right md;
+
 				& select {
 					min-width: 200px;
 				}
@@ -278,6 +280,7 @@ header {
 				/* Level 0 Menu Items */
 				& > li {
 					@mixin nav-item level-0;
+
 					height: 100%;
 					display: flex;
 					align-items: center;
@@ -335,7 +338,7 @@ header {
 		}
 
 		/* Mobile nav */
-		&[aria-expanded="true"] .nav-menu {
+		&[aria-expanded='true'] .nav-menu {
 			position: absolute;
 			align-items: flex-start;
 			background: var(--ros-semantic-color-background-base);
@@ -365,8 +368,10 @@ header {
 						@mixin h3;
 						@mixin padding-vertical lg;
 						@mixin padding-left lg;
+
 						margin-bottom: 0;
 						width: 100%;
+
 						&:hover {
 							background-color: var(--ros-pattern-header-color-nav-item-level-1-hover-background-color);
 							color: var(--ros-pattern-header-color-nav-item-level-1-hover-foreground-color);
@@ -381,10 +386,10 @@ header {
 					}
 
 					&::after {
-						content: "";
+						content: '';
 						background-color: var(--ros-theme-color-gray-900);
 						mask-position: center;
-						mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20width%3D%2218%22%3E%0A%20%20%3Crect%20id%3D%22Canvas%22%20fill%3D%22currentColor%22%20opacity%3D%220%22%20width%3D%2218%22%20height%3D%2218%22%20%2F%3E%3Cpath%20class%3D%22fill%22%20d%3D%22M4%2C7.01a1%2C1%2C0%2C0%2C1%2C1.7055-.7055l3.289%2C3.286%2C3.289-3.286a1%2C1%2C0%2C0%2C1%2C1.437%2C1.3865l-.0245.0245L9.7%2C11.7075a1%2C1%2C0%2C0%2C1-1.4125%2C0L4.293%2C7.716A.9945.9945%2C0%2C0%2C1%2C4%2C7.01Z%22%20%2F%3E%0A%3C%2Fsvg%3E");
+						mask-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20width%3D%2218%22%3E%0A%20%20%3Crect%20id%3D%22Canvas%22%20fill%3D%22currentColor%22%20opacity%3D%220%22%20width%3D%2218%22%20height%3D%2218%22%20%2F%3E%3Cpath%20class%3D%22fill%22%20d%3D%22M4%2C7.01a1%2C1%2C0%2C0%2C1%2C1.7055-.7055l3.289%2C3.286%2C3.289-3.286a1%2C1%2C0%2C0%2C1%2C1.437%2C1.3865l-.0245.0245L9.7%2C11.7075a1%2C1%2C0%2C0%2C1-1.4125%2C0L4.293%2C7.716A.9945.9945%2C0%2C0%2C1%2C4%2C7.01Z%22%20%2F%3E%0A%3C%2Fsvg%3E');
 						mask-repeat: no-repeat;
 						mask-size: cover;
 						position: absolute;
@@ -405,14 +410,17 @@ header {
 						margin-top: 0;
 						display: none;
 						left: 0;
+
 						&:hover {
 							background-color: unset;
 						}
 
 						& > li {
 							padding: 16px 32px;
+
 							& > a {
 								@mixin h3;
+
 								width: 100%;
 							}
 

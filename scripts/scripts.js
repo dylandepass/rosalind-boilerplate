@@ -183,14 +183,16 @@ export function addFavIcon(href) {
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
-  await loadBlocks(main);
+  if (!window.__STORYBOOK_PREVIEW__) {
+    await loadBlocks(main);
+  }
 
   decorateIcons(main);
   const { hash } = window.location;
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!window.STORIES) {
+  if (!window.__STORYBOOK_PREVIEW__) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
@@ -219,7 +221,7 @@ export async function loadPage() {
   loadDelayed();
 }
 
-if (!window.STORIES) {
+if (!window.__STORYBOOK_PREVIEW__) {
   loadPage();
 }
 

@@ -15,7 +15,11 @@ export const TwoCols = {
     selector: '.grid',
     index: 0,
   },
-  render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  render: (args, context) => {
+    const res = FranklinTemplate(loadPage, args, context, decorate);
+    console.log(res.innerHTML);
+    return res;
+  },
 };
 
 export const IconCards = {

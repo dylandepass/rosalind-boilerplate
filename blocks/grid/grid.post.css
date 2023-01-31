@@ -1,7 +1,8 @@
-@import "../../styles/system/mixins";
+@import url('../../styles/system/mixins');
 
 .grid {
 	@mixin gap lg;
+
 	display: grid;
 
 	&.two-cols {
@@ -24,8 +25,10 @@
 
 .section:has(.img-grid) {
 	border-top: 1px solid var(--ros-semantic-color-seperator-on-base);
+
 	@mixin padding-vertical xl;
 	@mixin padding-horizontal md;
+
 	min-height: 98px;
 }
 
@@ -52,9 +55,10 @@
 }
 
 .section:has(.logo-grid) {
-    @mixin padding-vertical xl;
-  	border-top: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
-  	border-bottom: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
+	@mixin padding-vertical xl;
+
+	border-top: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
+	border-bottom: var(--ros-semantic-border-width-sm) solid var(--ros-semantic-color-seperator-on-base);
 	min-height: 98px;
 }
 
@@ -76,6 +80,7 @@
 	& svg {
 		@mixin icon xl;
 		@mixin foreground-color layer-2 default;
+
 		transform: rotate(-45deg);
 	}
 
