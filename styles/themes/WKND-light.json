@@ -858,8 +858,7 @@
           "default": "#222222",
           "heading": "#222222",
           "subtle": "#6d6d6d",
-          "muted": "#909090",
-          "highlighted": "linear-gradient(225deg, #d97706 0%, #fbbf24 100%)"
+          "muted": "#909090"
         },
         "on-layer-1": {
           "default": "#222222",
