@@ -442,6 +442,7 @@
   --ros-semantic-color-foreground-on-layer-1-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-layer-1-heading: #222222;
   --ros-semantic-color-foreground-on-layer-1-default: #222222;
+  --ros-semantic-color-foreground-on-base-highlighted: linear-gradient(225deg, #d97706 0%, #fbbf24 100%);
   --ros-semantic-color-foreground-on-base-muted: #909090;
   --ros-semantic-color-foreground-on-base-subtle: #6d6d6d;
   --ros-semantic-color-foreground-on-base-heading: #222222;
