@@ -1,4 +1,4 @@
-import{d}from"./lib-franklin-bc9f93bf.js";import"./preload-helper-41c905a7.js";function r(){return`
+import{d}from"./lib-franklin-934bff3c.js";import"./preload-helper-41c905a7.js";function r(){return`
         <div>
             <p class="heading">Author</p>
             <div class="user-card">
@@ -53,4 +53,4 @@ import{d}from"./lib-franklin-bc9f93bf.js";import"./preload-helper-41c905a7.js";f
             </ul>
         </div>
     `}function h(n){const e=n.querySelector("div:first-of-type"),i=e.querySelector("img:first-of-type");i&&(i.loading="eager");const c=document.createElement("article"),s=document.createElement("div");s.classList.add("blog-post");const a=document.createElement("div");a.classList.add("content");const t=document.createElement("div");t.classList.add("hero"),t.append(i.closest("picture"));const l=e.querySelector("h1:first-of-type");l&&(l.classList.add("h3"),t.append(l)),a.append(t);const o=document.createElement("aside");o.innerHTML=r(),s.appendChild(a),s.appendChild(o),a.append(...e.childNodes),c.append(...s.childNodes),e.innerHTML="",e.append(c),d(e)}export{h as default};
-//# sourceMappingURL=blog-post-e577ea61.js.map
+//# sourceMappingURL=blog-post-d682c229.js.map
