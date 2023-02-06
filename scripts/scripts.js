@@ -167,6 +167,10 @@ export function isMobile() {
   return window.innerWidth < 900;
 }
 
+export function isStorybook() {
+  return window.location.pathname.includes('storybook');
+}
+
 /**
  * loads everything needed to get to LCP.
  */
@@ -213,7 +217,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
+  if (!isStorybook()) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
