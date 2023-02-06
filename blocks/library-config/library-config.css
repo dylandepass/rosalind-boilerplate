@@ -1,3 +1,11 @@
+main {
+
+}
+
+section.library-config-container {
+    padding: 0;
+}
+
 .sk-library {
     width: 360px;
     height: 360px;

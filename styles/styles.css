@@ -10,4 +10,11 @@
  * governing permissions and limitations under the License.
  */
 
- 
+ /* Block Library Overrides */
+ main:has(.library-config-container) {
+    padding-top: 0;
+ }
+
+ .section.library-config-container {
+    padding: 0;
+ }
