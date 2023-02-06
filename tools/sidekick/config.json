@@ -1,0 +1,21 @@
+{
+  "project": "Rosalind",
+  "host": "main--rosalind-boilerplate--dylandepass.hlx.page",
+  "libraries": [
+    {
+      "text": "Blocks",
+      "paths": ["https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/blocks.json"]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": [ "edit" ],
+      "isPalette": true,
+      "paletteRect": "top: auto; bottom: 20px; left: 20px; height: 398px; width: 360px;",
+      "url": "/tools/library",
+      "includePaths": [ "**.docx**" ]
+    }
+  ]
+}
