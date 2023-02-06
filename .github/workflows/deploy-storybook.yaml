@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - 'main'
+    paths:
+      - 'styles/system/**'
+      - 'tokens/**'
+      - 'blocks/**'
+      - 'templates/**'
 
 jobs:
   build:
