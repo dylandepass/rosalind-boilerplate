@@ -5,6 +5,9 @@ on:
     branches:
       - '**'      # matches every branch
       - '!main'   # excludes main
+    paths:
+      - 'styles/system/**'
+      - 'tokens/**'
 
 jobs:
   build:
