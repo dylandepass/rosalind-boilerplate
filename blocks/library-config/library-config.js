@@ -156,6 +156,12 @@ export default async function init(el) {
 
   const list = createList(libraries);
   skLibrary.append(list);
+  el.attachShadow({ mode: 'open' });
 
-  el.append(skLibrary);
+  el.shadowRoot.append(skLibrary);
+
+  const link = document.createElement('link');
+  link.setAttribute('rel', 'stylesheet');
+  link.setAttribute('href', '/blocks/library-config/library-config.css');
+  el.shadowRoot.appendChild(link);
 }
