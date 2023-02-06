@@ -1,9 +1,15 @@
-name: Build Design System
+name: Deploy Storybook
 
 on:
   push:
     branches:
       - 'main'
+    paths:
+      - '.storybook/**'
+      - 'styles/system/**'
+      - 'tokens/**'
+      - 'blocks/**'
+      - 'templates/**'
 
 jobs:
   build:
