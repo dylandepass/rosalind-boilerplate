@@ -17,7 +17,6 @@ export const TwoCols = {
   },
   render: (args, context) => {
     const res = FranklinTemplate(loadPage, args, context, decorate);
-    console.log(res.innerHTML);
     return res;
   },
 };

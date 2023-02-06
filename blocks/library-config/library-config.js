@@ -12,11 +12,6 @@ async function loadPlaceholders(content, list) {
   placeholders(content, list);
 }
 
-async function loadIcons(content, list) {
-  const { default: icons } = await import('./lists/icons.js');
-  icons(content, list);
-}
-
 async function loadAssets(content, list) {
   const { default: assets } = await import('./lists/assets.js');
   assets(content, list);
@@ -31,15 +26,11 @@ async function loadList(type, content, list) {
     case 'placeholders':
       loadPlaceholders(content, list);
       break;
-    case 'icons':
-      loadIcons(content, list);
-      break;
     case 'assets':
       loadAssets(content, list);
       break;
     default:
-      await import('../../utils/lana.js');
-      window.lana.log(`Library type not supported: ${type}`, { clientId: 'milo', sampleRate: 100 });
+      console.log(`Library type not supported: ${type}`); // eslint-disable-line no-console
   }
 }
 
@@ -79,7 +70,6 @@ async function combineLibraries(base, supplied) {
   const library = {
     blocks: base.blocks.data,
     placeholders: base.placeholders?.data,
-    icons: base.icons?.data,
     assets: await fetchAssetsData(assetsPath),
   };
 
