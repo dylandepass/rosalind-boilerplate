@@ -1,12 +1,6 @@
 {
   "project": "Rosalind",
   "host": "main--rosalind-boilerplate--dylandepass.hlx.page",
-  "libraries": [
-    {
-      "text": "Blocks",
-      "paths": ["https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/blocks.json"]
-    }
-  ],
   "plugins": [
     {
       "id": "library",
