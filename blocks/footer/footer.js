@@ -12,7 +12,7 @@ export default async function decorate(block) {
   let footerPath = cfg.footer || '/footer';
 
   // Load from storybook directory if running on github.io
-  if (window.location.host.includes('github.io') || !window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
+  if (window.location.host.includes('github.io') || window.__STORYBOOK_PREVIEW__) { // eslint-disable-line no-underscore-dangle
     footerPath = 'https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/footer';
   }
 
