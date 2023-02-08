@@ -1,4 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
+import { userEvent, within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import {
   loadHeader,
   buildBlock,
@@ -22,5 +24,12 @@ export const Footer = {
     decorateBlock(footerBlock);
     loadBlock(footerBlock, context.parameters.host);
     return footer;
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const tutorialsLabel = canvas.getByText('Tutorials', {
+      selector: '#tutorials',
+    });
+    expect(tutorialsLabel).toBeInTheDocument();
   },
 };
