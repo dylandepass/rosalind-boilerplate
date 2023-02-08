@@ -168,7 +168,7 @@ export function isMobile() {
 }
 
 export function isStorybook() {
-  return window.location.pathname.includes('storybook');
+  return window.location.pathname.includes('storybook') || window.__STORYBOOK_PREVIEW__; // eslint-disable-line no-underscore-dangle
 }
 
 /**
