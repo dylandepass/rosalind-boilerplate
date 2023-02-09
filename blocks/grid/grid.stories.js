@@ -3,7 +3,7 @@
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
 import { loadPage } from '../../scripts/scripts.js';
 import decorate from './grid.js';
-import style from './grid.css';
+import _style from './grid.css';
 
 export default {
   title: 'Blocks/Grid',

@@ -167,7 +167,11 @@ export function isMobile() {
   return window.innerWidth < 900;
 }
 
-export function isStorybook() {
+/**
+ * Are we currently rendering an isolated block as part of the block library or storybook?
+ * @returns {boolean} True if rendering block in isolation
+ */
+export function isIsolatedBlockRender() {
   return window.location.pathname.includes('storybook') || window.__STORYBOOK_PREVIEW__; // eslint-disable-line no-underscore-dangle
 }
 
@@ -217,7 +221,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!isStorybook()) {
+  if (!isIsolatedBlockRender()) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }

@@ -1,5 +1,10 @@
 import { Meta, Story } from '@storybook/blocks';
-import * as FormStories from '../stories/forms/forms.stories';
+import * as TextFieldStories from '../stories/forms/text-field.stories';
+import * as TextAreaStories from '../stories/forms/text-area.stories';
+import * as CheckboxStories from '../stories/forms/checkbox.stories';
+import * as SwitchStories from '../stories/forms/switch.stories';
+import * as RadioStories from '../stories/forms/radio.stories';
+import * as SelectStories from '../stories/forms/select.stories';
 
 <Meta title="Docs/Developers/Forms"/>
 
@@ -15,34 +20,34 @@ In Franklin, HTML Forms can be authored in a spreadsheet or manually created by 
 
 Text fields allow users to enter free form text data such as names, email addresses and other text.
 
-<Story of={FormStories.TextField}/>
+<Story of={TextFieldStories.Default}/>
 
 ## TextArea
 
 Text areas are a type of text input whereby users can enter multiple lines of text into the same field. Text areas also provide built-in features like scroll bars or resizing, which allow flexibility when writing a long form text.
 
-<Story of={FormStories.TextArea}/>
+<Story of={TextAreaStories.Default}/>
 
 ## Select
 
 The select input in an HTML form provides a user with a dropdown list of predefined options to choose from.
 
-<Story of={FormStories.Select}/>
+<Story of={SelectStories.Default}/>
 
 ## Checkbox
 
 Checkboxes allow a user to select one or more options from a set of predefined choices.
 
-<Story of={FormStories.Checkbox}/>
+<Story of={CheckboxStories.Default}/>
 
 ## Switch
 
 Switch elements or toggles show an on and off state that users can interact with. They are a useful way to turn on and off features or as a way to choose between two or more options. 
 
-<Story of={FormStories.Switch}/>
+<Story of={SwitchStories.Default}/>
 
 ## Radio
 
 Radio buttons are used in HTML forms to give users the ability to select one predetermined item from a predefined list of options. 
 
-<Story of={FormStories.Radio}/>
+<Story of={RadioStories.Default}/>
