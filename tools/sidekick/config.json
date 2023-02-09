@@ -1,6 +1,5 @@
 {
   "project": "Rosalind",
-  "host": "main--rosalind-boilerplate--dylandepass.hlx.page",
   "plugins": [
     {
       "id": "library",
