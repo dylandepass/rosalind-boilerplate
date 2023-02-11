@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: '16.x'
       - name: Install dependencies
-        run: yarn
+        run: npm i
       - name: Run Storybook tests
-        run: yarn test-storybook:ci
+        run: npm run test-storybook:ci
