@@ -1,1 +1,0 @@
-{"version":3,"file":"hero-3fb8e779.js","sources":["../../blocks/hero/hero.js"],"sourcesContent":["export default function decorate() {\n}\n"],"names":["decorate"],"mappings":"AAAe,SAASA,GAAW,CACnC"}

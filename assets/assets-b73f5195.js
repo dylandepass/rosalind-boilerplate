@@ -1,2 +1,0 @@
-import r from"./library-utils-7f4d8b3f.js";import{c as e}from"./scripts-ab8135af.js";import"./preload-helper-41c905a7.js";import"./lib-franklin-0f15b75e.js";function m(t){return e("a",{href:t},t).outerHTML}async function L(t,i){t.forEach(o=>{const s=e("img",{src:o}),n=e("li",{class:"asset-item"},s);i.append(n),s.addEventListener("click",()=>{const c=o.endsWith(".svg")?m(o):s.outerHTML,a=new Blob([c],{type:"text/html"});r(a)})})}export{L as default};
-//# sourceMappingURL=assets-b73f5195.js.map
