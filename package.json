@@ -6,7 +6,7 @@
   "scripts": {
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
     "test:watch": "npm test -- --watch",
-    "lint:js": "eslint .", b 
+    "lint:js": "eslint .",
     "lint:css": "stylelint 'blocks/**/*.post.css' 'styles/*.post.css' --fix",
     "lint": "npm run lint:js && npm run lint:css",
     "storybook": "storybook dev -p 6006",
