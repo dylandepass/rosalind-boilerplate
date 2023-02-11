@@ -11,9 +11,7 @@
     "lint": "npm run lint:js && npm run lint:css",
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
-    "setup-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook && npx http-server storybook --port 6006\"",
-    "test-storybook:ci": "npm run test-storybook\"",
-    "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
     "dev": "concurrently \"npm run franklin:up\" \"npm run postcss:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
     "postcss:dev": "gulp dev",
@@ -50,7 +48,7 @@
     "@web/test-runner": "0.14.0",
     "@web/test-runner-commands": "0.6.5",
     "chai": "4.3.6",
-    "concurrently": "7.5.0",
+    "concurrently": "7.4.0",
     "cssnano": "5.1.14",
     "dedent": "^0.7.0",
     "eslint": "8.24.0",
@@ -63,6 +61,7 @@
     "gulp-rename": "2.0.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-util": "3.0.8",
+    "http-server": "^14.1.1",
     "merge-stream": "2.0.0",
     "postcss": "8.4.18",
     "postcss-import": "14.1.0",
@@ -77,6 +76,6 @@
     "stylelint-config-standard": "29.0.0",
     "token-transformer": "0.0.28",
     "vite": "^4.0.4",
-    "wait-on": "^7.0.1"
+    "wait-on": "^6.0.1"
   }
 }
