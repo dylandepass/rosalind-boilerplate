@@ -11,7 +11,7 @@
     "lint": "npm run lint:js && npm run lint:css",
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
-    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook && npx http-server ./storybook --port 6006\" \"npx wait-on tcp:6006 && npm run test-storybook\"",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook && npx http-server storybook --port 6006\" \"npx wait-on tcp:6006 && npm run test-storybook\"",
     "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
     "dev": "concurrently \"npm run franklin:up\" \"npm run postcss:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
