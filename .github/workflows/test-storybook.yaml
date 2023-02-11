@@ -6,8 +6,11 @@ on:
       - '**'
       - '!main'
     paths:
+      - '.storybook/**'
       - 'styles/system/**'
       - 'tokens/**'
+      - 'blocks/**'
+      - 'templates/**'
 
 jobs:
   test:
