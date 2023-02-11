@@ -78,5 +78,6 @@ export const HeaderMobileOpen = {
     await userEvent.click(hamburger);
     expect(canvas.getByText('Home')).toBeInTheDocument();
     expect(canvas.getByText('Tutorials')).toBeInTheDocument();
+    expect(canvas.getByText('Storybook')).toBeInTheDocument();
   },
 };
