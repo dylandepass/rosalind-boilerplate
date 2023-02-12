@@ -62,14 +62,6 @@
           "value": "{global.color.static.magenta.500}",
           "type": "color"
         }
-      },
-      "foreground": {
-        "on-base": {
-          "highlighted": {
-            "value": "{global.color.gradient.pink.225-deg}",
-            "type": "color"
-          }
-        }
       }
     },
     "font-family": {

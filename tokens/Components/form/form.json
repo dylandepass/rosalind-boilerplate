@@ -2,114 +2,42 @@
   "component": {
     "form": {
       "font-size": {
-        "label": {
-          "value": "{semantic.font-size.body.sm}",
-          "type": "fontSizes"
-        },
-        "help": {
-          "value": "{semantic.font-size.body.xs}",
-          "type": "fontSizes"
-        },
         "placeholder": {
           "value": "{semantic.font-size.body.md}",
           "type": "fontSizes"
         }
       },
       "font-family": {
-        "label": {
-          "value": "{semantic.font-family.body}",
-          "type": "fontFamilies"
-        },
-        "help": {
-          "value": "{semantic.font-family.body}",
-          "type": "fontFamilies"
-        },
         "placeholder": {
           "value": "{semantic.font-family.body}",
           "type": "fontFamilies"
         }
       },
       "line-height": {
-        "label": {
-          "value": "150%",
-          "type": "lineHeights"
-        },
-        "help": {
-          "value": "150%",
-          "type": "lineHeights"
-        },
         "placeholder": {
           "value": "150%",
           "type": "lineHeights"
         }
       },
       "font-weight": {
-        "label": {
-          "value": "{semantic.font-weight.medium}",
-          "type": "fontWeights"
-        },
-        "help": {
-          "value": "{semantic.font-weight.normal}",
-          "type": "fontWeights"
-        },
         "placeholder": {
           "value": "{semantic.font-weight.normal}",
           "type": "fontWeights"
         }
       },
       "text-case": {
-        "label": {
-          "value": "{semantic.text-case.none}",
-          "type": "textCase"
-        },
-        "help": {
-          "value": "{semantic.text-case.none}",
-          "type": "textCase"
-        },
         "placeholder": {
           "value": "{semantic.text-case.none}",
           "type": "textCase"
         }
       },
       "letter-spacing": {
-        "label": {
-          "value": "{semantic.letter-spacing.default}",
-          "type": "letterSpacing"
-        },
-        "help": {
-          "value": "{semantic.letter-spacing.default}",
-          "type": "letterSpacing"
-        },
         "placeholder": {
           "value": "{semantic.letter-spacing.default}",
           "type": "letterSpacing"
         }
       },
       "typography": {
-        "label": {
-          "value": {
-            "fontFamily": "{component.form.font-family.label}",
-            "fontWeight": "{component.form.font-weight.label}",
-            "lineHeight": "{component.form.line-height.label}",
-            "fontSize": "{component.form.font-size.label}",
-            "letterSpacing": "{component.form.letter-spacing.label}",
-            "textDecoration": "{component.form.text-decoration.label}",
-            "textCase": "{component.form.text-case.label}"
-          },
-          "type": "typography"
-        },
-        "help": {
-          "value": {
-            "fontFamily": "{component.form.font-family.help}",
-            "fontWeight": "{component.form.font-weight.help}",
-            "lineHeight": "{component.form.line-height.help}",
-            "fontSize": "{component.form.font-size.help}",
-            "letterSpacing": "{component.form.letter-spacing.help}",
-            "textDecoration": "{component.form.text-decoration.help}",
-            "textCase": "{component.form.text-case.help}"
-          },
-          "type": "typography"
-        },
         "placeholder": {
           "value": {
             "fontFamily": "{component.form.font-family.placeholder}",
@@ -124,14 +52,6 @@
         }
       },
       "text-decoration": {
-        "label": {
-          "value": "{semantic.text-decoration.none}",
-          "type": "textDecoration"
-        },
-        "help": {
-          "value": "{semantic.text-decoration.none}",
-          "type": "textDecoration"
-        },
         "placeholder": {
           "value": "{semantic.text-decoration.none}",
           "type": "textDecoration"
@@ -139,53 +59,31 @@
       },
       "sizing": {
         "input-min-width": {
-          "value": "{global.size.1200}",
+          "value": "{global.size.1400}",
           "type": "sizing"
-        }
-      },
-      "spacing": {
-        "label": {
-          "padding-bottom": {
-            "value": "{global.space.50}",
-            "type": "spacing"
-          },
-          "padding-right": {
-            "value": "{semantic.spacing.around.component.xl}",
-            "type": "spacing",
-            "description": "Padding of component label, like the label on a checkbox"
-          }
-        },
-        "help": {
-          "padding-top": {
-            "value": "{global.space.100}",
-            "type": "spacing"
-          }
-        },
-        "group": {
-          "margin-bottom": {
-            "value": "{global.space.200}",
-            "type": "spacing"
-          }
         }
       },
       "color": {
         "foreground": {
+          "text": {
+            "default": {
+              "value": "{theme.color.gray.800}",
+              "type": "color",
+              "description": "The color of the text inside an input or select"
+            }
+          },
           "label": {
             "default": {
               "value": "{theme.color.gray.800}",
-              "type": "color"
+              "type": "color",
+              "description": "The label color of a checkbox, switch or radio"
             }
           },
-          "help": {
+          "placeholder": {
             "default": {
-              "value": "{theme.color.gray.800}",
-              "type": "color"
-            }
-          },
-          "input": {
-            "default": {
-              "value": "{theme.color.gray.800}",
-              "type": "color"
+              "value": "{semantic.color.foreground.on-layer-1.muted}",
+              "type": "color",
+              "description": "The label color of a checkbox, switch or radio"
             }
           }
         },

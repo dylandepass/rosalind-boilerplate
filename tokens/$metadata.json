@@ -6,6 +6,7 @@
     "semantic",
     "Components/buttons",
     "Components/form/form",
+    "Components/form/form-group",
     "Components/form/text-field",
     "Components/form/select",
     "Components/form/switch",
@@ -19,11 +20,11 @@
     "Brands/WKND/Components/button",
     "Brands/WKND/Patterns/header",
     "Brands/WKND/Patterns/footer",
+    "Brands/WKND/Patterns/modal",
     "Brands/Vader/semantic",
     "Brands/Vader/Components/button",
     "Brands/Vader/Patterns/header",
     "Brands/Vader/Patterns/footer",
-    "Brands/WKND/Patterns/modal",
     "Brands/Vader/Patterns/modal"
   ]
 }

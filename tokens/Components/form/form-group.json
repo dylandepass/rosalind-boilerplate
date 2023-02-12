@@ -1,0 +1,171 @@
+{
+  "component": {
+    "form-group": {
+      "font-size": {
+        "label": {
+          "value": "{semantic.font-size.body.xs}",
+          "type": "fontSizes"
+        },
+        "help": {
+          "value": "{semantic.font-size.body.xs}",
+          "type": "fontSizes"
+        }
+      },
+      "font-family": {
+        "label": {
+          "value": "{semantic.font-family.body}",
+          "type": "fontFamilies"
+        },
+        "help": {
+          "value": "{semantic.font-family.body}",
+          "type": "fontFamilies"
+        }
+      },
+      "line-height": {
+        "label": {
+          "value": "125%",
+          "type": "lineHeights"
+        },
+        "help": {
+          "value": "125%",
+          "type": "lineHeights"
+        }
+      },
+      "font-weight": {
+        "label": {
+          "value": "{semantic.font-weight.body.semi-bold}",
+          "type": "fontWeights"
+        },
+        "help": {
+          "value": "{semantic.font-weight.normal}",
+          "type": "fontWeights"
+        }
+      },
+      "text-case": {
+        "label": {
+          "value": "{semantic.text-case.none}",
+          "type": "textCase"
+        },
+        "help": {
+          "value": "{semantic.text-case.none}",
+          "type": "textCase"
+        }
+      },
+      "letter-spacing": {
+        "label": {
+          "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing"
+        },
+        "help": {
+          "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing"
+        }
+      },
+      "typography": {
+        "label": {
+          "value": {
+            "fontFamily": "{component.form-group.font-family.label}",
+            "fontWeight": "{component.form-group.font-weight.label}",
+            "lineHeight": "{component.form-group.line-height.label}",
+            "fontSize": "{component.form-group.font-size.label}",
+            "letterSpacing": "{component.form-group.letter-spacing.label}",
+            "textDecoration": "{component.form-group.text-decoration.label}",
+            "textCase": "{component.form-group.text-case.label}"
+          },
+          "type": "typography"
+        },
+        "help": {
+          "value": {
+            "fontFamily": "{component.form-group.font-family.help}",
+            "fontWeight": "{component.form-group.font-weight.help}",
+            "lineHeight": "{component.form-group.line-height.help}",
+            "fontSize": "{component.form-group.font-size.help}",
+            "letterSpacing": "{component.form-group.letter-spacing.help}",
+            "textDecoration": "{component.form-group.text-decoration.help}",
+            "textCase": "{component.form-group.text-case.help}"
+          },
+          "type": "typography"
+        }
+      },
+      "text-decoration": {
+        "label": {
+          "value": "{semantic.text-decoration.none}",
+          "type": "textDecoration"
+        },
+        "help": {
+          "value": "{semantic.text-decoration.none}",
+          "type": "textDecoration"
+        }
+      },
+      "spacing": {
+        "margin-bottom": {
+          "value": "{semantic.spacing.around.component.2xl}",
+          "type": "spacing"
+        },
+        "label": {
+          "padding-bottom": {
+            "value": "{semantic.spacing.around.component.xs}",
+            "type": "spacing"
+          },
+          "padding-right": {
+            "value": "{semantic.spacing.around.component.md}",
+            "type": "spacing",
+            "description": "Padding of component label, like the label on a checkbox"
+          }
+        },
+        "help": {
+          "padding-top": {
+            "value": "{semantic.spacing.around.component.xs}",
+            "type": "spacing"
+          }
+        },
+        "error": {
+          "padding-top": {
+            "value": "{semantic.spacing.around.component.xs}",
+            "type": "spacing"
+          }
+        }
+      },
+      "color": {
+        "foreground": {
+          "label": {
+            "default": {
+              "value": "{semantic.color.foreground.on-base.default}",
+              "type": "color"
+            }
+          },
+          "help": {
+            "default": {
+              "value": "{semantic.color.foreground.on-base.default}",
+              "type": "color"
+            }
+          },
+          "negative": {
+            "default": {
+              "value": "{semantic.color.negative.default}",
+              "type": "color"
+            }
+          },
+          "positive": {
+            "default": {
+              "value": "{semantic.color.positive.default}",
+              "type": "color"
+            }
+          },
+          "info": {
+            "default": {
+              "value": "{semantic.color.informative.default}",
+              "type": "color"
+            }
+          },
+          "notice": {
+            "default": {
+              "value": "{semantic.color.notice.default}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    }
+  }
+}

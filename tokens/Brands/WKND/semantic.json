@@ -37,12 +37,6 @@
             "value": "{global.color.static.white}",
             "type": "color"
           }
-        },
-        "on-base": {
-          "highlighted": {
-            "value": "{global.color.gradient.yellow.225-deg}",
-            "type": "color"
-          }
         }
       },
       "secondary": {
