@@ -3,8 +3,7 @@ name: Build Design System
 on:
   push:
     branches:
-      - '**'
-      - '!main'
+      - 'main'
     paths:
       - 'styles/system/**'
       - 'tokens/**'

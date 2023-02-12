@@ -5,16 +5,46 @@
         "placeholder": {
           "value": "{semantic.font-size.body.md}",
           "type": "fontSizes"
+        },
+        "text": {
+          "value": "{semantic.font-size.body.md}",
+          "type": "fontSizes",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.font-size.body.sm}",
+          "type": "fontSizes",
+          "description": "Token to be aliased by other form components"
         }
       },
       "font-family": {
         "placeholder": {
           "value": "{semantic.font-family.body}",
-          "type": "fontFamilies"
+          "type": "fontFamilies",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "{semantic.font-family.body}",
+          "type": "fontFamilies",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.font-family.body}",
+          "type": "fontFamilies",
+          "description": "Token to be aliased by other form components"
         }
       },
       "line-height": {
         "placeholder": {
+          "value": "150%",
+          "type": "lineHeights",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "150%",
+          "type": "lineHeights"
+        },
+        "label": {
           "value": "150%",
           "type": "lineHeights"
         }
@@ -22,19 +52,52 @@
       "font-weight": {
         "placeholder": {
           "value": "{semantic.font-weight.normal}",
-          "type": "fontWeights"
+          "type": "fontWeights",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "{semantic.font-weight.normal}",
+          "type": "fontWeights",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.font-weight.normal}",
+          "type": "fontWeights",
+          "description": "Token to be aliased by other form components"
         }
       },
       "text-case": {
         "placeholder": {
           "value": "{semantic.text-case.none}",
-          "type": "textCase"
+          "type": "textCase",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "{semantic.text-case.none}",
+          "type": "textCase",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.text-case.none}",
+          "type": "textCase",
+          "description": "Token to be aliased by other form components"
         }
       },
       "letter-spacing": {
         "placeholder": {
           "value": "{semantic.letter-spacing.default}",
-          "type": "letterSpacing"
+          "type": "letterSpacing",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing",
+          "description": "Token to be aliased by other form components"
         }
       },
       "typography": {
@@ -48,19 +111,58 @@
             "textDecoration": "{component.form.text-decoration.placeholder}",
             "textCase": "{component.form.text-case.placeholder}"
           },
-          "type": "typography"
+          "type": "typography",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": {
+            "fontFamily": "{component.form.font-family.text}",
+            "fontWeight": "{component.form.font-weight.text}",
+            "lineHeight": "{component.form.line-height.text}",
+            "fontSize": "{component.form.font-size.text}",
+            "letterSpacing": "{component.form.letter-spacing.text}",
+            "textDecoration": "{component.form.text-decoration.text}",
+            "textCase": "{component.form.text-case.text}"
+          },
+          "type": "typography",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": {
+            "fontFamily": "{component.form.font-family.label}",
+            "fontWeight": "{component.form.font-weight.label}",
+            "lineHeight": "{component.form.line-height.label}",
+            "fontSize": "{component.form.font-size.label}",
+            "letterSpacing": "{component.form.letter-spacing.label}",
+            "textDecoration": "{component.form.text-decoration.label}",
+            "textCase": "{component.form.text-case.label}"
+          },
+          "type": "typography",
+          "description": "Token to be aliased by other form components"
         }
       },
       "text-decoration": {
         "placeholder": {
           "value": "{semantic.text-decoration.none}",
-          "type": "textDecoration"
+          "type": "textDecoration",
+          "description": "Token to be aliased by other form components"
+        },
+        "text": {
+          "value": "{semantic.text-decoration.none}",
+          "type": "textDecoration",
+          "description": "Token to be aliased by other form components"
+        },
+        "label": {
+          "value": "{semantic.text-decoration.none}",
+          "type": "textDecoration",
+          "description": "Token to be aliased by other form components"
         }
       },
       "sizing": {
         "input-min-width": {
-          "value": "{global.size.1400}",
-          "type": "sizing"
+          "value": "{global.size.1600}",
+          "type": "sizing",
+          "description": "Token to be aliased by other form components"
         }
       },
       "color": {
@@ -69,21 +171,21 @@
             "default": {
               "value": "{theme.color.gray.800}",
               "type": "color",
-              "description": "The color of the text inside an input or select"
+              "description": "The color of the text inside an input or select.\nToken to be aliased by other form components."
             }
           },
           "label": {
             "default": {
               "value": "{theme.color.gray.800}",
               "type": "color",
-              "description": "The label color of a checkbox, switch or radio"
+              "description": "The label color of a checkbox, switch or radio.\nToken to be aliased by other form components."
             }
           },
           "placeholder": {
             "default": {
               "value": "{semantic.color.foreground.on-layer-1.muted}",
               "type": "color",
-              "description": "The label color of a checkbox, switch or radio"
+              "description": "The label color of a checkbox, switch or radio.\nToken to be aliased by other form components."
             }
           }
         },
@@ -91,7 +193,8 @@
           "input": {
             "default": {
               "value": "{semantic.color.transparent}",
-              "type": "color"
+              "type": "color",
+              "description": "Token to be aliased by other form components"
             }
           }
         }
