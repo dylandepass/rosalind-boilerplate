@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 06 Feb 2023 15:58:34 GMT
+ * Generated on Sun, 12 Feb 2023 04:50:23 GMT
  */
 
 :root {
@@ -457,44 +457,45 @@
   --ros-semantic-color-primary-dark: #d2b200;
   --ros-semantic-color-primary-base: #dfbf00;
   --ros-semantic-assets-logo: "https://i.imgur.com/LcSyqJN.png";
-  --ros-component-form-color-background-input-default: #00000000;
-  --ros-component-form-color-foreground-input-default: #222222;
-  --ros-component-form-color-foreground-help-default: #222222;
-  --ros-component-form-color-foreground-label-default: #222222;
-  --ros-component-form-spacing-group-margin-bottom: 16px;
-  --ros-component-form-spacing-help-padding-top: 8px;
-  --ros-component-form-spacing-label-padding-right: 20px;
-  --ros-component-form-spacing-label-padding-bottom: 5px;
-  --ros-component-form-sizing-input-min-width: 96px;
-  --ros-component-form-text-decoration-placeholder: none;
-  --ros-component-form-text-decoration-help: none;
-  --ros-component-form-text-decoration-label: none;
-  --ros-component-form-letter-spacing-placeholder: 0%;
-  --ros-component-form-letter-spacing-help: 0%;
-  --ros-component-form-letter-spacing-label: 0%;
-  --ros-component-form-text-case-placeholder: none;
-  --ros-component-form-text-case-help: none;
-  --ros-component-form-text-case-label: none;
-  --ros-component-form-font-weight-placeholder: 400;
-  --ros-component-form-font-weight-help: 400;
-  --ros-component-form-font-weight-label: 500;
-  --ros-component-form-line-height-placeholder: 150%;
-  --ros-component-form-line-height-help: 150%;
-  --ros-component-form-line-height-label: 150%;
-  --ros-component-form-font-family-placeholder: Roboto;
-  --ros-component-form-font-family-help: Roboto;
-  --ros-component-form-font-family-label: Roboto;
-  --ros-component-form-font-size-placeholder: 1rem;
-  --ros-component-form-font-size-help: 0.75rem;
-  --ros-component-form-font-size-label: 0.875rem;
-  --ros-component-text-field-paragraph-spacing-text: 0;
+  --ros-component-form-group-color-foreground-notice-default: #da7b11;
+  --ros-component-form-group-color-foreground-info-default: #1473e6;
+  --ros-component-form-group-color-foreground-positive-default: #268e6c;
+  --ros-component-form-group-color-foreground-negative-default: #d7373f;
+  --ros-component-form-group-color-foreground-help-default: #222222;
+  --ros-component-form-group-color-foreground-label-default: #222222;
+  --ros-component-form-group-spacing-error-padding-top: 5px;
+  --ros-component-form-group-spacing-help-padding-top: 5px;
+  --ros-component-form-group-spacing-label-padding-right: 12px;
+  --ros-component-form-group-spacing-label-padding-bottom: 5px;
+  --ros-component-form-group-spacing-margin-bottom: 24px;
+  --ros-component-form-group-text-decoration-help: none;
+  --ros-component-form-group-text-decoration-label: none;
+  --ros-component-form-group-letter-spacing-help: 0%;
+  --ros-component-form-group-letter-spacing-label: 0%;
+  --ros-component-form-group-text-case-help: none;
+  --ros-component-form-group-text-case-label: none;
+  --ros-component-form-group-font-weight-help: 400;
+  --ros-component-form-group-font-weight-label: 600;
+  --ros-component-form-group-line-height-help: 125%;
+  --ros-component-form-group-line-height-label: 125%;
+  --ros-component-form-group-font-family-help: Roboto;
+  --ros-component-form-group-font-family-label: Roboto;
+  --ros-component-form-group-font-size-help: 0.75rem;
+  --ros-component-form-group-font-size-label: 0.75rem;
+  --ros-component-text-field-text-case-placeholder: none;
   --ros-component-text-field-text-case-text: none;
+  --ros-component-text-field-text-decoration-placeholder: none;
   --ros-component-text-field-text-decoration-text: none;
-  --ros-component-text-field-min-width: 192px;
+  --ros-component-text-field-min-width: 112px;
+  --ros-component-text-field-letter-spacing-placeholder: 0%;
   --ros-component-text-field-letter-spacing-text: 0%;
+  --ros-component-text-field-font-weight-placeholder: 400;
   --ros-component-text-field-font-weight-text: 400;
+  --ros-component-text-field-line-height-placeholder: 150%;
   --ros-component-text-field-line-height-text: 150%;
-  --ros-component-text-field-font-family-text: Nunito, sans-serif;
+  --ros-component-text-field-font-family-placeholder: Roboto;
+  --ros-component-text-field-font-family-text: Roboto;
+  --ros-component-text-field-font-size-placeholder: 1rem;
   --ros-component-text-field-font-size-text: 1rem;
   --ros-component-text-field-spacing-space-between: 8px;
   --ros-component-text-field-spacing-padding-y: 6px;
@@ -527,11 +528,11 @@
   --ros-component-select-paragraph-spacing-text: 0;
   --ros-component-select-text-case-text: none;
   --ros-component-select-text-decoration-text: none;
-  --ros-component-select-min-width: 192px;
+  --ros-component-select-min-width: 112px;
   --ros-component-select-letter-spacing-text: 0%;
   --ros-component-select-font-weight-text: 400;
   --ros-component-select-line-height-text: 150%;
-  --ros-component-select-font-family-text: Nunito, sans-serif;
+  --ros-component-select-font-family-text: Roboto;
   --ros-component-select-font-size-text: 1rem;
   --ros-component-select-spacing-gap: 8px;
   --ros-component-select-spacing-padding-y: 6px;
@@ -570,7 +571,7 @@
   --ros-component-switch-letter-spacing-label: 0%;
   --ros-component-switch-font-weight-label: 400;
   --ros-component-switch-line-height-label: 150%;
-  --ros-component-switch-font-family-label: Nunito, sans-serif;
+  --ros-component-switch-font-family-label: Roboto;
   --ros-component-switch-font-size-label: 0.875rem;
   --ros-component-switch-spacing-space-between: 8px;
   --ros-component-switch-border-width-disabled: 1px;
@@ -601,7 +602,7 @@
   --ros-component-checkbox-letter-spacing-label: 0%;
   --ros-component-checkbox-font-weight-label: 400;
   --ros-component-checkbox-line-height-label: 150%;
-  --ros-component-checkbox-font-family-label: Nunito, sans-serif;
+  --ros-component-checkbox-font-family-label: Roboto;
   --ros-component-checkbox-font-size-label: 0.875rem;
   --ros-component-checkbox-spacing-space-between: 8px;
   --ros-component-checkbox-border-width-disabled: 1px;
@@ -634,7 +635,7 @@
   --ros-component-radio-letter-spacing-label: 0%;
   --ros-component-radio-font-weight-label: 400;
   --ros-component-radio-line-height-label: 150%;
-  --ros-component-radio-font-family-label: Nunito, sans-serif;
+  --ros-component-radio-font-family-label: Roboto;
   --ros-component-radio-font-size-label: 0.875rem;
   --ros-component-radio-spacing-space-between: 8px;
   --ros-component-radio-border-width-disabled: 1px;

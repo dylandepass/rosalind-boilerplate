@@ -42,14 +42,14 @@
   }
 
   &::placeholder {
-    color: var(--ros-component-form-color-foreground-color-placeholder-default);
-    font-family: var(--ros-component-form-font-family-placeholder);
-    line-height: var(--ros-component-form-line-height-placeholder);
-    font-size: var(--ros-component-form-font-size-placeholder);
-    font-weight: var(--ros-component-form-font-weight-placeholder);
-    text-transform: var(--ros-component-form-text-case-placeholder);
-    letter-spacing: var(--ros-component-form-letter-spacing-placeholder);
-    text-decoration: var(--ros-component-form-text-decoration-placeholder);
+    color: var(--ros-component-text-field-color-placeholder);
+    font-family: var(--ros-component-text-field-font-family-placeholder);
+    line-height: var(--ros-component-text-field-line-height-placeholder);
+    font-size: var(--ros-component-text-field-font-size-placeholder);
+    font-weight: var(--ros-component-text-field-font-weight-placeholder);
+    text-transform: var(--ros-component-text-field-text-case-placeholder);
+    letter-spacing: var(--ros-component-text-field-letter-spacing-placeholder);
+    text-decoration: var(--ros-component-text-field-text-decoration-placeholder);
   }
 
   &:optional {
@@ -60,7 +60,7 @@
     @mixin form-element $type, disabled;
 
     &::placeholder {
-      color: var(--ros-component-form-color-foreground-color-placeholder-disable);
+      color: var(--ros-component-text-field-color-disabled-foreground-color);
     }
   }
 
