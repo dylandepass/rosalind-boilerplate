@@ -135,11 +135,19 @@
         "text": {
           "value": "{global.font-size.md}",
           "type": "fontSizes"
+        },
+        "placeholder": {
+          "value": "{component.form.font-size.placeholder}",
+          "type": "fontSizes"
         }
       },
       "font-family": {
         "text": {
           "value": "{semantic.font-family.body}",
+          "type": "fontFamilies"
+        },
+        "placeholder": {
+          "value": "{component.form.font-family.placeholder}",
           "type": "fontFamilies"
         }
       },
@@ -147,17 +155,29 @@
         "text": {
           "value": "{semantic.line-height.body}",
           "type": "lineHeights"
+        },
+        "placeholder": {
+          "value": "{component.form.line-height.placeholder}",
+          "type": "lineHeights"
         }
       },
       "font-weight": {
         "text": {
           "value": "{semantic.font-weight.normal}",
           "type": "fontWeights"
+        },
+        "placeholder": {
+          "value": "{component.form.font-weight.placeholder}",
+          "type": "fontWeights"
         }
       },
       "letter-spacing": {
         "text": {
           "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing"
+        },
+        "placeholder": {
+          "value": "{component.form.letter-spacing.placeholder}",
           "type": "letterSpacing"
         }
       },
@@ -169,9 +189,22 @@
             "lineHeight": "{component.text-field.line-height.text}",
             "fontSize": "{component.text-field.font-size.text}",
             "letterSpacing": "{component.text-field.letter-spacing.text}",
-            "paragraphSpacing": "{component.text-field.paragraph-spacing.text}",
+            "paragraphSpacing": "",
             "textDecoration": "{component.text-field.text-decoration.text}",
             "textCase": "{component.text-field.text-case.text}"
+          },
+          "type": "typography"
+        },
+        "placeholder": {
+          "value": {
+            "fontFamily": "{component.text-field.font-family.placeholder}",
+            "fontWeight": "{component.text-field.font-weight.placeholder}",
+            "lineHeight": "{component.text-field.line-height.placeholder}",
+            "fontSize": "{component.text-field.font-size.placeholder}",
+            "letterSpacing": "{component.text-field.letter-spacing.placeholder}",
+            "paragraphSpacing": "",
+            "textDecoration": "{component.text-field.text-decoration.placeholder}",
+            "textCase": "{component.text-field.text-case.placeholder}"
           },
           "type": "typography"
         }
@@ -184,18 +217,20 @@
         "text": {
           "value": "none",
           "type": "textDecoration"
+        },
+        "placeholder": {
+          "value": "{component.form.text-decoration.placeholder}",
+          "type": "textDecoration"
         }
       },
       "text-case": {
         "text": {
           "value": "none",
           "type": "textCase"
-        }
-      },
-      "paragraph-spacing": {
-        "text": {
-          "value": "0",
-          "type": "paragraphSpacing"
+        },
+        "placeholder": {
+          "value": "{component.form.text-case.placeholder}",
+          "type": "textCase"
         }
       }
     }
