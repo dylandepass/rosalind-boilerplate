@@ -830,61 +830,6 @@
           }
         }
       }
-    },
-    "form": {
-      "font-size": {
-        "placeholder": "1rem"
-      },
-      "font-family": {
-        "placeholder": "Roboto"
-      },
-      "line-height": {
-        "placeholder": "150%"
-      },
-      "font-weight": {
-        "placeholder": 400
-      },
-      "text-case": {
-        "placeholder": "none"
-      },
-      "letter-spacing": {
-        "placeholder": "0%"
-      },
-      "typography": {
-        "placeholder": {
-          "fontFamily": "Roboto",
-          "fontWeight": 400,
-          "lineHeight": "150%",
-          "fontSize": 16,
-          "letterSpacing": "0%",
-          "textDecoration": "none",
-          "textCase": "none"
-        }
-      },
-      "text-decoration": {
-        "placeholder": "none"
-      },
-      "sizing": {
-        "input-min-width": "112px"
-      },
-      "color": {
-        "foreground": {
-          "text": {
-            "default": "#222222"
-          },
-          "label": {
-            "default": "#222222"
-          },
-          "placeholder": {
-            "default": "#909090"
-          }
-        },
-        "background": {
-          "input": {
-            "default": "#00000000"
-          }
-        }
-      }
     }
   },
   "semantic": {

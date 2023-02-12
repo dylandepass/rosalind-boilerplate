@@ -15,6 +15,7 @@
     "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
     "dev": "concurrently \"npm run franklin:up\" \"npm run postcss:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
+    "build-tokens": "node ./bin/transform.mjs",
     "postcss:dev": "gulp dev",
     "postcss:build": "gulp build"
   },

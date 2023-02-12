@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 12 Feb 2023 04:48:56 GMT
+ * Generated on Sun, 12 Feb 2023 04:50:22 GMT
  */
 
 :root {
@@ -455,18 +455,6 @@
   --ros-semantic-color-background-layer-2: #222;
   --ros-semantic-color-background-layer-1: #111;
   --ros-semantic-color-background-base: #000000;
-  --ros-component-form-color-background-input-default: #00000000;
-  --ros-component-form-color-foreground-placeholder-default: #909090;
-  --ros-component-form-color-foreground-label-default: #ebebeb;
-  --ros-component-form-color-foreground-text-default: #ebebeb;
-  --ros-component-form-sizing-input-min-width: 112px;
-  --ros-component-form-text-decoration-placeholder: none;
-  --ros-component-form-letter-spacing-placeholder: 0%;
-  --ros-component-form-text-case-placeholder: none;
-  --ros-component-form-font-weight-placeholder: 400;
-  --ros-component-form-line-height-placeholder: 150%;
-  --ros-component-form-font-family-placeholder: Inter;
-  --ros-component-form-font-size-placeholder: 1rem;
   --ros-component-form-group-color-foreground-notice-default: #da7b11;
   --ros-component-form-group-color-foreground-info-default: #1473e6;
   --ros-component-form-group-color-foreground-positive-default: #268e6c;
