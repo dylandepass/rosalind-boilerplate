@@ -1,0 +1,24 @@
+name: Build Design System
+
+on:
+  pull_request:
+    paths:
+      - 'styles/system.css'
+      - 'styles/system/**'
+      - 'tokens/**'
+
+jobs:
+  validate-system:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - run: npm install
+    - run: npm run design-system:transform
+    - run: npm run design-system:build
+    - run: npm run design-system:validate
+      env:
+        CI: true
