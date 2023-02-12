@@ -35,8 +35,7 @@
           "default": "#ebebeb",
           "heading": "#ebebeb",
           "subtle": "#b2b2b2",
-          "muted": "#909090",
-          "highlighted": "linear-gradient(225deg, #4f46e5 0%, #818cf8 100%)"
+          "muted": "#909090"
         },
         "on-layer-1": {
           "default": "#ebebeb",
@@ -1175,7 +1174,7 @@
           "textCase": "none"
         }
       },
-      "min-width": "192px",
+      "min-width": "112px",
       "text-decoration": {
         "text": "none"
       },
@@ -1260,7 +1259,7 @@
           "textCase": "none"
         }
       },
-      "min-width": "192px",
+      "min-width": "112px",
       "text-decoration": {
         "text": "none"
       },
@@ -1271,43 +1270,37 @@
         "text": 0
       }
     },
-    "form": {
+    "form-group": {
       "font-size": {
-        "label": "0.875rem",
-        "help": "0.75rem",
-        "placeholder": "1rem"
+        "label": "0.75rem",
+        "help": "0.75rem"
       },
       "font-family": {
         "label": "Nunito, sans-serif",
-        "help": "Nunito, sans-serif",
-        "placeholder": "Nunito, sans-serif"
+        "help": "Nunito, sans-serif"
       },
       "line-height": {
-        "label": "150%",
-        "help": "150%",
-        "placeholder": "150%"
+        "label": "125%",
+        "help": "125%"
       },
       "font-weight": {
-        "label": 500,
-        "help": 400,
-        "placeholder": 400
+        "label": 600,
+        "help": 400
       },
       "text-case": {
         "label": "none",
-        "help": "none",
-        "placeholder": "none"
+        "help": "none"
       },
       "letter-spacing": {
         "label": "0%",
-        "help": "0%",
-        "placeholder": "0%"
+        "help": "0%"
       },
       "typography": {
         "label": {
           "fontFamily": "Nunito, sans-serif",
-          "fontWeight": 500,
-          "lineHeight": "150%",
-          "fontSize": 14,
+          "fontWeight": 600,
+          "lineHeight": "125%",
+          "fontSize": 12,
           "letterSpacing": "0%",
           "textDecoration": "none",
           "textCase": "none"
@@ -1315,12 +1308,73 @@
         "help": {
           "fontFamily": "Nunito, sans-serif",
           "fontWeight": 400,
-          "lineHeight": "150%",
+          "lineHeight": "125%",
           "fontSize": 12,
           "letterSpacing": "0%",
           "textDecoration": "none",
           "textCase": "none"
+        }
+      },
+      "text-decoration": {
+        "label": "none",
+        "help": "none"
+      },
+      "spacing": {
+        "margin-bottom": "24px",
+        "label": {
+          "padding-bottom": "5px",
+          "padding-right": "12px"
         },
+        "help": {
+          "padding-top": "5px"
+        },
+        "error": {
+          "padding-top": "5px"
+        }
+      },
+      "color": {
+        "foreground": {
+          "label": {
+            "default": "#ebebeb"
+          },
+          "help": {
+            "default": "#ebebeb"
+          },
+          "negative": {
+            "default": "#d7373f"
+          },
+          "positive": {
+            "default": "#268e6c"
+          },
+          "info": {
+            "default": "#1473e6"
+          },
+          "notice": {
+            "default": "#da7b11"
+          }
+        }
+      }
+    },
+    "form": {
+      "font-size": {
+        "placeholder": "1rem"
+      },
+      "font-family": {
+        "placeholder": "Nunito, sans-serif"
+      },
+      "line-height": {
+        "placeholder": "150%"
+      },
+      "font-weight": {
+        "placeholder": 400
+      },
+      "text-case": {
+        "placeholder": "none"
+      },
+      "letter-spacing": {
+        "placeholder": "0%"
+      },
+      "typography": {
         "placeholder": {
           "fontFamily": "Nunito, sans-serif",
           "fontWeight": 400,
@@ -1332,35 +1386,21 @@
         }
       },
       "text-decoration": {
-        "label": "none",
-        "help": "none",
         "placeholder": "none"
       },
       "sizing": {
-        "input-min-width": "96px"
-      },
-      "spacing": {
-        "label": {
-          "padding-bottom": "5px",
-          "padding-right": "20px"
-        },
-        "help": {
-          "padding-top": "8px"
-        },
-        "group": {
-          "margin-bottom": "16px"
-        }
+        "input-min-width": "112px"
       },
       "color": {
         "foreground": {
+          "text": {
+            "default": "#ebebeb"
+          },
           "label": {
             "default": "#ebebeb"
           },
-          "help": {
-            "default": "#ebebeb"
-          },
-          "input": {
-            "default": "#ebebeb"
+          "placeholder": {
+            "default": "#909090"
           }
         },
         "background": {
