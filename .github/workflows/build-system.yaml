@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '18'
     - run: npm install
-    - run: node transform.mjs
+    - run: npm run bin/transform.mjs
     - run: npm run postcss:build
       env:
         CI: true

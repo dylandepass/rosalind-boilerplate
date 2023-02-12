@@ -8,7 +8,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -22,7 +22,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -36,7 +36,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -50,7 +50,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -64,7 +64,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -87,7 +87,7 @@
           }
         },
         "placeholder": {
-          "value": "{semantic.color.foreground.on-layer-1.muted}",
+          "value": "{component.form.color.foreground.placeholder.default}",
           "type": "color"
         },
         "icon": {
@@ -135,11 +135,19 @@
         "text": {
           "value": "{global.font-size.md}",
           "type": "fontSizes"
+        },
+        "placeholder": {
+          "value": "{component.form.font-size.placeholder}",
+          "type": "fontSizes"
         }
       },
       "font-family": {
         "text": {
-          "value": "Nunito, sans-serif",
+          "value": "{semantic.font-family.body}",
+          "type": "fontFamilies"
+        },
+        "placeholder": {
+          "value": "{component.form.font-family.placeholder}",
           "type": "fontFamilies"
         }
       },
@@ -147,17 +155,29 @@
         "text": {
           "value": "{semantic.line-height.body}",
           "type": "lineHeights"
+        },
+        "placeholder": {
+          "value": "{component.form.line-height.placeholder}",
+          "type": "lineHeights"
         }
       },
       "font-weight": {
         "text": {
           "value": "{semantic.font-weight.normal}",
           "type": "fontWeights"
+        },
+        "placeholder": {
+          "value": "{component.form.font-weight.placeholder}",
+          "type": "fontWeights"
         }
       },
       "letter-spacing": {
         "text": {
           "value": "{semantic.letter-spacing.default}",
+          "type": "letterSpacing"
+        },
+        "placeholder": {
+          "value": "{component.form.letter-spacing.placeholder}",
           "type": "letterSpacing"
         }
       },
@@ -169,20 +189,37 @@
             "lineHeight": "{component.text-field.line-height.text}",
             "fontSize": "{component.text-field.font-size.text}",
             "letterSpacing": "{component.text-field.letter-spacing.text}",
-            "paragraphSpacing": "{component.text-field.paragraph-spacing.text}",
+            "paragraphSpacing": "",
             "textDecoration": "{component.text-field.text-decoration.text}",
             "textCase": "{component.text-field.text-case.text}"
+          },
+          "type": "typography"
+        },
+        "placeholder": {
+          "value": {
+            "fontFamily": "{component.text-field.font-family.placeholder}",
+            "fontWeight": "{component.text-field.font-weight.placeholder}",
+            "lineHeight": "{component.text-field.line-height.placeholder}",
+            "fontSize": "{component.text-field.font-size.placeholder}",
+            "letterSpacing": "{component.text-field.letter-spacing.placeholder}",
+            "paragraphSpacing": "",
+            "textDecoration": "{component.text-field.text-decoration.placeholder}",
+            "textCase": "{component.text-field.text-case.placeholder}"
           },
           "type": "typography"
         }
       },
       "min-width": {
-        "value": "{global.size.2400}",
+        "value": "{component.form.sizing.input-min-width}",
         "type": "sizing"
       },
       "text-decoration": {
         "text": {
           "value": "none",
+          "type": "textDecoration"
+        },
+        "placeholder": {
+          "value": "{component.form.text-decoration.placeholder}",
           "type": "textDecoration"
         }
       },
@@ -190,12 +227,10 @@
         "text": {
           "value": "none",
           "type": "textCase"
-        }
-      },
-      "paragraph-spacing": {
-        "text": {
-          "value": "0",
-          "type": "paragraphSpacing"
+        },
+        "placeholder": {
+          "value": "{component.form.text-case.placeholder}",
+          "type": "textCase"
         }
       }
     }

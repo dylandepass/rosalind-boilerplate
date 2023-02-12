@@ -8,7 +8,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -22,7 +22,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -36,7 +36,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -50,7 +50,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -64,7 +64,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -87,7 +87,7 @@
           }
         },
         "placeholder": {
-          "value": "{semantic.color.foreground.on-layer-1.muted}",
+          "value": "{component.form.color.foreground.placeholder.default}",
           "type": "color"
         },
         "icon": {
@@ -139,7 +139,7 @@
       },
       "font-family": {
         "text": {
-          "value": "Nunito, sans-serif",
+          "value": "{semantic.font-family.body}",
           "type": "fontFamilies"
         }
       },
@@ -177,7 +177,7 @@
         }
       },
       "min-width": {
-        "value": "{global.size.2400}",
+        "value": "{component.form.sizing.input-min-width}",
         "type": "sizing"
       },
       "text-decoration": {

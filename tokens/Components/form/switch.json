@@ -36,7 +36,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -50,7 +50,7 @@
             "type": "color"
           },
           "foreground-color": {
-            "value": "{component.form.color.foreground.input.default}",
+            "value": "{component.form.color.foreground.text.default}",
             "type": "color"
           },
           "border-color": {
@@ -113,7 +113,7 @@
       },
       "font-family": {
         "label": {
-          "value": "Nunito, sans-serif",
+          "value": "{semantic.font-family.body}",
           "type": "fontFamilies"
         }
       },
