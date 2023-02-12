@@ -133,31 +133,31 @@
       },
       "font-size": {
         "text": {
-          "value": "{global.font-size.md}",
+          "value": "{component.form.font-size.text}",
           "type": "fontSizes"
         }
       },
       "font-family": {
         "text": {
-          "value": "{semantic.font-family.body}",
+          "value": "{component.form.font-family.text}",
           "type": "fontFamilies"
         }
       },
       "line-height": {
         "text": {
-          "value": "{semantic.line-height.body}",
+          "value": "{component.form.line-height.text}",
           "type": "lineHeights"
         }
       },
       "font-weight": {
         "text": {
-          "value": "{semantic.font-weight.normal}",
+          "value": "{component.form.font-weight.text}",
           "type": "fontWeights"
         }
       },
       "letter-spacing": {
         "text": {
-          "value": "{semantic.letter-spacing.default}",
+          "value": "{component.form.letter-spacing.text}",
           "type": "letterSpacing"
         }
       },
@@ -169,7 +169,7 @@
             "lineHeight": "{component.select.line-height.text}",
             "fontSize": "{component.select.font-size.text}",
             "letterSpacing": "{component.select.letter-spacing.text}",
-            "paragraphSpacing": "{component.select.paragraph-spacing.text}",
+            "paragraphSpacing": "",
             "textDecoration": "{component.select.text-decoration.text}",
             "textCase": "{component.select.text-case.text}"
           },
@@ -182,20 +182,14 @@
       },
       "text-decoration": {
         "text": {
-          "value": "none",
+          "value": "{component.form.text-decoration.text}",
           "type": "textDecoration"
         }
       },
       "text-case": {
         "text": {
-          "value": "none",
+          "value": "{component.form.text-case.text}",
           "type": "textCase"
-        }
-      },
-      "paragraph-spacing": {
-        "text": {
-          "value": "0",
-          "type": "paragraphSpacing"
         }
       }
     }
