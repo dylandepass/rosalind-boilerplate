@@ -18,8 +18,9 @@ jobs:
       with:
         node-version: '18'
     - run: npm install
-    - run: npm run bin/transform.mjs
-    - run: npm run postcss:build
+    - run: npm run design-system:transform
+    - run: npm run design-system:build
+    - run: npm run design-system:validate
       env:
         CI: true
     - uses: stefanzweifel/git-auto-commit-action@v4

@@ -13,11 +13,12 @@
     "test-storybook": "test-storybook",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook --quiet && npx http-server storybook --port 6006 --silent\" \"wait-on tcp:6006 && npm run test-storybook\"",
     "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
-    "dev": "concurrently \"npm run franklin:up\" \"npm run postcss:dev\"",
+    "dev": "concurrently \"npm run franklin:up\" \"npm run design-system:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
-    "build-tokens": "node ./bin/transform.mjs",
-    "postcss:dev": "gulp dev",
-    "postcss:build": "gulp build"
+    "design-system:transform": "node ./bin/transform.mjs",
+    "design-system:validate": "node ./bin/validate-system.mjs",
+    "design-system:build": "gulp build",
+    "design-system:dev": "gulp dev"
   },
   "repository": {
     "type": "git",
