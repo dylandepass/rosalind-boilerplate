@@ -318,6 +318,10 @@
           "muted": {
             "value": "{theme.color.gray.500}",
             "type": "color"
+          },
+          "highlighted": {
+            "value": "{global.color.gradient.indigo.225-deg}",
+            "type": "color"
           }
         },
         "on-layer-1": {
