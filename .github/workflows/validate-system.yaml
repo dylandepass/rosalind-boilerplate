@@ -1,15 +1,14 @@
 name: Build Design System
 
 on:
-  push:
-    branches:
-      - 'main'
+  pull_request:
     paths:
+      - 'styles/system.css'
       - 'styles/system/**'
       - 'tokens/**'
 
 jobs:
-  build-system:
+  validate-system:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -23,8 +22,3 @@ jobs:
     - run: npm run design-system:validate
       env:
         CI: true
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        # Optional. Commit message for the created commit.
-        # Defaults to "Apply automatic changes"
-        commit_message: Design System Build

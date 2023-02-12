@@ -15,7 +15,7 @@
 
 	/* TODO: Finish Fluid */
 	&.fluid {
-		max-width: var(--hlx-max-width-limit);
+		max-width: var(--ros-semantic-size-section-max-width);
 	}
 
 	&.full-width {

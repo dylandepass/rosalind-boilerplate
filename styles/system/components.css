@@ -57,7 +57,6 @@
 	justify-content: center;
 	font-family: var(--ros-component-button-font-family-label);
 	font-size: var(--ros-component-button-font-size-label);
-	height: var(--ros-component-button-sizing-height);
 	gap: var(--ros-component-button-spacing-gap);
 	line-height: 100%;
 	font-weight: 700;
@@ -73,7 +72,7 @@
 .button em {
 	display: flex;
 	gap: var(--ros-component-button-spacing-gap);
-	padding: var(--ros-component-button-spacing-default-padding-y) var(--ros-component-button-spacing-default-padding-x);
+	padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
 	align-items: center;
 	font-style: normal;
 }
