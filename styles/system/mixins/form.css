@@ -37,7 +37,7 @@
     @mixin form-element $type, disabled;
 
     &::placeholder {
-      color: var(--ros-component-form-color-foreground-color-placeholder-disable);
+      color: var(--ros-component-text-field-color-disabled-foreground-color);
     }
   }
 
