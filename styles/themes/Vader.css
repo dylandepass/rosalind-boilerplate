@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 12 Feb 2023 04:28:56 GMT
+ * Generated on Sun, 12 Feb 2023 04:48:56 GMT
  */
 
 :root {
@@ -492,14 +492,20 @@
   --ros-component-form-group-font-family-label: Inter;
   --ros-component-form-group-font-size-help: 0.75rem;
   --ros-component-form-group-font-size-label: 0.75rem;
-  --ros-component-text-field-paragraph-spacing-text: 0;
+  --ros-component-text-field-text-case-placeholder: none;
   --ros-component-text-field-text-case-text: none;
+  --ros-component-text-field-text-decoration-placeholder: none;
   --ros-component-text-field-text-decoration-text: none;
   --ros-component-text-field-min-width: 112px;
+  --ros-component-text-field-letter-spacing-placeholder: 0%;
   --ros-component-text-field-letter-spacing-text: 0%;
+  --ros-component-text-field-font-weight-placeholder: 400;
   --ros-component-text-field-font-weight-text: 400;
+  --ros-component-text-field-line-height-placeholder: 150%;
   --ros-component-text-field-line-height-text: 150%;
+  --ros-component-text-field-font-family-placeholder: Inter;
   --ros-component-text-field-font-family-text: Inter;
+  --ros-component-text-field-font-size-placeholder: 1rem;
   --ros-component-text-field-font-size-text: 1rem;
   --ros-component-text-field-spacing-space-between: 8px;
   --ros-component-text-field-spacing-padding-y: 6px;

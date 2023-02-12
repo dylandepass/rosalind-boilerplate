@@ -695,19 +695,24 @@
         "space-between": "8px"
       },
       "font-size": {
-        "text": "1rem"
+        "text": "1rem",
+        "placeholder": "1rem"
       },
       "font-family": {
-        "text": "Roboto"
+        "text": "Roboto",
+        "placeholder": "Roboto"
       },
       "line-height": {
-        "text": "150%"
+        "text": "150%",
+        "placeholder": "150%"
       },
       "font-weight": {
-        "text": 400
+        "text": 400,
+        "placeholder": 400
       },
       "letter-spacing": {
-        "text": "0%"
+        "text": "0%",
+        "placeholder": "0%"
       },
       "typography": {
         "text": {
@@ -716,20 +721,29 @@
           "lineHeight": "150%",
           "fontSize": 16,
           "letterSpacing": "0%",
-          "paragraphSpacing": 0,
+          "paragraphSpacing": "",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "placeholder": {
+          "fontFamily": "Roboto",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "paragraphSpacing": "",
           "textDecoration": "none",
           "textCase": "none"
         }
       },
       "min-width": "112px",
       "text-decoration": {
-        "text": "none"
+        "text": "none",
+        "placeholder": "none"
       },
       "text-case": {
-        "text": "none"
-      },
-      "paragraph-spacing": {
-        "text": 0
+        "text": "none",
+        "placeholder": "none"
       }
     },
     "form-group": {
