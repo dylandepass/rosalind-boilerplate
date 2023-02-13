@@ -114,6 +114,7 @@ input[type="radio"] {
 
 		& + label {
 			padding-left: 47px;
+			text-transform: var(--ros-component-switch-text-case-label);
 		}
 
 		/* Default switch state */
