@@ -13,7 +13,6 @@ on:
 
 jobs:
   deploy-storybook:
-    needs: validate-system
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
