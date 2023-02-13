@@ -1,9 +1,7 @@
 name: Build Design System
 
 on:
-  push:
-    branches:
-      - 'main'
+  pull_request:
     paths:
       - 'styles/system/**'
       - 'tokens/**'
@@ -28,4 +26,3 @@ jobs:
         # Optional. Commit message for the created commit.
         # Defaults to "Apply automatic changes"
         commit_message: Design System Build
-        push_options: '--force'
