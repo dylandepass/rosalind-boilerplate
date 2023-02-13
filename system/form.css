@@ -52,61 +52,12 @@ select {
 }
 
 /* Checkbox */
-input[type="checkbox"],
+input[type="checkbox"] {
+	@mixin base-checked-element checkbox;
+}
+
 input[type="radio"] {
-	opacity: 0;
-	appearance: none;
-	outline: none;
-	display: inline-block;
-	position: relative;
-	cursor: pointer;
-
-	/* Default */
-	& + label::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		background-color: var(--ros-component-checkbox-color-default-background-color);
-		border-width: var(--ros-component-checkbox-border-width-default);
-		border-color: var(--ros-component-checkbox-color-default-border-color);
-		border-radius: var(--ros-component-checkbox-border-radius);
-		border-style: solid;
-	}
-
-	/* Label */
-	& + label {
-		position: relative;
-		padding-left: 30px;
-		cursor: pointer;
-		display: inline-block;
-		user-select: none;
-		font-family: var(--ros-component-checkbox-font-family-label);
-		font-weight: var(--ros-component-checkbox-font-weight-label);
-		letter-spacing: var(--ros-component-checkbox-letter-spacing-label);
-		text-decoration: var(--ros-component-checkbox-text-decoration-label);
-		text-transform: var(--ros-component-checkbox-text-case-label);
-		color: var(--ros-component-checkbox-color-label);
-		line-height: var(--ros-component-checkbox-line-height-label);
-	}
-
-	/* Background hover */
-	&:hover + label::before {
-		border-style: solid;
-		border-width: var(--ros-component-checkbox-border-width-hover);
-		border-color: var(--ros-component-checkbox-color-hover-border-color);
-		background-color: var(--ros-component-checkbox-color-hover-background-color);
-	}
-
-	/* Background focus-visible */
-	&:focus-visible + label::before {
-		outline:
-			var(--ros-component-checkbox-border-width-key-focus)
-			solid
-			var(--ros-component-checkbox-color-key-focus-border-color);
-		border-color: rgb(0 0 0 / 0%);
-		background-color: var(--ros-component-checkbox-color-key-focus-background-color);
-	}
+	@mixin base-checked-element radio;
 }
 
 [type="checkbox"] {
@@ -163,6 +114,7 @@ input[type="radio"] {
 
 		& + label {
 			padding-left: 47px;
+			text-transform: var(--ros-component-switch-text-case-label);
 		}
 
 		/* Default switch state */

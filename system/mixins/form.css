@@ -76,3 +76,87 @@
     box-shadow: 0 0 0 var(--ros-component-$(type)-border-width-key-focus) var(--ros-component-$(type)-color-error-border-color);
   }
 }
+
+@custom-selector :--check-element-background + label::before;
+@custom-selector :--check-element-label + label;
+
+@define-mixin base-checked-element $type {
+  opacity: 0;
+	appearance: none;
+	outline: none;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+
+	& :--check-element-background {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: var(--ros-component-$(type)-color-default-background-color);
+		border-width: var(--ros-component-$(type)-border-width-default);
+		border-color: var(--ros-component-$(type)-color-default-border-color);
+		border-radius: var(--ros-component-$(type)-border-radius);
+		border-style: solid;
+	}
+
+	& :--check-element-label {
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		user-select: none;
+		font-family: var(--ros-component-$(type)-font-family-label);
+		font-size: var(--ros-component-$(type)-font-size-label);
+		font-weight: var(--ros-component-$(type)-font-weight-label);
+		letter-spacing: var(--ros-component-$(type)-letter-spacing-label);
+		text-decoration: var(--ros-component-$(type)-text-decoration-label);
+		text-transform: var(--ros-component-$(type)-text-case-label);
+		color: var(--ros-component-$(type)-color-default-foreground-color);
+		line-height: var(--ros-component-$(type)-line-height-label);
+		padding-left: var(--ros-component-$(type)-spacing-space-between);
+	}
+
+	&:hover {
+    & :--check-element-background {
+      border-style: solid;
+      border-width: var(--ros-component-$(type)-border-width-hover);
+      border-color: var(--ros-component-$(type)-color-hover-border-color);
+      background-color: var(--ros-component-$(type)-color-hover-background-color);
+    }
+    
+    & :--check-element-label {
+      color: var(--ros-component-$(type)-color-hover-foreground-color);
+	  }
+  }
+
+	/* Background focus-visible */
+	&:focus-visible {
+    & :--check-element-background {
+      outline:
+        var(--ros-component-$(type)-border-width-key-focus)
+        solid
+        var(--ros-component-$(type)-color-key-focus-border-color);
+      border-color: rgb(0 0 0 / 0%);
+      background-color: var(--ros-component-$(type)-color-key-focus-background-color);
+    }
+
+    & :--check-element-label {
+      color: var(--ros-component-$(type)-color-key-focus-foreground-color);
+    }
+  }
+
+  &:disabled {
+      & :--check-element-background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--ros-component-$(type)-color-disabled-background-color);
+        border-width: var(--ros-component-$(type)-border-width-disabled);
+        border-color: var(--ros-component-$(type)-color-disabled-border-color);
+      }
+
+      & :--check-element-label {
+        color: var(--ros-component-$(type)-color-disabled-foreground-color);
+      }
+  }
+}
