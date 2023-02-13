@@ -435,7 +435,7 @@
         "disabled": "1px"
       },
       "spacing": {
-        "space-between": "8px"
+        "space-between": "32px"
       },
       "font-size": {
         "label": "0.875rem"
