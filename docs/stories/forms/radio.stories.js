@@ -56,6 +56,19 @@ export const Selected = {
   },
 };
 
+export const Required = {
+  args: {
+    label: 'Agree to Terms',
+    values: ['Beef', 'Chicken', 'Fish'],
+    help: 'A clever desciption of this field',
+    required: true,
+    disabled: false,
+  },
+  render: (args) => RadioExample(args),
+  play: async ({ canvasElement }) => {
+  },
+};
+
 export const Disabled = {
   args: {
     label: 'Agree to Terms',
