@@ -71,10 +71,6 @@
             "value": "{semantic.color.border.disabled}",
             "type": "color"
           }
-        },
-        "label": {
-          "value": "{component.form-group.color.foreground.label.default}",
-          "type": "color"
         }
       },
       "border-radius": {
@@ -101,7 +97,7 @@
       },
       "spacing": {
         "space-between": {
-          "value": "{semantic.spacing.gap.component.xs}",
+          "value": "{semantic.spacing.around.component.3xl}",
           "type": "spacing"
         }
       },
