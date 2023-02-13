@@ -71,10 +71,6 @@
             "value": "{semantic.color.border.disabled}",
             "type": "color"
           }
-        },
-        "label": {
-          "value": "{component.form.color.foreground.label.default}",
-          "type": "color"
         }
       },
       "border-radius": {
