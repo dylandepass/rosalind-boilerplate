@@ -133,6 +133,14 @@ export function decorateButtons(element) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
         }
+        if ((up.childNodes.length === 1 && up.tagName === 'EM'
+          && twoup.childNodes.length === 1 && twoup.tagName === 'STRONG')
+          || (up.childNodes.length === 1 && up.tagName === 'STRONG'
+          && twoup.childNodes.length === 1 && twoup.tagName === 'EM')) {
+          const threeup = twoup?.parentElement;
+          a.className = 'button quiet';
+          threeup.classList.add('button-container');
+        }
 
         if (a.textContent === '') {
           a.classList.add('icon-only');

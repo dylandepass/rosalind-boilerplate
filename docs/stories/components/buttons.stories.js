@@ -16,12 +16,37 @@ function decorate(block) {
     if (anchor.textContent.includes('Disabled')) {
       anchor.classList.add('disabled');
     }
-
-    if (anchor.textContent.includes('Quiet')) {
-      anchor.classList.add('quiet');
-      anchor.classList.remove('primary');
-    }
   });
+
+  block.parentElement.classList.remove('section');
+  block.parentElement.classList.add('story');
+}
+
+function createButton(type, icon) {
+  const container = document.createElement('p');
+  container.classList.add('button-container');
+
+  let iconSpan;
+  if (icon) {
+    iconSpan = `<span class='icon ${icon}'></span>`;
+  }
+  container.innerHTML = /* html */`<a href="javascript:void(0)" title=${type} class="button ${type}">${iconSpan || ''}Primary</a>`;
+  return container;
+}
+
+function testButton(canvasElement, type) {
+  const canvas = within(canvasElement);
+  let test = 0;
+
+  const primary = canvas.getByTitle(type);
+  primary.addEventListener('click', () => {
+    test = 1;
+  });
+
+  expect(primary).toBeInTheDocument();
+  userEvent.click(primary);
+  expect(test).toEqual(1);
+  primary.blur();
 }
 
 /**
@@ -38,7 +63,7 @@ export default {
   },
 };
 
-export const Buttons = {
+export const AuthoredButtons = {
   parameters: {
     path: '/storybook/buttons.plain.html',
     selector: 'div',
@@ -48,7 +73,7 @@ export const Buttons = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     await waitFor(() => {
-      expect(canvas.getByText('Buttons')).toBeInTheDocument();
+      expect(canvas.getByText('Authored Buttons')).toBeInTheDocument();
     });
 
     const primary = canvas.getByTitle('Primary');
@@ -76,5 +101,77 @@ export const Buttons = {
     testButtonByTitle('Quiet');
     testButtonByTitle('Quiet Icon Left');
     testButtonByTitle('Quiet Icon Right');
+  },
+};
+
+export const Primary = {
+  render: (args, context) => {
+    const button = createButton('primary');
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const primary = canvas.getByTitle('primary');
+    expect(primary).toBeInTheDocument();
+    testButton(canvasElement, 'primary');
+  },
+};
+
+export const PrimaryIcon = {
+  render: (args, context) => {
+    const button = createButton('primary', 'icon-plus');
+    decorateIcons(button);
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    testButton(canvasElement, 'primary');
+  },
+};
+
+export const Secondary = {
+  render: (args, context) => {
+    const button = createButton('secondary');
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const primary = canvas.getByTitle('secondary');
+    expect(primary).toBeInTheDocument();
+    testButton(canvasElement, 'secondary');
+  },
+};
+
+export const SecondaryIcon = {
+  render: (args, context) => {
+    const button = createButton('secondary', 'icon-plus');
+    decorateIcons(button);
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    testButton(canvasElement, 'secondary');
+  },
+};
+
+export const Quiet = {
+  render: (args, context) => {
+    const button = createButton('quiet');
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const primary = canvas.getByTitle('quiet');
+    expect(primary).toBeInTheDocument();
+    testButton(canvasElement, 'quiet');
+  },
+};
+
+export const QuietIcon = {
+  render: (args, context) => {
+    const button = createButton('quiet', 'icon-plus');
+    decorateIcons(button);
+    return button;
+  },
+  play: async ({ canvasElement }) => {
+    testButton(canvasElement, 'quiet');
   },
 };

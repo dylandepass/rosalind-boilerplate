@@ -92,7 +92,7 @@
 
 .button .icon,
 .button .icon svg {
-	@mixin icon md;
+	@mixin icon sm;
 }
 
 .button.primary {
