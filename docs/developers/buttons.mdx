@@ -1,0 +1,78 @@
+import { Meta, Story } from '@storybook/blocks';
+import * as ButtonStories from '../stories/components/buttons.stories.js';
+
+<Meta title="Docs/Developers/Buttons"/>
+
+# Buttons
+
+Buttons can be created one of two ways. By an author in a document or programatically in javascript by a developer.
+
+## Authored Button
+
+Buttons can be created in authored documents (word doc) and have the ability to be styled as a primary, secondary or quiet button. To do this simply create a link in the document that is on its own line. Any links that are created inline with a paragraph of text will be rendered as hyperlinks and not as a button.
+
+### Demo
+<Story of={ButtonStories.AuthoredButtons}/>
+
+The source document for this demo can be seen [here](https://docs.google.com/document/d/10BJaKMVvzCg5EgG_09WrrssIAYlL46VB9zZpk_BF_bY/edit#heading=h.pfvofwquxuwe).
+
+## Buttons created in javascript
+
+Buttons can be constructed in javascript using the two classes `button` and one of `primary`, `secondary` or `quiet`. These classes can be used on an `a` or a `button` tag. The `button-container` wrapper around the button adds margins around the button, it is added as part of the franklin decoration process so it is best to include it when buttons are created programatically.
+
+### Primary Buttons
+
+<Story of={ButtonStories.Primary}/>
+
+#### Code Example
+```html
+<p class="button-container">
+    <a title="primary" class="button primary">Primary</a>
+</p>
+```
+
+### Secondary Buttons
+
+<Story of={ButtonStories.Secondary}/>
+
+#### Code Example
+```html
+<p class="button-container">
+    <a title="secondary" class="button secondary">Secondary</a>
+</p>
+```
+
+### Quiet Buttons
+
+<Story of={ButtonStories.Quiet}/>
+
+#### Code Example
+```html
+<p class="button-container">
+    <a title="quiet" class="button quiet">Quiet</a>
+</p>
+```
+
+## Icon Buttons created in javascript
+
+To include an icon in a button you can use the `decorateIcons` function to decorate a `span` element as an icon. The `decorateIcons` function will load the icon form the `icons` folder. In the example below the `icon-plus` class tells `decorateIcons` to look for `plus.svg` in the `/icons` directory and load it into the span.
+
+<Story of={ButtonStories.PrimaryIcon}/>
+
+#### Code Example
+```html
+<p class="button-container">
+    <a title="primary" class="button primary"><span class="icon icon-plus"></span>Primary</a>
+</p>
+```
+
+The HTMLElement above should then be passed into the `decorateIcons` function to load the icon inside the span. Below is a full example.
+
+```javascript
+import { decorateIcons } from 'lib-franklin.js';
+
+const container = document.createElement('p');
+container.classList.add('button-container');
+container.innerHTML = `<a title="primary" class="button primary"><span class='icon icon-plus'></span>Primary</a>`;
+decorateIcons(container);
+```

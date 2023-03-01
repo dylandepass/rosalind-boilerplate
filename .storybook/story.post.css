@@ -1,4 +1,4 @@
-@import url("../styles/system/mixins");
+@import url('../styles/system/mixins');
 
 @define-mixin border {
 	border: 1px solid hsl(203deg 50% 30% / 20%);
@@ -8,11 +8,15 @@
 
 body {
 	overflow-y: auto;
+
+	& main {
+		padding-top: 0;
+	}
 }
 
 code {
 	width: auto;
-	font-family: ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace;
+	font-family: ui-monospace, Menlo, Monaco, 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Droid Sans Mono', 'Courier New', monospace;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	display: inline-block;
