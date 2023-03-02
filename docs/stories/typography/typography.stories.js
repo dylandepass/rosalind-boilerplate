@@ -25,10 +25,10 @@ export const Demo = {
 export const Display = {
   title: 'Display',
   render: () => dedent/* html */`
-    <div>
-      <h1 class="display1">Display 1</h1>
-      <h1 class="display2">Display 2</h1>
-      <h1 class="display3">Display 3</h1>
+    <div class="story">
+      <h1 class="display1">This is a <b>Display</b></h1>
+      <h1 class="display2">This is a <b>Display 2</b></h1>
+      <h1 class="display3">This is a <b>Display 3</b></h1>
     </div>`,
 };
 
@@ -36,11 +36,11 @@ export const Headings = {
   title: 'Headings',
   render: () => dedent/* html */`
     <div class="story">
-      <h1>h1. This is a very large header.</h1>
-      <h2>h2. This is a large header</h2>
-      <h3>h3. This is a medium header</h3>
-      <h4>h4. This is a moderate header</h4>
-      <h5>h5. This is a small header</h5>
+      <h1>h1. This is a <b>very</b> large header.</h1>
+      <h2>h2. This is a <b>large</b> header</h2>
+      <h3>h3. This is a <b>medium</b> header</h3>
+      <h4>h4. This is a <b>moderate</b> header</h4>
+      <h5>h5. This is a <b>small</b> header</h5>
     </div>`,
 };
 
@@ -48,7 +48,7 @@ export const Subtitle = {
   title: 'Subtitle',
   render: () => dedent/* html */`
     <div class="story">
-      <p class='subtitle'>Create videos with a single click. Add subtitles, transcript audio and more.</p>
+      <p class='subtitle'>Create videos with a <b>single click</b>. Add subtitles, transcript audio and more.</p>
     </div>`,
 };
 
@@ -65,7 +65,7 @@ export const Body = {
   render: () => dedent/* html */`
     <div class="story">
       <div class="block-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <b>sed do eiusmod</b> tempor incididunt ut <span class='semi-bold'>labore et dolore</span> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>`,
 };

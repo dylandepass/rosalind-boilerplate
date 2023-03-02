@@ -20,7 +20,37 @@ const themesJson = JSON.parse(tokenThemesBuffer.toString());
 
 const systemCSS = await fs.readFile('./styles/system.css');
 
-const excludes = ['--ros-theme', '--ros-semantic-drop-shadow', '--ros-semantic-spacing-gap-component', '--ros-semantic-spacing-around-component', '--ros-semantic-border-width', '--ros-semantic-size-icon', '--ros-semantic-size-breakpoints-screen', '--ros-pattern', '--ros-semantic-inner-shadow'];
+const excludes = [
+  '--ros-theme',
+  '--ros-semantic-drop-shadow',
+  '--ros-semantic-spacing-gap-component',
+  '--ros-semantic-spacing-around-component',
+  '--ros-semantic-border-width',
+  '--ros-semantic-size-icon',
+  '--ros-semantic-size-breakpoints-screen',
+  '--ros-pattern',
+  '--ros-semantic-inner-shadow',
+  '--ros-semantic-text-decoration-line-through',
+  '--ros-semantic-text-decoration-underline',
+  '--ros-semantic-text-decoration-none',
+  '--ros-semantic-text-case-display',
+  '--ros-semantic-text-case-none',
+  '--ros-semantic-font-weight-black',
+  '--ros-semantic-font-weight-extra-bold',
+  '--ros-semantic-font-weight-bold',
+  '--ros-semantic-font-weight-semi-bold',
+  '--ros-semantic-font-weight-medium',
+  '--ros-semantic-font-weight-normal',
+  '--ros-semantic-font-weight-light',
+  '--ros-semantic-font-weight-extra-light',
+  '--ros-semantic-font-weight-thin',
+  '--ros-semantic-border-radius-none',
+  '--ros-semantic-border-radius-round',
+  '--ros-semantic-assets-logo',
+  '--ros-semantic-font-size-body-lg',
+  '--ros-semantic-font-size-body-sm',
+  '--ros-semantic-font-size-body-xs',
+];
 
 for (const theme of themesJson) {
   const themeVariableFile = await fs.readFile(`./styles/themes/${theme.name}.css`);
