@@ -78,3 +78,15 @@ img {
 	width: auto;
 	height: auto;
 }
+
+.base {
+	@mixin layer-base;
+}
+
+.layer-1 {
+	@mixin layer-1;
+}
+
+.layer-2 {
+	@mixin layer-2;
+}
