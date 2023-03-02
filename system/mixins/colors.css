@@ -26,6 +26,13 @@
 
 @define-mixin layer-base {
   @mixin color-combination base;
+
+  & .highlighted {
+    background: var(--ros-semantic-color-foreground-on-base-highlighted);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-decoration: none;
+  }
 }
 
 @define-mixin layer-1 {
