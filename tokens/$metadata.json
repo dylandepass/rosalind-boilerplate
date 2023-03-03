@@ -5,6 +5,7 @@
     "dark-theme",
     "semantic",
     "Components/buttons",
+    "Components/tag",
     "Components/form/form",
     "Components/form/form-group",
     "Components/form/text-field",

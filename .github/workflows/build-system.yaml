@@ -1,7 +1,6 @@
 name: Build Design System
 
 on:
-  workflow_dispatch:
   pull_request:
     paths:
       - 'styles/system/**'

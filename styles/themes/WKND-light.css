@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 02 Mar 2023 17:21:57 GMT
+ * Generated on Fri, 03 Mar 2023 20:52:00 GMT
  */
 
 :root {
@@ -432,6 +432,10 @@
   --ros-semantic-color-secondary-darker: #000000;
   --ros-semantic-color-secondary-dark: #000000;
   --ros-semantic-color-secondary-base: #000000;
+  --ros-semantic-color-foreground-on-informative-default: #ffffff;
+  --ros-semantic-color-foreground-on-notice-default: #ffffff;
+  --ros-semantic-color-foreground-on-negative-default: #ffffff;
+  --ros-semantic-color-foreground-on-positive-default: #ffffff;
   --ros-semantic-color-foreground-on-disabled-subtle: #505050;
   --ros-semantic-color-foreground-on-disabled-default: #b1b1b1;
   --ros-semantic-color-foreground-on-layer-2-muted: #909090;
@@ -457,6 +461,36 @@
   --ros-semantic-color-primary-dark: #d2b200;
   --ros-semantic-color-primary-base: #dfbf00;
   --ros-semantic-assets-logo: "https://i.imgur.com/LcSyqJN.png";
+  --ros-component-tag-text-decoration-label: none;
+  --ros-component-tag-border-width-disabled: 0px;
+  --ros-component-tag-border-width-key-focus: 3px;
+  --ros-component-tag-border-width-down: 0px;
+  --ros-component-tag-border-width-hover: 0px;
+  --ros-component-tag-border-width-default: 0px;
+  --ros-component-tag-text-case-label: none;
+  --ros-component-tag-line-height-label: 150%;
+  --ros-component-tag-font-weight-label: 400;
+  --ros-component-tag-font-size-label: 1rem;
+  --ros-component-tag-font-family-label: Roboto;
+  --ros-component-tag-spacing-padding-y: 5px;
+  --ros-component-tag-spacing-gap: 8px;
+  --ros-component-tag-spacing-padding-x: 12px;
+  --ros-component-tag-border-radius-default: 0px;
+  --ros-component-tag-color-disabled-foreground-color: #b1b1b1;
+  --ros-component-tag-color-disabled-border-color: #00000000;
+  --ros-component-tag-color-disabled-background-color: #d5d5d5;
+  --ros-component-tag-color-key-focus-foreground-color: #222222;
+  --ros-component-tag-color-key-focus-border-color: #9d64e1;
+  --ros-component-tag-color-key-focus-background-color: #f4f4f4;
+  --ros-component-tag-color-down-foreground-color: #000000;
+  --ros-component-tag-color-down-border-color: #00000000;
+  --ros-component-tag-color-down-background-color: #c4a600;
+  --ros-component-tag-color-hover-foreground-color: #000000;
+  --ros-component-tag-color-hover-border-color: #00000000;
+  --ros-component-tag-color-hover-background-color: #dfbf00;
+  --ros-component-tag-color-default-foreground-color: #222222;
+  --ros-component-tag-color-default-border-color: #00000000;
+  --ros-component-tag-color-default-background-color: #f4f4f4;
   --ros-component-form-group-color-foreground-notice-default: #da7b11;
   --ros-component-form-group-color-foreground-info-default: #1473e6;
   --ros-component-form-group-color-foreground-positive-default: #268e6c;

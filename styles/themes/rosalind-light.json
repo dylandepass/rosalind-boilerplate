@@ -671,6 +671,78 @@
         }
       }
     },
+    "tag": {
+      "color": {
+        "default": {
+          "background-color": "#f4f4f4",
+          "border-color": "#00000000",
+          "foreground-color": "#222222"
+        },
+        "hover": {
+          "background-color": "#5c5ce0",
+          "border-color": "#00000000",
+          "foreground-color": "#ffffff"
+        },
+        "down": {
+          "background-color": "#4646c6",
+          "border-color": "#00000000",
+          "foreground-color": "#ffffff"
+        },
+        "key-focus": {
+          "background-color": "#f4f4f4",
+          "border-color": "#9d64e1",
+          "foreground-color": "#222222"
+        },
+        "disabled": {
+          "background-color": "#d5d5d5",
+          "border-color": "#00000000",
+          "foreground-color": "#b1b1b1"
+        }
+      },
+      "border-radius": {
+        "default": "4px"
+      },
+      "spacing": {
+        "padding-x": "12px",
+        "gap": "8px",
+        "padding-y": "5px"
+      },
+      "font-family": {
+        "label": "Nunito, sans-serif"
+      },
+      "font-size": {
+        "label": "1rem"
+      },
+      "font-weight": {
+        "label": 400
+      },
+      "line-height": {
+        "label": "150%"
+      },
+      "text-case": {
+        "label": "none"
+      },
+      "border-width": {
+        "default": "0px",
+        "hover": "0px",
+        "down": "0px",
+        "key-focus": "3px",
+        "disabled": "0px"
+      },
+      "typography": {
+        "label": {
+          "fontFamily": "Nunito, sans-serif",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 16,
+          "textCase": "none",
+          "textDecoration": "none"
+        }
+      },
+      "text-decoration": {
+        "label": "none"
+      }
+    },
     "button": {
       "font-size": {
         "label": "1rem"
@@ -961,6 +1033,18 @@
         "on-disabled": {
           "default": "#b1b1b1",
           "subtle": "#505050"
+        },
+        "on-positive": {
+          "default": "#ffffff"
+        },
+        "on-negative": {
+          "default": "#ffffff"
+        },
+        "on-notice": {
+          "default": "#ffffff"
+        },
+        "on-informative": {
+          "default": "#ffffff"
         }
       },
       "positive": {
