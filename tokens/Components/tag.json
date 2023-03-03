@@ -89,7 +89,7 @@
           "type": "spacing"
         },
         "padding-y": {
-          "value": "0",
+          "value": "{semantic.spacing.around.component.xs}",
           "type": "spacing"
         }
       },
