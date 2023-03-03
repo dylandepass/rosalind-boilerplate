@@ -389,6 +389,30 @@
             "value": "{global.color.static.gray.800}",
             "type": "color"
           }
+        },
+        "on-positive": {
+          "default": {
+            "value": "{global.color.static.white}",
+            "type": "color"
+          }
+        },
+        "on-negative": {
+          "default": {
+            "value": "{global.color.static.white}",
+            "type": "color"
+          }
+        },
+        "on-notice": {
+          "default": {
+            "value": "{global.color.static.white}",
+            "type": "color"
+          }
+        },
+        "on-informative": {
+          "default": {
+            "value": "{global.color.static.white}",
+            "type": "color"
+          }
         }
       },
       "positive": {
