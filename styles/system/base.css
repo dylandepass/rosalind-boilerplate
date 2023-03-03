@@ -90,3 +90,8 @@ img {
 .layer-2 {
 	@mixin layer-2;
 }
+
+/* Hide Custom Element if not defined, prevents FOUC */
+tag-element:not(:defined) {
+	display: none;
+}

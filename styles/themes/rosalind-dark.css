@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 02 Mar 2023 17:21:58 GMT
+ * Generated on Fri, 03 Mar 2023 18:15:18 GMT
  */
 
 :root {
@@ -263,6 +263,36 @@
   --ros-component-button-line-height-label: 150%;
   --ros-component-button-font-family-label: Nunito, sans-serif;
   --ros-component-button-font-size-label: 1rem;
+  --ros-component-tag-text-decoration-label: none;
+  --ros-component-tag-border-width-disabled: 0px;
+  --ros-component-tag-border-width-key-focus: 3px;
+  --ros-component-tag-border-width-down: 0px;
+  --ros-component-tag-border-width-hover: 0px;
+  --ros-component-tag-border-width-default: 0px;
+  --ros-component-tag-text-case-label: none;
+  --ros-component-tag-line-height-label: 150%;
+  --ros-component-tag-font-weight-label: 400;
+  --ros-component-tag-font-size-label: 1rem;
+  --ros-component-tag-font-family-label: Nunito, sans-serif;
+  --ros-component-tag-spacing-padding-y: 5px;
+  --ros-component-tag-spacing-gap: 8px;
+  --ros-component-tag-spacing-padding-x: 12px;
+  --ros-component-tag-border-radius-default: 4px;
+  --ros-component-tag-color-disabled-foreground-color: #707070;
+  --ros-component-tag-color-disabled-border-color: #00000000;
+  --ros-component-tag-color-disabled-background-color: #545454;
+  --ros-component-tag-color-key-focus-foreground-color: #ebebeb;
+  --ros-component-tag-color-key-focus-border-color: #9d64e1;
+  --ros-component-tag-color-key-focus-background-color: #1e293b;
+  --ros-component-tag-color-down-foreground-color: #ffffff;
+  --ros-component-tag-color-down-border-color: #00000000;
+  --ros-component-tag-color-down-background-color: #4646c6;
+  --ros-component-tag-color-hover-foreground-color: #ffffff;
+  --ros-component-tag-color-hover-border-color: #00000000;
+  --ros-component-tag-color-hover-background-color: #5c5ce0;
+  --ros-component-tag-color-default-foreground-color: #ebebeb;
+  --ros-component-tag-color-default-border-color: #00000000;
+  --ros-component-tag-color-default-background-color: #1e293b;
   --ros-component-form-group-color-foreground-notice-default: #da7b11;
   --ros-component-form-group-color-foreground-info-default: #1473e6;
   --ros-component-form-group-color-foreground-positive-default: #268e6c;
@@ -743,6 +773,10 @@
   --ros-semantic-color-positive-down: #33ab84;
   --ros-semantic-color-positive-hover: #2d9d78;
   --ros-semantic-color-positive-default: #268e6c;
+  --ros-semantic-color-foreground-on-informative-default: #ffffff;
+  --ros-semantic-color-foreground-on-notice-default: #ffffff;
+  --ros-semantic-color-foreground-on-negative-default: #ffffff;
+  --ros-semantic-color-foreground-on-positive-default: #ffffff;
   --ros-semantic-color-foreground-on-disabled-subtle: #505050;
   --ros-semantic-color-foreground-on-disabled-default: #707070;
   --ros-semantic-color-foreground-on-secondary-default: #ffffff;
