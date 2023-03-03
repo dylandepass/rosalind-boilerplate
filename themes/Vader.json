@@ -824,6 +824,78 @@
           }
         }
       }
+    },
+    "tag": {
+      "color": {
+        "default": {
+          "background-color": "#111",
+          "border-color": "#00000000",
+          "foreground-color": "#ebebeb"
+        },
+        "hover": {
+          "background-color": "#d83790",
+          "border-color": "#00000000",
+          "foreground-color": "#ffffff"
+        },
+        "down": {
+          "background-color": "#bc1c74",
+          "border-color": "#00000000",
+          "foreground-color": "#ffffff"
+        },
+        "key-focus": {
+          "background-color": "#111",
+          "border-color": "#9d64e1",
+          "foreground-color": "#ebebeb"
+        },
+        "disabled": {
+          "background-color": "#545454",
+          "border-color": "#00000000",
+          "foreground-color": "#707070"
+        }
+      },
+      "border-radius": {
+        "default": "4px"
+      },
+      "spacing": {
+        "padding-x": "12px",
+        "gap": "8px",
+        "padding-y": "5px"
+      },
+      "font-family": {
+        "label": "Inter"
+      },
+      "font-size": {
+        "label": "1rem"
+      },
+      "font-weight": {
+        "label": 400
+      },
+      "line-height": {
+        "label": "150%"
+      },
+      "text-case": {
+        "label": "none"
+      },
+      "border-width": {
+        "default": "0px",
+        "hover": "0px",
+        "down": "0px",
+        "key-focus": "3px",
+        "disabled": "0px"
+      },
+      "typography": {
+        "label": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "fontSize": 16,
+          "textCase": "none",
+          "textDecoration": "none"
+        }
+      },
+      "text-decoration": {
+        "label": "none"
+      }
     }
   },
   "semantic": {
@@ -889,6 +961,18 @@
         "on-disabled": {
           "default": "#707070",
           "subtle": "#505050"
+        },
+        "on-positive": {
+          "default": "#ffffff"
+        },
+        "on-negative": {
+          "default": "#ffffff"
+        },
+        "on-notice": {
+          "default": "#ffffff"
+        },
+        "on-informative": {
+          "default": "#ffffff"
         }
       },
       "positive": {

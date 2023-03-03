@@ -1,0 +1,9 @@
+import{j as i}from"./jsx-runtime-04624988.js";import{M as m}from"./index-788d7a01.js";import{t as p}from"./rosalind-light-61e38815.js";import{C as d}from"./index-b3d99fce.js";import{u as t}from"./index-210c8183.js";import"./index-42dd39f4.js";import"./_commonjsHelpers-042e6b4d.js";import"./preload-helper-41c905a7.js";import"./chunk-GWAJ4KRU-d69fdc61.js";import"./index-804ed8e8.js";import"./index-d475d2ea.js";import"./memoizerific-a8c4a000.js";import"./index-f7a5e4df.js";import"./chunk-RDJSMFWU-a20c41ee.js";import"./chunk-FD4M6EBV-8d27da22.js";import"./chunk-NNAAFZ4U-67fa674f.js";import"./chunk-Y5O7ZP4P-a6d59b06.js";import"./_baseToString-53b55ec4.js";import"./_getTag-7cbcf524.js";import"./isEqual-d0561132.js";import"./index-7fb38eb9.js";import"./uniq-74fc131e.js";import"./index-356e4a49.js";function E(e={}){const{wrapper:s}=Object.assign({},t(),e.components);return s?i.jsx(s,Object.assign({},e,{children:i.jsx(n,{})})):n();function n(){const o=Object.assign({h1:"h1",p:"p",pre:"pre",code:"code"},t(),e.components);return i.jsxs(i.Fragment,{children:[i.jsx(m,{title:"Docs/Developers/Mixins/Icons"}),`
+`,i.jsx(o.h1,{children:"Icon Mixins"}),`
+`,i.jsx(o.p,{children:"Rosalind provides the following mixin to work with icons."}),`
+`,i.jsx(o.pre,{children:i.jsx(o.code,{className:"language-css",children:`@mixin icon {size};
+`})}),`
+`,i.jsxs("div",{className:"table margin-top",children:[i.jsxs("div",{children:[i.jsx("div",{children:"Parameter"}),`
+`,i.jsx("div",{children:"Options"})]}),i.jsxs("div",{children:[i.jsx("div",{children:i.jsx(o.code,{children:"size"})}),`
+`,i.jsx("div",{children:Object.entries(p.semantic.size.icon).map(([r,c])=>i.jsx(d,{k:r,value:c,url:"/?path=/docs/docs-developers-tokens-icon--docs"}))})]})]})]})}}export{E as default};
+//# sourceMappingURL=icons-bf23830b.js.map
