@@ -30,15 +30,15 @@ function getTable(block, name, path) {
   const rows = [...block.children];
   const maxCols = rows.reduce((cols, row) => (
     row.children.length > cols ? row.children.length : cols), 0);
-  const table = document.createElement('table');
+  const table = createTag('table');
   table.setAttribute('border', 1);
-  const headerRow = document.createElement('tr');
+  const headerRow = createTag('tr');
   headerRow.append(createTag('th', { colspan: maxCols }, name));
   table.append(headerRow);
   rows.forEach((row) => {
-    const tr = document.createElement('tr');
+    const tr = createTag('tr');
     [...row.children].forEach((col) => {
-      const td = document.createElement('td');
+      const td = createTag('td');
       if (row.children.length < maxCols) {
         td.setAttribute('colspan', maxCols);
       }
@@ -78,10 +78,10 @@ export default async function loadBlocks(blocks, list) {
     const doc = parser.parseFromString(html, 'text/html');
     const pageBlocks = doc.body.querySelectorAll('div[class]');
     pageBlocks.forEach((pageBlock) => {
-      const item = document.createElement('li');
-      const name = document.createElement('p');
+      const item = createTag('li');
+      const name = createTag('p');
       name.textContent = getAuthorName(pageBlock) || getBlockName(pageBlock);
-      const copy = document.createElement('button');
+      const copy = createTag('button');
       copy.addEventListener('click', (e) => {
         const table = getTable(pageBlock, getBlockName(pageBlock), block.path);
         e.target.classList.add('copied');

@@ -3,7 +3,7 @@ import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
 import { decorateIcons } from '../../../scripts/lib-franklin.js';
-import { loadPage } from '../../../scripts/scripts.js';
+import { createTag, loadPage } from '../../../scripts/scripts.js';
 
 function decorate(block) {
   decorateIcons(block);
@@ -23,7 +23,7 @@ function decorate(block) {
 }
 
 function createButton(type, icon) {
-  const container = document.createElement('p');
+  const container = createTag('p');
   container.classList.add('button-container');
 
   let iconSpan;

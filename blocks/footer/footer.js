@@ -1,4 +1,5 @@
 import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import { createTag } from '../../scripts/scripts.js';
 
 /**
  * loads and decorates the footer
@@ -18,8 +19,7 @@ export default async function decorate(block) {
 
   const resp = await fetch(`${footerPath}.plain.html`);
   const html = await resp.text();
-  const footer = document.createElement('div');
-  footer.innerHTML = html;
+  const footer = createTag('div', {}, html);
   await decorateIcons(footer);
 
   const about = footer.children[0];
@@ -38,12 +38,9 @@ export default async function decorate(block) {
   block.classList.add('full-width-section');
   block.append(footer);
 
-  const copy = document.createElement('div');
-  copy.classList.add('footer-copy');
-  copy.classList.add('section');
-  copy.classList.add('full-width-section');
+  const copy = createTag('div', { class: 'section full-width-section footer-copy' });
 
-  const copyContainer = document.createElement('div');
+  const copyContainer = createTag('div');
   copy.append(copyContainer);
   copyContainer.innerText = '2022 Rosalind Theme. Built with ❤️';
 

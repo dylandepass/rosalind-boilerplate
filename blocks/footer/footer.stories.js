@@ -7,6 +7,7 @@ import {
   decorateBlock,
 } from '../../scripts/lib-franklin.js';
 import _style from './footer.css';
+import { createTag } from '../../scripts/scripts.js';
 
 export default {
   title: 'Blocks/Footer',
@@ -17,7 +18,7 @@ export default {
 
 export const Footer = {
   render: (args, context) => {
-    const footer = document.createElement('footer');
+    const footer = createTag('footer');
     const footerBlock = buildBlock('footer', '');
     footer.append(footerBlock);
     decorateBlock(footerBlock);

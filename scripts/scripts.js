@@ -16,17 +16,6 @@ import {
 const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
-function build2ColHero(main) {
-  const firstDiv = main.querySelector(':scope > div:first-of-type');
-  const picture = firstDiv.querySelector('picture');
-  const section = document.createElement('div');
-  const heroBlock = buildBlock('hero', [[{ elems: [...firstDiv.children] }, picture]]);
-  heroBlock.classList.add('hero-2-cols');
-  section.append(heroBlock);
-  firstDiv.remove();
-  main.prepend(section);
-}
-
 export function createTag(tag, attributes, html) {
   const el = document.createElement(tag);
   if (html) {
@@ -48,6 +37,16 @@ export function createTag(tag, attributes, html) {
   return el;
 }
 
+function build2ColHero(main) {
+  const firstDiv = main.querySelector(':scope > div:first-of-type');
+  const picture = firstDiv.querySelector('picture');
+  const section = createTag('div');
+  const heroBlock = buildBlock('hero', [[{ elems: [...firstDiv.children] }, picture]]);
+  heroBlock.classList.add('hero-2-cols');
+  section.append(heroBlock);
+  firstDiv.remove();
+  main.prepend(section);
+}
 /**
  * Loads JS and CSS for a template.
  */
@@ -203,7 +202,7 @@ async function loadEager(doc) {
  * @param {string} href The favicon URL
  */
 export function addFavIcon(href) {
-  const link = document.createElement('link');
+  const link = createTag('link');
   link.rel = 'icon';
   link.type = 'image/svg+xml';
   link.href = href;

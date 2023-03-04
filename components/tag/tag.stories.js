@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-import { decorateIcons } from '../../scripts/lib-franklin.js';
 import _style from './tag.css';
 
 import('./tag.js');
@@ -36,7 +35,7 @@ export default {
 };
 
 function createTag(args, context, disabled = false, icon = '', iconPosition = 'left', style = '') {
-  const tag = document.createElement('tag-element');
+  const tag = createTag('tag-element');
   tag.setAttribute('disabled', args.disabled);
 
   if (args.icon) {

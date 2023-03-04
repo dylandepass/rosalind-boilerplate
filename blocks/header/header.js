@@ -1,5 +1,5 @@
 import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
-import { isMobile } from '../../scripts/scripts.js';
+import { isMobile, createTag } from '../../scripts/scripts.js';
 
 /**
  * collapses all open nav sections
@@ -44,7 +44,7 @@ export default async function decorate(block) {
     const html = await resp.text();
 
     // decorate nav DOM
-    const nav = document.createElement('nav');
+    const nav = createTag('nav', {}, html);
     nav.innerHTML = html;
 
     const classes = ['brand', 'menu', 'tools'];
@@ -54,8 +54,7 @@ export default async function decorate(block) {
     });
 
     const brand = nav.querySelector('.nav-brand p');
-    const logo = document.createElement('span');
-    logo.classList.add('logo');
+    const logo = createTag('span', { class: 'logo' });
     brand?.prepend(logo);
     logo.style.setProperty('background-image', `url(${getComputedStyle(document.documentElement)
       .getPropertyValue('--ros-semantic-assets-logo')}`);
@@ -89,8 +88,7 @@ export default async function decorate(block) {
     }
 
     // hamburger for mobile
-    const hamburger = document.createElement('div');
-    hamburger.classList.add('nav-hamburger');
+    const hamburger = createTag('div', { class: 'nav-hamburger' });
     hamburger.innerHTML = /* html */`
           <div>
             <span class="line"></span>
@@ -111,22 +109,17 @@ export default async function decorate(block) {
     const themesBuffer = await fetch('../../themes.txt');
     const themes = await themesBuffer.json();
 
-    const toolsContainer = document.createElement('div');
-    toolsContainer.classList.add('nav-tools');
+    const toolsContainer = createTag('div', { class: 'nav-tools' });
+    const themeSelectContainer = createTag('div', { class: 'select theme-switcher' });
+    const themeSelect = createTag('select');
+    const defaultOption = createTag('option');
 
-    const themeSelectContainer = document.createElement('div');
-    themeSelectContainer.classList.add('select');
-    themeSelectContainer.classList.add('theme-switcher');
-
-    const themeSelect = document.createElement('select');
-
-    const defaultOption = document.createElement('option');
     defaultOption.value = '0';
     defaultOption.innerText = 'Select a Theme';
     themeSelect.append(defaultOption);
 
     themes.forEach((theme) => {
-      const option = document.createElement('option');
+      const option = createTag('option');
       option.value = theme.name;
       option.innerText = theme.name;
       themeSelect.append(option);

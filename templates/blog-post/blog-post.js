@@ -1,4 +1,5 @@
 import { decorateIcons } from '../../scripts/lib-franklin.js';
+import { createTag } from '../../scripts/scripts.js';
 
 function renderSidebar() {
   return /* html */`
@@ -66,14 +67,11 @@ export default function decorate(main) {
     heroImage.loading = 'eager';
   }
 
-  const container = document.createElement('article');
-  const post = document.createElement('div');
-  post.classList.add('blog-post');
-  const content = document.createElement('div');
-  content.classList.add('content');
+  const container = createTag('article');
+  const post = createTag('div', { class: 'blog-post' });
+  const content = createTag('div', { class: 'content' });
 
-  const heroImageContainer = document.createElement('div');
-  heroImageContainer.classList.add('hero');
+  const heroImageContainer = createTag('div', { class: 'hero' }, heroImage.closest('picture'));
   heroImageContainer.append(heroImage.closest('picture'));
 
   const title = section.querySelector('h1:first-of-type');
@@ -84,10 +82,7 @@ export default function decorate(main) {
 
   content.append(heroImageContainer);
 
-  const sidebar = document.createElement('aside');
-
-  sidebar.innerHTML = renderSidebar();
-
+  const sidebar = createTag('aside', {}, renderSidebar());
   post.appendChild(content);
   post.appendChild(sidebar);
 

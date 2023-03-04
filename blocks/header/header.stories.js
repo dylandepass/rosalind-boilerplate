@@ -8,6 +8,7 @@ import {
   decorateBlock,
 } from '../../scripts/lib-franklin.js';
 import _style from './header.css';
+import { createTag } from '../../scripts/scripts.js';
 
 export default {
   title: 'Blocks/Header',
@@ -17,7 +18,7 @@ export default {
 };
 
 const renderHeader = (args, context) => {
-  const header = document.createElement('header');
+  const header = createTag('header');
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);
