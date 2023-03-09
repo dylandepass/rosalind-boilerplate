@@ -6,7 +6,6 @@
 	border-width: var(--ros-component-button-border-width-$(type)-$(state));
 	border-radius: var(--ros-component-button-border-radius-$(type));
 	border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
-	margin: calc(var(--ros-component-button-border-width-$(type)-$(state)) * -1);
 }
 
 @define-mixin button $type {
@@ -22,6 +21,8 @@
 
 	&:focus-visible {
 		@mixin button-style $type, key-focus;
+		border-width: var(--ros-component-button-border-width-$(type)-default);
+		outline: var(--ros-component-button-border-width-$(type)-key-focus) solid var(--ros-component-button-color-$(type)-key-focus-border-color);
 	}
 
 	&:active {
@@ -55,6 +56,7 @@
 
 	display: flex;
 	justify-content: center;
+	height: var(--ros-component-size-button-default-height);
 	font-family: var(--ros-component-button-font-family-label);
 	font-size: var(--ros-component-button-font-size-label);
 	gap: var(--ros-component-button-spacing-gap);
