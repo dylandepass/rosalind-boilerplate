@@ -3,7 +3,7 @@ const istanbul = require('vite-plugin-istanbul');
 const constants = require('@storybook/addon-coverage/dist/cjs/constants');
 module.exports = {
   stories: ['../docs', '../blocks/**/*.mdx', '../blocks/**/*.stories.@(js|jsx|ts|tsx)', '../templates/**/*.stories.@(js|jsx|ts|tsx)', '../components/**/*.stories.@(js|jsx|ts|tsx)', '../components/**/*.mdx'],
-  addons: ['@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-interactions', '@dylandepass/franklin-storybook-addon', {
+  addons: ['@dylandepass/franklin-storybook-addon', '@storybook/addon-interactions', '@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-essentials', {
     name: '@storybook/addon-coverage',
     options: {
       istanbul: {
