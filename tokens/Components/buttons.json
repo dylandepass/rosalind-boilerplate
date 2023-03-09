@@ -377,6 +377,18 @@
           "value": "none",
           "type": "textCase"
         }
+      },
+      "size": {
+        "default": {
+          "height": {
+            "value": "{global.size.550}",
+            "type": "sizing"
+          },
+          "min-width": {
+            "value": "{global.size.500}",
+            "type": "sizing"
+          }
+        }
       }
     }
   }
