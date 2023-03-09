@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_rosalind_rosalind_template=self.webpackChunk_rosalind_rosalind_template||[]).push([[4008],{"./blocks/hero/hero.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{function decorate(){}__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{default:()=>decorate})}}]);
