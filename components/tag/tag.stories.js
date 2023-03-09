@@ -2,7 +2,7 @@
 import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import _style from './tag.css';
-import { createTag } from '../../scripts/scripts';
+import { createTag } from '../../scripts/scripts.js';
 
 import('./tag.js');
 
