@@ -293,11 +293,11 @@
             "type": "borderWidth"
           },
           "hover": {
-            "value": "{semantic.border-width.none}",
+            "value": "{semantic.border-width.sm}",
             "type": "borderWidth"
           },
           "down": {
-            "value": "{semantic.border-width.none}",
+            "value": "{semantic.border-width.sm}",
             "type": "borderWidth"
           },
           "key-focus": {
@@ -305,7 +305,7 @@
             "type": "borderWidth"
           },
           "disabled": {
-            "value": "{semantic.border-width.none}",
+            "value": "{semantic.border-width.sm}",
             "type": "borderWidth"
           }
         },
