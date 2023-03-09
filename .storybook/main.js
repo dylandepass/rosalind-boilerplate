@@ -12,7 +12,7 @@ module.exports = {
     }
   }, '@storybook/addon-mdx-gfm'],
   framework: {
-    name: '@storybook/html-vite',
+    name: '@storybook/html-webpack5',
     options: {}
   },
   docs: {
@@ -22,13 +22,6 @@ module.exports = {
     return {
       presets: ['@babel/preset-react']
     };
-  },
-  viteFinal: async config => {
-    config.build = {
-      ...(config.build ?? {}),
-      target: 'esnext'
-    };
-    return config;
   },
   "staticDirs": ['./', '../styles/', {
     from: '../icons',

@@ -134,7 +134,7 @@ export function decorateIcons(element = document) {
     }
     const icon = span.classList[1].substring(5);
     // eslint-disable-next-line no-use-before-define
-    const resp = await fetch(`${window.hlx.codeBasePath}/icons/${icon}.svg`);
+    const resp = await fetch(`${(!window.__STORYBOOK_PREVIEW__) ? window.hlx.codeBasePath : ''}/icons/${icon}.svg`); // eslint-disable-line no-underscore-dangle
     if (resp.ok) {
       const iconHTML = await resp.text();
       if (iconHTML.match(/<style/i)) {
