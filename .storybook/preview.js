@@ -1,3 +1,7 @@
+
+import { addons, useEffect } from '@storybook/addons';
+import { FranklinSourceDecorator } from '@dylandepass/franklin-storybook-addon';
+
 //import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
 
 // import light from '!!style-loader?injectType=lazyStyleTag!css-loader!../styles/themes/rosalind-light.css'
@@ -73,6 +77,6 @@ export const parameters = {
   },
 };
 
-// export const decorators = [
-//   cssVariablesTheme,
-// ];
+export const decorators = [
+  FranklinSourceDecorator,
+];

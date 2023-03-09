@@ -3,7 +3,7 @@ import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
 import { decorateIcons } from '../../../scripts/lib-franklin.js';
-import { loadPage } from '../../../scripts/scripts.js';
+import { createTag, loadPage } from '../../../scripts/scripts.js';
 
 function decorate(block) {
   decorateIcons(block);
@@ -23,7 +23,7 @@ function decorate(block) {
 }
 
 function createButton(type, icon) {
-  const container = document.createElement('p');
+  const container = createTag('p');
   container.classList.add('button-container');
 
   let iconSpan;
@@ -173,5 +173,24 @@ export const QuietIcon = {
   },
   play: async ({ canvasElement }) => {
     testButton(canvasElement, 'quiet');
+  },
+};
+
+export const ButtonGroup = {
+  render: (args, context) => {
+    const container = document.createElement('div');
+
+    const buttonGroup1 = document.createElement('div');
+    buttonGroup1.append(createButton('primary', 'icon-plus'));
+    buttonGroup1.append(createButton('secondary', 'icon-plus'));
+
+    const buttonGroup2 = document.createElement('div');
+    buttonGroup2.append(createButton('primary', 'icon-plus'));
+    buttonGroup2.append(createButton('secondary', 'icon-plus'));
+
+    container.append(buttonGroup1);
+    container.append(buttonGroup2);
+    decorateIcons(container);
+    return container;
   },
 };

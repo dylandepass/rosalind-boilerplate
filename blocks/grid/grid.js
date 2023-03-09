@@ -1,3 +1,5 @@
+import { createTag } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   block.querySelectorAll(':scope > div').forEach((row) => {
     row.querySelectorAll(':scope > div').forEach((col) => {
@@ -5,8 +7,7 @@ export default function decorate(block) {
         const icon = col.querySelector('.icon');
         if (icon) {
           icon.remove();
-          const content = document.createElement('div');
-          content.innerHTML = col.innerHTML;
+          const content = createTag('div', {}, col.innerHTML);
           col.innerHTML = '';
           col.append(icon);
           col.append(content);

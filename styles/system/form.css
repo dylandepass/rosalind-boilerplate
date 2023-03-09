@@ -7,7 +7,7 @@ form .group {
 	margin-bottom: var(--ros-component-form-group-spacing-margin-bottom);
 }
 
-form .group label {
+form .group > label {
 	color: var(--ros-component-form-group-color-foreground-label-default);
 	font-family: var(--ros-component-form-group-font-family-label);
 	font-size: var(--ros-component-form-group-font-size-label);

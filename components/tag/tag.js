@@ -1,4 +1,5 @@
 import { loadCSS, decorateIcons } from '../../scripts/lib-franklin.js';
+import { createTag } from '../../scripts/scripts.js';
 
 class Tag extends HTMLElement {
   constructor() {
@@ -14,19 +15,15 @@ class Tag extends HTMLElement {
   async render() {
     const icon = this.getAttribute('icon');
     const iconPosition = this.getAttribute('iconPosition');
-
-    const container = document.createElement('div');
-    container.classList.add('container');
-
-    container.innerHTML = /* html */ `
+    const content = /* html */ `
             ${icon && iconPosition !== 'right' ? `<span class="icon icon-${icon}"></span>` : ''}
             <span class='label'>${this.getAttribute('label')}</span>
             ${icon && iconPosition === 'right' ? `<span class="icon icon-${icon}"></span>` : ''}`;
 
-    decorateIcons(container);
+    const tag = createTag('div', { class: 'container' }, content);
 
-    this.appendChild(container);
-
+    decorateIcons(tag);
+    this.appendChild(tag);
     this.dispatchEvent(new Event('ready'));
   }
 }

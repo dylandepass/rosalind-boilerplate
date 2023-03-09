@@ -98,7 +98,7 @@ function createList(libraries) {
     const item = createTag('li', { class: 'content-type' }, type);
     libraryList.append(item);
 
-    const list = document.createElement('ul');
+    const list = createTag('ul');
     list.classList.add('con-type-list', `con-${type}-list`);
     container.append(list);
 
@@ -160,7 +160,7 @@ export default async function init(el) {
 
   el.shadowRoot.append(skLibrary);
 
-  const link = document.createElement('link');
+  const link = createTag('link');
   link.setAttribute('rel', 'stylesheet');
   link.setAttribute('href', '/blocks/library-config/library-config.css');
   el.shadowRoot.appendChild(link);

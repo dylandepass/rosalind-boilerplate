@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-import { decorateIcons } from '../../scripts/lib-franklin.js';
 import _style from './tag.css';
+import { createTag } from '../../scripts/scripts';
 
 import('./tag.js');
 
@@ -35,8 +35,8 @@ export default {
   },
 };
 
-function createTag(args, context, disabled = false, icon = '', iconPosition = 'left', style = '') {
-  const tag = document.createElement('tag-element');
+function createTagDemo(args, context, disabled = false, icon = '', iconPosition = 'left', style = '') {
+  const tag = createTag('tag-element');
   tag.setAttribute('disabled', args.disabled);
 
   if (args.icon) {
@@ -79,7 +79,7 @@ async function testTag(canvasElement, icon = false) {
 }
 
 export const Tag = {
-  render: (args, context) => createTag(args, context),
+  render: (args, context) => createTagDemo(args, context),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
@@ -91,7 +91,7 @@ export const IconLeft = {
     iconPosition: 'left',
     icon: 'check',
   },
-  render: (args, context) => createTag(args, context, false, 'tag'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement, true);
@@ -103,7 +103,7 @@ export const IconRight = {
     iconPosition: 'right',
     icon: 'check',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', 'right'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', 'right'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement, true);
@@ -114,7 +114,7 @@ export const PositiveStyle = {
   args: {
     style: 'positive',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', '', 'positive'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', '', 'positive'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
@@ -136,7 +136,7 @@ export const NoticeStyle = {
   args: {
     style: 'notice',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', '', 'notice'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', '', 'notice'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
@@ -148,7 +148,7 @@ export const InformativeStyle = {
     ...Tag.args,
     style: 'informative',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', '', 'informative'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', '', 'informative'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
@@ -159,7 +159,7 @@ export const Disabled = {
   args: {
     disabled: 'true',
   },
-  render: (args, context) => createTag(args, context, true, 'tag', ''),
+  render: (args, context) => createTagDemo(args, context, true, 'tag', ''),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
