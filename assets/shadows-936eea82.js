@@ -1,0 +1,9 @@
+import{j as i}from"./jsx-runtime-f9d62efa.js";import{M as t}from"./index-e85d51fa.js";import"./index-d3a33419.js";import{u as n}from"./index-8063ddaf.js";import"./index-0285b6c4.js";import"./_commonjsHelpers-87174ba5.js";import"./preload-helper-41c905a7.js";import"./chunk-GWAJ4KRU-d69fdc61.js";import"./index-84070ec7.js";import"./index-d95f4d35.js";import"./memoizerific-6211ecf2.js";import"./index-a1177552.js";import"./chunk-RDJSMFWU-adca00a4.js";import"./chunk-FD4M6EBV-8d27da22.js";import"./chunk-NNAAFZ4U-67fa674f.js";import"./chunk-Y5O7ZP4P-e999ce82.js";import"./index-fdaea41f.js";import"./_baseToString-e7f1b41f.js";import"./_getTag-5e1ca3fd.js";import"./isEqual-ebac266f.js";import"./index-25e212b3.js";import"./_defineProperty-118703d3.js";import"./uniq-2965a0d1.js";import"./index-633d3215.js";import"./index-1013ef18.js";function k(e={}){const{wrapper:r}=Object.assign({},n(),e.components);return r?i.jsx(r,Object.assign({},e,{children:i.jsx(s,{})})):s();function s(){const o=Object.assign({h1:"h1",p:"p",pre:"pre",code:"code"},n(),e.components);return i.jsxs(i.Fragment,{children:[i.jsx(t,{title:"Docs/Developers/Mixins/Shadow"}),`
+`,i.jsx(o.h1,{children:"Shadow Mixins"}),`
+`,i.jsx(o.p,{children:"Rosalind provides the following mixin to work with shadows."}),`
+`,i.jsx(o.pre,{children:i.jsx(o.code,{className:"language-css",children:`@mixin shadow {size};
+`})}),`
+`,i.jsxs("div",{className:"table margin-top",children:[i.jsxs("div",{children:[i.jsx("div",{children:"Parameter"}),`
+`,i.jsx("div",{children:"Options"})]}),i.jsxs("div",{children:[i.jsx("div",{children:i.jsx(o.code,{children:"size"})}),`
+`,i.jsxs("div",{children:[i.jsx(o.code,{children:"sm"})," ",i.jsx(o.code,{children:"md"})," ",i.jsx(o.code,{children:"lg"})," ",i.jsx(o.code,{children:"xl"})]})]})]})]})}}export{k as default};
+//# sourceMappingURL=shadows-936eea82.js.map

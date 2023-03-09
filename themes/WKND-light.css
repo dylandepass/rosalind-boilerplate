@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Mar 2023 03:22:47 GMT
+ * Generated on Thu, 09 Mar 2023 05:37:53 GMT
  */
 
 :root {
@@ -689,6 +689,8 @@
   --ros-component-radio-color-default-border-color: #e6e6e6;
   --ros-component-radio-color-default-foreground-color: #222222;
   --ros-component-radio-color-default-background-color: #00000000;
+  --ros-component-button-size-default-min-width: 40px;
+  --ros-component-button-size-default-height: 44px;
   --ros-component-button-text-case-label: none;
   --ros-component-button-text-decoration-label: none;
   --ros-component-button-paragraph-spacing-label: 0;
@@ -703,10 +705,10 @@
   --ros-component-button-border-width-quiet-down: 0px;
   --ros-component-button-border-width-quiet-hover: 0px;
   --ros-component-button-border-width-quiet-default: 0px;
-  --ros-component-button-border-width-secondary-disabled: 0px;
+  --ros-component-button-border-width-secondary-disabled: 1px;
   --ros-component-button-border-width-secondary-key-focus: 3px;
-  --ros-component-button-border-width-secondary-down: 0px;
-  --ros-component-button-border-width-secondary-hover: 0px;
+  --ros-component-button-border-width-secondary-down: 1px;
+  --ros-component-button-border-width-secondary-hover: 1px;
   --ros-component-button-border-width-secondary-default: 1px;
   --ros-component-button-border-width-primary-disabled: 0px;
   --ros-component-button-border-width-primary-key-focus: 3px;
