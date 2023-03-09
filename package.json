@@ -45,7 +45,7 @@
     "@storybook/addon-mdx-gfm": "7.0.0-beta.64",
     "@storybook/blocks": "7.0.0-beta.64",
     "@storybook/html": "7.0.0-beta.64",
-    "@storybook/html-vite": "7.0.0-beta.64",
+    "@storybook/html-webpack5": "^7.0.0-beta.64",
     "@storybook/jest": "0.0.11-next.0",
     "@storybook/test-runner": "0.10.0-next.10",
     "@storybook/testing-library": "0.0.14-next.1",
