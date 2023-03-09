@@ -896,6 +896,14 @@
       "text-case": {
         "label": "none"
       }
+    },
+    "size": {
+      "button": {
+        "default": {
+          "height": "44px",
+          "min-width": "40px"
+        }
+      }
     }
   },
   "semantic": {
