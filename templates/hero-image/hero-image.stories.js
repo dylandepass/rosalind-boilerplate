@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 
-import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
+import { FranklinPage } from '@dylandepass/franklin-storybook-addon';
 import decorate from './hero-image.js';
-import { loadPage } from '../../scripts/scripts.js';
+import { loadPage, createTag } from '../../scripts/scripts.js';
 import { decorateSections } from '../../scripts/lib-franklin.js';
 import style from './hero-image.css';
 
@@ -12,6 +12,7 @@ import style from './hero-image.css';
 export default {
   title: 'Templates/Hero Image',
   parameters: {
+    layout: 'fullscreen',
     docs: {
       description: {
         component: 'A block to display buttons',
@@ -21,14 +22,17 @@ export default {
 };
 
 function prepareTemplate(args, context) {
-  const template = FranklinTemplate(loadPage, args, context, decorate);
-  decorateSections(template);
+  const templateMeta = createTag('meta', { name: 'template', content: 'hero-image' });
+  document.head.appendChild(templateMeta);
+
+  const template = FranklinPage(loadPage, args, context);
+  console.log('template', template);
   return template;
 }
 
 export const HeroImage = {
   parameters: {
-    path: '/storybook/templates/hero-image.plain.html',
+    path: '/storybook/templates/hero-image',
     root: true,
     template: true,
     selector: 'div',

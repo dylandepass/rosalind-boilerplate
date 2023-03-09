@@ -127,6 +127,7 @@ header {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
+	top: 1px;
 
 	/* Don't use a stickey headers on small mobile devices */
 	@media (--ros-screen-xs) {

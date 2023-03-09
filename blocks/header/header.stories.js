@@ -18,6 +18,10 @@ export default {
 };
 
 const renderHeader = (args, context) => {
+  if (!window.hlx) window.hlx = {};
+  window.hlx.suppressLoadPage = true;
+  window.hlx.suppressLoadHeaderFooter = true;
+
   const header = createTag('header');
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);

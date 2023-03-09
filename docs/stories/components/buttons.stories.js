@@ -175,3 +175,22 @@ export const QuietIcon = {
     testButton(canvasElement, 'quiet');
   },
 };
+
+export const ButtonGroup = {
+  render: (args, context) => {
+    const container = document.createElement('div');
+
+    const buttonGroup1 = document.createElement('div');
+    buttonGroup1.append(createButton('primary', 'icon-plus'));
+    buttonGroup1.append(createButton('secondary', 'icon-plus'));
+
+    const buttonGroup2 = document.createElement('div');
+    buttonGroup2.append(createButton('primary', 'icon-plus'));
+    buttonGroup2.append(createButton('secondary', 'icon-plus'));
+
+    container.append(buttonGroup1);
+    container.append(buttonGroup2);
+    decorateIcons(container);
+    return container;
+  },
+};

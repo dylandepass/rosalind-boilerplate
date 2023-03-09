@@ -18,6 +18,10 @@ export default {
 
 export const Footer = {
   render: (args, context) => {
+    if (!window.hlx) window.hlx = {};
+    window.hlx.suppressLoadPage = true;
+    window.hlx.suppressLoadHeaderFooter = true;
+
     const footer = createTag('footer');
     const footerBlock = buildBlock('footer', '');
     footer.append(footerBlock);
