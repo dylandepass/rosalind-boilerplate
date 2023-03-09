@@ -125,7 +125,7 @@ export const NegativeStyle = {
   args: {
     style: 'negative',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', '', 'negative'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', '', 'negative'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);
