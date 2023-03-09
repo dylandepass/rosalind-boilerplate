@@ -2,7 +2,7 @@
 import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import _style from './tag.css';
-import { createTag } from '../../scripts/scripts';
+import { createTag } from '../../scripts/scripts.js';
 
 import('./tag.js');
 
@@ -125,7 +125,7 @@ export const NegativeStyle = {
   args: {
     style: 'negative',
   },
-  render: (args, context) => createTag(args, context, false, 'tag', '', 'negative'),
+  render: (args, context) => createTagDemo(args, context, false, 'tag', '', 'negative'),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     testTag(canvasElement);

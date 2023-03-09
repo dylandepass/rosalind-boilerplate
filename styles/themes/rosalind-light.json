@@ -864,10 +864,10 @@
         },
         "secondary": {
           "default": "1px",
-          "hover": "0px",
-          "down": "0px",
+          "hover": "1px",
+          "down": "1px",
           "key-focus": "3px",
-          "disabled": "0px"
+          "disabled": "1px"
         },
         "quiet": {
           "default": "0px",
@@ -895,6 +895,12 @@
       },
       "text-case": {
         "label": "none"
+      },
+      "size": {
+        "default": {
+          "height": "44px",
+          "min-width": "40px"
+        }
       }
     }
   },
