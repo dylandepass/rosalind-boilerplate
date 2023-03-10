@@ -1,13 +1,28 @@
 
-import { addons, useEffect } from '@storybook/addons';
 import { FranklinSourceDecorator } from '@dylandepass/franklin-storybook-addon';
 
-//import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
-
-// import light from '!!style-loader?injectType=lazyStyleTag!css-loader!../styles/themes/rosalind-light.css'
-// import dark from '!!style-loader?injectType=lazyStyleTag!css-loader!../styles/themes/rosalind-dark.css'
-// import WKND from '!!style-loader?injectType=lazyStyleTag!css-loader!../styles/themes/WKND-light.css'
-// import vader from '!!style-loader?injectType=lazyStyleTag!css-loader!../styles/themes/Vader.css'
+const themes = {
+  'rosalind-light': {
+    id: 'rosalind-light',
+    name: 'rosalind-light',
+    active: true,
+  },
+  'rosalind-dark': {
+    id: 'rosalind-dark',
+    name: 'rosalind-dark',
+    active: true,
+  },
+  'Vader': {
+    id: 'Vader',
+    name: 'Vader',
+    active: true,
+  },
+  'WKND-light': {
+    id: 'WKND-light',
+    name: 'WKND-light',
+    active: true,
+  },
+};
 
 const customViewports = {
   xs: {
@@ -56,15 +71,6 @@ const customViewports = {
 
 export const parameters = {
   host: 'https://main--rosalind-boilerplate--dylandepass.hlx.page',
-  // cssVariables: {
-  //   files: {
-  //     'rosalind-light': light,
-  //     'rosalind-dark': dark,
-  //     'WKND-light': WKND,
-  //     'Vader': vader,
-  //   },
-  //   defaultTheme: 'rosalind-light'
-  // },
   options: {
     storySort: {
       order: ['Introduction', '*'],
@@ -73,6 +79,11 @@ export const parameters = {
   viewport: {
     viewports: {
       ...customViewports,
+    },
+  },
+  theme: {
+    themes: {
+      ...themes,
     },
   },
 };
