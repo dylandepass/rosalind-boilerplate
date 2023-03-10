@@ -26,5 +26,8 @@ module.exports = {
   "staticDirs": ['./', '../styles/', {
     from: '../icons',
     to: '/icons'
+  },{
+    from: '../blocks',
+    to: '/blocks'
   }]
 };
