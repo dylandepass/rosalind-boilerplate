@@ -106,11 +106,17 @@ Start the server
 <!-- Running Tests -->
 ### :test_tube: Running Tests
 
-To run tests, run the following command. Storybook must be running locally.
+To run tests, run the following command.
+
+```bash
+  npm run test
+```
+
+To run storybook tests, run the following command.
 
 ```bash
   npm run storybook
-  npm run test
+  npm run test-storybook
 ```
 
 <!-- Contributing -->
