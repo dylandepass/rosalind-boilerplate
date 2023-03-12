@@ -13,6 +13,10 @@
         "layer-2": {
           "value": "{global.color.static.stone.800}",
           "type": "color"
+        },
+        "overlay": {
+          "value": "{global.color.static.transparent.black.800}",
+          "type": "color"
         }
       },
       "primary": {

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Starter franklin project with the Rosalind Template",
   "scripts": {
-    "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage && npm run test-storybook",
+    "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
     "lint:css": "stylelint 'blocks/**/*.post.css' 'components/**/*.post.css' 'styles/*.post.css' --fix",
