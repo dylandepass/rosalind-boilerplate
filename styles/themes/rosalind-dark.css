@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Mar 2023 05:35:36 GMT
+ * Generated on Sun, 12 Mar 2023 18:25:38 GMT
  */
 
 :root {
@@ -814,6 +814,7 @@
   --ros-semantic-color-border-hover: #5c5ce0;
   --ros-semantic-color-border-base: #334155;
   --ros-semantic-color-background-disabled: #545454;
+  --ros-semantic-color-background-overlay: #0f172ae6;
   --ros-semantic-color-background-layer-2: #334155;
   --ros-semantic-color-background-layer-1: #1e293b;
   --ros-semantic-color-background-base: #0f172a;

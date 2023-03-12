@@ -5,6 +5,7 @@
         "base": "#0f172a",
         "layer-1": "#1e293b",
         "layer-2": "#334155",
+        "overlay": "#0f172ae6",
         "disabled": "#545454"
       },
       "border": {

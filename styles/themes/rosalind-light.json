@@ -1006,7 +1006,8 @@
         "base": "#ffffff",
         "layer-1": "#f4f4f4",
         "layer-2": "#d3d3d3",
-        "disabled": "#d5d5d5"
+        "disabled": "#d5d5d5",
+        "overlay": "#ffffffe6"
       },
       "foreground": {
         "on-base": {

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Mar 2023 05:35:37 GMT
+ * Generated on Sun, 12 Mar 2023 18:25:38 GMT
  */
 
 :root {
@@ -417,6 +417,7 @@
   --ros-semantic-color-positive-down: #33ab84;
   --ros-semantic-color-positive-hover: #2d9d78;
   --ros-semantic-color-positive-default: #268e6c;
+  --ros-semantic-color-background-overlay: #ffffffe6;
   --ros-semantic-color-background-disabled: #d5d5d5;
   --ros-semantic-color-background-layer-2: #d3d3d3;
   --ros-semantic-color-background-layer-1: #f4f4f4;
