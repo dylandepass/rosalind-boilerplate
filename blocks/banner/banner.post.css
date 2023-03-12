@@ -51,7 +51,7 @@
 			@mixin padding 2xl;
 			@mixin border-radius default;
 
-			background-color: rgb(255 255 255 / 90%);
+			background-color: var(--ros-semantic-color-background-overlay);
 
 			@media (--ros-screen-lg) {
 				width: 100%;

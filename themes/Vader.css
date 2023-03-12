@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Mar 2023 05:35:38 GMT
+ * Generated on Sun, 12 Mar 2023 18:33:11 GMT
  */
 
 :root {
@@ -456,6 +456,7 @@
   --ros-semantic-color-primary-dark: #ca2982;
   --ros-semantic-color-primary-base: #d83790;
   --ros-semantic-color-background-disabled: #545454;
+  --ros-semantic-color-background-overlay: #000000e6;
   --ros-semantic-color-background-layer-2: #222;
   --ros-semantic-color-background-layer-1: #111;
   --ros-semantic-color-background-base: #000000;
