@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Starter franklin project with the Rosalind Template",
   "scripts": {
-    "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
+    "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage && npm run test-storybook",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
     "lint:css": "stylelint 'blocks/**/*.post.css' 'components/**/*.post.css' 'styles/*.post.css' --fix",
@@ -12,7 +12,7 @@
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook --quiet && npx http-server storybook --port 6006 --silent\" \"wait-on tcp:6006 && npm run test-storybook\"",
-    "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
+    "build-storybook" : "storybook build -o ./storybook && node ./bin/no-jekyll.js",
     "dev": "concurrently \"npm run franklin:up\" \"npm run design-system:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
     "design-system:transform": "node ./bin/transform.mjs",
