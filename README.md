@@ -36,6 +36,10 @@
 
 <br />
 
+<div align="center"> 
+  <img src="https://i.imgur.com/M4Iqceh.png" alt="screenshot" />
+</div>
+
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
@@ -53,13 +57,9 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
+When you are managing user experiences, it can be quite challenging to keep styles consistent and synchronized across multiple development platforms and devices. Rosalind offers a boilerplate setup to help get your company's design system started with an end-to-end designer/developer workflow across any platform.
 
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="https://i.imgur.com/M4Iqceh.png" alt="screenshot" />
-</div>
+With Rosalind, design decisions start in Figma, which is where designers feel most at home. They can then customize the design system to their liking and, with the click of a button, give developers access to these decisions in code on any platform iOS, Android, CSS, JS, HTML etc.
 
 <!-- Features -->
 ### :dart: Features
