@@ -1,111 +1,111 @@
 @import url('../../styles/system/mixins');
 
 tag-element {
-    & .container {
-        display: inline-flex;
-        align-items: center;
-        gap: var(--ros-component-tag-spacing-gap);
-        background-color: var(--ros-component-tag-color-default-background-color);
-        color: var(--ros-component-tag-color-default-foreground-color);
-        padding: var(--ros-component-tag-spacing-padding-y) var(--ros-component-tag-spacing-padding-x);
-        border-width: var(--ros-component-tag-border-width-default);
-        border-color: var(--ros-component-tag-color-default-border-color);
-        border-style: solid;
-        border-radius: var(--ros-component-tag-border-radius-default);
-        user-select: none;
+	& .container {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--ros-component-tag-spacing-gap);
+		background-color: var(--ros-component-tag-color-default-background-color);
+		color: var(--ros-component-tag-color-default-foreground-color);
+		padding: var(--ros-component-tag-spacing-padding-y) var(--ros-component-tag-spacing-padding-x);
+		border-width: var(--ros-component-tag-border-width-default);
+		border-color: var(--ros-component-tag-color-default-border-color);
+		border-style: solid;
+		border-radius: var(--ros-component-tag-border-radius-default);
+		user-select: none;
 
-        & .label {
-            font-size: var(--ros-component-tag-font-size-label);
-            font-weight: var(--ros-component-tag-font-weight-label);
-            font-family: var(--ros-component-tag-font-family-label);
-            line-height: var(--ros-component-tag-line-height-label);
-            text-transform: var(--ros-component-tag-text-case-label);
-        }
+		& .label {
+			font-size: var(--ros-component-tag-font-size-label);
+			font-weight: var(--ros-component-tag-font-weight-label);
+			font-family: var(--ros-component-tag-font-family-label);
+			line-height: var(--ros-component-tag-line-height-label);
+			text-transform: var(--ros-component-tag-text-case-label);
+		}
 
-        & .icon {
-            @mixin icon sm;
+		& .icon {
+			@mixin icon sm;
 
-            display: flex;
+			display: flex;
 
-            & svg {
-                @mixin icon sm;
-            }
-        }
+			& svg {
+				@mixin icon sm;
+			}
+		}
 
-        &:hover {
-            background-color: var(--ros-component-tag-color-hover-background-color);
-            color: var(--ros-component-tag-color-hover-foreground-color);
-            border-width: var(--ros-component-tag-border-width-hover);
-            border-color: var(--ros-component-tag-color-hover-border-color);
-            cursor: pointer;
-        }
+		&:hover {
+			background-color: var(--ros-component-tag-color-hover-background-color);
+			color: var(--ros-component-tag-color-hover-foreground-color);
+			border-width: var(--ros-component-tag-border-width-hover);
+			border-color: var(--ros-component-tag-color-hover-border-color);
+			cursor: pointer;
+		}
 
-        &:active {
-            background-color: var(--ros-component-tag-color-down-background-color);
-            color: var(--ros-component-tag-color-down-foreground-color);
-            border-width: var(--ros-component-tag-border-width-down);
-            border-color: var(--ros-component-tag-color-down-border-color);
-            cursor: pointer;
-        }
-    }
+		&:active {
+			background-color: var(--ros-component-tag-color-down-background-color);
+			color: var(--ros-component-tag-color-down-foreground-color);
+			border-width: var(--ros-component-tag-border-width-down);
+			border-color: var(--ros-component-tag-color-down-border-color);
+			cursor: pointer;
+		}
+	}
 
-    &[style='positive'] .container {
-        background-color: var(--ros-semantic-color-positive-default);
-        color: var(--ros-semantic-color-foreground-on-positive-default);
+	&[style='positive'] .container {
+		background-color: var(--ros-semantic-color-positive-default);
+		color: var(--ros-semantic-color-foreground-on-positive-default);
 
-        &:hover {
-            background-color: var(--ros-semantic-color-positive-hover);
-        }
+		&:hover {
+			background-color: var(--ros-semantic-color-positive-hover);
+		}
 
-        &:active {
-            background-color: var(--ros-semantic-color-positive-down);
-        }
-    }
+		&:active {
+			background-color: var(--ros-semantic-color-positive-down);
+		}
+	}
 
-    &[style='negative'] .container {
-        background-color: var(--ros-semantic-color-negative-default);
-        color: var(--ros-semantic-color-foreground-on-negative-default);
+	&[style='negative'] .container {
+		background-color: var(--ros-semantic-color-negative-default);
+		color: var(--ros-semantic-color-foreground-on-negative-default);
 
-        &:hover {
-            background-color: var(--ros-semantic-color-negative-hover);
-        }
+		&:hover {
+			background-color: var(--ros-semantic-color-negative-hover);
+		}
 
-        &:active {
-            background-color: var(--ros-semantic-color-negative-down);
-        }
-    }
+		&:active {
+			background-color: var(--ros-semantic-color-negative-down);
+		}
+	}
 
-    &[style='notice'] .container {
-        background-color: var(--ros-semantic-color-notice-default);
-        color: var(--ros-semantic-color-foreground-on-notice-default);
+	&[style='notice'] .container {
+		background-color: var(--ros-semantic-color-notice-default);
+		color: var(--ros-semantic-color-foreground-on-notice-default);
 
-        &:hover {
-            background-color: var(--ros-semantic-color-notice-hover);
-        }
+		&:hover {
+			background-color: var(--ros-semantic-color-notice-hover);
+		}
 
-        &:active {
-            background-color: var(--ros-semantic-color-notice-down);
-        }
-    }
+		&:active {
+			background-color: var(--ros-semantic-color-notice-down);
+		}
+	}
 
-    &[style='informative'] .container {
-        background-color: var(--ros-semantic-color-informative-default);
-        color: var(--ros-semantic-color-foreground-on-informative-default);
+	&[style='informative'] .container {
+		background-color: var(--ros-semantic-color-informative-default);
+		color: var(--ros-semantic-color-foreground-on-informative-default);
 
-        &:hover {
-            background-color: var(--ros-semantic-color-informative-hover);
-        }
+		&:hover {
+			background-color: var(--ros-semantic-color-informative-hover);
+		}
 
-        &:active {
-            background-color: var(--ros-semantic-color-informative-down);
-        }
-    }
+		&:active {
+			background-color: var(--ros-semantic-color-informative-down);
+		}
+	}
 
-    &[disabled='true'] .container {
-        background-color: var(--ros-component-tag-color-disabled-background-color);
-        color: var(--ros-component-tag-color-disabled-foreground-color);
-        border-width: var(--ros-component-tag-border-width-disabled);
-        border-color: var(--ros-component-tag-color-disabled-border-color);
-        cursor: not-allowed;
-    }
+	&[disabled='true'] .container {
+		background-color: var(--ros-component-tag-color-disabled-background-color);
+		color: var(--ros-component-tag-color-disabled-foreground-color);
+		border-width: var(--ros-component-tag-border-width-disabled);
+		border-color: var(--ros-component-tag-color-disabled-border-color);
+		cursor: not-allowed;
+	}
 }

@@ -45,7 +45,7 @@
 	}
 
 	@media (--ros-screen-md) {
-		& > div {
+		&:not(.full-width) > div {
 			max-width: var(--ros-semantic-size-section-max-width);
 		}
 	}

@@ -1,0 +1,223 @@
+@import url('../../styles/system/mixins.css');
+
+.banner {
+	position: relative;
+
+	@media (--ros-screen-md) {
+		height: auto;
+	}
+
+	& > div {
+		display: grid;
+	}
+
+	& .bg-image {
+		@media (--ros-screen-xs) {
+			height: auto;
+		}
+
+		@media (--ros-screen-lg) {
+			height: auto;
+		}
+
+		& picture {
+			line-height: 0;
+			display: block;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+
+				@media (--ros-screen-lg) {
+					width: 100%;
+					max-width: initial;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	& .container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+
+		& .content {
+			@mixin padding 2xl;
+			@mixin border-radius default;
+
+			background-color: rgb(255 255 255 / 90%);
+
+			@media (--ros-screen-lg) {
+				width: 100%;
+			}
+
+			& :--heading {
+				@mixin font-weight semi-bold;
+
+				margin-bottom: 0;
+			}
+
+			& p {
+				@mixin body-text regular, lg;
+			}
+
+			& .button-group {
+				display: flex;
+				flex-direction: column;
+
+				& .button-container {
+					display: flex;
+					flex-direction: column;
+					margin-right: var(--ros-semantic-spacing-around-component-md);
+
+					/* Primary buttons on top on mobile */
+					&.primary {
+						order: 1;
+					}
+
+					&:not(.primary) {
+						order: 2;
+					}
+
+					@media (--ros-screen-sm) {
+						/* Primary buttons on the right on desktop */
+						&.primary {
+							order: 2;
+						}
+
+						&:not(.primary) {
+							order: 1;
+						}
+					}
+				}
+
+				@media (--ros-screen-sm) {
+					flex-direction: row;
+				}
+			}
+		}
+	}
+
+	&.large {
+		& .bg-image {
+			& img {
+				min-height: 580px;
+
+				@media (--ros-screen-sm) {
+					height: 660px;
+					min-height: unset;
+				}
+			}
+		}
+	}
+
+	&.medium {
+		& .bg-image {
+			& img {
+				min-height: 400px;
+
+				@media (--ros-screen-sm) {
+					height: 400px;
+					min-height: unset;
+				}
+			}
+		}
+	}
+
+	&.small {
+		& .bg-image {
+			& img {
+				min-height: 300px;
+
+				@media (--ros-screen-sm) {
+					height: 260px;
+					min-height: unset;
+				}
+			}
+		}
+	}
+
+	&.extra-small {
+		& .bg-image {
+			& img {
+				min-height: 256px;
+
+				@media (--ros-screen-sm) {
+					height: 200px;
+					min-height: unset;
+				}
+			}
+		}
+	}
+
+	&.left {
+		& .container {
+			width: 100%;
+
+			& .content {
+				width: 80%;
+			}
+
+			@media (--ros-screen-sm) {
+				@mixin margin-left 5xl;
+
+				max-width: 432px;
+				justify-content: flex-start;
+
+				& .content {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.right {
+		& .container {
+			width: 100%;
+			justify-self: flex-end;
+
+			& .content {
+				width: 80%;
+			}
+
+			@media (--ros-screen-sm) {
+				@mixin margin-right 5xl;
+
+				max-width: 432px;
+				justify-content: flex-end;
+
+				& .content {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.center {
+		& .container {
+			justify-content: center;
+
+			@media (--ros-screen-md) {
+				& .content {
+					max-width: 880px;
+					width: 80%;
+				}
+			}
+
+			& .content {
+				width: 80%;
+				text-align: center;
+
+				& .button-group {
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
