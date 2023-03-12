@@ -301,7 +301,7 @@
 
 /* margin */
 @define-mixin margin $size {
-  padding: var(--ros-semantic-spacing-around-component-$(size));
+  margin: var(--ros-semantic-spacing-around-component-$(size));
 }
 
 @define-mixin margin-top $size {
