@@ -299,6 +299,10 @@
         "disabled": {
           "value": "{theme.color.gray.300}",
           "type": "color"
+        },
+        "overlay": {
+          "value": "{global.color.static.transparent.white.800}",
+          "type": "color"
         }
       },
       "foreground": {

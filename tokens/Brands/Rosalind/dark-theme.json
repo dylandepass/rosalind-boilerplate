@@ -13,6 +13,10 @@
         "layer-2": {
           "value": "{global.color.static.slate.700}",
           "type": "color"
+        },
+        "overlay": {
+          "value": "#0f172ae6",
+          "type": "color"
         }
       },
       "border": {
