@@ -36,10 +36,6 @@
 
 <br />
 
-<div align="center"> 
-  <img src="https://i.imgur.com/M4Iqceh.png" alt="screenshot" />
-</div>
-
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
