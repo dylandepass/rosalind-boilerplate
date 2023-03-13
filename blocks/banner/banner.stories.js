@@ -1,8 +1,28 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 import { FranklinTemplate } from '@dylandepass/franklin-storybook-addon';
+import { within, waitFor, userEvent } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import decorate from './banner.js';
 import { loadPage } from '../../scripts/scripts.js';
 import style from './banner.css';
+
+async function testBanner(canvasElement, type, buttonGroup = true) {
+  const canvas = within(canvasElement);
+  await waitFor(() => {
+    expect(document.querySelector('.bg-image')).toBeInTheDocument();
+  });
+
+  const container = document.querySelector('.container');
+  expect(container).toBeInTheDocument();
+
+  const typeElement = document.querySelector(`.${type}`);
+  expect(typeElement).toBeInTheDocument();
+
+  if (buttonGroup) {
+    const buttonGroupElement = document.querySelector('.button-group');
+    expect(buttonGroupElement).toBeInTheDocument();
+  }
+}
 
 export const BannerLargeLeft = {
   parameters: {
@@ -12,6 +32,10 @@ export const BannerLargeLeft = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'left');
+  },
 };
 
 export const BannerLargeRight = {
@@ -22,6 +46,10 @@ export const BannerLargeRight = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'right');
+  },
 };
 
 export const BannerLargeCenter = {
@@ -32,6 +60,10 @@ export const BannerLargeCenter = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'center');
+  },
 };
 
 export const BannerMediumLeft = {
@@ -42,6 +74,10 @@ export const BannerMediumLeft = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'left');
+  },
 };
 
 export const BannerMediumRight = {
@@ -52,6 +88,10 @@ export const BannerMediumRight = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'right');
+  },
 };
 
 export const BannerMediumCenter = {
@@ -62,6 +102,10 @@ export const BannerMediumCenter = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'center');
+  },
 };
 
 export const BannerSmallLeft = {
@@ -72,6 +116,10 @@ export const BannerSmallLeft = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'left');
+  },
 };
 
 export const BannerSmallRight = {
@@ -82,6 +130,10 @@ export const BannerSmallRight = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'right');
+  },
 };
 
 export const BannerSmallCenter = {
@@ -92,6 +144,10 @@ export const BannerSmallCenter = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'center');
+  },
 };
 
 export const BannerExtraSmallLeft = {
@@ -102,6 +158,10 @@ export const BannerExtraSmallLeft = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'left');
+  },
 };
 
 export const BannerExtraSmallRight = {
@@ -112,6 +172,10 @@ export const BannerExtraSmallRight = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'right');
+  },
 };
 
 export const BannerExtraSmallCenter = {
@@ -122,6 +186,10 @@ export const BannerExtraSmallCenter = {
   },
 
   render: (args, context) => FranklinTemplate(loadPage, args, context, decorate),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    testBanner(canvasElement, 'center');
+  },
 };
 
 /**
