@@ -49,8 +49,8 @@
 
 		& .content {
 			@mixin padding 2xl;
-			@mixin border-radius default;
 
+			width: 100%;
 			background-color: var(--ros-semantic-color-background-overlay);
 
 			@media (--ros-screen-lg) {
@@ -160,18 +160,12 @@
 		& .container {
 			width: 100%;
 
-			& .content {
-				width: 80%;
-			}
-
 			@media (--ros-screen-sm) {
-				@mixin margin-left 5xl;
-
-				max-width: 432px;
 				justify-content: flex-start;
 
 				& .content {
-					width: 100%;
+					width: 80%;
+					max-width: 432px;
 				}
 			}
 		}
@@ -180,20 +174,20 @@
 	&.right {
 		& .container {
 			width: 100%;
-			justify-self: flex-end;
 
-			& .content {
-				width: 80%;
+			& .section.full-width-section {
+				& > div {
+					display: flex;
+					justify-content: flex-end;
+				}
 			}
 
 			@media (--ros-screen-sm) {
-				@mixin margin-right 5xl;
-
-				max-width: 432px;
 				justify-content: flex-end;
 
 				& .content {
-					width: 100%;
+					width: 80%;
+					max-width: 432px;
 				}
 			}
 		}
@@ -202,6 +196,13 @@
 	&.center {
 		& .container {
 			justify-content: center;
+
+			& .section.full-width-section {
+				& > div {
+					display: flex;
+					justify-content: center;
+				}
+			}
 
 			@media (--ros-screen-md) {
 				& .content {
