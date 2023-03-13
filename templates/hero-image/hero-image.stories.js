@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies, no-unused-vars */
 
 import { FranklinPage } from '@dylandepass/franklin-storybook-addon';
+import { within, waitFor, userEvent } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import decorate from './hero-image.js';
 import { loadPage, createTag } from '../../scripts/scripts.js';
 import { decorateSections } from '../../scripts/lib-franklin.js';
@@ -40,4 +42,19 @@ export const HeroImage = {
     selector: 'div',
   },
   render: (args, context) => prepareTemplate(args, context),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await waitFor(() => {
+      expect(document.querySelector('.header-wrapper')).toBeInTheDocument();
+    });
+
+    await waitFor(() => {
+      expect(document.querySelector('.cover')).toBeInTheDocument();
+    });
+
+    expect(document.querySelector('.footer-wrapper')).toBeInTheDocument();
+    expect(document.querySelector('.image')).toBeInTheDocument();
+    expect(document.querySelector('.content')).toBeInTheDocument();
+    expect(document.querySelector('#hero-image-template')).toBeInTheDocument();
+  },
 };
