@@ -6,6 +6,7 @@
     "semantic",
     "Components/buttons",
     "Components/tag",
+    "Components/Avatar",
     "Components/form/form",
     "Components/form/form-group",
     "Components/form/text-field",
