@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 12 Mar 2023 18:33:10 GMT
+ * Generated on Tue, 14 Mar 2023 17:57:39 GMT
  */
 
 :root {
@@ -189,6 +189,13 @@
   --ros-theme-color-gray-100: #f8f8f8;
   --ros-theme-color-gray-75: #fdfdfd;
   --ros-theme-color-gray-50: #fff;
+  --ros-components-avatar-size-xxl: 192px;
+  --ros-components-avatar-size-xl: 160px;
+  --ros-components-avatar-size-lg: 128px;
+  --ros-components-avatar-size-md: 96px;
+  --ros-components-avatar-size-sm: 64px;
+  --ros-components-avatar-size-xs: 32px;
+  --ros-components-avatar-border-width-default: 1px;
   --ros-semantic-inner-shadow-sm-0-spread: 0px;
   --ros-semantic-inner-shadow-sm-0-blur: 4px;
   --ros-semantic-inner-shadow-sm-0-y: 2px;
@@ -492,6 +499,8 @@
   --ros-component-tag-color-default-foreground-color: #222222;
   --ros-component-tag-color-default-border-color: #00000000;
   --ros-component-tag-color-default-background-color: #f4f4f4;
+  --ros-component-avatar-border-radius-default: 9999px;
+  --ros-component-avatar-color-border-default: #e6e6e6;
   --ros-component-form-group-color-foreground-notice-default: #da7b11;
   --ros-component-form-group-color-foreground-info-default: #1473e6;
   --ros-component-form-group-color-foreground-positive-default: #268e6c;

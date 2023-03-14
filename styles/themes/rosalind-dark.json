@@ -1377,6 +1377,16 @@
         }
       }
     },
+    "avatar": {
+      "color": {
+        "border": {
+          "default": "#334155"
+        }
+      },
+      "border-radius": {
+        "default": "9999px"
+      }
+    },
     "tag": {
       "color": {
         "default": {
@@ -1607,6 +1617,21 @@
           "height": "44px",
           "min-width": "40px"
         }
+      }
+    }
+  },
+  "components": {
+    "avatar": {
+      "border-width": {
+        "default": "1px"
+      },
+      "size": {
+        "xs": "32px",
+        "sm": "64px",
+        "md": "96px",
+        "lg": "128px",
+        "xl": "160px",
+        "xxl": "192px"
       }
     }
   },
