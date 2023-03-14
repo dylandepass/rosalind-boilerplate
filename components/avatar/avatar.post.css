@@ -1,0 +1,42 @@
+avatar-element {
+	& img {
+		border-radius: var(--ros-component-avatar-border-radius-default);
+		border: var(--ros-components-avatar-border-width-default) solid var(--ros-component-avatar-color-border-default);
+	}
+
+	&.xs {
+		& img {
+			max-width: var(--ros-components-avatar-size-xs);
+		}
+	}
+
+	&.sm {
+		& img {
+			max-width: var(--ros-components-avatar-size-sm);
+		}
+	}
+
+	&.md {
+		& img {
+			max-width: var(--ros-components-avatar-size-md);
+		}
+	}
+
+	&.lg {
+		& img {
+			max-width: var(--ros-components-avatar-size-lg);
+		}
+	}
+
+	&.xl {
+		& img {
+			max-width: var(--ros-components-avatar-size-xl);
+		}
+	}
+
+	&.xxl {
+		& img {
+			max-width: var(--ros-components-avatar-size-xxl);
+		}
+	}
+}

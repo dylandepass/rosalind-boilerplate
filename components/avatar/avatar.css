@@ -1,0 +1,3 @@
+/* stylelint-disable */
+/* Generated File: Do not edit directly */
+avatar-element img{border:var(--ros-components-avatar-border-width-default) solid var(--ros-component-avatar-color-border-default);border-radius:var(--ros-component-avatar-border-radius-default)}avatar-element.xs img{max-width:var(--ros-components-avatar-size-xs)}avatar-element.sm img{max-width:var(--ros-components-avatar-size-sm)}avatar-element.md img{max-width:var(--ros-components-avatar-size-md)}avatar-element.lg img{max-width:var(--ros-components-avatar-size-lg)}avatar-element.xl img{max-width:var(--ros-components-avatar-size-xl)}avatar-element.xxl img{max-width:var(--ros-components-avatar-size-xxl)}
