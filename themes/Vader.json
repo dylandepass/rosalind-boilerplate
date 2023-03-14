@@ -831,6 +831,16 @@
         }
       }
     },
+    "avatar": {
+      "color": {
+        "border": {
+          "default": "#3f3f3f"
+        }
+      },
+      "border-radius": {
+        "default": "9999px"
+      }
+    },
     "tag": {
       "color": {
         "default": {
@@ -1608,6 +1618,21 @@
           "blur": "4px",
           "spread": "0px"
         }
+      }
+    }
+  },
+  "components": {
+    "avatar": {
+      "border-width": {
+        "default": "1px"
+      },
+      "size": {
+        "xs": "32px",
+        "sm": "64px",
+        "md": "96px",
+        "lg": "128px",
+        "xl": "160px",
+        "xxl": "192px"
       }
     }
   },
