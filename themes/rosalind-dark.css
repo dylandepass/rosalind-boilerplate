@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 14 Mar 2023 18:08:43 GMT
+ * Generated on Wed, 15 Mar 2023 15:08:32 GMT
  */
 
 :root {
@@ -198,7 +198,7 @@
   --ros-components-avatar-border-width-default: 1px;
   --ros-component-button-size-default-min-width: 40px;
   --ros-component-button-size-default-height: 44px;
-  --ros-component-button-text-case-label: none;
+  --ros-component-button-text-case-label: capitalize;
   --ros-component-button-text-decoration-label: none;
   --ros-component-button-paragraph-spacing-label: 0;
   --ros-component-button-spacing-gap: 12px;
@@ -668,7 +668,7 @@
   --ros-semantic-spacing-typography-caption-margin-bottom: 12px;
   --ros-semantic-spacing-typography-body-margin-bottom: 16px;
   --ros-semantic-spacing-typography-heading-margin-bottom: 12px;
-  --ros-semantic-spacing-typography-eyebrow-margin-bottom: 0px;
+  --ros-semantic-spacing-typography-eyebrow-margin-bottom: 8px;
   --ros-semantic-spacing-typography-subtitle-margin-bottom: 16px;
   --ros-semantic-spacing-typography-display-margin-bottom: 16px;
   --ros-semantic-spacing-section-mobile-padding-y: 48px;
@@ -733,7 +733,7 @@
   --ros-semantic-font-size-body-md: 1rem;
   --ros-semantic-font-size-body-sm: 0.875rem;
   --ros-semantic-font-size-body-xs: 0.75rem;
-  --ros-semantic-font-size-mobile-eyebrow: 19;
+  --ros-semantic-font-size-mobile-eyebrow: 14;
   --ros-semantic-font-size-mobile-subtitle: 23;
   --ros-semantic-font-size-mobile-heading-5: 12;
   --ros-semantic-font-size-mobile-heading-4: 15;
@@ -743,7 +743,7 @@
   --ros-semantic-font-size-mobile-display-3: 27.78;
   --ros-semantic-font-size-mobile-display-2: 33.33;
   --ros-semantic-font-size-mobile-display-1: 40;
-  --ros-semantic-font-size-desktop-eyebrow: 19;
+  --ros-semantic-font-size-desktop-eyebrow: 14;
   --ros-semantic-font-size-desktop-subtitle: 28;
   --ros-semantic-font-size-desktop-heading-5: 13;
   --ros-semantic-font-size-desktop-heading-4: 16;

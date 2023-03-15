@@ -271,7 +271,7 @@
           "letterSpacing": "0%",
           "paragraphSpacing": 0,
           "textDecoration": "none",
-          "textCase": "none"
+          "textCase": "capitalize"
         }
       },
       "border-width": {
@@ -314,7 +314,7 @@
         "label": "none"
       },
       "text-case": {
-        "label": "none"
+        "label": "capitalize"
       },
       "size": {
         "default": {
@@ -1061,7 +1061,7 @@
         "heading-4": 16,
         "heading-5": 13,
         "subtitle": 28,
-        "eyebrow": 19
+        "eyebrow": 14
       },
       "mobile": {
         "display-1": 40,
@@ -1073,7 +1073,7 @@
         "heading-4": 15,
         "heading-5": 12,
         "subtitle": 23,
-        "eyebrow": 19
+        "eyebrow": 14
       },
       "body": {
         "xs": "0.75rem",
@@ -1179,7 +1179,7 @@
           "margin-bottom": "16px"
         },
         "eyebrow": {
-          "margin-bottom": "0px"
+          "margin-bottom": "8px"
         },
         "heading": {
           "margin-bottom": "12px"
@@ -1388,7 +1388,7 @@
           "fontFamily": "Roboto",
           "fontWeight": 700,
           "lineHeight": "110%",
-          "fontSize": 19,
+          "fontSize": 14,
           "paragraphSpacing": 0,
           "letterSpacing": "-1%",
           "textDecoration": "none",
@@ -1490,7 +1490,7 @@
           "fontFamily": "Roboto",
           "fontWeight": 700,
           "lineHeight": "110%",
-          "fontSize": 19,
+          "fontSize": 14,
           "paragraphSpacing": 0,
           "letterSpacing": "-1%",
           "textDecoration": "none",
