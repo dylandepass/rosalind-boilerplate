@@ -374,7 +374,7 @@
       },
       "text-case": {
         "label": {
-          "value": "none",
+          "value": "capitalize",
           "type": "textCase"
         }
       },

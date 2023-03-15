@@ -91,7 +91,7 @@
           "type": "fontSizes"
         },
         "eyebrow": {
-          "value": "{global.font-size.lg}",
+          "value": "{global.font-size.sm}",
           "type": "fontSizes"
         }
       },
@@ -133,7 +133,7 @@
           "type": "fontSizes"
         },
         "eyebrow": {
-          "value": "{global.font-size.lg}",
+          "value": "{global.font-size.sm}",
           "type": "fontSizes"
         }
       },
@@ -734,7 +734,7 @@
         },
         "eyebrow": {
           "margin-bottom": {
-            "value": "0",
+            "value": "{global.space.100}",
             "type": "spacing"
           }
         },

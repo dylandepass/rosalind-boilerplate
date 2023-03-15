@@ -60,6 +60,7 @@
 	font-family: var(--ros-component-button-font-family-label);
 	font-size: var(--ros-component-button-font-size-label);
 	gap: var(--ros-component-button-spacing-gap);
+	text-transform: var(--ros-component-button-text-case-label);
 	line-height: 100%;
 	font-weight: 700;
 	border-style: solid;
