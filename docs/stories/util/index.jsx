@@ -41,22 +41,28 @@ export function TokenList({tokens, prefix}) {
 }
 
 export function TokenRow({k, value, prefix}) {
+  const isColor = prefix.match(/color/i);
   return(
       <div>
         <div>{prefix}</div>
         <div>{value}</div>
+        {isColor && (<div><div className="color-demo" style={{ backgroundColor: `var(${prefix})` }}>&nbsp;</div></div>)}
         <div><button className="button secondary small" onClick={() => navigator.clipboard.writeText(`${prefix}`)}>Copy Token</button></div>
       </div>
   ) 
 }
 
-export function Code({k, value, url}) {
+export function ColorDot() {
+  return <span className='color'></span>;
+}
+
+export function Code({k, value, url, isColor}) {
   if((window.location.href.includes('github.io'))) {
     url = `Rosalind-dna/docs/storybook${url}`;
   }
   return(
-      <code title={value}><a href={url}>{k}</a></code>
-  ) 
+      <code title={value}><a href={url}>{isColor ? <span className="color" style={{backgroundColor: value}}></span> : ``}{k}</a></code>
+  )
 }
 
 export const SystemName = "Rosalind Design System";
