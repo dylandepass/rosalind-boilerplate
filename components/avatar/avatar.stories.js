@@ -15,8 +15,10 @@ export default {
 
 async function testAvatar(canvasElement, icon = false) {
   const canvas = within(canvasElement);
-  expect(document.querySelector('.container')).toBeInTheDocument();
-  expect(document.querySelector('img')).toBeInTheDocument();
+  await waitFor(() => {
+    expect(document.querySelector('.container')).toBeInTheDocument();
+    expect(document.querySelector('img')).toBeInTheDocument();
+  });
 }
 
 export const AvatarExtraSmall = {
