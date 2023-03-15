@@ -67,8 +67,33 @@ code {
 	}
 
 	&.token {
+		&:not(:has(.color-demo)) {
+			& > div:first-of-type {
+				grid-template-columns: 1fr 1fr 130px;
+			}
+		}
+
+		&:has(.color-demo) {
+			& > div:first-of-type {
+				grid-template-columns: 1fr 300px 100px 130px;
+			}
+		}
+
 		& > div {
-			grid-template-columns: 1fr 250px 120px;
+			&:not(:has(.color-demo)) {
+				grid-template-columns: 1fr 1fr 130px;
+			}
+
+			&:has(.color-demo) {
+				grid-template-columns: 1fr 300px 100px 130px;
+			}
+
+			& .color-demo {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				border: 1px solid hsl(203deg 50% 30% / 20%);
+			}
 		}
 	}
 
@@ -78,6 +103,25 @@ code {
 
 	&.margin-bottom {
 		margin-bottom: 20px !important;
+	}
+
+	& code {
+		@mixin margin-bottom md;
+
+		& a {
+			display: flex;
+			align-items: center;
+
+			& .color {
+				@mixin border-default;
+
+				width: 12px;
+				height: 12px;
+				display: inline-block;
+				margin-right: 8px;
+				border-radius: 50%;
+			}
+		}
 	}
 }
 
