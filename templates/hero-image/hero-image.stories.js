@@ -30,7 +30,6 @@ function prepareTemplate(args, context) {
   document.head.appendChild(templateMeta);
 
   const template = FranklinPage(loadPage, args, context);
-  console.log('template', template);
   return template;
 }
 
