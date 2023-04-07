@@ -1,83 +1,83 @@
 @import './mixins';
 
 @define-mixin button-style $type, $state: default {
-	color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
-	background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
-	border-width: var(--ros-component-button-border-width-$(type)-$(state));
-	border-radius: var(--ros-component-button-border-radius-$(type));
-	border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
+  color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
+  background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
+  border-width: var(--ros-component-button-border-width-$(type)-$(state));
+  border-radius: var(--ros-component-button-border-radius-$(type));
+  border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
 }
 
 @define-mixin button $type {
-	@mixin button-style $type, default;
+  @mixin button-style $type, default;
 
-	&:hover {
-		@mixin button-style $type, hover;
-	}
+  &:hover {
+    @mixin button-style $type, hover;
+  }
 
-	&:focus {
-		@mixin button-style $type, default;
-	}
+  &:focus {
+    @mixin button-style $type, default;
+  }
 
-	&:focus-visible {
-		@mixin button-style $type, key-focus;
-		border-width: var(--ros-component-button-border-width-$(type)-default);
-		outline: var(--ros-component-button-border-width-$(type)-key-focus) solid var(--ros-component-button-color-$(type)-key-focus-border-color);
-	}
+  &:focus-visible {
+    @mixin button-style $type, key-focus;
+    border-width: var(--ros-component-button-border-width-$(type)-default);
+    outline: var(--ros-component-button-border-width-$(type)-key-focus) solid var(--ros-component-button-color-$(type)-key-focus-border-color);
+  }
 
-	&:active {
-		@mixin button-style $type, down;
-	}
+  &:active {
+    @mixin button-style $type, down;
+  }
 
-	&.disabled {
-		@mixin button-style $type, disabled;
+  &.disabled {
+    @mixin button-style $type, disabled;
 
-		&:focus,
-		&:focus-visible {
-			outline: initial;
-		}
-	}
+    &:focus,
+    &:focus-visible {
+      outline: initial;
+    }
+  }
 }
 
 .button-container {
-	display: block;
-	margin-right: 10px;
+  display: block;
+  margin-right: 10px;
 
-	@media (--ros-screen-md) {
-		display: inline-block;
-		vertical-align: top;
-	}
+  @media (--ros-screen-md) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
 .button {
-	&:not(:has(em)) {
-		padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
-	}
+  &:not(:has(em)) {
+    padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
+  }
 
-	display: flex;
-	justify-content: center;
-	height: var(--ros-component-button-size-default-height);
-	font-family: var(--ros-component-button-font-family-label);
-	font-size: var(--ros-component-button-font-size-label);
-	gap: var(--ros-component-button-spacing-gap);
-	text-transform: var(--ros-component-button-text-case-label);
-	line-height: 100%;
-	font-weight: 700;
-	border-style: solid;
-	align-items: center;
-	font-style: initial;
-	user-select: none;
-	transition-property: color, background-color, border-color, fill, stroke, opacity;
-	transition-duration: 0.2s;
-	outline: none;
+  display: flex;
+  justify-content: center;
+  height: var(--ros-component-button-size-default-height);
+  font-family: var(--ros-component-button-font-family-label);
+  font-size: var(--ros-component-button-font-size-label);
+  gap: var(--ros-component-button-spacing-gap);
+  text-transform: var(--ros-component-button-text-case-label);
+  line-height: 100%;
+  font-weight: 700;
+  border-style: solid;
+  align-items: center;
+  font-style: initial;
+  user-select: none;
+  transition-property: color, background-color, border-color, fill, stroke, opacity;
+  transition-duration: 0.2s;
+  outline: none;
 }
 
 .button em {
-	display: flex;
-	gap: var(--ros-component-button-spacing-gap);
-	padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
-	align-items: center;
-	font-style: normal;
+  display: flex;
+  gap: var(--ros-component-button-spacing-gap);
+  padding: var(--ros-component-button-spacing-padding-y) var(--ros-component-button-spacing-padding-x);
+  align-items: center;
+  font-style: normal;
 }
 
 
@@ -95,18 +95,18 @@
 
 .button .icon,
 .button .icon svg {
-	@mixin icon sm;
+  @mixin icon sm;
 }
 
 .button.primary {
-	@mixin button primary;
+  @mixin button primary;
 }
 
 .button.secondary {
-	@mixin button secondary;
+  @mixin button secondary;
 }
 
 .button.quiet {
-	@mixin button quiet;
+  @mixin button quiet;
 }
 

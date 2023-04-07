@@ -29,9 +29,9 @@
 
   & .highlighted {
     background: var(--ros-semantic-color-foreground-on-base-highlighted);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		text-decoration: none;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
   }
 }
 

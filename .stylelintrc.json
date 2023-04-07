@@ -1,8 +1,6 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-recommended",
   "rules": {
-    "string-quotes": "single",
-    "indentation": "tab",
     "custom-property-pattern": null,
     "function-whitespace-after": null,
     "function-no-unknown": null,
