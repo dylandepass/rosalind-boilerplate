@@ -12,13 +12,14 @@
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook --quiet && npx http-server storybook --port 6006 --silent\" \"wait-on tcp:6006 && npm run test-storybook\"",
-    "build-storybook" : "storybook build -o ./storybook && node ./bin/no-jekyll.js",
+    "build-storybook": "storybook build -o ./storybook && node ./bin/no-jekyll.js",
     "dev": "concurrently \"npm run franklin:up\" \"npm run design-system:dev\"",
     "franklin:up": "npx @adobe/helix-cli up",
     "design-system:transform": "node ./bin/transform.mjs",
     "design-system:validate": "node ./bin/validate-system.mjs",
     "design-system:build": "gulp build",
-    "design-system:dev": "gulp dev"
+    "design-system:dev": "gulp dev",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -67,20 +68,28 @@
     "gulp-sourcemaps": "3.0.0",
     "gulp-util": "3.0.8",
     "http-server": "14.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "merge-stream": "2.0.0",
     "postcss": "8.4.18",
     "postcss-import": "14.1.0",
     "postcss-mixins": "9.0.2",
     "postcss-preset-env": "7.8.2",
+    "prettier": "^2.8.7",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "sinon": "14.0.1",
     "storybook": "7.0.0-beta.64",
     "style-dictionary": "3.7.1",
-    "stylelint": "14.14.0",
-    "stylelint-config-standard": "29.0.0",
+    "stylelint": "15.3.0",
+    "stylelint-config-recommended": "^11.0.0",
     "token-transformer": "0.0.28",
     "vite": "4.0.4",
     "wait-on": "6.0.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint",
+    "*.post.css": "stylelint"
   }
 }

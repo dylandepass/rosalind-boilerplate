@@ -1,220 +1,220 @@
 @import "./mixins";
 
 form .group {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-bottom: var(--ros-component-form-group-spacing-margin-bottom);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: var(--ros-component-form-group-spacing-margin-bottom);
 }
 
 form .group > label {
-	color: var(--ros-component-form-group-color-foreground-label-default);
-	font-family: var(--ros-component-form-group-font-family-label);
-	font-size: var(--ros-component-form-group-font-size-label);
-	font-weight: var(--ros-component-form-group-font-weight-label);
-	line-height: var(--ros-component-form-group-line-height-label);
-	letter-spacing: var(--ros-component-form-group-letter-spacing-label);
-	text-transform: var(--ros-component-form-group-text-case-label);
-	text-decoration: var(--ros-component-form-group-text-decoration-label);
+  color: var(--ros-component-form-group-color-foreground-label-default);
+  font-family: var(--ros-component-form-group-font-family-label);
+  font-size: var(--ros-component-form-group-font-size-label);
+  font-weight: var(--ros-component-form-group-font-weight-label);
+  line-height: var(--ros-component-form-group-line-height-label);
+  letter-spacing: var(--ros-component-form-group-letter-spacing-label);
+  text-transform: var(--ros-component-form-group-text-case-label);
+  text-decoration: var(--ros-component-form-group-text-decoration-label);
 
-	padding-bottom: var(--ros-component-form-group-spacing-label-padding-bottom);
-	padding-right: 20px;
+  padding-bottom: var(--ros-component-form-group-spacing-label-padding-bottom);
+  padding-right: 20px;
 }
 
 form .group:has(input:required) > label:after,
 form .group:has(textarea:required) > label:after,
 form .group:has(select:required) > label:after {
-	content:"*";
-	color: var(--ros-semantic-color-negative-default);
-	padding-left: var(--ros-component-form-group-spacing-label-padding-right);
+  content:"*";
+  color: var(--ros-semantic-color-negative-default);
+  padding-left: var(--ros-component-form-group-spacing-label-padding-right);
 }
 
 form .group span {
-	color: var(--ros-component-form-group-color-foreground-help-default);
-	font-family: var(--ros-component-form-group-font-family-help);
-	font-size: var(--ros-component-form-group-font-size-help);
-	font-weight: var(--ros-component-form-group-font-weight-help);
-	line-height: var(--ros-component-form-group-line-height-help);
-	letter-spacing: var(--ros-component-form-group-letter-spacing-help);
-	text-transform: var(--ros-component-form-group-text-case-help);
-	text-decoration: var(--ros-component-form-group-text-decoration-help);
+  color: var(--ros-component-form-group-color-foreground-help-default);
+  font-family: var(--ros-component-form-group-font-family-help);
+  font-size: var(--ros-component-form-group-font-size-help);
+  font-weight: var(--ros-component-form-group-font-weight-help);
+  line-height: var(--ros-component-form-group-line-height-help);
+  letter-spacing: var(--ros-component-form-group-letter-spacing-help);
+  text-transform: var(--ros-component-form-group-text-case-help);
+  text-decoration: var(--ros-component-form-group-text-decoration-help);
 
-	padding-top: var(--ros-component-form-group-spacing-help-padding-top);
+  padding-top: var(--ros-component-form-group-spacing-help-padding-top);
 }
 
 input[type="text"],
 textarea {
-	@mixin base-text-field text-field;
+  @mixin base-text-field text-field;
 }
 
 select {
-	@mixin base-text-field select;
+  @mixin base-text-field select;
 }
 
 /* Checkbox */
 input[type="checkbox"] {
-	@mixin base-checked-element checkbox;
+  @mixin base-checked-element checkbox;
 }
 
 input[type="radio"] {
-	@mixin base-checked-element radio;
+  @mixin base-checked-element radio;
 }
 
 [type="checkbox"] {
-	&:not(.switch) {
-		/* Default checkbox state */
-		& + label::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 20px;
-			height: 20px;
-			border-radius: var(--ros-component-checkbox-border-radius);
-			background-color: var(--ros-component-checkbox-color-default-background-color);
-			border-width: var(--ros-component-checkbox-border-width-default);
-			border-color: var(--ros-component-checkbox-color-default-border-color);
-			border-style: solid;
-		}
+  &:not(.switch) {
+    /* Default checkbox state */
+    & + label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: var(--ros-component-checkbox-border-radius);
+      background-color: var(--ros-component-checkbox-color-default-background-color);
+      border-width: var(--ros-component-checkbox-border-width-default);
+      border-color: var(--ros-component-checkbox-color-default-border-color);
+      border-style: solid;
+    }
 
-		/* Checkbox Checked (Background) */
-		&:checked + label::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: var(--ros-component-checkbox-sizing-background-width);
-			height: var(--ros-component-checkbox-sizing-background-height);
-			border-style: solid;
-			/* border-width: var(--ros-border-width-form-input-active); */
-			border-color: var(--ros-component-checkbox-color-checked-border-color);
-			background-color: var(--ros-component-checkbox-color-checked-background-color);
-		}
+    /* Checkbox Checked (Background) */
+    &:checked + label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: var(--ros-component-checkbox-sizing-background-width);
+      height: var(--ros-component-checkbox-sizing-background-height);
+      border-style: solid;
+      /* border-width: var(--ros-border-width-form-input-active); */
+      border-color: var(--ros-component-checkbox-color-checked-border-color);
+      background-color: var(--ros-component-checkbox-color-checked-background-color);
+    }
 
-		/* Checkbox Checked (Check Shape) */
-		&:checked + label::after {
-			content: "";
-			position: absolute;
-			left: 8px;
-			top: 4px;
-			width: 5px;
-			height: 10px;
-			border-color: var(--ros-component-checkbox-color-checked-foreground-color);
-			border-style: solid;
-			border-width: 0 2px 2px 0;
-			transform: rotate(45deg);
-		}
-	}
+    /* Checkbox Checked (Check Shape) */
+    &:checked + label::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border-color: var(--ros-component-checkbox-color-checked-foreground-color);
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
 
-	&.switch {
-		height: var(--ros-component-switch-sizing-background-width);
-		width: var(--ros-component-switch-sizing-background-height);
-		position: absolute;
-		z-index: 1;
+  &.switch {
+    height: var(--ros-component-switch-sizing-background-width);
+    width: var(--ros-component-switch-sizing-background-height);
+    position: absolute;
+    z-index: 1;
 
-		& + label {
-			padding-left: 47px;
-			text-transform: var(--ros-component-switch-text-case-label);
-		}
+    & + label {
+      padding-left: 47px;
+      text-transform: var(--ros-component-switch-text-case-label);
+    }
 
-		/* Default switch state */
-		& + label::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: var(--ros-component-switch-sizing-background-width);
-			height: var(--ros-component-switch-sizing-background-height);
-			border-radius: 11px;
-		}
+    /* Default switch state */
+    & + label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: var(--ros-component-switch-sizing-background-width);
+      height: var(--ros-component-switch-sizing-background-height);
+      border-radius: 11px;
+    }
 
-		/* Default switch toggle */
-		& + label::after {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 3px;
-			top: 3px;
-			border-radius: 50%;
-			width: var(--ros-component-switch-sizing-toggle-width);
-			height: var(--ros-component-switch-sizing-toggle-height);
-			background-color: var(--ros-component-switch-color-default-foreground-color);
-			transform: translateX(var(--x, 0));
-		}
+    /* Default switch toggle */
+    & + label::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      border-radius: 50%;
+      width: var(--ros-component-switch-sizing-toggle-width);
+      height: var(--ros-component-switch-sizing-toggle-height);
+      background-color: var(--ros-component-switch-color-default-foreground-color);
+      transform: translateX(var(--x, 0));
+    }
 
-		/* Checked switch background */
-		&:checked + label::before {
-			background-color: var(--ros-component-switch-color-checked-background-color);
-		}
+    /* Checked switch background */
+    &:checked + label::before {
+      background-color: var(--ros-component-switch-color-checked-background-color);
+    }
 
-		/* Checked switch toggle */
-		&:checked + label::after {
-			--x: 18px;
+    /* Checked switch toggle */
+    &:checked + label::after {
+      --x: 18px;
 
-			background-color: var(--ros-component-switch-color-checked-foreground-color);
-		}
-	}
+      background-color: var(--ros-component-switch-color-checked-foreground-color);
+    }
+  }
 }
 
 input[type="radio"] {
-	appearance: none;
-	position: relative;
+  appearance: none;
+  position: relative;
 
-	/* Default radio background */
-	& + label::before {
-		border-radius: 50%;
-		width: var(--ros-component-radio-sizing-background-width);
-		height: var(--ros-component-radio-sizing-background-height);
-	}
+  /* Default radio background */
+  & + label::before {
+    border-radius: 50%;
+    width: var(--ros-component-radio-sizing-background-width);
+    height: var(--ros-component-radio-sizing-background-height);
+  }
 
-	/* Default radio check */
-	& + label::after {
-		content: "";
-		position: absolute;
-		left: 5px;
-		top: 5px;
-		display: block;
-		width: var(--ros-component-radio-sizing-toggle-width);
-		height: var(--ros-component-radio-sizing-toggle-height);
-		border-radius: 50%;
-		background-color: var(--ros-component-radio-color-checked-foreground-color);
-		opacity: 0;
-	}
+  /* Default radio check */
+  & + label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: block;
+    width: var(--ros-component-radio-sizing-toggle-width);
+    height: var(--ros-component-radio-sizing-toggle-height);
+    border-radius: 50%;
+    background-color: var(--ros-component-radio-color-checked-foreground-color);
+    opacity: 0;
+  }
 
-	/* Checked radio background */
-	&:checked + label::before {
-		border-color: var(--ros-component-radio-color-checked-border-color);
-		background-color: var(--ros-component-radio-color-checked-background-color);
-	}
+  /* Checked radio background */
+  &:checked + label::before {
+    border-color: var(--ros-component-radio-color-checked-border-color);
+    background-color: var(--ros-component-radio-color-checked-background-color);
+  }
 
-	/* Checked radio check */
-	&:checked + label::after {
-		opacity: 1;
-		background-color: var(--ros-component-radio-color-checked-foreground-color);
-	}
+  /* Checked radio check */
+  &:checked + label::after {
+    opacity: 1;
+    background-color: var(--ros-component-radio-color-checked-foreground-color);
+  }
 }
 
 select {
-	appearance: none;
-	min-width: var(--ros-component-select-min-width);
+  appearance: none;
+  min-width: var(--ros-component-select-min-width);
 }
 
 .select {
-	position: relative;
+  position: relative;
 
-	&:after {
-		content: "";
-		background-color: var(--ros-component-text-field-color-default-foreground-color);
-		mask-position: center;
-		mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20width%3D%2218%22%3E%0A%20%20%3Crect%20id%3D%22Canvas%22%20fill%3D%22currentColor%22%20opacity%3D%220%22%20width%3D%2218%22%20height%3D%2218%22%20%2F%3E%3Cpath%20class%3D%22fill%22%20d%3D%22M4%2C7.01a1%2C1%2C0%2C0%2C1%2C1.7055-.7055l3.289%2C3.286%2C3.289-3.286a1%2C1%2C0%2C0%2C1%2C1.437%2C1.3865l-.0245.0245L9.7%2C11.7075a1%2C1%2C0%2C0%2C1-1.4125%2C0L4.293%2C7.716A.9945.9945%2C0%2C0%2C1%2C4%2C7.01Z%22%20%2F%3E%0A%3C%2Fsvg%3E");
-		mask-repeat: no-repeat;
-		mask-size: cover;
-		display: inline-block;
-		position: absolute;
-		top: 7px;
-		right: 5px;
-		height: 20px;
-		width: 20px;
-		pointer-events: none;
-	}
+  &:after {
+    content: "";
+    background-color: var(--ros-component-text-field-color-default-foreground-color);
+    mask-position: center;
+    mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20width%3D%2218%22%3E%0A%20%20%3Crect%20id%3D%22Canvas%22%20fill%3D%22currentColor%22%20opacity%3D%220%22%20width%3D%2218%22%20height%3D%2218%22%20%2F%3E%3Cpath%20class%3D%22fill%22%20d%3D%22M4%2C7.01a1%2C1%2C0%2C0%2C1%2C1.7055-.7055l3.289%2C3.286%2C3.289-3.286a1%2C1%2C0%2C0%2C1%2C1.437%2C1.3865l-.0245.0245L9.7%2C11.7075a1%2C1%2C0%2C0%2C1-1.4125%2C0L4.293%2C7.716A.9945.9945%2C0%2C0%2C1%2C4%2C7.01Z%22%20%2F%3E%0A%3C%2Fsvg%3E");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    pointer-events: none;
+  }
 }

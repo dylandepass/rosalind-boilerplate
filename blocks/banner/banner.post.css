@@ -1,224 +1,224 @@
 @import url('../../styles/system/mixins.css');
 
 .banner {
-	position: relative;
+  position: relative;
 
-	@media (--ros-screen-md) {
-		height: auto;
-	}
+  @media (--ros-screen-md) {
+    height: auto;
+  }
 
-	& > div {
-		display: grid;
-	}
+  & > div {
+    display: grid;
+  }
 
-	& .bg-image {
-		@media (--ros-screen-xs) {
-			height: auto;
-		}
+  & .bg-image {
+    @media (--ros-screen-xs) {
+      height: auto;
+    }
 
-		@media (--ros-screen-lg) {
-			height: auto;
-		}
+    @media (--ros-screen-lg) {
+      height: auto;
+    }
 
-		& picture {
-			line-height: 0;
-			display: block;
+    & picture {
+      line-height: 0;
+      display: block;
 
-			& img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
-				@media (--ros-screen-lg) {
-					width: 100%;
-					max-width: initial;
-					height: auto;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-lg) {
+          width: 100%;
+          max-width: initial;
+          height: auto;
+        }
+      }
+    }
+  }
 
-	& .container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 
-		& .content {
-			@mixin padding 2xl;
+    & .content {
+      @mixin padding 2xl;
 
-			width: 100%;
-			background-color: var(--ros-semantic-color-background-overlay);
+      width: 100%;
+      background-color: var(--ros-semantic-color-background-overlay);
 
-			@media (--ros-screen-lg) {
-				width: 100%;
-			}
+      @media (--ros-screen-lg) {
+        width: 100%;
+      }
 
-			& :--heading {
-				@mixin font-weight semi-bold;
+      & :--heading {
+        @mixin font-weight semi-bold;
 
-				margin-bottom: 0;
-			}
+        margin-bottom: 0;
+      }
 
-			& p {
-				@mixin body-text regular, lg;
-			}
+      & p {
+        @mixin body-text regular, lg;
+      }
 
-			& .button-group {
-				display: flex;
-				flex-direction: column;
+      & .button-group {
+        display: flex;
+        flex-direction: column;
 
-				& .button-container {
-					display: flex;
-					flex-direction: column;
-					margin-right: var(--ros-semantic-spacing-around-component-md);
+        & .button-container {
+          display: flex;
+          flex-direction: column;
+          margin-right: var(--ros-semantic-spacing-around-component-md);
 
-					/* Primary buttons on top on mobile */
-					&.primary {
-						order: 1;
-					}
+          /* Primary buttons on top on mobile */
+          &.primary {
+            order: 1;
+          }
 
-					&:not(.primary) {
-						order: 2;
-					}
+          &:not(.primary) {
+            order: 2;
+          }
 
-					@media (--ros-screen-sm) {
-						/* Primary buttons on the right on desktop */
-						&.primary {
-							order: 2;
-						}
+          @media (--ros-screen-sm) {
+            /* Primary buttons on the right on desktop */
+            &.primary {
+              order: 2;
+            }
 
-						&:not(.primary) {
-							order: 1;
-						}
-					}
-				}
+            &:not(.primary) {
+              order: 1;
+            }
+          }
+        }
 
-				@media (--ros-screen-sm) {
-					flex-direction: row;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-sm) {
+          flex-direction: row;
+        }
+      }
+    }
+  }
 
-	&.large {
-		& .bg-image {
-			& img {
-				min-height: 580px;
+  &.large {
+    & .bg-image {
+      & img {
+        min-height: 580px;
 
-				@media (--ros-screen-sm) {
-					height: 660px;
-					min-height: unset;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-sm) {
+          height: 660px;
+          min-height: unset;
+        }
+      }
+    }
+  }
 
-	&.medium {
-		& .bg-image {
-			& img {
-				min-height: 400px;
+  &.medium {
+    & .bg-image {
+      & img {
+        min-height: 400px;
 
-				@media (--ros-screen-sm) {
-					height: 400px;
-					min-height: unset;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-sm) {
+          height: 400px;
+          min-height: unset;
+        }
+      }
+    }
+  }
 
-	&.small {
-		& .bg-image {
-			& img {
-				min-height: 300px;
+  &.small {
+    & .bg-image {
+      & img {
+        min-height: 300px;
 
-				@media (--ros-screen-sm) {
-					height: 260px;
-					min-height: unset;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-sm) {
+          height: 260px;
+          min-height: unset;
+        }
+      }
+    }
+  }
 
-	&.extra-small {
-		& .bg-image {
-			& img {
-				min-height: 256px;
+  &.extra-small {
+    & .bg-image {
+      & img {
+        min-height: 256px;
 
-				@media (--ros-screen-sm) {
-					height: 200px;
-					min-height: unset;
-				}
-			}
-		}
-	}
+        @media (--ros-screen-sm) {
+          height: 200px;
+          min-height: unset;
+        }
+      }
+    }
+  }
 
-	&.left {
-		& .container {
-			width: 100%;
+  &.left {
+    & .container {
+      width: 100%;
 
-			@media (--ros-screen-sm) {
-				justify-content: flex-start;
+      @media (--ros-screen-sm) {
+        justify-content: flex-start;
 
-				& .content {
-					width: 80%;
-					max-width: 432px;
-				}
-			}
-		}
-	}
+        & .content {
+          width: 80%;
+          max-width: 432px;
+        }
+      }
+    }
+  }
 
-	&.right {
-		& .container {
-			width: 100%;
+  &.right {
+    & .container {
+      width: 100%;
 
-			& .section.full-width-section {
-				& > div {
-					display: flex;
-					justify-content: flex-end;
-				}
-			}
+      & .section.full-width-section {
+        & > div {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
 
-			@media (--ros-screen-sm) {
-				justify-content: flex-end;
+      @media (--ros-screen-sm) {
+        justify-content: flex-end;
 
-				& .content {
-					width: 80%;
-					max-width: 432px;
-				}
-			}
-		}
-	}
+        & .content {
+          width: 80%;
+          max-width: 432px;
+        }
+      }
+    }
+  }
 
-	&.center {
-		& .container {
-			justify-content: center;
+  &.center {
+    & .container {
+      justify-content: center;
 
-			& .section.full-width-section {
-				& > div {
-					display: flex;
-					justify-content: center;
-				}
-			}
+      & .section.full-width-section {
+        & > div {
+          display: flex;
+          justify-content: center;
+        }
+      }
 
-			@media (--ros-screen-md) {
-				& .content {
-					max-width: 880px;
-					width: 80%;
-				}
-			}
+      @media (--ros-screen-md) {
+        & .content {
+          max-width: 880px;
+          width: 80%;
+        }
+      }
 
-			& .content {
-				width: 80%;
-				text-align: center;
+      & .content {
+        width: 80%;
+        text-align: center;
 
-				& .button-group {
-					justify-content: center;
-				}
-			}
-		}
-	}
+        & .button-group {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

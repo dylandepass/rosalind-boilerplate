@@ -1,265 +1,265 @@
 @define-mixin col {
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	max-width: 100%;
-	box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 @define-mixin col-auto {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 auto;
-	width: auto;
-	max-width: none;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
 }
 
 @define-mixin col1 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 8.33%;
-	max-width: 8.33%;
+  flex: 0 0 8.33%;
+  max-width: 8.33%;
 }
 
 @define-mixin col2 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 16.66%;
-	max-width: 16.66%;
+  flex: 0 0 16.66%;
+  max-width: 16.66%;
 }
 
 @define-mixin col3 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 25%;
-	max-width: 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 @define-mixin col4 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 33.33%;
-	max-width: 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
 }
 
 @define-mixin col5 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 41.66%;
-	max-width: 41.66%;
+  flex: 0 0 41.66%;
+  max-width: 41.66%;
 }
 
 @define-mixin col6 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 50%;
-	max-width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 @define-mixin col7 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 58.33%;
-	max-width: 58.33%;
+  flex: 0 0 58.33%;
+  max-width: 58.33%;
 }
 
 @define-mixin col8 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 66.66%;
-	max-width: 66.66%;
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
 }
 
 @define-mixin col9 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 75%;
-	max-width: 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 @define-mixin col10 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 83.33%;
-	max-width: 83.33%;
+  flex: 0 0 83.33%;
+  max-width: 83.33%;
 }
 
 @define-mixin col11 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 91.66%;
-	max-width: 91.66%;
+  flex: 0 0 91.66%;
+  max-width: 91.66%;
 }
 
 @define-mixin col12 {
-	@mixin col;
+  @mixin col;
 
-	flex: 0 0 100%;
-	max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @define-mixin col1-offset {
-	margin-left: 8.33%;
+  margin-left: 8.33%;
 }
 
 @define-mixin col2-offset {
-	margin-left: 16.66%;
+  margin-left: 16.66%;
 }
 
 @define-mixin col3-offset {
-	margin-left: 25%;
+  margin-left: 25%;
 }
 
 @define-mixin col4-offset {
-	margin-left: 33.33%;
+  margin-left: 33.33%;
 }
 
 @define-mixin col5-offset {
-	margin-left: 41.66%;
+  margin-left: 41.66%;
 }
 
 @define-mixin col6-offset {
-	margin-left: 50%;
+  margin-left: 50%;
 }
 
 @define-mixin col7-offset {
-	margin-left: 58.33%;
+  margin-left: 58.33%;
 }
 
 @define-mixin col8-offset {
-	margin-left: 66.66%;
+  margin-left: 66.66%;
 }
 
 @define-mixin col9-offset {
-	margin-left: 75%;
+  margin-left: 75%;
 }
 
 @define-mixin col10-offset {
-	margin-left: 83.33%;
+  margin-left: 83.33%;
 }
 
 @define-mixin col11-offset {
-	margin-left: 91.66%;
+  margin-left: 91.66%;
 }
 
 @define-mixin col12-offset {
-	margin-left: 100%;
+  margin-left: 100%;
 }
 
 .col-1 {
-	@mixin col1;
+  @mixin col1;
 }
 
 .col-2 {
-	@mixin col2;
+  @mixin col2;
 }
 
 .col-3 {
-	@mixin col3;
+  @mixin col3;
 }
 
 .col-4 {
-	@mixin col4;
+  @mixin col4;
 }
 
 .col-5 {
-	@mixin col5;
+  @mixin col5;
 }
 
 .col-6 {
-	@mixin col6;
+  @mixin col6;
 }
 
 .col-7 {
-	@mixin col7;
+  @mixin col7;
 }
 
 .col-8 {
-	@mixin col8;
+  @mixin col8;
 }
 
 .col-9 {
-	@mixin col9;
+  @mixin col9;
 }
 
 .col-10 {
-	@mixin col10;
+  @mixin col10;
 }
 
 .col-11 {
-	@mixin col11;
+  @mixin col11;
 }
 
 .col-12 {
-	@mixin col12;
+  @mixin col12;
 }
 
 .col-1-offset {
-	@mixin col1-offset;
+  @mixin col1-offset;
 }
 
 .col-2-offset {
-	@mixin col2-offset;
+  @mixin col2-offset;
 }
 
 .col-3-offset {
-	@mixin col3-offset;
+  @mixin col3-offset;
 }
 
 .col-4-offset {
-	@mixin col4-offset;
+  @mixin col4-offset;
 }
 
 .col-5-offset {
-	@mixin col5-offset;
+  @mixin col5-offset;
 }
 
 .col-6-offset {
-	@mixin col6-offset;
+  @mixin col6-offset;
 }
 
 .col-7-offset {
-	@mixin col7-offset;
+  @mixin col7-offset;
 }
 
 .col-8-offset {
-	@mixin col8-offset;
+  @mixin col8-offset;
 }
 
 .col-9-offset {
-	@mixin col9-offset;
+  @mixin col9-offset;
 }
 
 .col-10-offset {
-	@mixin col10-offset;
+  @mixin col10-offset;
 }
 
 .col-11-offset {
-	@mixin col11-offset;
+  @mixin col11-offset;
 }
 
 .col-12-offset {
-	@mixin col12-offset;
+  @mixin col12-offset;
 }
 
 .col-auto {
-	@mixin col-auto;
+  @mixin col-auto;
 }
 
 .full-screen {
-	@media (--ros-screen-lg) {
-		height: calc(100vh - var(--hlx-padding-top-body-desktop));
-		overflow-y: scroll;
-		-webkit-overflow-scrolling: touch;
-	}
+  @media (--ros-screen-lg) {
+    height: calc(100vh - var(--hlx-padding-top-body-desktop));
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .sticky {
-	@media (--ros-screen-lg) {
-		position: sticky;
-		top: var(--padding-top-body-deskto) p;
-		max-height: calc(100vh - var(--hlx-padding-top-body-desktop));
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
-	}
+  @media (--ros-screen-lg) {
+    position: sticky;
+    top: var(--padding-top-body-deskto) p;
+    max-height: calc(100vh - var(--hlx-padding-top-body-desktop));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }

@@ -1,68 +1,68 @@
 @import url('../../styles/system/mixins');
 
 .z-pattern-container {
-	&.layer-1 {
-		@mixin layer-1;
-	}
+  &.layer-1 {
+    @mixin layer-1;
+  }
 }
 
 .z-pattern {
-	@mixin padding-vertical 2xl;
+  @mixin padding-vertical 2xl;
 
-	& .row {
-		& .container {
-			@mixin grid-cols 1;
-			@mixin grid-md-cols 2;
-			@mixin gap lg;
-			@mixin margin-bottom 4xl;
-			@mixin margin-md-bottom 9xl;
+  & .row {
+    & .container {
+      @mixin grid-cols 1;
+      @mixin grid-md-cols 2;
+      @mixin gap lg;
+      @mixin margin-bottom 4xl;
+      @mixin margin-md-bottom 9xl;
 
-			& .text {
-				@mixin padding lg;
-			}
+      & .text {
+        @mixin padding lg;
+      }
 
-			& .image {
-				display: flex;
-				align-items: center;
-			}
-		}
+      & .image {
+        display: flex;
+        align-items: center;
+      }
+    }
 
-		&.media-reversed {
-			& .container {
-				& > div:first-of-type {
-					order: 0;
+    &.media-reversed {
+      & .container {
+        & > div:first-of-type {
+          order: 0;
 
-					@media (--ros-screen-md) {
-						order: 1;
-					}
-				}
-			}
-		}
+          @media (--ros-screen-md) {
+            order: 1;
+          }
+        }
+      }
+    }
 
-		&.media-reverse-mobile {
-			& .container {
-				& > div:first-of-type {
-					order: 1;
+    &.media-reverse-mobile {
+      & .container {
+        & > div:first-of-type {
+          order: 1;
 
-					@media (--ros-screen-md) {
-						order: 0;
-					}
-				}
-			}
-		}
-	}
+          @media (--ros-screen-md) {
+            order: 0;
+          }
+        }
+      }
+    }
+  }
 
-	/* .media.media-reversed .foreground .media-row > div:first-child {
+  /* .media.media-reversed .foreground .media-row > div:first-child {
 		order: 2;
 	} */
 
-	& .container {
-		& .heading {
-			@mixin margin-bottom 6xl;
+  & .container {
+    & .heading {
+      @mixin margin-bottom 6xl;
 
-			text-align: center;
-		}
-	}
+      text-align: center;
+    }
+  }
 }
 
 /*
