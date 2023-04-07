@@ -1,44 +1,44 @@
 @import url('../../styles/system/mixins');
 
 .hero-2-cols {
-	& > div {
-		display: grid;
-		text-align: center;
+  & > div {
+    display: grid;
+    text-align: center;
 
-		@mixin gap lg;
-		@mixin grid-cols 1;
-		@mixin grid-md-cols 2;
+    @mixin gap lg;
+    @mixin grid-cols 1;
+    @mixin grid-md-cols 2;
 
-		& > div {
-			@mixin margin-bottom 2xl;
+    & > div {
+      @mixin margin-bottom 2xl;
 
-			@media (--ros-screen-lg) {
-				margin-bottom: 0;
-			}
-		}
+      @media (--ros-screen-lg) {
+        margin-bottom: 0;
+      }
+    }
 
-		@media (--ros-screen-md) {
-			text-align: left;
-		}
-	}
+    @media (--ros-screen-md) {
+      text-align: left;
+    }
+  }
 
-	& u {
-		background: var(--ros-semantic-color-foreground-on-base-highlighted);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		text-decoration: none;
-	}
+  & u {
+    background: var(--ros-semantic-color-foreground-on-base-highlighted);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
 
-	& .illustration > svg {
-		@mixin padding xl;
+  & .illustration > svg {
+    @mixin padding xl;
 
-		width: 100%;
-		height: 100%;
-	}
+    width: 100%;
+    height: 100%;
+  }
 
-	@media (--ros-screen-sm) {
-		& .button-container {
-			display: inline-block;
-		}
-	}
+  @media (--ros-screen-sm) {
+    & .button-container {
+      display: inline-block;
+    }
+  }
 }
