@@ -40,7 +40,7 @@
 }
 
 .button-container {
-  display: block;
+  display: inline-block;
   margin-right: 10px;
 
   @media (--ros-screen-md) {
