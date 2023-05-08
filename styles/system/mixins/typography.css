@@ -36,14 +36,14 @@
 }
 
 @define-mixin display2 $weight: regular {
-  @mixin base-display;
+  @mixin base-display $weight;
 
   --min: var(--ros-semantic-font-size-mobile-display-2);
   --max: var(--ros-semantic-font-size-desktop-display-2);
 }
 
 @define-mixin display3 $weight: regular {
-  @mixin base-display;
+  @mixin base-display $weight;
 
   --min: var(--ros-semantic-font-size-mobile-display-3);
   --max: var(--ros-semantic-font-size-desktop-display-3);
