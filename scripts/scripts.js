@@ -231,6 +231,9 @@ async function loadLazy(doc) {
   if (!window.hlx.suppressLoadHeaderFooter) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
+  } else {
+    document.querySelector('header').remove();
+    document.querySelector('footer').remove();
   }
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
@@ -252,6 +255,9 @@ function loadDelayed() {
 }
 
 export async function loadPage() {
+  window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
+  window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
+
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
