@@ -274,8 +274,11 @@ export async function loadPage() {
   window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
   window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
 
-  // Listen for message from Block Library
-  window.addEventListener('message', receiveMessage);
+  // If the page is in an iframe
+  if (window.parent !== window) {
+    // Listen for message from Block Library
+    window.addEventListener('message', receiveMessage);
+  }
 
   await loadEager(document);
   await loadLazy(document);
