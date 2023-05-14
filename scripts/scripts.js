@@ -255,7 +255,7 @@ function loadDelayed() {
 }
 
 function receiveMessage(event) {
-  const allowed = ['http://localhost:3000', 'https://www.hlx.live'];
+  const allowed = ['https://localhost:3000', 'https://www.hlx.live'];
   if (!allowed.some((item) => event.origin.includes(item))) return;
 
   try {
@@ -274,8 +274,11 @@ export async function loadPage() {
   window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
   window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
 
-  // Listen for message from Block Library
-  window.addEventListener('message', receiveMessage);
+  // If the page is in an iframe
+  if (window.parent !== window) {
+    // Listen for message from Block Library
+    window.addEventListener('message', receiveMessage);
+  }
 
   await loadEager(document);
   await loadLazy(document);
