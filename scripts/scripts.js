@@ -255,7 +255,7 @@ function loadDelayed() {
 }
 
 function receiveMessage(event) {
-  const allowed = ['https://localhost:8000', 'https://www.hlx.live'];
+  const allowed = ['https://localhost:8000', 'https://www.hlx.live', 'https://main--franklin-library-host--dylandepass.hlx.live'];
   if (!allowed.some((item) => event.origin.includes(item))) return;
 
   try {
