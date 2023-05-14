@@ -254,9 +254,28 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function receiveMessage(event) {
+  const allowed = ['http://localhost:3000', 'https://www.hlx.live'];
+  if (!allowed.some((item) => event.origin.includes(item))) return;
+
+  try {
+    const { type, selector, index } = event.data;
+    if (type === 'focus') {
+      const element = document.querySelectorAll(selector)[index];
+      document.body.replaceChildren(element);
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.log('Unable to focus element', e);
+  }
+}
+
 export async function loadPage() {
   window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
   window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
+
+  // Listen for message from Block Library
+  window.addEventListener('message', receiveMessage);
 
   await loadEager(document);
   await loadLazy(document);
