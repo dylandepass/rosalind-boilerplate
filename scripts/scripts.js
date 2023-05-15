@@ -262,7 +262,8 @@ function receiveMessage(event) {
     const { type, selector, index } = event.data;
     if (type === 'focus') {
       const element = document.querySelectorAll(selector)[index];
-      document.body.replaceChildren(element);
+      const section = element.closest('.section');
+      document.body.replaceChildren(section);
     }
   } catch (e) {
     // eslint-disable-next-line no-console
