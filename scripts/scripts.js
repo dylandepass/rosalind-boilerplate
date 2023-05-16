@@ -255,8 +255,8 @@ function loadDelayed() {
 }
 
 function receiveMessage(event) {
-  const allowed = ['https://localhost:8000', 'https://www.hlx.live', 'https://main--franklin-library-host--dylandepass.hlx.live'];
-  if (!allowed.some((item) => event.origin.includes(item))) return;
+  const trustedOrigins = ['https://localhost:8000', 'https://www.hlx.live', 'https://main--franklin-library-host--dylandepass.hlx.live'];
+  if (!trustedOrigins.some((item) => event.origin.includes(item))) return;
 
   try {
     const { type, selector, index } = event.data;
@@ -287,7 +287,8 @@ export async function loadPage() {
     window.addEventListener('message', receiveMessage);
 
     // Notify the block library rendering is complete
-    window.postMessage({ type: 'ready' });
+    // localhost should be replaced with hlx.live
+    window.parent.postMessage({ type: 'ready' }, 'https://localhost:8000');
   }
 
   loadDelayed();
