@@ -263,7 +263,10 @@ function receiveMessage(event) {
     if (type === 'focus') {
       const element = document.querySelectorAll(selector)[index];
       const section = element.closest('.section');
-      document.body.replaceChildren(section);
+      document.body.querySelector('main').replaceChildren(section);
+
+      const libraryMetadata = section.querySelector('.library-metadata-wrapper');
+      if (libraryMetadata) libraryMetadata.remove();
     }
   } catch (e) {
     // eslint-disable-next-line no-console
@@ -275,14 +278,18 @@ export async function loadPage() {
   window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
   window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
 
+  await loadEager(document);
+  await loadLazy(document);
+
   // If the page is in an iframe
   if (window.parent !== window) {
     // Listen for message from Block Library
     window.addEventListener('message', receiveMessage);
+
+    // Notify the block library rendering is complete
+    window.postMessage({ type: 'ready' });
   }
 
-  await loadEager(document);
-  await loadLazy(document);
   loadDelayed();
 }
 
