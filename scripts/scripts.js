@@ -254,42 +254,12 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
-function receiveMessage(event) {
-  const trustedOrigins = ['https://localhost:8000', 'https://www.hlx.live', 'https://main--franklin-library-host--dylandepass.hlx.live'];
-  if (!trustedOrigins.some((item) => event.origin.includes(item))) return;
-
-  try {
-    const { type, selector, index } = event.data;
-    if (type === 'focus') {
-      const element = document.querySelectorAll(selector)[index];
-      const section = element.closest('.section');
-      document.body.querySelector('main').replaceChildren(section);
-
-      const libraryMetadata = section.querySelector('.library-metadata-wrapper');
-      if (libraryMetadata) libraryMetadata.remove();
-    }
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.log('Unable to focus element', e);
-  }
-}
-
 export async function loadPage() {
   window.hlx.suppressLoadHeaderFooter = getMetadata('suppressloadheaderfooter');
   window.hlx.suppressBlockLoader = getMetadata('suppressblockloader');
 
   await loadEager(document);
   await loadLazy(document);
-
-  // If the page is in an iframe
-  if (window.parent !== window) {
-    // Listen for message from Block Library
-    window.addEventListener('message', receiveMessage);
-
-    // Notify the block library rendering is complete
-    // localhost should be replaced with hlx.live
-    window.parent.postMessage({ type: 'ready' }, 'https://localhost:8000');
-  }
 
   loadDelayed();
 }
