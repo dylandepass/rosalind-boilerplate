@@ -19,6 +19,8 @@
         background-color: #ededed;
         height: 100%;
       }
+      
+      helix-sidekick { display: none }
     </style>
     <title>Sidekick Library</title>
   </head>
@@ -31,7 +33,7 @@
     <script>
       const library = document.createElement('sidekick-library')
       library.config = {
-        base: 'https://main--rosalind-boilerplate--dylandepass.hlx.page/storybook/library.json',
+        base: '/storybook/library.json',
       }
 
       document.body.prepend(library)
