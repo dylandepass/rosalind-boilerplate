@@ -191,9 +191,11 @@ async function loadEager(doc) {
   loadTheme();
   const main = doc.querySelector('main');
   await decorateTemplate(main);
-  if (main) {
+  if (main && !window.hlx.suppressBlockLoader) {
     decorateMain(main);
     await waitForLCP(LCP_BLOCKS);
+  } else {
+    document.querySelector('body').classList.add('appear');
   }
 }
 
