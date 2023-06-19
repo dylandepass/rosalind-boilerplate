@@ -2,7 +2,7 @@
 
 @define-mixin button-style $type, $state: default {
   color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
-  background-color: var(--ros-component-button-color-$(type)-$(state)-background-color);
+  background: var(--ros-component-button-color-$(type)-$(state)-background-color);
   border-width: var(--ros-component-button-border-width-$(type)-$(state));
   border-radius: var(--ros-component-button-border-radius-$(type));
   border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
@@ -40,7 +40,7 @@
 }
 
 .button-container {
-  display: block;
+  display: inline-block;
   margin-right: 10px;
 
   @media (--ros-screen-md) {
