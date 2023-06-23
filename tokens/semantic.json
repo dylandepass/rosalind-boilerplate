@@ -1367,6 +1367,12 @@
         "value": "{global.shadow.inner.100}",
         "type": "boxShadow"
       }
+    },
+    "variable": {
+      "show": {
+        "value": "true",
+        "type": "boolean"
+      }
     }
   }
 }
