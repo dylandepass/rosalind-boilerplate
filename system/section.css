@@ -51,6 +51,14 @@
   }
 }
 
+.sidekick-library .section {
+  padding: 0;
+
+  @media (--ros-screen-sm) {
+    padding: 0;
+  }
+}
+
 .default-content-wrapper {
   max-width: var(--ros-semantic-size-section-max-width);
   margin-left: auto;
