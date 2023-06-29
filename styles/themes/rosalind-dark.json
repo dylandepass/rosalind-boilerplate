@@ -1568,6 +1568,38 @@
             "foreground-color": "#505050",
             "border-color": "#00000000"
           }
+        },
+        "tab": {
+          "default": {
+            "background-color": "#00000000",
+            "foreground-color": "#ebebeb",
+            "border-color": "#00000000"
+          },
+          "hover": {
+            "background-color": "#00000000",
+            "foreground-color": "#5151d3",
+            "border-color": "#00000000"
+          },
+          "down": {
+            "background-color": "#00000000",
+            "foreground-color": "#4646c6",
+            "border-color": "#00000000"
+          },
+          "key-focus": {
+            "background-color": "#00000000",
+            "foreground-color": "#5c5ce0",
+            "border-color": "#9d64e1"
+          },
+          "disabled": {
+            "background-color": "#545454",
+            "foreground-color": "#707070",
+            "border-color": "#00000000"
+          },
+          "selected": {
+            "background-color": "#5c5ce0",
+            "foreground-color": "#ffffff",
+            "border-color": "#00000000"
+          }
         }
       },
       "border-width": {
@@ -1591,12 +1623,20 @@
           "down": "0px",
           "key-focus": "3px",
           "disabled": "0px"
+        },
+        "tab": {
+          "default": "0px",
+          "hover": "0px",
+          "down": "0px",
+          "key-focus": "3px",
+          "disabled": "0px"
         }
       },
       "border-radius": {
         "primary": "4px",
         "secondary": "4px",
-        "quiet": "4px"
+        "quiet": "4px",
+        "tab": "0px"
       },
       "spacing": {
         "padding-x": "16px",
