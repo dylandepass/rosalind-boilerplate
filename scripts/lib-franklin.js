@@ -185,6 +185,12 @@ export async function fetchPlaceholders(prefix = 'default') {
  */
 export function decorateBlock(block) {
   const shortBlockName = block.classList[0];
+
+  if (shortBlockName === 'library-metadata') {
+    block.remove();
+    return;
+  }
+
   if (shortBlockName) {
     block.classList.add('block');
     block.setAttribute('data-block-name', shortBlockName);
