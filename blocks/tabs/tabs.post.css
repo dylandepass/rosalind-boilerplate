@@ -1,0 +1,144 @@
+@import '../../styles/system/mixins';
+
+.section.tabs-container {
+  padding-top: 0;
+}
+
+.tabs {
+  position: relative;
+  margin: 0;
+}
+
+.tabs div[role="tablist"] {
+  position: relative;
+  display: flex;
+  z-index: 2;
+
+  /* ScrollProps - If content exceeds height of container, overflow! */
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox 64 */
+}
+
+.tabs div[role="tablist"]::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.tabs .tab-headline {
+  @mixin margin-top 2xl;
+  @mixin margin-bottom xl;
+}
+
+.tabs.center .tab-headline {
+  text-align: center;
+}
+
+.tabs div[role="tablist"] .tab-list-container {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (--ros-screen-md) {
+    padding: 0 8.3%;
+  }
+}
+
+
+.tabs div[role="tablist"] .tab-list-container select {
+  @mixin body-text bold, xs;
+  @mixin padding-horizontal xs;
+
+  @media (--ros-screen-xs) {
+    @mixin body-text bold, xs;
+  }
+}
+
+/* center tabs */
+.tabs.center div[role="tablist"]::after,
+.tabs.center div[role="tablist"]::before {
+  content: "";
+  margin: auto;
+}
+
+.tabs.center div[role="tablist"] .tab-list-container {
+  width: auto;
+  margin: 0;
+}
+
+.tab-list-container button {
+  display: none;
+
+
+  @media (--ros-screen-md) {
+    display: block;
+  }
+}
+
+.tab-list-container .select {
+  display: block;
+
+  @media (--ros-screen-md) {
+    display: none;
+  }
+}
+
+.tab-list-container .select select {
+  text-align: center;
+}
+
+/* contained tabs content */
+[role='tabpanel'] > .section > .content,
+.tabs.contained .tab-content .tab-content-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.tab-content [role='tabpanel'] .section {
+  position: relative;
+}
+
+.tab-content [role='tabpanel'] .section picture.section-background {
+  z-index: 0;
+}
+
+.tab-content [role='tabpanel'] .section > .content {
+  z-index: 1;
+  position: relative;
+}
+
+.tab-content [role='tabpanel'] .section[class*='-up'] > .content {
+  width: 100%;
+}
+
+.tabs div[role="tablist"] button {
+  @mixin button tab;
+}
+
+.tabs div[role="tablist"] button hr {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tabs div[role="tablist"] button:first-of-type {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.tabs div[role="tablist"] button[aria-selected="true"] {
+  background: var(--ros-component-button-color-tab-selected-background-color);
+  color: var(--ros-component-button-color-tab-selected-foreground-color);
+  border-color: var(--ros-component-button-color-tab-selected-border-color);
+}
+
+.tabs div[role="tablist"] button[aria-selected="true"] hr {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #FFF;
+}
