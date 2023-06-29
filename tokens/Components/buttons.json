@@ -266,11 +266,11 @@
         "tab": {
           "default": {
             "background-color": {
-              "value": "{semantic.color.primary.base}",
+              "value": "{semantic.color.transparent}",
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.foreground.on-primary.default}",
+              "value": "{semantic.color.foreground.on-base.default}",
               "type": "color"
             },
             "border-color": {
@@ -280,11 +280,11 @@
           },
           "hover": {
             "background-color": {
-              "value": "{semantic.color.primary.dark}",
+              "value": "{semantic.color.transparent}",
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.foreground.on-primary.default}",
+              "value": "{semantic.color.primary.dark}",
               "type": "color"
             },
             "border-color": {
@@ -294,11 +294,11 @@
           },
           "down": {
             "background-color": {
-              "value": "{semantic.color.primary.darker}",
+              "value": "{semantic.color.transparent}",
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.foreground.on-primary.default}",
+              "value": "{semantic.color.primary.darker}",
               "type": "color"
             },
             "border-color": {
@@ -308,11 +308,11 @@
           },
           "key-focus": {
             "background-color": {
-              "value": "{semantic.color.primary.base}",
+              "value": "{semantic.color.transparent}",
               "type": "color"
             },
             "foreground-color": {
-              "value": "{semantic.color.foreground.on-primary.default}",
+              "value": "{semantic.color.primary.base}",
               "type": "color"
             },
             "border-color": {
@@ -327,6 +327,20 @@
             },
             "foreground-color": {
               "value": "{semantic.color.foreground.on-disabled.default}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{semantic.color.transparent}",
+              "type": "color"
+            }
+          },
+          "selected": {
+            "background-color": {
+              "value": "{semantic.color.primary.base}",
+              "type": "color"
+            },
+            "foreground-color": {
+              "value": "{semantic.color.foreground.on-primary.default}",
               "type": "color"
             },
             "border-color": {
