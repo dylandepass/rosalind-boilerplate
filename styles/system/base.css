@@ -40,6 +40,10 @@ main {
   padding-top: var(--ros-pattern-header-size-height);
 }
 
+.sidekick-library main {
+  padding: 0;
+}
+
 hr {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
