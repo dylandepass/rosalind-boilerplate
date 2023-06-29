@@ -52,10 +52,12 @@
 }
 
 .sidekick-library .section {
-  padding: 0;
+  padding-left: var(--ros-semantic-spacing-section-mobile-padding-x);
+  padding-right: var(--ros-semantic-spacing-section-mobile-padding-x);
 
   @media (--ros-screen-sm) {
-    padding: 0;
+    padding-left: var(--ros-semantic-spacing-section-desktop-padding-x);
+    padding-right: var(--ros-semantic-spacing-section-desktop-padding-x);
   }
 }
 
