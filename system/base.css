@@ -40,8 +40,8 @@ main {
   padding-top: var(--ros-pattern-header-size-height);
 }
 
-.sidekick-library main {
-  padding: 0;
+main.sidekick-library {
+  padding-top: 0;
 }
 
 hr {
