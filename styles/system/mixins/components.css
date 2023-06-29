@@ -1,0 +1,38 @@
+@define-mixin button-style $type, $state: default {
+  color: var(--ros-component-button-color-$(type)-$(state)-foreground-color);
+  background: var(--ros-component-button-color-$(type)-$(state)-background-color);
+  border-width: var(--ros-component-button-border-width-$(type)-$(state));
+  border-radius: var(--ros-component-button-border-radius-$(type));
+  border-color: var(--ros-component-button-color-$(type)-$(state)-border-color);
+}
+
+@define-mixin button $type {
+  @mixin button-style $type, default;
+
+  &:hover {
+    @mixin button-style $type, hover;
+  }
+
+  &:focus {
+    @mixin button-style $type, default;
+  }
+
+  &:focus-visible {
+    @mixin button-style $type, key-focus;
+    border-width: var(--ros-component-button-border-width-$(type)-default);
+    outline: var(--ros-component-button-border-width-$(type)-key-focus) solid var(--ros-component-button-color-$(type)-key-focus-border-color);
+  }
+
+  &:active {
+    @mixin button-style $type, down;
+  }
+
+  &.disabled {
+    @mixin button-style $type, disabled;
+
+    &:focus,
+    &:focus-visible {
+      outline: initial;
+    }
+  }
+}
