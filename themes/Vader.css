@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 29 Jun 2023 03:04:35 GMT
+ * Generated on Thu, 29 Jun 2023 19:29:16 GMT
  */
 
 :root {
@@ -705,9 +705,15 @@
   --ros-component-button-spacing-gap: 12px;
   --ros-component-button-spacing-padding-y: 12px;
   --ros-component-button-spacing-padding-x: 16px;
+  --ros-component-button-border-radius-tab: 0px;
   --ros-component-button-border-radius-quiet: 4px;
   --ros-component-button-border-radius-secondary: 4px;
   --ros-component-button-border-radius-primary: 4px;
+  --ros-component-button-border-width-tab-disabled: 0px;
+  --ros-component-button-border-width-tab-key-focus: 3px;
+  --ros-component-button-border-width-tab-down: 0px;
+  --ros-component-button-border-width-tab-hover: 0px;
+  --ros-component-button-border-width-tab-default: 0px;
   --ros-component-button-border-width-quiet-disabled: 0px;
   --ros-component-button-border-width-quiet-key-focus: 3px;
   --ros-component-button-border-width-quiet-down: 0px;
@@ -723,6 +729,24 @@
   --ros-component-button-border-width-primary-down: 0px;
   --ros-component-button-border-width-primary-hover: 0px;
   --ros-component-button-border-width-primary-default: 0px;
+  --ros-component-button-color-tab-selected-border-color: #00000000;
+  --ros-component-button-color-tab-selected-foreground-color: #ffffff;
+  --ros-component-button-color-tab-selected-background-color: #d83790;
+  --ros-component-button-color-tab-disabled-border-color: #00000000;
+  --ros-component-button-color-tab-disabled-foreground-color: #707070;
+  --ros-component-button-color-tab-disabled-background-color: #545454;
+  --ros-component-button-color-tab-key-focus-border-color: #9d64e1;
+  --ros-component-button-color-tab-key-focus-foreground-color: #d83790;
+  --ros-component-button-color-tab-key-focus-background-color: #00000000;
+  --ros-component-button-color-tab-down-border-color: #00000000;
+  --ros-component-button-color-tab-down-foreground-color: #bc1c74;
+  --ros-component-button-color-tab-down-background-color: #00000000;
+  --ros-component-button-color-tab-hover-border-color: #00000000;
+  --ros-component-button-color-tab-hover-foreground-color: #ca2982;
+  --ros-component-button-color-tab-hover-background-color: #00000000;
+  --ros-component-button-color-tab-default-border-color: #00000000;
+  --ros-component-button-color-tab-default-foreground-color: #ebebeb;
+  --ros-component-button-color-tab-default-background-color: #00000000;
   --ros-component-button-color-quiet-disabled-border-color: #00000000;
   --ros-component-button-color-quiet-disabled-foreground-color: #505050;
   --ros-component-button-color-quiet-disabled-background-color: #00000000;
