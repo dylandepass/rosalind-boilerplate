@@ -6,12 +6,11 @@ import {
   decorateSections,
   decorateBlocks,
   decorateTemplateAndTheme,
-  decorateIcons,
   waitForLCP,
   loadBlocks,
   loadCSS,
   getMetadata,
-} from './lib-franklin.js';
+} from './aem.js';
 
 const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
@@ -174,6 +173,27 @@ export function isMobile() {
   return window.innerWidth < 900;
 }
 
+export function decorateIcons(element = document) {
+  element.querySelectorAll('span.icon').forEach(async (span) => {
+    if (span.classList.length < 2 || !span.classList[1].startsWith('icon-')) {
+      return;
+    }
+    const icon = span.classList[1].substring(5);
+    // eslint-disable-next-line no-use-before-define
+    const resp = await fetch(`${(!window.__STORYBOOK_PREVIEW__) ? window.hlx.codeBasePath : ''}/icons/${icon}.svg`); // eslint-disable-line no-underscore-dangle
+    if (resp.ok) {
+      const iconHTML = await resp.text();
+      if (iconHTML.match(/<style/i)) {
+        const img = document.createElement('img');
+        img.src = `data:image/svg+xml,${encodeURIComponent(iconHTML)}`;
+        span.appendChild(img);
+      } else {
+        span.innerHTML = iconHTML;
+      }
+    }
+  });
+}
+
 /**
  * Are we currently rendering an isolated block as part of the block library or storybook?
  * @returns {boolean} True if rendering block in isolation
@@ -193,6 +213,7 @@ async function loadEager(doc) {
   await decorateTemplate(main);
   if (main && !window.hlx.suppressBlockLoader) {
     decorateMain(main);
+    document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
   } else {
     document.querySelector('body').classList.add('appear');

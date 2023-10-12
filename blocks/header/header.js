@@ -1,5 +1,5 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
-import { isMobile, createTag } from '../../scripts/scripts.js';
+import { readBlockConfig } from '../../scripts/aem.js';
+import { isMobile, createTag, decorateIcons } from '../../scripts/scripts.js';
 
 /**
  * collapses all open nav sections

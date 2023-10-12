@@ -6,7 +6,7 @@ import {
   buildBlock,
   loadBlock,
   decorateBlock,
-} from '../../scripts/lib-franklin.js';
+} from '../../scripts/aem.js';
 import _style from './header.css';
 import { createTag } from '../../scripts/scripts.js';
 

@@ -5,7 +5,7 @@ import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import decorate from './hero-image.js';
 import { loadPage, createTag } from '../../scripts/scripts.js';
-import { decorateSections } from '../../scripts/lib-franklin.js';
+import { decorateSections } from '../../scripts/aem.js';
 import hero from './hero-image.css';
 import footer from '../../blocks/footer/footer.css';
 import header from '../../blocks/header/header.css';
