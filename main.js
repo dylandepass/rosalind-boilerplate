@@ -7,7 +7,7 @@ module.exports = {
     name: '@storybook/addon-coverage',
     options: {
       istanbul: {
-        exclude: ['**/lib-franklin.js', '**/scripts.js']
+        exclude: ['**/aem.js', '**/scripts.js']
       }
     }
   }, '@storybook/addon-mdx-gfm'],
