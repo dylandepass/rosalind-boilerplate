@@ -75,6 +75,10 @@ export const AuthoredButtons = {
       expect(canvas.getByText('Authored Buttons')).toBeInTheDocument();
     });
 
+    await waitFor(() => {
+      expect(canvas.getByTitle('Primary')).toBeInTheDocument();
+    });
+
     const primary = canvas.getByTitle('Primary');
     expect(primary).toBeInTheDocument();
 
