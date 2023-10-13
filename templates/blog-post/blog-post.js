@@ -1,5 +1,4 @@
-import { decorateIcons } from '../../scripts/lib-franklin.js';
-import { createTag } from '../../scripts/scripts.js';
+import { createTag, decorateIcons } from '../../scripts/scripts.js';
 
 function renderSidebar() {
   return /* html */`

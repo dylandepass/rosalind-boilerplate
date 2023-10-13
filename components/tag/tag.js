@@ -1,5 +1,5 @@
-import { loadCSS, decorateIcons } from '../../scripts/lib-franklin.js';
-import { createTag } from '../../scripts/scripts.js';
+import { loadCSS } from '../../scripts/aem.js';
+import { createTag, decorateIcons } from '../../scripts/scripts.js';
 
 class Tag extends HTMLElement {
   constructor() {

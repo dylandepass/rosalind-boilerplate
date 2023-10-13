@@ -1,4 +1,4 @@
-import { buildBlock } from '../../scripts/lib-franklin.js';
+import { buildBlock } from '../../scripts/aem.js';
 import { createTag } from '../../scripts/scripts.js';
 
 export default function decorate(main) {

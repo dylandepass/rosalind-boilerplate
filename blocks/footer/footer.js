@@ -1,5 +1,5 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
-import { createTag } from '../../scripts/scripts.js';
+import { readBlockConfig } from '../../scripts/aem.js';
+import { createTag, decorateIcons } from '../../scripts/scripts.js';
 
 /**
  * loads and decorates the footer

@@ -1,4 +1,4 @@
-import { loadCSS, toCamelCase } from '../../scripts/lib-franklin.js';
+import { loadCSS, toCamelCase } from '../../scripts/aem.js';
 import { createTag } from '../../scripts/scripts.js';
 
 class Avatar extends HTMLElement {
