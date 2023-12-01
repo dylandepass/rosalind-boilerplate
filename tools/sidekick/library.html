@@ -28,12 +28,17 @@
   <body>
     <script
       type="module"
-      src="https://www.hlx.live/tools/sidekick/library/index.js"
+      src="http://localhost:8000/dist/index.js"
     ></script>
     <script>
       const library = document.createElement('sidekick-library')
       library.config = {
         base: '/storybook/library.json',
+        plugins: {
+          blocks: {
+            encodeImages: true,
+          }
+        }
       }
 
       document.body.prepend(library)
