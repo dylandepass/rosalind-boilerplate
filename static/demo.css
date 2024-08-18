@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/tools/register/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/tools/register/styles.css" />
+</head>
+
+<body class="register">
+  <header></header>
+  <main>
+    <!-- TITLE -->
+    <div>
+      <h1>Register</h1>
+      <p style="display: none;">
+        The <strong>Register</strong> tool is designed to streamline the process of integrating and managing
+        various types of external repositories. It focuses on connecting GitHub for source code management and
+        SharePoint or Google Drive for content storage. The tool handles authentication, user management, and
+        permissions, ensuring that automated systems can interact with both code and content repositories seamlessly.
+      </p>
+    </div>
+    <!-- PROGRESS BAR -->
+    <div>
+      <div class="progress">
+        <div>
+          <div>
+            <ol>
+              <li>Link</li>
+              <li>Sign in</li>
+              <li>Connect</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FORM -->
+    <div>
+      <form id="github-form">
+
+        <div class="form-field url-field">
+          <label for="github-url">GitHub URL</label>
+          <input name="github-url" id="github-url" type="url" pattern=".*github\.com.*" required />
+          <div class="field-help-text">
+            <p>https://github.com/user/repo</p>
+          </div>
+        </div>
+
+        <p class="button-wrapper">
+          <button type="submit" class="button">Submit</button>
+          <button type="reset" class="button outline">Clear</button>
+        </p>
+      </form>
+
+      <form aria-hidden="true" id="signin-form">
+        <div class="form-text">
+          <label>Sign in to continue.</label>
+        </div>
+
+        <p class="button-wrapper">
+          <button type="submit" class="button">Sign in</button>
+        </p>
+      </form>
+
+      <form aria-hidden="true" id="connect-user-form">
+        <div class="form-text">
+          <h3>
+            Connect user account access
+          </h3>
+          <label>
+            To connect a user account to this project, you need to log in. The login window allows you to specify the
+            user account that the Service application will use to access SharePoint or Google Drive. It's recommended to
+            use a system or technical user account with a long password rotation policy. If the password is changed,
+            <strong>you must renew the access grant by re-registering the user</strong> through this interface.
+          </label>
+        </div>
+
+        <p class="button-wrapper">
+          <button type="submit" class="button">Connect user</button>
+        </p>
+      </form>
+
+      <form aria-hidden="true" id="connect-app-form">
+        <div class="form-text">
+          <h3>
+            Connect application permission
+          </h3>
+          <label>
+            To connect the Service application directly to SharePoint, you need to grant specific application
+            permissions. You must assign <code>Sites.Selected</code> <strong>write</strong> permissions to the
+            SharePoint site associated with your project. For detailed instructions on configuring these permissions,
+            please <a href="https://www.aem.live/docs/setup-customer-sharepoint">refer to the documentation</a>.
+          </label>
+        </div>
+
+        <p class="button-wrapper">
+          <button type="submit" class="button">Connect application</button>
+        </p>
+      </form>
+
+      <form aria-hidden="true" id="disconnect-form">
+        <p class="button-wrapper">
+          <button type="submit" class="button">Disconnect</button>
+        </p>
+      </form>
+
+      <div class="section-metadata">
+        <div>
+          <div>id</div>
+          <div>form</div>
+        </div>
+      </div>
+    </div>
+    <!-- TABLE -->
+    <div>
+      <div class="table">
+        <table id="registerTable" aria-hidden="true">
+          <tbody>
+            <tr>
+              <td>Owner</td>
+              <td data-key="owner">-</td>
+            </tr>
+            <tr>
+              <td>Repo</td>
+              <td data-key="repo">-</td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td data-key="githubUrl">-</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td data-key>-</td>
+            </tr>
+            <tr>
+              <td>Content Bus ID</td>
+              <td data-key="contentBusId">-</td>
+            </tr>
+            <tr>
+              <td>Tenant ID</td>
+              <td data-key="tenantId">-</td>
+            </tr>
+            <tr class="user">
+              <td>User</td>
+              <td data-key="user">-</td>
+            </tr>
+            <tr class="user">
+              <td>Scopes</td>
+              <td data-key>-</td>
+            </tr>
+            <tr class="app">
+              <td>Application ID</td>
+              <td data-key>-</td>
+            </tr>
+            <tr class="app">
+              <td>Roles</td>
+              <td data-key>-</td>
+            </tr>
+            <tr>
+              <td>Issuer</td>
+              <td data-key>-</td>
+            </tr>
+            <tr>
+              <td>Can Read?</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="button-wrapper reset-wrapper">
+        <button type="button" id="register-reset" class="button emphasis" disabled>Start Over</button>
+      </p>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

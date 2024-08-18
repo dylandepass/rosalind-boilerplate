@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Static HTML Page</title>
+    <script src="/scripts/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/themes/rosalind-light.css"/>
+    <link rel="stylesheet" href="/styles/system.css" />
+    <link rel="stylesheet" href="/static/demo.css" />
+    <meta name="template" content="home" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <p>
+          <picture>
+            <source type="image/webp" srcset="./media_1dda29fc47b8402ff940c87a2659813e503b01d2d.png?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+            <source type="image/webp" srcset="./media_1dda29fc47b8402ff940c87a2659813e503b01d2d.png?width=750&#x26;format=webply&#x26;optimize=medium">
+            <source type="image/png" srcset="./media_1dda29fc47b8402ff940c87a2659813e503b01d2d.png?width=2000&#x26;format=png&#x26;optimize=medium" media="(min-width: 600px)">
+            <img loading="lazy" alt="" src="./media_1dda29fc47b8402ff940c87a2659813e503b01d2d.png?width=750&#x26;format=png&#x26;optimize=medium" width="584" height="482">
+          </picture>
+        </p>
+        <h1>This is an autoblock</h1>
+        <p>Autoblocks will work with static HTML files</p>
+        <p><strong><a href="#designerdeveloper-workflow"><span class="icon icon-play-circle"></span>Buttons work as well</a></strong></p>
+      </div>
+      <div>
+        <h2 id="why-use-rosalind">This is default content</h2>
+        <p>Default content can be used as well</p>
+        <div class="grid two-cols full-width-section">
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_15d79fa8e35bf44e0e1befcf656f005cd3e770c6c.png?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_15d79fa8e35bf44e0e1befcf656f005cd3e770c6c.png?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/png" srcset="./media_15d79fa8e35bf44e0e1befcf656f005cd3e770c6c.png?width=2000&#x26;format=png&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_15d79fa8e35bf44e0e1befcf656f005cd3e770c6c.png?width=750&#x26;format=png&#x26;optimize=medium" width="584" height="482">
+              </picture>
+            </div>
+            <div>
+              <h3 id="figma-integration">This is a block, blocks can be reused in static HTML</h3>
+              <p>Blocks will need to follow the expected HTML structure in the markup in order to render correctly.</p>
+              <ul>
+                <li><span class="icon icon-check-circle"></span>Write one off pages</li>
+                <li><span class="icon icon-check-circle"></span>Reuse blocks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>style</div>
+            <div>secondary-background</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>This is free form HTML</h1>
+        <p>It does not ahere to any existing block pattern. You can write this content like any webpage using HTML/CSS</p>
+        <p><strong><a href="#designerdeveloper-workflow"><span class="icon icon-play-circle"></span>Buttons work as well</a></strong></p>
+        <p>NOTE: None of this content is editable by authors since it's embedded directly into the HTML.</p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
