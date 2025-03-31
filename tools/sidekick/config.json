@@ -1,6 +1,5 @@
 {
   "project": "Rosalind",
-  "host": "rosalind.dylandepass.com",
   "plugins": [
     {
       "id": "library",
