@@ -1,11 +1,12 @@
 .section {
   margin: auto;
   width: 100%;
-  padding: var(--ros-semantic-spacing-section-mobile-padding-y) var(--ros-semantic-spacing-section-mobile-padding-x);
+  padding: var(--ros-semantic-spacing-section-mobile-padding-y)
+    var(--ros-semantic-spacing-section-mobile-padding-x);
   max-width: var(--ros-semantic-size-section-max-width);
 
-  &[data-section-status="loading"],
-  &[data-section-status="initialized"] {
+  &[data-section-status='loading'],
+  &[data-section-status='initialized'] {
     display: none;
   }
 
@@ -36,38 +37,39 @@
     }
 
     @media (--ros-screen-lg) {
-      padding: var(--ros-semantic-spacing-section-desktop-padding-y) var(--ros-semantic-spacing-section-desktop-padding-x);
+      padding: var(--ros-semantic-spacing-section-desktop-padding-y)
+        var(--ros-semantic-spacing-section-desktop-padding-x);
     }
   }
 
   &.xxxxl-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-4xl) 0;
   }
-  
+
   &.xxxl-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-3xl) 0;
   }
-  
+
   &.xxl-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-2xl) 0;
   }
-  
+
   &.xl-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-xl) 0;
   }
-  
+
   &.lg-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-lg) 0;
   }
-  
+
   &.md-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-md) 0;
   }
-  
+
   &.sm-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-sm) 0;
   }
-  
+
   &.xs-vertical-padding {
     padding: var(--ros-semantic-spacing-around-component-xs) 0;
   }
@@ -75,38 +77,37 @@
   &.xxxxl-padding {
     padding: var(--ros-semantic-spacing-around-component-4xl);
   }
-  
+
   &.xxxl-padding {
     padding: var(--ros-semantic-spacing-around-component-3xl);
   }
-  
+
   &.xxl-padding {
     padding: var(--ros-semantic-spacing-around-component-2xl);
   }
-  
+
   &.xl-padding {
     padding: var(--ros-semantic-spacing-around-component-xl);
   }
-  
+
   &.lg-padding {
     padding: var(--ros-semantic-spacing-around-component-lg);
   }
-  
+
   &.md-padding {
     padding: var(--ros-semantic-spacing-around-component-md);
   }
-  
+
   &.sm-padding {
     padding: var(--ros-semantic-spacing-around-component-sm);
   }
-  
+
   &.xs-padding {
     padding: var(--ros-semantic-spacing-around-component-xs);
   }
 
-
   &.center[class*='-up'] {
-  justify-items: center;
+    justify-items: center;
   }
 
   &[class*='-up'].no-gap {
@@ -126,7 +127,7 @@
   }
 
   &[class*='-up'].xl-gap {
-    gap: var(--ros-semantic-spacing-gap-component-xl)
+    gap: var(--ros-semantic-spacing-gap-component-xl);
   }
 
   &[class*='-up'].l-gap {
@@ -160,12 +161,31 @@
   }
 
   @media (--ros-screen-sm) {
-    padding: var(--ros-semantic-spacing-section-desktop-padding-y) var(--ros-semantic-spacing-section-desktop-padding-x);
+    padding: var(--ros-semantic-spacing-section-desktop-padding-y)
+      var(--ros-semantic-spacing-section-desktop-padding-x);
   }
 
   @media (--ros-screen-md) {
     &:not(.full-width) > div {
       max-width: var(--ros-semantic-size-section-max-width);
+    }
+  }
+
+  @media (--ros-screen-xl) {
+    &.two-up {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &.three-up {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    &.four-up {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    &.five-up {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
 }
